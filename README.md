@@ -100,14 +100,6 @@ sound-studio-1-pro/
 
 ---
 
-## 🔒 Private AI & Pro Architecture
-
-Sound Studio (1) Pro includes a modular, air-gapped architecture for private extensions:
-- The public release contains zero proprietary API keys, remote analytics, or tracking scripts.
-- Private AI features (multi-provider sound engineering with Gemini, OpenAI, Claude, DeepSeek, and local Ollama) reside in an isolated local module (`private_ai_archive/`) and can be dynamically injected into the workspace without altering public code.
-
----
-
 ## 👤 Author & Copyright
 
 - **Author & Sound Designer**: **sokkaUmB**
