@@ -1,0 +1,47 @@
+{
+  "name": "Sound Studio (1) Pro for Nothing Ear",
+  "short_name": "Sound Studio (1)",
+  "description": "Parametric EQ Studio & QR Generator per Nothing Ear, Nothing HeadPhone (1) e Nothing X",
+  "id": "sound-studio-1-pro",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "window-controls-overlay"],
+  "orientation": "any",
+  "background_color": "#0c0c10",
+  "theme_color": "#0c0c10",
+  "lang": "it-IT",
+  "dir": "ltr",
+  "categories": ["music", "audio", "utilities"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

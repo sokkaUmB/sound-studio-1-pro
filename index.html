@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Sound Studio (1) Pro for Nothing Ear</title>
+
+  <!-- PWA & Android 13+ Standalone Capabilities -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0c0c10">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Sound Studio (1) Pro">
+  <meta name="author" content="sokkaUmB">
+  <meta name="description" content="Parametric EQ Studio & QR Generator per Nothing Ear, Nothing HeadPhone (1) e Nothing X.">
+
+  <!-- Social Open Graph & Twitter Cards -->
+  <meta property="og:title" content="Sound Studio (1) Pro for Nothing Ear">
+  <meta property="og:description" content="Parametric EQ Studio & QR Generator per Nothing Ear, Nothing HeadPhone (1) e Nothing X.">
+  <meta property="og:image" content="icons/icon-512.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sound Studio (1) Pro for Nothing Ear">
+  <meta name="twitter:description" content="Parametric EQ Studio & QR Generator per Nothing Ear, Nothing HeadPhone (1) e Nothing X.">
+  <meta name="twitter:image" content="icons/icon-512.png">
+  <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+  <script src="js/qrcode.min.js"></script>
+  <script src="js/pako.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- In Alto: Header Superiore Nothing Hardware Style -->
+<header class="app-top-header">
+  <div class="top-header-inner">
+    <div class="brand-group">
+      <img src="icons/icon.svg" alt="Sound Studio Logo" class="brand-logo" width="32" height="32">
+      <div class="brand-text">
+        <h1 class="brand-title" data-i18n="ui.top_title">SOUND STUDIO (1) PRO FOR NOTHING EAR</h1>
+        <p class="brand-subtitle" data-i18n="ui.top_subtitle">PARAMETRIC EQ &amp; DISCOGRAPHY ENGINE</p>
+      </div>
+    </div>
+    <div class="top-header-actions">
+      <button type="button" id="btnThemeToggle" class="theme-toggle-btn" onclick="cycleTheme()" title="Cambia tema" aria-label="Cambia tema">
+        <span class="theme-icon" id="themeIcon">🌓</span>
+        <span class="theme-label" id="themeLabel" data-i18n="ui.theme_auto">Auto</span>
+      </button>
+      <div class="lang-selector-wrapper">
+        <select id="selLanguage" onchange="onLanguageChange(this.value)" class="lang-select" title="Language / Lingua">
+          <option value="it">🇮🇹 IT</option>
+          <option value="en">🇬🇧 EN</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="de">🇩🇪 DE</option>
+          <option value="es">🇪🇸 ES</option>
+          <option value="ru">🇷🇺 RU</option>
+          <option value="zh">🇨🇳 ZH</option>
+          <option value="hi">🇮🇳 HI</option>
+          <option value="ar">🇸🇦 AR</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Teenage Engineering & Nothing OS Mobile Top Tab Switcher -->
+  <nav class="mobile-tab-nav" id="mobileTabNav" aria-label="Sezioni Principali">
+    <button type="button" class="tab-btn active" data-tab="tab-studio" onclick="switchMobileTab('tab-studio')">
+      <span class="tab-dot"></span>
+      <span class="tab-label" data-i18n="ui.tab_studio">🎛️ STUDIO &amp; EQ</span>
+    </button>
+    <button type="button" class="tab-btn" data-tab="tab-qr" onclick="switchMobileTab('tab-qr')">
+      <span class="tab-dot"></span>
+      <span class="tab-label" data-i18n="ui.tab_qr">📱 QR &amp; PRESET</span>
+    </button>
+    <!-- [AI_TAB_BUTTON_ANCHOR] -->
+  </nav>
+</header>
+
+<div class="app-container">
+
+  <!-- Colonna Sinistra Desktop: Studio & EQ + AI Engine -->
+  <div class="desktop-main-col">
+
+    <!-- Scheda 1: Studio & EQ -->
+    <div id="tabContentStudio" class="tab-section panel active">
+      <div class="panel-header">
+        <div class="panel-title">
+          <span class="dot"></span>
+          <span data-i18n="ui.catalog_title">Catalogo Acustico Gerarchico</span>
+        </div>
+        <div class="badge" data-i18n="ui.engine_badge">DISCOGRAPHY ENGINE PRO</div>
+      </div>
+
+      <!-- Selettore Dispositivo Audio Hardware -->
+      <div class="device-selector-box">
+        <div class="device-selector-header">
+          <label for="selDevice" data-i18n="ui.device_label" style="margin-bottom: 0;">🎧 Dispositivo Audio (Compensazione Hardware Dedicata):</label>
+          <span class="badge" id="deviceBadge" style="background: var(--accent); color: #fff; border-color: var(--accent);">NOTHING HEADPHONE (1)</span>
+        </div>
+        <select id="selDevice" onchange="onDeviceChange()">
+          <optgroup data-i18n-label="device_groups.over_ear" label="🎧 OVER-EAR HEADPHONES (Driver 40mm / HRTF Padiglione)">
+            <option value="nothing_headphone_1" data-i18n="devices.nothing_headphone_1" selected>Nothing HeadPhone (1) (Driver 40mm / HRTF Over-Ear)</option>
+            <option value="nothing_headphone_1_pro" data-i18n="devices.nothing_headphone_1_pro">Nothing HeadPhone (1) Pro (Flagship Over-Ear / Multi-Driver)</option>
+            <option value="cmf_headphone_pro" data-i18n="devices.cmf_headphone_pro">CMF Headphone Pro (Driver 40mm / Bass Control Over-Ear)</option>
+          </optgroup>
+          <optgroup data-i18n-label="device_groups.open_ear" label="🦻 OPEN-EAR & HALF IN-EAR (Design Aperto)">
+            <option value="nothing_ear_open" data-i18n="devices.nothing_ear_open">Nothing Ear (open) (Driver 14.2mm Titanio / Sound Seal)</option>
+            <option value="cmf_clip_pro" data-i18n="devices.cmf_clip_pro">CMF Clip Pro (Open-Ear Clip / Conduzione d'Aria)</option>
+            <option value="nothing_ear_stick" data-i18n="devices.nothing_ear_stick">Nothing Ear (stick) (Driver 12.6mm Half In-Ear)</option>
+          </optgroup>
+          <optgroup data-i18n-label="device_groups.in_ear_nothing" label="👂 NOTHING IN-EAR FLAGSHIP (Auricolari Nothing)">
+            <option value="nothing_ear_2024" data-i18n="devices.nothing_ear_2024">Nothing Ear (2024 - Flagship Driver Ceramico)</option>
+            <option value="nothing_ear_a" data-i18n="devices.nothing_ear_a">Nothing Ear (a) (Dual-Chamber Punch)</option>
+            <option value="nothing_ear_2" data-i18n="devices.nothing_ear_2">Nothing Ear (2) (Driver Grafene / Anti-Fatigue 6kHz)</option>
+            <option value="nothing_ear_1" data-i18n="devices.nothing_ear_1">Nothing Ear (1) (Tuning Teenage Engineering)</option>
+          </optgroup>
+          <optgroup data-i18n-label="device_groups.cmf_audio" label="🟠 CMF BY NOTHING (In-Ear & Neckband)">
+            <option value="cmf_buds_pro_2" data-i18n="devices.cmf_buds_pro_2">CMF Buds Pro 2 (Dual Driver Ultra Bass De-mud)</option>
+            <option value="cmf_buds_2_plus" data-i18n="devices.cmf_buds_2_plus">CMF Buds 2 Plus (Dual Driver Hi-Res / LDAC)</option>
+            <option value="cmf_buds_2" data-i18n="devices.cmf_buds_2">CMF Buds 2 / 2a (Dynamic Balanced Bass)</option>
+            <option value="cmf_buds_pro" data-i18n="devices.cmf_buds_pro">CMF Buds Pro (Precisione Bilanciata)</option>
+            <option value="cmf_buds" data-i18n="devices.cmf_buds">CMF Buds (Standard In-Ear)</option>
+            <option value="cmf_neckband_pro" data-i18n="devices.cmf_neckband_pro">CMF Neckband Pro (Driver 13.6mm Titanio / 50dB ANC)</option>
+          </optgroup>
+          <optgroup data-i18n-label="device_groups.studio" label="🎚️ STUDIO REFERENCE">
+            <option value="studio_flat" data-i18n="devices.studio_flat">Direct Studio Master (Nessuna compensazione hardware)</option>
+          </optgroup>
+        </select>
+        <div id="deviceNotes" class="device-info-bar">
+          <strong>Calibrazione Nothing HeadPhone (1):</strong> Camera acustica over-ear da 40mm. Basso e sub-bassi profondi e veloci, de-fango a 250-350Hz (-1 dB) per eliminare l'effetto scatola della coppa chiusa, apertura soundstage a 6.6kHz (+1 dB) e ariosità naturale a 13.2kHz (+1 dB).
+        </div>
+      </div>
+
+      <!-- Barra di Ricerca Rapida con Autocomplete Istantaneo -->
+      <div class="search-wrapper">
+        <div class="search-input-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="catalogSearchInput" data-i18n-placeholder="ui.search_placeholder" placeholder="Cerca album, band o sottogenere... (Es: Awake, Tool, Pantera, Puppets)" autocomplete="off" oninput="onCatalogSearchInput(this.value)" onkeydown="onCatalogSearchKeyDown(event)">
+          <button type="button" class="search-clear-btn" id="searchClearBtn" onclick="clearCatalogSearch()" style="display: none;" title="Cancella ricerca">&times;</button>
+        </div>
+        <div class="search-dropdown" id="searchDropdown" style="display: none;"></div>
+      </div>
+
+      <!-- Selettori a cascata -->
+      <div class="cascade-grid">
+        <div>
+          <label for="selGenre" data-i18n="ui.genre_label">1. Genere</label>
+          <select id="selGenre" onchange="onGenreChange()"></select>
+        </div>
+        <div>
+          <label for="selSubgenre" data-i18n="ui.subgenre_label">2. Sottogenere</label>
+          <select id="selSubgenre" onchange="onSubgenreChange()"></select>
+        </div>
+        <div>
+          <label for="selArtist" data-i18n="ui.artist_label">3. Artista / Band</label>
+          <select id="selArtist" onchange="onArtistChange()"></select>
+        </div>
+        <div>
+          <label for="selAlbum" data-i18n="ui.album_label">4. Album Specifico</label>
+          <select id="selAlbum" onchange="onAlbumChange()"></select>
+        </div>
+      </div>
+
+      <!-- Scheda Note Acustiche del Mix -->
+      <div id="presetNotes" class="notes-callout" data-i18n="ui.preset_notes_default">Seleziona un genere o un album dal catalogo per visualizzare i dettagli tecnici di missaggio.</div>
+
+      <!-- Barra Azioni Rapide EQ Manuale -->
+      <div class="quick-bar">
+        <span data-i18n="ui.quick_presets_label" style="font-size: 11px; font-weight: bold; color: var(--text-muted); text-transform: uppercase; margin-right: 4px;">Preset Rapidi:</span>
+        <button class="chip-btn" onclick="applyQuickPreset('flat')" data-i18n="ui.chip_flat">⚖️ Flat (Reset)</button>
+        <button class="chip-btn" onclick="applyQuickPreset('vshape')" data-i18n="ui.chip_vshape">⚡ V-Shape (Rock/Metal)</button>
+        <button class="chip-btn" onclick="applyQuickPreset('bass')" data-i18n="ui.chip_bass">🔊 Bass Boost</button>
+        <button class="chip-btn" onclick="applyQuickPreset('vocal')" data-i18n="ui.chip_vocal">🎙️ Vocal Clarity</button>
+        <button class="chip-btn" onclick="applyQuickPreset('treble')" data-i18n="ui.chip_treble">✨ Treble Air</button>
+        <button class="chip-btn" onclick="applyQuickPreset('warm')" data-i18n="ui.chip_warm">📻 Calore Analogico</button>
+      </div>
+
+      <!-- Visualizzatore di Risposta Parametrica Interattivo -->
+      <div class="curve-box">
+        <canvas id="curveCanvas"></canvas>
+      </div>
+
+      <!-- Griglia Controlli Manuali a 8 Bande -->
+      <div class="bands-grid" id="bandsContainer"></div>
+    </div>
+    <!-- [AI_TAB_CONTENT_ANCHOR] -->
+  </div>
+
+  <!-- Colonna Destra Desktop: QR Code & Presets -->
+  <div class="desktop-side-col">
+
+    <!-- Scheda 2: QR & Presets -->
+    <div id="tabContentQR" class="tab-section panel qr-column">
+      <div class="panel-header" style="width: 100%;">
+        <div class="panel-title">
+          <span class="dot" style="background: var(--success); box-shadow: 0 0 8px var(--success);"></span>
+          <span data-i18n="ui.qr_panel_title">QR Nothing X</span>
+        </div>
+        <div class="badge live" data-i18n="ui.qr_live_sync">LIVE SYNC</div>
+      </div>
+
+      <div class="qr-wrapper">
+        <!-- Scheda Audio Hardware Nothing / Teenage Engineering -->
+        <div class="nothing-qr-card">
+          <div class="qr-card-header">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span class="qr-card-dot"></span>
+              <span class="qr-card-title">SOUND STUDIO (1) PRO</span>
+            </div>
+            <span class="badge" style="background: rgba(235, 0, 41, 0.15); color: var(--accent); border-color: rgba(235, 0, 41, 0.3);">PEQ</span>
+          </div>
+
+          <div class="qr-frame-outer">
+            <div id="qrcode"></div>
+          </div>
+
+          <div class="qr-card-footer">
+            <div class="qr-card-meta-row">
+              <span class="qr-meta-label">PRESET:</span>
+              <span class="qr-meta-value" id="qrCardPresetName">Custom</span>
+            </div>
+            <div class="qr-card-meta-row">
+              <span class="qr-meta-label">DEVICE:</span>
+              <span class="qr-meta-value" id="qrCardDevice" style="color: var(--accent);">Nothing HeadPhone (1)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="width: 100%; text-align: left; margin-top: 10px;">
+        <label for="profileName" data-i18n="ui.profile_name_label">Nome Profilo Nothing X (Max 16 caratteri)</label>
+        <input type="text" id="profileName" value="Custom" maxlength="16" oninput="onProfileNameChange()">
+      </div>
+
+      <div class="qr-actions">
+        <button class="btn btn-primary" onclick="copyBase64Payload()" data-i18n="ui.btn_copy_payload">
+          📋 Copia Payload Base64
+        </button>
+        <button class="btn" onclick="downloadQRCode()" data-i18n="ui.btn_save_qr">
+          💾 Salva QR in Galleria (.png)
+        </button>
+        <button class="btn" id="btnShareQR" onclick="shareQRCode()" data-i18n="ui.btn_share_qr" style="display: none;" title="Condividi direttamente tramite Android Share Sheet">
+          ↗️ Condividi QR
+        </button>
+        <button class="btn" id="btnLaunchNothingX" onclick="openNothingX()" data-i18n="ui.btn_open_nothing_x" style="display: none; background: #1a1a24; border-color: #eb0029; color: #ffffff;" title="Apri direttamente l'app Nothing X per importare il preset">
+          ⚡ Apri Nothing X
+        </button>
+      </div>
+
+      <!-- Gestione Preset Utente (LocalStorage) -->
+      <div class="user-presets-box" style="margin-top: 18px; width: 100%;">
+        <div style="flex: 1; min-width: 150px;">
+          <label for="selCustomPresets" data-i18n="ui.user_presets" style="margin-bottom: 2px;">I Tuoi Preset Salvati</label>
+          <select id="selCustomPresets" onchange="loadUserPreset()">
+            <option value="">-- Seleziona un preset salvato --</option>
+          </select>
+        </div>
+        <div style="display: flex; gap: 6px; align-items: flex-end;">
+          <button class="btn btn-sm" onclick="saveUserPreset()" data-i18n="ui.btn_save_preset" title="Salva l'equalizzazione corrente nei preferiti">💾 Salva Preset</button>
+          <button class="btn btn-sm" onclick="deleteUserPreset()" data-i18n="ui.btn_delete_preset" title="Elimina il preset selezionato">🗑️ Elimina</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Footer Ufficiale Nothing OS Style -->
+<footer class="app-footer" style="max-width: 1400px; margin: 30px auto 25px; padding: 18px 20px; border-top: 1px solid var(--border, #22222c); text-align: center; font-size: 11px; color: var(--text-dim, #777); font-family: 'ND-Dot', monospace; line-height: 1.7;">
+  <div style="letter-spacing: 1.5px; font-weight: 600; color: var(--text, #fff); margin-bottom: 4px;">
+    SOUND STUDIO (1) PRO &bull; ACOUSTIC MASTERING SUITE
+  </div>
+  <div>
+    &copy; 2026 <strong>sokkaUmB</strong> &bull; Licensed under <a href="LICENSE.md" target="_blank" style="color: var(--accent, #eb0029); text-decoration: underline;">CC BY-NC 4.0</a> (Non-Commercial Community Use)
+  </div>
+  <div style="font-size: 10px; opacity: 0.65; margin-top: 5px;">
+    Independent community project developed by sokkaUmB. Not affiliated with Nothing Technology Limited.<br>
+    Nothing, Nothing Ear, Nothing HeadPhone (1) and Nothing X are trademarks of Nothing Technology Limited.
+  </div>
+</footer>
+<!-- [AI_MODALS_ANCHOR] -->
+
+<!-- Feedback Toast -->
+<div id="toast">
+  <span id="toastMsg">Notifica</span>
+</div>
+
+<!-- Scripts loaded sequentially without type=module for 100% offline & local file:// compatibility -->
+<script src="js/i18n/i18n-manager.js"></script>
+<script src="js/i18n/locales/it.js"></script>
+<script src="js/i18n/locales/en.js"></script>
+<script src="js/i18n/locales/fr.js"></script>
+<script src="js/i18n/locales/de.js"></script>
+<script src="js/i18n/locales/es.js"></script>
+<script src="js/i18n/locales/ru.js"></script>
+<script src="js/i18n/locales/zh.js"></script>
+<script src="js/i18n/locales/hi.js"></script>
+<script src="js/i18n/locales/ar.js"></script>
+<script src="js/protocol.js"></script>
+<script src="js/database.js"></script>
+<!-- [AI_SCRIPTS_ANCHOR] -->
+<script src="js/app.js"></script>
+<script>
+  // Registrazione Service Worker per Android 13+ PWA Offline
+  if ('serviceWorker' in navigator && (window.location.protocol === 'http:' || window.location.protocol === 'https:')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js').then((reg) => {
+        console.log('[PWA] Service Worker attivo per Android/Offline:', reg.scope);
+      }).catch((err) => {
+        console.warn('[PWA] Errore Service Worker:', err);
+      });
+    });
+  }
+</script>
+</body>
+</html>
