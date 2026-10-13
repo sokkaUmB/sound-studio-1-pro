@@ -17,6 +17,7 @@
 [![Preset](https://img.shields.io/badge/Profili_Acustici-1.231_Calibrati-38bdf8.svg)](#-catalogo-discografico--database-acustico)
 [![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-funzionalità-principali)
 [![Nothing X](https://img.shields.io/badge/Protocollo-Nothing_X_PEQ-white.svg)](#-come-funziona)
+[![Sostieni con Revolut](https://img.shields.io/badge/Sostieni-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
 [![Autore](https://img.shields.io/badge/Autore-sokkaUmB-lightgrey.svg)](#-autore--copyright)
 
 🌐 **Leggi in altre lingue:** [🇬🇧 **English**](README.md)
@@ -104,6 +105,16 @@ sound-studio-1-pro/
 
 - **Ideatore & Sound Designer**: **sokkaUmB**
 - **Repository Ufficiale**: [https://github.com/sokkaUmB/sound-studio-1-pro](https://github.com/sokkaUmB/sound-studio-1-pro)
+
+---
+
+## ☕ Sostieni il Progetto
+
+Se apprezzi **Sound Studio (1) Pro** e desideri supportare la ricerca acustica, la calibrazione e l'aggiunta continua di nuovi profili album, puoi offrire un caffè tramite Revolut:
+
+👉 **[Sostieni via Revolut (revolut.me/sokkapkd)](https://revolut.me/sokkapkd)**
+
+*(Supporta Apple Pay, Google Pay, Revolut e tutte le principali carte di credito/debito internazionali).*
 
 ---
 

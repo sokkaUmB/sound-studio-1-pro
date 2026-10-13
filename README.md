@@ -17,6 +17,7 @@
 [![Presets](https://img.shields.io/badge/Acoustic_Profiles-1%2C231_Calibrated-38bdf8.svg)](#-discography--acoustic-database)
 [![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-key-features)
 [![Nothing X](https://img.shields.io/badge/Protocol-Nothing_X_PEQ-white.svg)](#-how-it-works)
+[![Support via Revolut](https://img.shields.io/badge/Support-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
 [![Author](https://img.shields.io/badge/Author-sokkaUmB-lightgrey.svg)](#-author--copyright)
 
 🌐 **Read in other languages:** [🇮🇹 **Italiano**](README.it.md)
@@ -104,6 +105,16 @@ sound-studio-1-pro/
 
 - **Author & Sound Designer**: **sokkaUmB**
 - **Repository**: [https://github.com/sokkaUmB/sound-studio-1-pro](https://github.com/sokkaUmB/sound-studio-1-pro)
+
+---
+
+## ☕ Support the Project
+
+If you enjoy **Sound Studio (1) Pro** and would like to support the ongoing research, acoustical tuning, and development of new album profiles, you can buy me a coffee via Revolut:
+
+👉 **[Support via Revolut (revolut.me/sokkapkd)](https://revolut.me/sokkapkd)**
+
+*(Supports Apple Pay, Google Pay, Revolut, and all major debit/credit cards worldwide).*
 
 ---
 
