@@ -13,6 +13,7 @@
 
 **The Ultimate Acoustic Mastering Suite & Parametric EQ Engine for Nothing Ear & Headphones**
 
+[![Live Web App](https://img.shields.io/badge/Live_Web_App-sound--studio--1--pro.pages.dev-22c55e.svg?logo=cloudflare-pages&logoColor=white)](https://sound-studio-1-pro.pages.dev/)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-red.svg)](LICENSE.md)
 [![Presets](https://img.shields.io/badge/Acoustic_Profiles-1%2C231_Calibrated-38bdf8.svg)](#-discography--acoustic-database)
 [![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-key-features)
@@ -20,6 +21,9 @@
 [![Support via Revolut](https://img.shields.io/badge/Support-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
 [![Author](https://img.shields.io/badge/Author-sokkaUmB-lightgrey.svg)](#-author--copyright)
 
+<br>
+
+🌐 **Live Web App:** [**sound-studio-1-pro.pages.dev**](https://sound-studio-1-pro.pages.dev/)  
 🌐 **Read in other languages:** [🇮🇹 **Italiano**](README.it.md)
 
 </div>
@@ -104,6 +108,7 @@ sound-studio-1-pro/
 ## 👤 Author & Copyright
 
 - **Author & Sound Designer**: **sokkaUmB**
+- **Live Web App**: [https://sound-studio-1-pro.pages.dev/](https://sound-studio-1-pro.pages.dev/)
 - **Repository**: [https://github.com/sokkaUmB/sound-studio-1-pro](https://github.com/sokkaUmB/sound-studio-1-pro)
 
 ---

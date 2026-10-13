@@ -13,6 +13,7 @@
 
 **La Suite Definitiva di Mastering Acustico & Motore PEQ Parametrico per Auricolari e Cuffie Nothing**
 
+[![Live Web App](https://img.shields.io/badge/Live_Web_App-sound--studio--1--pro.pages.dev-22c55e.svg?logo=cloudflare-pages&logoColor=white)](https://sound-studio-1-pro.pages.dev/)
 [![Licenza: CC BY-NC 4.0](https://img.shields.io/badge/Licenza-CC_BY--NC_4.0-red.svg)](LICENSE.md)
 [![Preset](https://img.shields.io/badge/Profili_Acustici-1.231_Calibrati-38bdf8.svg)](#-catalogo-discografico--database-acustico)
 [![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-funzionalità-principali)
@@ -20,6 +21,9 @@
 [![Sostieni con Revolut](https://img.shields.io/badge/Sostieni-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
 [![Autore](https://img.shields.io/badge/Autore-sokkaUmB-lightgrey.svg)](#-autore--copyright)
 
+<br>
+
+🌐 **Web App Online:** [**sound-studio-1-pro.pages.dev**](https://sound-studio-1-pro.pages.dev/)  
 🌐 **Leggi in altre lingue:** [🇬🇧 **English**](README.md)
 
 </div>
@@ -104,6 +108,7 @@ sound-studio-1-pro/
 ## 👤 Autore & Copyright
 
 - **Ideatore & Sound Designer**: **sokkaUmB**
+- **Web App Online**: [https://sound-studio-1-pro.pages.dev/](https://sound-studio-1-pro.pages.dev/)
 - **Repository Ufficiale**: [https://github.com/sokkaUmB/sound-studio-1-pro](https://github.com/sokkaUmB/sound-studio-1-pro)
 
 ---
