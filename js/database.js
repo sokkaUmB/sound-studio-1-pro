@@ -1,6 +1,6 @@
 ﻿// js/database.js - Surgically Calibrated PEQ Database for Nothing X
 // Catalogo arricchito: Pietre miliari mondiali + Top streaming per genere
-// Totale Artisti: 250 | Totale Album in Studio: 1677 | Profili PEQ Calibrati: 1965
+// Totale Artisti: 260 | Totale Album in Studio: 1825 | Profili PEQ Calibrati: 2123
 const MUSIC_DATABASE = {
   metal: {
     label: "Metal",
@@ -7597,6 +7597,229 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          slayer: {
+            label: "Slayer",
+            eq: {
+              name: "Slayer Master",
+              notes: "Firma thrash metal estremo e chirurgico: doppia cassa supersonica di Dave Lombardo / Paul Bostaph calibrata a 50Hz per impatto fulmineo, rullante ad altissima tensione a 240Hz. Riffing frenetico in Eb di Hanneman e King scavato a 450Hz e pompato a 2.2kHz per massimo mordente senza impastare, voce al vetriolo di Tom Araya a 3.8kHz e controllo asprezze soliste whammy-bar a 6.8kHz per Nothing X.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.3 },
+                { freq: 120, gain: 1, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.4 },
+                { freq: 450, gain: -2, q: 1.3 },
+                { freq: 2200, gain: 2, q: 1.5 },
+                { freq: 3800, gain: 2, q: 1.3 },
+                { freq: 6800, gain: -1, q: 1.4 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              slayer_show_no_mercy: {
+                label: "Show No Mercy (1983)",
+                eq: {
+                  name: "Show No Mercy 83",
+                  notes: "Esordio speed/black metal autoprodotto: compensazione del roll-off nei bassi a 55Hz, risalto del rullante a 220Hz e pulizia del rumore di fondo a 8kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 500, gain: -1, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7000, gain: -1, q: 1.4 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_hell_awaits: {
+                label: "Hell Awaits (1985)",
+                eq: {
+                  name: "Hell Awaits 1985",
+                  notes: "Mix cupo, riverberato e infernale: alleggerimento delle risonanze fangose a 440Hz, spinta all'attacco della doppia cassa a 50Hz e presenza vocale a 3.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.4 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 440, gain: -2, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 6800, gain: -1, q: 1.4 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_reign_in_blood: {
+                label: "Reign in Blood (1986)",
+                eq: {
+                  name: "Reign In Blood86",
+                  notes: "Pietra miliare del thrash prodotta da Rick Rubin: 29 minuti a velocita folle, mix ultra-asciutto, cassa a punto a 58Hz, zero riverbero, chitarre chirurgiche a 2.5kHz.",
+                  bands: [
+                    { freq: 58, gain: 3, q: 1.3 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.4 },
+                    { freq: 460, gain: -2, q: 1.3 },
+                    { freq: 2500, gain: 2, q: 1.5 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 7200, gain: -1, q: 1.3 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_south_of_heaven: {
+                label: "South of Heaven (1988)",
+                eq: {
+                  name: "South Heaven 88",
+                  notes: "Rallentamento calcolato e atmosfera tetra: voce piu melodica di Araya a 3.2kHz, rullante piu profondo a 200Hz e riff pesanti con corpo aumentato a 130Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 200, gain: 2, q: 1.3 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3200, gain: 2, q: 1.3 },
+                    { freq: 7600, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_seasons_in_the_abyss: {
+                label: "Seasons in the Abyss (1990)",
+                eq: {
+                  name: "Seasons Abyss 90",
+                  notes: "La sintesi perfetta del sound Slayer: equilibrio dinamico sublime, cassa a 52Hz devastante, chitarre armonizzate taglienti a 2.4kHz e spazialita cristallina.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 460, gain: -2, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 7800, gain: 0, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_divine_intervention: {
+                label: "Divine Intervention (1994)",
+                eq: {
+                  name: "Divine Interv 94",
+                  notes: "Debutto di Paul Bostaph: mix compresso e claustrofobico, recupero di punch a 50Hz, controllo del sibilo a 6.2kHz e risalto del blast-beat a 2.8kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.3 },
+                    { freq: 450, gain: -2, q: 1.4 },
+                    { freq: 2800, gain: 2, q: 1.4 },
+                    { freq: 3700, gain: 2, q: 1.3 },
+                    { freq: 6200, gain: -1, q: 1.4 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_undisputed_attitude: {
+                label: "Undisputed Attitude (1996)",
+                eq: {
+                  name: "Undisputed Att96",
+                  notes: "Tributo hardcore punk/crossover: attacco grezzo e diretto, cassa secca a 65Hz, chitarre punk fuzzose a 2kHz e grinta sputata sul microfono a 3.6kHz.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 520, gain: -1, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7200, gain: -1, q: 1.3 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_diabolus_in_musica: {
+                label: "Diabolus in Musica (1998)",
+                eq: {
+                  name: "Diabolus Musica",
+                  notes: "Accordature drop-B ed elementi nu-metal/groove: esaltazione delle sub-basse a 45Hz, chitarre cupe aperte a 2.6kHz e snare penetrante a 220Hz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.4 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 470, gain: -2, q: 1.3 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_god_hates_us_all: {
+                label: "God Hates Us All (2001)",
+                eq: {
+                  name: "God Hates Us All",
+                  notes: "Produzione brutale di Matt Hyde: accordature ribassate in C#, muro sonoro a 50Hz, voce urlata ai limiti della rottura a 3.8kHz e rullante picchiato a morte.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.4 },
+                    { freq: 460, gain: -2, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.5 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 7000, gain: -1, q: 1.4 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_christ_illusion: {
+                label: "Christ Illusion (2006)",
+                eq: {
+                  name: "Christ Illus 06",
+                  notes: "Ritorno del leggendario Dave Lombardo: doppia cassa velocissima esaltata a 52Hz, assoli dissonanti bilanciati a 3kHz e mix thrash moderno Nothing X.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 450, gain: -2, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3000, gain: 2, q: 1.3 },
+                    { freq: 7500, gain: -1, q: 1.3 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_world_painted_blood: {
+                label: "World Painted Blood (2009)",
+                eq: {
+                  name: "World Painted 09",
+                  notes: "Ultimo lavoro con la formazione classica Hanneman/King/Araya/Lombardo: attacco ruvido vintage, dinamica organica a 2.2kHz e cassa definita a 55Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.3 },
+                    { freq: 470, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7800, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              slayer_repentless: {
+                label: "Repentless (2015)",
+                eq: {
+                  name: "Repentless 2015",
+                  notes: "Ultimo album in studio con Gary Holt alla chitarra: produzione moderna e potente di Terry Date, sub-bassi serrati a 48Hz, riffing ad alta definizione a 2.4kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.4 },
+                    { freq: 460, gain: -2, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.5 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 0, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.1 }
+                  ]
+                }
+              }
+            }
           }
         }
       },
@@ -9094,6 +9317,399 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          motorhead: {
+            label: "Motörhead",
+            eq: {
+              name: "Motorhead Master",
+              notes: "Firma sonica inconfondibile speed metal e rock'n'roll: basso Rickenbacker 4001/4004 di Lemmy sovradistorto su testate Marshall Super Bass ('Murder One') con tono da chitarra ritmica a 1.2kHz-1.8kHz. Rullante a mitraglia di Philthy/Mikkey a 220Hz, cassa martellante a 60Hz, chitarre taglienti e voce abrasiva a 3.5kHz ottimizzata per auricolari Nothing X.",
+              bands: [
+                { freq: 60, gain: 2, q: 1.2 },
+                { freq: 140, gain: 1, q: 1.1 },
+                { freq: 260, gain: 1, q: 1.2 },
+                { freq: 650, gain: 1, q: 1.3 },
+                { freq: 1800, gain: 2, q: 1.4 },
+                { freq: 3500, gain: 2, q: 1.3 },
+                { freq: 7500, gain: -1, q: 1.4 },
+                { freq: 13000, gain: 1, q: 1.1 }
+              ]
+            },
+            albums: {
+              motor_motorhead: {
+                label: "Motörhead (1977)",
+                eq: {
+                  name: "Motorhead 1977",
+                  notes: "Esordio garage punk/metal su Chiswick: recupero di basse a 60Hz, enfatizzazione del ringhio di Lemmy a 1.6kHz e addolcimento dell'eccessivo sferragliare a 6kHz.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 680, gain: 1, q: 1.2 },
+                    { freq: 1600, gain: 2, q: 1.4 },
+                    { freq: 3400, gain: 2, q: 1.3 },
+                    { freq: 6800, gain: -2, q: 1.4 },
+                    { freq: 12500, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              motor_overkill: {
+                label: "Overkill (1979)",
+                eq: {
+                  name: "Overkill 1979",
+                  notes: "Produzione pionieristica della doppia cassa: focus a 55Hz per l'impatto di Philthy Animal Taylor, riffing chirurgico di Fast Eddie a 2.5kHz e basso poderoso a 150Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.2 },
+                    { freq: 600, gain: 1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7400, gain: -1, q: 1.3 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_bomber: {
+                label: "Bomber (1979)",
+                eq: {
+                  name: "Bomber 1979",
+                  notes: "Mix heavy e ruvido registrato sotto stress: pulizia a 400Hz per togliere risonanze scure, boost a 2kHz per la chitarra e brillantezza controllata sui piatti a 8kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 400, gain: -1, q: 1.3 },
+                    { freq: 2000, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 7800, gain: -1, q: 1.3 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_ace_of_spades: {
+                label: "Ace of Spades (1980)",
+                eq: {
+                  name: "Ace Of Spades 80",
+                  notes: "Capolavoro assoluto con Vic Maile: perfetto equilibrio sonoro, basso overdrive tagliente a 1.8kHz, rullante a frusta a 240Hz e cassa secca a 65Hz.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.3 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 1800, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7200, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_iron_fist: {
+                label: "Iron Fist (1982)",
+                eq: {
+                  name: "Iron Fist 1982",
+                  notes: "Produzione asciutta e tagliente curata da Fast Eddie: lieve corpo aggiunto a 180Hz, morso a 2.2kHz e controllo delle alte frequenze a 7kHz per evitare fatica d'ascolto.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.2 },
+                    { freq: 620, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3700, gain: 1, q: 1.2 },
+                    { freq: 7000, gain: -1, q: 1.3 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_another_perfect_day: {
+                label: "Another Perfect Day (1983)",
+                eq: {
+                  name: "Another Perfect",
+                  notes: "Album melodico con Brian Robertson (Thin Lizzy): stratificazione chitarristica ricca a 3kHz, basso definito a 130Hz e spazialita stereo espansa Nothing X.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3000, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_orgasmatron: {
+                label: "Orgasmatron (1986)",
+                eq: {
+                  name: "Orgasmatron 1986",
+                  notes: "Produzione massiccia e cupa di Bill Laswell: sub-bassi tellurici a 48Hz, voce robotica/metallica esaltata a 3.2kHz e taglio delle risonanze cupe a 420Hz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 420, gain: -2, q: 1.4 },
+                    { freq: 1700, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 2, q: 1.3 },
+                    { freq: 7600, gain: 0, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_rock_n_roll: {
+                label: "Rock 'n' Roll (1987)",
+                eq: {
+                  name: "Rock N Roll 1987",
+                  notes: "Ritorno a ritmi veloci e rock'n'roll diretto: punch della cassa a 60Hz, rullante brillante a 220Hz e chitarre gemelle Campbell/Wurzel aperte a 2.4kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 580, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_1916: {
+                label: "1916 (1991)",
+                eq: {
+                  name: "1916 Album 1991",
+                  notes: "Produzione variegata nominata ai Grammy: versatilita tra thrash metal (Going to Brazil) e ballate intime (1916), calore a 200Hz e voce intima a 3kHz.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 200, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_march_or_die: {
+                label: "March ör Die (1992)",
+                eq: {
+                  name: "March Or Die 92",
+                  notes: "Suono radiofonico americano con Tommy Aldridge e Mikkey Dee: snare profondo a 200Hz, cassa definita a 52Hz e chitarre sature morbide a 2.2kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 200, gain: 2, q: 1.3 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3400, gain: 1, q: 1.2 },
+                    { freq: 7800, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_bastards: {
+                label: "Bastards (1993)",
+                eq: {
+                  name: "Bastards 1993",
+                  notes: "Prodotto da Howard Benson, uno dei preferiti di Lemmy: velocita furiosa, batteria di Mikkey Dee scolpita a 60Hz e chitarre affilate come rasoi a 2.8kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 520, gain: -1, q: 1.2 },
+                    { freq: 2800, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 7500, gain: -1, q: 1.3 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_sacrifice: {
+                label: "Sacrifice (1995)",
+                eq: {
+                  name: "Sacrifice 1995",
+                  notes: "Tonalita scure e violenza sonora pura: accordature ribassate valorizzate a 50Hz, riffing soffocante aperto a 2.4kHz e attacco della voce al vetriolo.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 460, gain: -2, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3700, gain: 2, q: 1.3 },
+                    { freq: 7200, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_overnight_sensation: {
+                label: "Overnight Sensation (1996)",
+                eq: {
+                  name: "Overnight Sensa",
+                  notes: "Ritorno al formato trio (Campbell unica chitarra): recupero di spazialita per il basso di Lemmy a 1.5kHz, cassa rotonda a 65Hz e rullante naturale.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 1500, gain: 2, q: 1.3 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 7600, gain: -1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_snake_bite_love: {
+                label: "Snake Bite Love (1998)",
+                eq: {
+                  name: "Snake Bite 1998",
+                  notes: "Mix rapido e spontaneo: cassa veloce a 58Hz, rifinitura sui medi a 2.2kHz per distinguere assoli e ritmica, gestione delle asprezze a 6.8kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 510, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 6800, gain: -1, q: 1.3 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_we_are_motorhead: {
+                label: "We Are Motörhead (2000)",
+                eq: {
+                  name: "We Are Motorhead",
+                  notes: "Velocita hardcore punk e metallo pesante: riffing compatto a 2.5kHz, doppia cassa dirompente a 55Hz e cover di God Save The Queen energica a 3.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 7400, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_hammered: {
+                label: "Hammered (2002)",
+                eq: {
+                  name: "Hammered 2002",
+                  notes: "Atmosfere scure e riflessive: medi bassi corposi a 180Hz, chiarezza della voce matura di Lemmy a 2.6kHz e bassi solidi senza code fangose.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 3400, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: -1, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_inferno: {
+                label: "Inferno (2004)",
+                eq: {
+                  name: "Inferno 2004",
+                  notes: "Inizio dell'era Cameron Webb: mix moderno potente e compresso, rullante esplosivo a 210Hz, basso Murder One maestoso a 1.8kHz e cassa a 50Hz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.3 },
+                    { freq: 470, gain: -1, q: 1.3 },
+                    { freq: 1800, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7800, gain: 0, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_kiss_of_death: {
+                label: "Kiss of Death (2006)",
+                eq: {
+                  name: "Kiss Of Death 06",
+                  notes: "Continuita con Webb: bassi granitici a 52Hz, assoli di Campbell (e ospite C.C. Deville) brillanti a 3.2kHz, controllo del clipping digitale a 8kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 490, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 0, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_motorizer: {
+                label: "Motörizer (2008)",
+                eq: {
+                  name: "Motorizer 2008",
+                  notes: "Punch dinamico impeccabile: groove serrato di Mikkey Dee evidenziato a 65Hz e 230Hz, chitarre aperte a 2.4kHz e voce sempre intelligibile a 3.8kHz.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 510, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_the_world_is_yours: {
+                label: "The Wörld Is Yours (2010)",
+                eq: {
+                  name: "World Is Yours10",
+                  notes: "Classic rock'n'roll pompato ad alto volume: spinta a 120Hz per il basso ritmico, brillantezza ai piatti a 10kHz e medi aggressivi a 2kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_aftershock: {
+                label: "Aftershock (2013)",
+                eq: {
+                  name: "Aftershock 2013",
+                  notes: "Blues-metal viscerale: calore analogico preservato a 160Hz, attacco delle pelli a 2.8kHz e presenza calda del canto di Lemmy a 3.2kHz.",
+                  bands: [
+                    { freq: 56, gain: 2, q: 1.2 },
+                    { freq: 160, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2800, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 7800, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              motor_bad_magic: {
+                label: "Bad Magic (2015)",
+                eq: {
+                  name: "Bad Magic 2015",
+                  notes: "Ultimo testamento registrato live in studio: energia cruda, cassa a 55Hz e basso distortion fusi insieme, chitarre abrasive e voce commovente in Sympathy For The Devil.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
           }
         }
       },
@@ -10559,6 +11175,656 @@ const MUSIC_DATABASE = {
                     { freq: 4000, gain: 1, q: 1.2 },
                     { freq: 8000, gain: 2, q: 1.2 },
                     { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          ac_dc: {
+            label: "AC/DC",
+            eq: {
+              name: "AC/DC Master",
+              notes: "Firma hard rock iconica: chitarre ritmiche Gretsch/Gibson senza master volume su Marshall Plexi/JMP, crunch asciutto e percussivo. Controllo della cassa a 55Hz per un impatto solido ma privo di sub-rimbombi, corpo al rullante a 200Hz, medi scavati attorno a 480Hz per pulire il fango del cabinet, presenza aggressiva del pick attack a 2.4kHz e smussamento delle sibilanti a 7.5kHz per calibrazione Nothing X.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.2 },
+                { freq: 120, gain: 1, q: 1.1 },
+                { freq: 220, gain: 2, q: 1.3 },
+                { freq: 480, gain: -1, q: 1.2 },
+                { freq: 2400, gain: 2, q: 1.4 },
+                { freq: 4200, gain: 1, q: 1.2 },
+                { freq: 7500, gain: -1, q: 1.3 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              acdc_high_voltage: {
+                label: "High Voltage (1976)",
+                eq: {
+                  name: "High Voltage 76",
+                  notes: "Mix grezzo e primordiale Albert Studios: enfasi sui bassi a 60Hz per compensare il nastro analogico sottile, spinta a 2.2kHz per l'attacco acido della chitarra solista di Angus e voce tagliente di Bon Scott.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.3 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4000, gain: 1, q: 1.3 },
+                    { freq: 7200, gain: -1, q: 1.3 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_tnt: {
+                label: "T.N.T. (1975)",
+                eq: {
+                  name: "TNT 1975",
+                  notes: "Produzione Vanda & Young asciutta e percussiva: cassa secca valorizzata a 55Hz, rullante legnoso a 200Hz, crunch grezzo a 2.5kHz con controllo a 6.8kHz sulle asperita metalliche dei piatti.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 200, gain: 2, q: 1.3 },
+                    { freq: 470, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 1, q: 1.2 },
+                    { freq: 6800, gain: -1, q: 1.4 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_dirty_deeds: {
+                label: "Dirty Deeds Done Dirt Cheap (1976)",
+                eq: {
+                  name: "Dirty Deeds 76",
+                  notes: "Sonorita garage e pub rock sanguigne: calore sulle basse a 110Hz, attenuazione del boxiness a 520Hz e risalto del grit vocale sfrontato di Bon Scott a 3.5kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 1, q: 1.1 },
+                    { freq: 520, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 7400, gain: -1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_let_there_be_rock: {
+                label: "Let There Be Rock (1977)",
+                eq: {
+                  name: "Let There Rock77",
+                  notes: "Mix sovrasaturo con amplificatori vicini alla fusione: taglio selettivo a 450Hz per separare le chitarre gemelle, boost dinamico a 2.8kHz e contenimento dell'hiss d'ambiente a 7.8kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 215, gain: 2, q: 1.2 },
+                    { freq: 450, gain: -2, q: 1.4 },
+                    { freq: 2800, gain: 2, q: 1.5 },
+                    { freq: 4400, gain: 1, q: 1.2 },
+                    { freq: 7800, gain: -1, q: 1.3 },
+                    { freq: 13500, gain: 1, q: 1.1 }
+                  ]
+                }
+              },
+              acdc_powerage: {
+                label: "Powerage (1978)",
+                eq: {
+                  name: "Powerage 1978",
+                  notes: "Mix preferito dagli audiofili: eccezionale equilibrio dinamico tra il basso di Cliff Williams a 130Hz, chitarra ritmica a 2.2kHz e rullante profondo a 240Hz, calibrato per trasparenza Nothing X.",
+                  bands: [
+                    { freq: 56, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 1, q: 1.2 },
+                    { freq: 7600, gain: 0, q: 1.1 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_highway_to_hell: {
+                label: "Highway to Hell (1979)",
+                eq: {
+                  name: "Highway To Hell",
+                  notes: "Produzione raffinata di Mutt Lange: compattazione del low-end a 50Hz, armoniche brillanti e aperte a 3.2kHz, decadimento naturale e spazialita moderna per la voce di Bon Scott.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 460, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 0, q: 1.1 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_back_in_black: {
+                label: "Back in Black (1980)",
+                eq: {
+                  name: "Back in Black 80",
+                  notes: "Mastering leggendario ai Compass Point Studios: rullante tonante centrato a 200Hz, cassa monumentale a 58Hz, chitarre Marshall scolpite a 2.5kHz senza asprezze, riferimento assoluto di calibrazione.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 200, gain: 2, q: 1.3 },
+                    { freq: 460, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: -1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_for_those_about_to_rock: {
+                label: "For Those About to Rock We Salute You (1981)",
+                eq: {
+                  name: "For Those Rock81",
+                  notes: "Suono pesante e massiccio con echi da stadio: sub-bass espanso a 50Hz per la risonanza dei cannoni, medi scolpiti a 1.8kHz e controllo del riverbero lungo a 6.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.3 },
+                    { freq: 1800, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 6500, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_flick_of_the_switch: {
+                label: "Flick of the Switch (1983)",
+                eq: {
+                  name: "Flick Switch 83",
+                  notes: "Auto-produzione essenziale e ruvida: compensazione della secchezza del mix con lieve calore a 140Hz, spinta al mordente a 2.6kHz per ripristinare il punch viscerale dei Marshall.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 210, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 1, q: 1.2 },
+                    { freq: 7200, gain: -1, q: 1.3 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_fly_on_the_wall: {
+                label: "Fly on the Wall (1985)",
+                eq: {
+                  name: "Fly On The Wall",
+                  notes: "Correzione dell'eccessivo riverbero sulla voce di Johnson: recupero di chiarezza a 3.5kHz, pulizia della risonanza a 420Hz e rinforzo della cassa a 60Hz per dare peso alla sezione ritmica.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.3 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 420, gain: -2, q: 1.4 },
+                    { freq: 2300, gain: 1, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.4 },
+                    { freq: 7000, gain: -1, q: 1.3 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_blow_up_your_video: {
+                label: "Blow Up Your Video (1988)",
+                eq: {
+                  name: "Blow Up Video 88",
+                  notes: "Ritorno di Vanda & Young con estetica fine anni 80: bilanciamento della brillantezza digitale a 7.5kHz, corpo al basso a 125Hz e definizione dell'attacco delle pelli a 2.2kHz.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 215, gain: 2, q: 1.2 },
+                    { freq: 490, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_the_razors_edge: {
+                label: "The Razors Edge (1990)",
+                eq: {
+                  name: "Razors Edge 1990",
+                  notes: "Mastering iper-definito di Bruce Fairbairn: intro di Thunderstruck brillante a 4.5kHz, rullante a scoppio calibrato a 210Hz e cassa da stadio a 52Hz con sub-bassi granitici.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.3 },
+                    { freq: 460, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 0, q: 1.1 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_ballbreaker: {
+                label: "Ballbreaker (1995)",
+                eq: {
+                  name: "Ballbreaker 1995",
+                  notes: "Produzione analogica e bluesy di Rick Rubin: groove swingante di Phil Rudd evidenziato a 65Hz e 210Hz, medi legnosi a 1.2kHz e chitarre sature morbide nelle alte frequenze.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 1200, gain: 2, q: 1.3 },
+                    { freq: 3400, gain: 1, q: 1.2 },
+                    { freq: 7200, gain: -1, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_stiff_upper_lip: {
+                label: "Stiff Upper Lip (2000)",
+                eq: {
+                  name: "Stiff Upper Lip",
+                  notes: "Intonazione blues-rock calda e rotonda: calore valvolare aggiunto a 150Hz, presenza intima della voce di Brian a 2.8kHz e roll-off naturale oltre i 12kHz per preservare il sapore vintage.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2800, gain: 2, q: 1.3 },
+                    { freq: 4100, gain: 1, q: 1.2 },
+                    { freq: 7400, gain: -1, q: 1.2 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_black_ice: {
+                label: "Black Ice (2008)",
+                eq: {
+                  name: "Black Ice 2008",
+                  notes: "Produzione di Brendan O'Brien moderna e potente: controllo delle basse frequenze a 55Hz per evitare masking, attacco solido a 3kHz e apertura ariosa a 10kHz sui piatti Paiste.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 470, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_rock_or_bust: {
+                label: "Rock or Bust (2014)",
+                eq: {
+                  name: "Rock Or Bust 14",
+                  notes: "Mix compatto e tirato: riffing serrato di Stevie Young a 2.1kHz, punch concentrato a 70Hz per cuffie moderne Nothing X e contenimento della compressione dinamica a 5kHz.",
+                  bands: [
+                    { freq: 70, gain: 2, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 210, gain: 2, q: 1.2 },
+                    { freq: 490, gain: -1, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 4300, gain: 1, q: 1.2 },
+                    { freq: 7800, gain: -1, q: 1.3 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              acdc_power_up: {
+                label: "Power Up (2020)",
+                eq: {
+                  name: "Power Up 2020",
+                  notes: "Omaggio a Malcolm Young con resa dinamica stellare: sub-bassi profondi a 48Hz, definizione della Gretsch a 2.4kHz e armoniche scintillanti a 12kHz su driver Nothing X.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 460, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          scorpions: {
+            label: "Scorpions",
+            eq: {
+              name: "Scorpions Master",
+              notes: "Firma hard rock e heavy melodico teutonico: chitarre ritmiche e soliste Gibson Flying V/Explorer di Schenker e Jabs sature e penetranti a 2.2kHz, voce acuta e pulita di Klaus Meine a 3.8kHz. Basso rotondo a 130Hz, cassa d'impatto a 58Hz e rifinitura brillante a 8.5kHz per valorizzare il tipico riverbero da arena rock degli anni '80 su Nothing X.",
+              bands: [
+                { freq: 58, gain: 2, q: 1.2 },
+                { freq: 130, gain: 2, q: 1.1 },
+                { freq: 260, gain: 1, q: 1.2 },
+                { freq: 550, gain: -1, q: 1.3 },
+                { freq: 2200, gain: 2, q: 1.4 },
+                { freq: 3800, gain: 2, q: 1.3 },
+                { freq: 8000, gain: 1, q: 1.2 },
+                { freq: 15000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              scorp_lonesome_crow: {
+                label: "Lonesome Crow (1972)",
+                eq: {
+                  name: "Lonesome Crow 72",
+                  notes: "Esordio kraut-rock/psichedelico con Michael Schenker sedicenne: correzione del roll-off nei bassi a 55Hz, medi caldi a 800Hz e controllo del sibilo analogico a 10kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 280, gain: 1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 1, q: 1.3 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 7000, gain: -1, q: 1.3 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_fly_to_the_rainbow: {
+                label: "Fly to the Rainbow (1974)",
+                eq: {
+                  name: "Fly Rainbow 1974",
+                  notes: "Transizione hard-prog con Uli Jon Roth: risalto della Stratocaster hendrixiana a 2.5kHz, calore al basso a 140Hz e apertura acustica sui piatti a 9kHz.",
+                  bands: [
+                    { freq: 56, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 580, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 3700, gain: 1, q: 1.2 },
+                    { freq: 7800, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_in_trance: {
+                label: "In Trance (1975)",
+                eq: {
+                  name: "In Trance 1975",
+                  notes: "Inizio della collaborazione con Dieter Dierks: prima definizione dell'hard rock Scorpions, morso chitarristico a 2.2kHz e presenza vibrante della voce a 3.6kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.2 },
+                    { freq: 540, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 7500, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_virgin_killer: {
+                label: "Virgin Killer (1976)",
+                eq: {
+                  name: "Virgin Killer 76",
+                  notes: "Heavy metal veloce e aggressivo: assoli virtuosistici di Roth esaltati a 3kHz, cassa e rullante asciutti a 200Hz e controllo delle frequenze aspre a 6.5kHz.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 200, gain: 2, q: 1.3 },
+                    { freq: 510, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 6500, gain: -1, q: 1.4 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_taken_by_force: {
+                label: "Taken by Force (1977)",
+                eq: {
+                  name: "Taken By Force77",
+                  notes: "Ultimo lavoro con Roth, debutto di Herman Rarebell: groove potente della batteria a 60Hz e 240Hz, arpeggi melodici cristallini a 4kHz e dinamica estesa.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 520, gain: -1, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 7800, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_lovedrive: {
+                label: "Lovedrive (1979)",
+                eq: {
+                  name: "Lovedrive 1979",
+                  notes: "Svolta commerciale e ritorno come ospite di Michael Schenker: chitarre gemelle possenti a 2kHz, punch al rullante a 220Hz e basso fluido calibrato a 120Hz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_animal_magnetism: {
+                label: "Animal Magnetism (1980)",
+                eq: {
+                  name: "Animal Magnet 80",
+                  notes: "Riffing cupo, pesante e cadenzato (The Zoo): rinforzo sulle sub-basse a 50Hz, talk-box di Jabs scolpito a 1.5kHz e gestione delle sibilanti a 7kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.2 },
+                    { freq: 530, gain: -1, q: 1.2 },
+                    { freq: 1500, gain: 2, q: 1.4 },
+                    { freq: 3700, gain: 1, q: 1.2 },
+                    { freq: 7000, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_blackout: {
+                label: "Blackout (1982)",
+                eq: {
+                  name: "Blackout 1982",
+                  notes: "Capolavoro hard rock: voce di Meine post-operazione chirurgica e cristallina a 4kHz, riffing tagliente a 2.4kHz, cassa a mitraglia a 62Hz e spazialita perfetta.",
+                  bands: [
+                    { freq: 62, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_love_at_first_sting: {
+                label: "Love at First Sting (1984)",
+                eq: {
+                  name: "Love 1st Sting84",
+                  notes: "Registrazione interamente digitale precoce (32-track): addolcimento della rigidita a 5.5kHz, risalto della cassa a 58Hz e magnificenza per le ballate a 2.5kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 3900, gain: 2, q: 1.2 },
+                    { freq: 7600, gain: -1, q: 1.3 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_savage_amusement: {
+                label: "Savage Amusement (1988)",
+                eq: {
+                  name: "Savage Amuse 88",
+                  notes: "Produzione levigata stile Def Leppard: esaltazione dei cori multistrato a 3kHz, riverbero della batteria gated a 200Hz e controllo delle alte a 9kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 200, gain: 2, q: 1.3 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 1, q: 1.3 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 0, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_crazy_world: {
+                label: "Crazy World (1990)",
+                eq: {
+                  name: "Crazy World 1990",
+                  notes: "Produzione di Keith Olsen (Wind of Change): fischiettio e voce morbidi a 3.2kHz, basso profondo a 100Hz e riffing heavy energico a 2.2kHz senza durezze.",
+                  bands: [
+                    { freq: 56, gain: 2, q: 1.2 },
+                    { freq: 100, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 510, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_face_the_heat: {
+                label: "Face the Heat (1993)",
+                eq: {
+                  name: "Face The Heat 93",
+                  notes: "Produzione di Bruce Fairbairn pesante e moderna: accordature ribassate valorizzate a 50Hz, snare d'impatto a 220Hz e chitarre sature in primo piano a 2kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 470, gain: -1, q: 1.3 },
+                    { freq: 2000, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 0, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_pure_instinct: {
+                label: "Pure Instinct (1996)",
+                eq: {
+                  name: "Pure Instinct 96",
+                  notes: "Album melodico con forti venature acustiche: calore legnoso a 350Hz, limpidezza alle chitarre acustiche a 5kHz e voce intima di Meine a 3.5kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 350, gain: 1, q: 1.2 },
+                    { freq: 560, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 1, q: 1.3 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 7800, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_eye_ii_eye: {
+                label: "Eye II Eye (1999)",
+                eq: {
+                  name: "Eye II Eye 1999",
+                  notes: "Sperimentazione pop-rock ed elettronica: controllo dei sub-bassi sintetici a 45Hz, linearizzazione dei loop ritmici a 250Hz e presenza vocale a 3kHz.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.2 },
+                    { freq: 520, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 1, q: 1.3 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_unbreakable: {
+                label: "Unbreakable (2004)",
+                eq: {
+                  name: "Unbreakable 2004",
+                  notes: "Ritorno alle radici heavy: basso martellante di Pawel Maciwoda a 110Hz, riffing aggressivo a 2.4kHz e apertura dinamica Nothing X per i cori epici.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_humanity_hour_i: {
+                label: "Humanity: Hour I (2007)",
+                eq: {
+                  name: "Humanity Hour I",
+                  notes: "Concept album orchestrale prodotto da Desmond Child: separazione tra archi a 1.5kHz, chitarre metal a 2.6kHz e impatto cinematografico nei bassi a 48Hz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 230, gain: 2, q: 1.2 },
+                    { freq: 500, gain: -1, q: 1.2 },
+                    { freq: 1500, gain: 1, q: 1.3 },
+                    { freq: 3400, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              scorp_sting_in_the_tail: {
+                label: "Sting in the Tail (2010)",
+                eq: {
+                  name: "Sting In Tail 10",
+                  notes: "Omaggio al classico sound anni 80: brillantezza ariosa a 8.5kHz, punch solido a 60Hz e chitarre twin-lead vivaci e cantabili a 2.2kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.2 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_return_to_forever: {
+                label: "Return to Forever (2015)",
+                eq: {
+                  name: "Return Forever15",
+                  notes: "Celebrazione del cinquantennale: mix moderno compresso bilanciato con lieve de-enfasi a 4kHz, recupero dinamico a 120Hz e trasparenza vocale a 3.2kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 1, q: 1.1 },
+                    { freq: 510, gain: -1, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 7800, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              scorp_rock_believer: {
+                label: "Rock Believer (2022)",
+                eq: {
+                  name: "Rock Believer 22",
+                  notes: "Registrazione live-in-studio con Mikkey Dee alla batteria: attacco viscerale della doppia cassa a 55Hz, dinamica organica a 2kHz e assoli graffianti a 4kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.3 },
+                    { freq: 480, gain: -1, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.1 }
                   ]
                 }
               }
@@ -18935,6 +20201,280 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          pink_floyd: {
+            label: "Pink Floyd",
+            eq: {
+              name: "Pink Floyd Mast",
+              notes: "Calibrazione audiofilo-immersiva: bassi profondi per il Moog di Wright, corpo melodico al basso di Waters, morbidezza analogica sui medio-alti e ariosita stereofonica per i riverberi olografici di Gilmour.",
+              bands: [
+                { freq: 45, gain: 2, q: 1.1 },
+                { freq: 120, gain: 1, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.0 },
+                { freq: 500, gain: 0, q: 1.2 },
+                { freq: 1800, gain: 1, q: 1.1 },
+                { freq: 3800, gain: 1, q: 1.3 },
+                { freq: 8500, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              pf_piper: {
+                label: "The Piper at the Gates of Dawn (1967)",
+                eq: {
+                  name: "Piper Gates 1967",
+                  notes: "Mix psichedelico mono/stereo Abbey Road: compensazione roll-off vintage a 55Hz, presenza vocale di Syd Barrett a 2.2kHz e controllo dell'asprezza chitarristica a 5kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.1 },
+                    { freq: 320, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 1, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              pf_saucerful: {
+                label: "A Saucerful of Secrets (1968)",
+                eq: {
+                  name: "Saucerful Secr68",
+                  notes: "Sperimentazione spaziale psichedelica: risonanza al basso di Waters a 110Hz, apertura sulle armoniche dell'organo Farfisa a 1.6kHz e atmosfera riverberata espansa.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.3 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 0, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              pf_more: {
+                label: "More (1969)",
+                eq: {
+                  name: "More OST 1969",
+                  notes: "Colonna sonora pastorale e proto-hard rock: calore e risoluzione per le chitarre folk acustiche a 250Hz e impatto percussivo controllato sui transienti a 60Hz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 250, gain: 2, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2000, gain: 1, q: 1.1 },
+                    { freq: 3800, gain: 1, q: 1.2 },
+                    { freq: 7000, gain: 0, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              pf_ummagumma: {
+                label: "Ummagumma (1969)",
+                eq: {
+                  name: "Ummagumma 1969",
+                  notes: "Avanguardia in studio solista: estensione sub-bassi per i loop di nastro e percussioni sperimentali a 45Hz, con nitidezza sui medio-alti per pianoforte e piatti.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 700, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              pf_atom_heart: {
+                label: "Atom Heart Mother (1970)",
+                eq: {
+                  name: "Atom Heart M1970",
+                  notes: "Impianto orchestrale con ottoni e coro: decongestione del mascheramento medio-basso a 300Hz, brillantezza sulle trombe a 4kHz e rotondita della grancassa sinfonica a 50Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 1, q: 1.2 },
+                    { freq: 300, gain: -1, q: 1.3 },
+                    { freq: 550, gain: 1, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.0 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              pf_meddle: {
+                label: "Meddle (1971)",
+                eq: {
+                  name: "Meddle 1971",
+                  notes: "Genesi di Echoes: esaltazione del ping del grand piano Leslie a 4.2kHz, calore del basso raddoppiato di One of These Days a 125Hz e pulizia dei riverberi marini.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 1, q: 1.1 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              pf_obscured: {
+                label: "Obscured by Clouds (1972)",
+                eq: {
+                  name: "Obscured Cl 1972",
+                  notes: "Mastering caldo e asciutto allo Chateau d'Herouville: punch percussivo solido a 65Hz, calore analogico per VCS3 e mordente per la chitarra slide a 3.5kHz.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 0, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              pf_dark_side: {
+                label: "The Dark Side of the Moon (1973)",
+                eq: {
+                  name: "Dark Side EQ",
+                  notes: "Mastering capolavoro di Alan Parsons: subwoofer morbido per il battito cardiaco a 45Hz, trasparenza dinamica sul sax a 1.4kHz e ariosita cristallina per i rintocchi di Time a 9kHz.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 450, gain: 0, q: 1.1 },
+                    { freq: 1400, gain: 1, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              pf_wish_you: {
+                label: "Wish You Were Here (1975)",
+                eq: {
+                  name: "Wish You Were EQ",
+                  notes: "Spazialita eterea e calore analogico: armoniche per la chitarra acustica a 12 corde a 240Hz, sustain morbido del Minimoog e brillantezza liquida per il chorus Stratocaster a 3.6kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              pf_animals: {
+                label: "Animals (1977)",
+                eq: {
+                  name: "Animals 1977",
+                  notes: "Sound grezzo e viscerale Britannia Row: ringhio del basso a plettro a 800Hz, attacco compatto della cassa a 60Hz e sferzate corrosive della Telecaster e chitarre di Gilmour a 4kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 800, gain: 2, q: 1.3 },
+                    { freq: 2000, gain: 1, q: 1.1 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 7800, gain: 0, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              pf_the_wall: {
+                label: "The Wall (1979)",
+                eq: {
+                  name: "The Wall 1979",
+                  notes: "Produzione maestosa di Bob Ezrin: basso ritmico autorevole a 100Hz, articolazione per i dialoghi cinematografici a 2.5kHz e solo monumentale di Comfortably Numb calibrato a 3.8kHz.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 100, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 0, q: 1.0 },
+                    { freq: 480, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              pf_final_cut: {
+                label: "The Final Cut (1983)",
+                eq: {
+                  name: "Final Cut 1983",
+                  notes: "Mastering olofonico Zuccarelli ad escursione dinamica estrema: intimita sussurrata per la voce di Waters a 1.5kHz, controllo delle esplosioni orchestrali e sub-bassi precisi.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.1 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1500, gain: 2, q: 1.2 },
+                    { freq: 3400, gain: 1, q: 1.3 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              pf_momentary: {
+                label: "A Momentary Lapse of Reason (1987)",
+                eq: {
+                  name: "Momentary Lap 87",
+                  notes: "Mix digitale e riverberi ampi anni 80: addolcimento delle asprezze metalliche a 6.5kHz, calore al basso synth a 55Hz e apertura d'aria per il mastering moderno di Learning to Fly.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 6500, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              pf_division_bell: {
+                label: "The Division Bell (1994)",
+                eq: {
+                  name: "Division Bell 94",
+                  notes: "Trasparenza audiophile registrata sul battello Astoria: sustain cantilenante della Black Strat a 3kHz, cassa e basso armoniosi a 50Hz e palcoscenico tridimensionale a 15kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              pf_endless_river: {
+                label: "The Endless River (2014)",
+                eq: {
+                  name: "Endless River 14",
+                  notes: "Affresco ambient-orchestrale commemorativo: sub-estensione per i pad di Rick Wright a 40Hz, pulizia sui transienti percussivi e texture d'aria ad altissima risoluzione a 16kHz.",
+                  bands: [
+                    { freq: 40, gain: 3, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.0 },
+                    { freq: 480, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 16000, gain: 2, q: 0.8 }
+                  ]
+                }
+              }
+            }
           }
         }
       },
@@ -20759,6 +22299,779 @@ const MUSIC_DATABASE = {
                     { freq: 4200, gain: 0, q: 1.3 },
                     { freq: 8200, gain: 2, q: 1.2 },
                     { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          muse: {
+            label: "Muse",
+            eq: {
+              name: "Muse Master EQ",
+              notes: "Calibrazione space/alt-rock: sostegno al sub-basso a 55Hz per i synth-bass e rullanti di Howard, definizione per il fuzz a 1.6kHz del basso di Wolstenholme e nitidezza per il falsetto di Bellamy a 3.6kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 120, gain: 2, q: 1.2 },
+                { freq: 250, gain: 0, q: 1.0 },
+                { freq: 500, gain: 0, q: 1.2 },
+                { freq: 1600, gain: 1, q: 1.2 },
+                { freq: 3600, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 1, q: 0.9 }
+              ]
+            },
+            albums: {
+              mu_showbiz: {
+                label: "Showbiz (1999)",
+                eq: {
+                  name: "Showbiz 1999",
+                  notes: "Debutto alt-rock crudo prodotto da John Leckie: morbidezza per contenere le risonanze aspre della voce a 3.5kHz, calore al basso a 130Hz e apertura dinamica.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: -1, q: 1.3 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mu_origin_symmetry: {
+                label: "Origin of Symmetry (2001)",
+                eq: {
+                  name: "Origin Symmet 01",
+                  notes: "Riff iconici con Fuzz Factory e basso distorted: esaltazione del punch a 115Hz per New Born/Plug In Baby, controllo sibilanti e corpo al clavicembalo/arpeggi.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 3, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 1700, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 1, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              mu_absolution: {
+                label: "Absolution (2003)",
+                eq: {
+                  name: "Absolution 2003",
+                  notes: "Sound apocalittico orchestrale: basso fuzz granitico di Hysteria centrato a 120Hz e 1.5kHz, kick profondo a 50Hz e presenza maestosa per archi e cori a 4kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1500, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              mu_black_holes: {
+                label: "Black Holes and Revelations (2006)",
+                eq: {
+                  name: "Black Holes 2006",
+                  notes: "Ibridazione funk, space-rock e synth: bassi elastici a 60Hz per Supermassive Black Hole, chiarezza della tromba mariachi in City of Delusion e apertura stereo per Knights of Cydonia.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.2 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              mu_resistance: {
+                label: "The Resistance (2009)",
+                eq: {
+                  name: "Resistance 2009",
+                  notes: "Sinfonie progressive e operistiche: precisione per il pianoforte classico nei medi a 1.2kHz, ariosita ad alta risoluzione per la suite Exogenesis e grancassa cinematografica.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.0 },
+                    { freq: 115, gain: 1, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 480, gain: 0, q: 1.1 },
+                    { freq: 1200, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              mu_2nd_law: {
+                label: "The 2nd Law (2012)",
+                eq: {
+                  name: "The 2nd Law 2012",
+                  notes: "Produzione contemporanea dubstep/funk: sub-bassi potenti e controllati a 45Hz per il wobble di Madness, voce intima in primo piano a 2kHz e dinamica brillante sui transienti.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.1 },
+                    { freq: 105, gain: 1, q: 1.2 },
+                    { freq: 240, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.1 },
+                    { freq: 4200, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              mu_drones: {
+                label: "Drones (2015)",
+                eq: {
+                  name: "Drones 2015",
+                  notes: "Produzione essenziale hard-rock di Mutt Lange: rullante teso e punchy a 180Hz, chitarre sferzanti ad alto impatto a 2.6kHz e compatezza nei sub-bassi per The Handler.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.3 },
+                    { freq: 7500, gain: 0, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mu_simulation: {
+                label: "Simulation Theory (2018)",
+                eq: {
+                  name: "Simulation Th 18",
+                  notes: "Atmosfere retro-synthwave anni 80: bassi analogici ricchi e rotondi a 50Hz, arpeggiatori e brass elettronici aperti a 6kHz con riverbero vocale cinematografico espanso.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3800, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              mu_will_people: {
+                label: "Will of the People (2022)",
+                eq: {
+                  name: "Will People 2022",
+                  notes: "Mastering moderno ibrido glam-metal: kick rapido e definito a 60Hz, attacco per le chitarre metal a 3.5kHz e gestione del limiting contemporaneo senza perdita di respiro.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 1900, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          dire_straits: {
+            label: "Dire Straits",
+            eq: {
+              name: "Dire Straits Mst",
+              notes: "Calibrazione audiofila pura: focalizzazione sul tocco fingerpicking pulito di Knopfler a 3kHz, voce baritonale calda a 250Hz, kick e basso morbidi e profondi senza colorazione artificiale.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.0 },
+                { freq: 120, gain: 1, q: 1.1 },
+                { freq: 250, gain: 2, q: 1.0 },
+                { freq: 500, gain: 0, q: 1.1 },
+                { freq: 1700, gain: 1, q: 1.1 },
+                { freq: 3000, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              ds_dire_straits: {
+                label: "Dire Straits (1978)",
+                eq: {
+                  name: "Dire Straits 78",
+                  notes: "Debutto iconico (Sultans of Swing): esaltazione del twang brillante della Stratocaster a 3.4kHz, rullante legnoso e basso solido e lineare a 115Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ds_communique: {
+                label: "Communiqué (1979)",
+                eq: {
+                  name: "Communique 1979",
+                  notes: "Atmosfere intime registrate a Nassau: corpo morbido per il fingerstyle a 280Hz, chiarezza della grancassa e micro-dettaglio per le chitarre ritmiche.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 280, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ds_making_movies: {
+                label: "Making Movies (1980)",
+                eq: {
+                  name: "Making Movies 80",
+                  notes: "Produzione rock potente di Jimmy Iovine: risonanza per il pianoforte di Roy Bittan a 1.4kHz, impatto ritmico a 110Hz e risalto per la voce graffiante di Romeo and Juliet.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1400, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ds_love_over_gold: {
+                label: "Love over Gold (1982)",
+                eq: {
+                  name: "Love Over Gold82",
+                  notes: "Masterpiece audiofilo ad ampia gamma dinamica: estensione per il contrabbasso e tuoni a 40Hz in Telegraph Road, transienti acustici intatti e ariosita stereo a 15kHz.",
+                  bands: [
+                    { freq: 40, gain: 2, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 1, q: 1.0 },
+                    { freq: 480, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              ds_brothers_arms: {
+                label: "Brothers in Arms (1985)",
+                eq: {
+                  name: "Brothers Arms 85",
+                  notes: "Pioniere della registrazione digitale Sony 24-track: morbidezza sulle altissime a 6kHz per smussare il primo digitale, calore per la Les Paul a 450Hz e profondita atmosferica.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 1, q: 1.0 },
+                    { freq: 450, gain: 2, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 6000, gain: -1, q: 1.3 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              ds_on_every_street: {
+                label: "On Every Street (1991)",
+                eq: {
+                  name: "On Every St 1991",
+                  notes: "Produzione raffinata e stratificata ai massimi standard: corpo caldo per i fiati e chitarra a 220Hz, cassa definita a 55Hz e brillantezza setosa per pedal-steel e piatti.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 1, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          simple_minds: {
+            label: "Simple Minds",
+            eq: {
+              name: "Simple Minds Mst",
+              notes: "Calibrazione new wave / arena rock: basso melodico pulsante a 125Hz, arpeggi scintillanti con chorus di Burchill a 3.6kHz, corpo alle tastiere Roland Jupiter e risalto per Jim Kerr.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 125, gain: 2, q: 1.2 },
+                { freq: 260, gain: 0, q: 1.0 },
+                { freq: 500, gain: 0, q: 1.1 },
+                { freq: 1800, gain: 1, q: 1.1 },
+                { freq: 3600, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 1, q: 0.9 }
+              ]
+            },
+            albums: {
+              sm_life_in_a_day: {
+                label: "Life in a Day (1979)",
+                eq: {
+                  name: "Life In A Day 79",
+                  notes: "Debutto new wave frizzante: risalto per le chitarre ritmiche a 3.4kHz, definizione del basso melodico a 130Hz e bilanciamento della voce giovanile.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              sm_real_cacophony: {
+                label: "Real to Real Cacophony (1979)",
+                eq: {
+                  name: "Real Cacoph 1979",
+                  notes: "Post-punk spigoloso e sperimentale: enfatizzazione delle armoniche cupe a 250Hz, controllo delle frequenze taglienti a 2.5kHz e kick serrato.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 0, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              sm_empires_dance: {
+                label: "Empires and Dance (1980)",
+                eq: {
+                  name: "Empires Dance 80",
+                  notes: "Pioniere dell'electro-industrial rock (I Travel): kick pulsante a 60Hz, sequenziatori ritmici incisivi a 1.6kHz e atmosfera scura e avvolgente.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_sons_fascination: {
+                label: "Sons and Fascination (1981)",
+                eq: {
+                  name: "Sons Fascina 81",
+                  notes: "Produzione Steve Hillage: basso iconico di Derek Forbes in primo piano a 115Hz, synth stratificati a 500Hz e riverbero ampio per la voce a 3.2kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 3, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_sister_feelings: {
+                label: "Sister Feelings Call (1981)",
+                eq: {
+                  name: "Sister Feeling81",
+                  notes: "Gemello strumentale/ipnotico di Sons: profondita per le linee di basso a 130Hz, ariosita delle trame di chitarra a 4kHz e dinamica pulita.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_new_gold_dream: {
+                label: "New Gold Dream (81–82–83–84) (1982)",
+                eq: {
+                  name: "New Gold Dream82",
+                  notes: "Capolavoro dream-wave: calore avvolgente dei sintetizzatori Roland a 400Hz, basso melodico leggendario e brillantezza vellutata sui piatti a 9kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 400, gain: 2, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              sm_sparkle_rain: {
+                label: "Sparkle in the Rain (1984)",
+                eq: {
+                  name: "Sparkle Rain 84",
+                  notes: "Produzione monumentale di Steve Lillywhite: corpo del rullante imponente (Waterfront) a 180Hz, chitarre d'impatto a 3kHz e punch poderoso al kick.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.2 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_once_upon_time: {
+                label: "Once Upon a Time (1985)",
+                eq: {
+                  name: "Once Upon Time85",
+                  notes: "Zenith dell'arena rock mondiale (Alive and Kicking): potenza sonora per grandi impianti, slap di basso e cori aperti ed esaltati a 4.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 2, q: 1.1 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_street_fighting: {
+                label: "Street Fighting Years (1989)",
+                eq: {
+                  name: "Street Fight 89",
+                  notes: "Produzione epica e spirituale di Trevor Horn (Belfast Child): estensione sub-bassi maestosa a 45Hz, archi commoventi e profondita cinematografica a 10kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 480, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 10000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              sm_real_life: {
+                label: "Real Life (1991)",
+                eq: {
+                  name: "Real Life 1991",
+                  notes: "Pop-rock da stadio raffinato: pianoforte cristallino a 1.5kHz, calore vocale a 280Hz e sezione ritmica equilibrata e senza fatica d'ascolto.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1500, gain: 2, q: 1.1 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_good_news: {
+                label: "Good News from the Next World (1995)",
+                eq: {
+                  name: "Good News Wld 95",
+                  notes: "Ritorno energico alle chitarre elettriche: mordente per i riff di Burchill a 2.8kHz, kick sostenuto a 65Hz e rullante brillante.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_neapolis: {
+                label: "Néapolis (1998)",
+                eq: {
+                  name: "Neapolis 1998",
+                  notes: "Ritorno elettronico moderno col rientro di Derek Forbes: sub-bassi elettronici a 50Hz, pad spaziali a 5kHz e voce intima di Jim Kerr.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_neon_lights: {
+                label: "Neon Lights (2001)",
+                eq: {
+                  name: "Neon Lights 2001",
+                  notes: "Tributo electro-cover: esaltazione dei sintetizzatori analogici a 1.4kHz, kick ritmico solido a 60Hz e chiarezza per le armonie vocali.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.1 },
+                    { freq: 1400, gain: 2, q: 1.1 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_cry: {
+                label: "Cry (2002)",
+                eq: {
+                  name: "Cry 2002",
+                  notes: "Contaminazioni dance/club registrate in Italia: bassi sintetici rotondi a 55Hz, presenza vocale a 2.2kHz e percussioni elettroniche nitide.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.1 },
+                    { freq: 4000, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_black_white: {
+                label: "Black & White 050505 (2005)",
+                eq: {
+                  name: "Black White 2005",
+                  notes: "Rinascita sonora post-punk melodica: chitarre ampie cariche di delay a 3.4kHz, ritmica incisiva a 120Hz e respiro per Stay Visible.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_graffiti_soul: {
+                label: "Graffiti Soul (2009)",
+                eq: {
+                  name: "Graffiti Soul 09",
+                  notes: "Rock compatto e moderno registrato ai Rockfield Studios: rullante incisivo a 200Hz, chitarre graffianti a 3kHz e bassi dinamici e veloci.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 200, gain: 2, q: 1.1 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_big_music: {
+                label: "Big Music (2014)",
+                eq: {
+                  name: "Big Music 2014",
+                  notes: "Elettro-rock potente e stratificato: solidita per le percussioni elettroniche a 55Hz, medi trasparenti per la voce e controllo delle alte per evitare affaticamento.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1900, gain: 1, q: 1.1 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              sm_walk_between: {
+                label: "Walk Between Worlds (2018)",
+                eq: {
+                  name: "Walk Between W18",
+                  notes: "Sintesi perfetta tra new wave anni 80 e produzione moderna: synth aperti a 8kHz, voce matura profonda a 250Hz e bassi pulsanti.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              sm_direction_heart: {
+                label: "Direction of the Heart (2022)",
+                eq: {
+                  name: "Direct Heart 22",
+                  notes: "Registrato in Sicilia durante il lockdown: groove compatti ed energici a 60Hz, melodie di synth scintillanti a 7.5kHz e voce chiara e dinamica.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          the_eagles: {
+            label: "The Eagles",
+            eq: {
+              name: "Eagles Master EQ",
+              notes: "Calibrazione country-rock californiano: armonie vocali celestiali centrate a 1.5kHz-2.5kHz, brillantezza delle chitarre acustiche e soliste di Felder/Walsh a 3.8kHz, kick caldo di Henley a 90Hz.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.0 },
+                { freq: 115, gain: 2, q: 1.2 },
+                { freq: 250, gain: 1, q: 1.0 },
+                { freq: 500, gain: 0, q: 1.1 },
+                { freq: 1800, gain: 2, q: 1.1 },
+                { freq: 3800, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14500, gain: 1, q: 0.9 }
+              ]
+            },
+            albums: {
+              ea_eagles: {
+                label: "Eagles (1972)",
+                eq: {
+                  name: "Eagles 1972",
+                  notes: "Debutto registrato a Londra con Glyn Johns (Take It Easy): calore rustico delle chitarre acustiche e banjo a 2.5kHz, basso armonioso a 120Hz e purezza vocale.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ea_desperado: {
+                label: "Desperado (1973)",
+                eq: {
+                  name: "Desperado 1973",
+                  notes: "Concept western orchestrale: risonanza e calore per il pianoforte a 450Hz, archi vellutati nei medio-alti e rullante morbido per le ballate.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.1 },
+                    { freq: 250, gain: 2, q: 1.0 },
+                    { freq: 450, gain: 2, q: 1.2 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ea_on_the_border: {
+                label: "On the Border (1974)",
+                eq: {
+                  name: "On The Border 74",
+                  notes: "Svolta hard-rock con l'ingresso di Don Felder: mordente per le chitarre elettriche a 2.8kHz, kick deciso a 75Hz e impatto ritmico potenziato.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ea_one_of_these_nights: {
+                label: "One of These Nights (1975)",
+                eq: {
+                  name: "One These Nights",
+                  notes: "Infiltrazioni funk/R&B: basso pulsante e rotondo di Randy Meisner a 110Hz, falsetti cristallini a 3.4kHz e archi raffinati.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 110, gain: 3, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ea_hotel_california: {
+                label: "Hotel California (1976)",
+                eq: {
+                  name: "Hotel Calif 1976",
+                  notes: "Vertice della produzione rock anni 70 di Bill Szymczyk: separazione chirurgica per il duello Felder/Walsh a 3.6kHz, grancassa profonda a 60Hz e timbrica analogica sublime.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 2, q: 1.1 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              ea_the_long_run: {
+                label: "The Long Run (1979)",
+                eq: {
+                  name: "The Long Run 79",
+                  notes: "Sound asciutto e punchy di fine decennio: corpo al rullante a 200Hz, chitarra slide di Joe Walsh a fuoco sui 3kHz e basso solido di Timothy B. Schmit a 105Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 105, gain: 2, q: 1.2 },
+                    { freq: 200, gain: 2, q: 1.1 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ea_long_road_eden: {
+                label: "Long Road Out of Eden (2007)",
+                eq: {
+                  name: "Long Road Eden07",
+                  notes: "Produzione contemporanea audiophile: estensione impeccabile dei sub-bassi a 45Hz, trasparenza dinamica sulle armonie a 2kHz e ariosita moderna a 14kHz.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.0 },
+                    { freq: 110, gain: 1, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.8 }
                   ]
                 }
               }
@@ -23438,6 +25751,399 @@ const MUSIC_DATABASE = {
                     { freq: 4250, gain: 1, q: 1.3 },
                     { freq: 8150, gain: 2, q: 1.2 },
                     { freq: 14800, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          eric_clapton: {
+            label: "Eric Clapton",
+            eq: {
+              name: "Clapton Mast EQ",
+              notes: "Calibrazione blues-rock pura: corpo cremoso del midrange a 1.2kHz-2.5kHz per il tocco delle Stratocaster Blackie/Brownie, voce calda e vellutata a 250Hz e ritmica blues rilassata e dinamica.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.0 },
+                { freq: 120, gain: 1, q: 1.1 },
+                { freq: 250, gain: 2, q: 1.0 },
+                { freq: 500, gain: 1, q: 1.1 },
+                { freq: 1600, gain: 2, q: 1.1 },
+                { freq: 3200, gain: 1, q: 1.2 },
+                { freq: 7500, gain: 1, q: 1.0 },
+                { freq: 13500, gain: 1, q: 0.9 }
+              ]
+            },
+            albums: {
+              ec_eric_clapton: {
+                label: "Eric Clapton (1970)",
+                eq: {
+                  name: "Clapton 1970",
+                  notes: "Debutto solista con i Delaney & Bonnie (After Midnight): vivacita dei fiati a 1.5kHz, Stratocaster brillante e grancassa analogica rotonda.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1500, gain: 2, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_461_ocean: {
+                label: "461 Ocean Boulevard (1974)",
+                eq: {
+                  name: "461 Ocean Blvd74",
+                  notes: "Capolavoro solare ai Criteria Studios (I Shot the Sheriff): ritmica reggae-rock rilassata a 105Hz, chitarra slide morbida a 3kHz e voce calda.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 105, gain: 3, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_theres_one: {
+                label: "There's One in Every Crowd (1975)",
+                eq: {
+                  name: "Theres One 1975",
+                  notes: "Sessioni roots a Kingston: morbidezza nei bassi a 90Hz, chitarre acustiche e dobro luminosi a 3.5kHz e distensione vocale.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_no_reason: {
+                label: "No Reason to Cry (1976)",
+                eq: {
+                  name: "No Reason Cry 76",
+                  notes: "Registrato a Shangri-La con The Band e Bob Dylan: calore medio-basso avvolgente a 350Hz, batteria naturale di Levon Helm e chitarre roots organiche.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 350, gain: 2, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: 0, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_slowhand: {
+                label: "Slowhand (1977)",
+                eq: {
+                  name: "Slowhand 1977",
+                  notes: "Pietra miliare prodotta da Glyn Johns (Lay Down Sally, Wonderful Tonight): timbrica trasparente della chitarra a 3.2kHz, basso rotondo a 115Hz e assoli suadenti.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 480, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 2, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_backless: {
+                label: "Backless (1978)",
+                eq: {
+                  name: "Backless 1978",
+                  notes: "Country-blues rilassato (Promises): calore acustico a 240Hz, chitarra solista discreta e priva di asprezze e voce intima.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 240, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_another_ticket: {
+                label: "Another Ticket (1981)",
+                eq: {
+                  name: "Another Ticket81",
+                  notes: "Ultimo capitolo RSO con Tom Dowd (I Can't Stand It): rullante preciso a 190Hz, chitarra solista brillante a 3.4kHz e solidita rock.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 2, q: 1.1 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_money_cigars: {
+                label: "Money and Cigarettes (1983)",
+                eq: {
+                  name: "Money Cigars 83",
+                  notes: "Ritorno al blues asciutto con Ry Cooder: tocco pulito del plettro a 3.5kHz, basso serrato a 110Hz e trasparenza tra le chitarre incrociate.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_behind_sun: {
+                label: "Behind the Sun (1985)",
+                eq: {
+                  name: "Behind The Sun85",
+                  notes: "Produzione pop-rock anni 80 con Phil Collins (Forever Man): sintetizzatori aperti a 6kHz, rullante riverberato a 180Hz e chitarra graffiante a 2.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 2, q: 1.1 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 6000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_august: {
+                label: "August (1986)",
+                eq: {
+                  name: "August 1986",
+                  notes: "Sound potente con fiati e batterie imponenti (It's in the Way That You Use It): sezione ritmica scolpita a 60Hz e assoli carichi di gain a 3kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_journeyman: {
+                label: "Journeyman (1989)",
+                eq: {
+                  name: "Journeyman 1989",
+                  notes: "Ritorno solenne al blues-rock moderno (Bad Love, Pretending): calore del solo di Stratocaster a 2.8kHz, kick vigoroso a 55Hz e apertura per cori e tastiere.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 2, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_from_cradle: {
+                label: "From the Cradle (1994)",
+                eq: {
+                  name: "From Cradle 1994",
+                  notes: "Blues purista registrato rigorosamente live in studio: nessun riverbero finto, midrange vivo degli amplificatori valvolari a 1.2kHz e rullante di legno genuino.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.1 },
+                    { freq: 1200, gain: 2, q: 1.2 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: 0, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_pilgrim: {
+                label: "Pilgrim (1998)",
+                eq: {
+                  name: "Pilgrim 1998",
+                  notes: "Fusione intima tra blues ed elettronica/R&B (My Father's Eyes): sub-bassi profondi a 45Hz, archi orchestrali caldi a 600Hz e voce vicinissima al microfono.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 600, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              ec_reptile: {
+                label: "Reptile (2001)",
+                eq: {
+                  name: "Reptile 2001",
+                  notes: "Produzione calda con Billy Preston: calore del Fender Rhodes a 300Hz, chitarra acustica vellutata e brillantezza non affaticante per le ritmiche shuffle.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 300, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_mr_johnson: {
+                label: "Me and Mr. Johnson (2004)",
+                eq: {
+                  name: "Me Mr Johnson 04",
+                  notes: "Tributo elettrico potente a Robert Johnson: saturazione valvolare graffiante a 2.2kHz, kick compatto a 65Hz e impatto blues immediato.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: 0, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_robert_j: {
+                label: "Sessions for Robert J (2004)",
+                eq: {
+                  name: "Robert J 2004",
+                  notes: "Sessioni intime acustiche ed elettriche: risonanza della cassa armonica della chitarra acustica a 220Hz, tocco pulito delle dita e riverbero d'ambiente naturale.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 220, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_back_home: {
+                label: "Back Home (2005)",
+                eq: {
+                  name: "Back Home 2005",
+                  notes: "Atmosfere pop-blues domestiche e rilassate: rotondita delle frequenze basse a 100Hz, voce morbida nei medi e controllo delle alte per un ascolto caldo.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 100, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3000, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_clapton: {
+                label: "Clapton (2010)",
+                eq: {
+                  name: "Clapton 2010",
+                  notes: "Omaggio alle radici ragtime, jazz e blues: cornetta vellutata di Wynton Marsalis a 1.6kHz, grancassa naturale jazz a 70Hz e chitarra calda e legnosa.",
+                  bands: [
+                    { freq: 70, gain: 2, q: 1.0 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 280, gain: 2, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1600, gain: 2, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_old_sock: {
+                label: "Old Sock (2013)",
+                eq: {
+                  name: "Old Sock 2013",
+                  notes: "Sessioni roots rilassate con sfumature reggae e calypso: basso morbido e profondo a 80Hz, percussioni leggere e trasparenza acustica.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1700, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_i_still_do: {
+                label: "I Still Do (2016)",
+                eq: {
+                  name: "I Still Do 2016",
+                  notes: "Riunione con Glyn Johns su nastro analogico a 16 tracce: calore valvolare vintage, chitarra scura e vellutata sui medio-alti e voce espressiva.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 260, gain: 2, q: 1.0 },
+                    { freq: 480, gain: 1, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_happy_xmas: {
+                label: "Happy Xmas (2018)",
+                eq: {
+                  name: "Happy Xmas 2018",
+                  notes: "Album festivo in chiave blues e dance-blues (For Love on Christmas Day): campanelli brillanti a 9kHz, groove blues saldo a 115Hz e voce calda.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ec_meanwhile: {
+                label: "Meanwhile (2024)",
+                eq: {
+                  name: "Meanwhile 2024",
+                  notes: "Produzione contemporanea con collaborazioni di Jeff Beck: definizione digitale impeccabile, chitarre soliste distinte a 3.2kHz e bassi stabili a 55Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1, q: 0.9 }
                   ]
                 }
               }

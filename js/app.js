@@ -1714,143 +1714,194 @@
     const container = document.getElementById("qrcode");
     if (!container) return null;
 
-    const qrCanvas = container.querySelector("canvas");
-    if (!qrCanvas || qrCanvas.width === 0) {
+    let qrSource = container.querySelector("canvas");
+    if (!qrSource || qrSource.width === 0) {
       const img = container.querySelector("img");
       if (img && img.src && img.src.startsWith("data:image/")) {
-        return img.src;
+        qrSource = img;
       }
-      return null;
+    }
+    if (!qrSource) return null;
+
+    // Helper: Cross-platform Rounded Rectangle
+    function drawRoundRect(ctx, x, y, w, h, r) {
+      if (typeof ctx.roundRect === "function") {
+        ctx.roundRect(x, y, w, h, r);
+      } else {
+        ctx.beginPath();
+        ctx.moveTo(x + r, y);
+        ctx.arcTo(x + w, y, x + w, y + h, r);
+        ctx.arcTo(x + w, y + h, x, y + h, r);
+        ctx.arcTo(x, y + h, x, y, r);
+        ctx.arcTo(x, y + x + w, y, r);
+        ctx.closePath();
+      }
     }
 
-    // Build the high-definition Nothing OS Audio Card (Teenage Engineering Style)
     try {
-      const cardW = 480;
-      const cardH = 580;
+      // High-Definition Nothing OS Audio Card (Scale 2x for Retina/High-Res Display)
+      const cardW = 596;
+      const cardH = 732;
       const cardCanvas = document.createElement("canvas");
       cardCanvas.width = cardW;
       cardCanvas.height = cardH;
       const ctx = cardCanvas.getContext("2d");
-      if (!ctx) return qrCanvas.toDataURL("image/png");
+      if (!ctx) return (qrSource instanceof HTMLCanvasElement ? qrSource.toDataURL("image/png") : (qrSource.src || null));
 
-      // 1. Dark chassis background
-      ctx.fillStyle = "#0c0c10";
-      ctx.fillRect(0, 0, cardW, cardH);
-
-      const grad = ctx.createLinearGradient(0, 0, cardW, cardH);
-      grad.addColorStop(0, "rgba(25, 25, 34, 0.7)");
-      grad.addColorStop(1, "rgba(10, 10, 14, 0.98)");
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, cardW, cardH);
-
-      // Chassis outer border
+      // 1. Dark chassis background with rounded corners
+      ctx.save();
+      drawRoundRect(ctx, 0, 0, cardW, cardH, 28);
+      ctx.fillStyle = "#0e0e13";
+      ctx.fill();
       ctx.lineWidth = 2;
-      ctx.strokeStyle = "#252532";
-      ctx.strokeRect(10, 10, cardW - 20, cardH - 20);
+      ctx.strokeStyle = "#232330";
+      ctx.stroke();
+      ctx.clip(); // Clip contents within rounded chassis
 
-      // Technical inner line
-      ctx.lineWidth = 1;
-      ctx.strokeStyle = "rgba(255, 255, 255, 0.08)";
-      ctx.strokeRect(16, 16, cardW - 32, cardH - 32);
+      // 2. Header: Glowing Red Dot + Title "SOUND STUDIO (1) PRO" + "PEQ" pill badge
+      const headerY = 46;
 
-      // 2. Header: Nothing Red Dot + Title
-      const hDotX = 36;
-      const hDotY = 46;
+      // 2a. Glowing Red Dot
+      ctx.save();
       ctx.beginPath();
-      ctx.arc(hDotX, hDotY, 6, 0, Math.PI * 2);
+      ctx.arc(36, headerY, 8, 0, Math.PI * 2);
       ctx.fillStyle = "#eb0029";
       ctx.shadowColor = "#eb0029";
-      ctx.shadowBlur = 10;
+      ctx.shadowBlur = 12;
       ctx.fill();
-      ctx.shadowBlur = 0;
+      ctx.restore();
 
+      // 2b. Title
       ctx.fillStyle = "#ffffff";
-      ctx.font = "800 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+      ctx.font = "800 22px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
       ctx.textAlign = "left";
       ctx.textBaseline = "middle";
-      ctx.letterSpacing = "1.5px";
-      ctx.fillText("SOUND STUDIO (1) PRO", 52, 46);
+      ctx.fillText("SOUND STUDIO (1) PRO", 56, headerY);
 
+      // 2c. PEQ Pill Badge
+      const pillW = 66;
+      const pillH = 34;
+      const pillX = cardW - 28 - pillW;
+      const pillY = headerY - (pillH / 2);
+      ctx.save();
+      drawRoundRect(ctx, pillX, pillY, pillW, pillH, 8);
+      ctx.fillStyle = "rgba(235, 0, 41, 0.15)";
+      ctx.fill();
+      ctx.lineWidth = 1.5;
+      ctx.strokeStyle = "rgba(235, 0, 41, 0.4)";
+      ctx.stroke();
       ctx.fillStyle = "#eb0029";
-      ctx.font = "bold 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-      ctx.textAlign = "right";
-      ctx.fillText("NOTHING X • PEQ", cardW - 36, 46);
+      ctx.font = "bold 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText("PEQ", pillX + (pillW / 2), headerY);
+      ctx.restore();
 
       // Divider below header
-      ctx.strokeStyle = "#202028";
+      ctx.strokeStyle = "#1a1a24";
+      ctx.lineWidth = 2;
       ctx.beginPath();
-      ctx.moveTo(24, 68);
-      ctx.lineTo(cardW - 24, 68);
+      ctx.moveTo(28, 80);
+      ctx.lineTo(cardW - 28, 80);
       ctx.stroke();
 
-      // 3. White Polarized QR Code Frame with Teenage Engineering corner crosshairs
-      const frameX = 80;
-      const frameY = 95;
-      const frameSize = 320;
-      const pad = 16;
+      // 3. Central White QR Frame with Teenage Engineering corner crosshairs (+)
+      const frameSize = 488;
+      const frameX = Math.round((cardW - frameSize) / 2);
+      const frameY = 104;
 
+      // 3a. Red Corner Crosshairs (Top-Left & Bottom-Right ONLY)
+      ctx.fillStyle = "#eb0029";
+      ctx.font = "bold 28px monospace";
+      ctx.textBaseline = "middle";
+      ctx.textAlign = "center";
+      ctx.fillText("+", frameX - 10, frameY - 8);
+      ctx.fillText("+", frameX + frameSize + 10, frameY + frameSize + 8);
+
+      // 3b. White Rounded QR Frame
+      ctx.save();
+      drawRoundRect(ctx, frameX, frameY, frameSize, frameSize, 16);
       ctx.fillStyle = "#ffffff";
-      ctx.fillRect(frameX, frameY, frameSize, frameSize);
+      ctx.shadowColor = "rgba(0, 0, 0, 0.45)";
+      ctx.shadowBlur = 20;
+      ctx.shadowOffsetY = 6;
+      ctx.fill();
+      ctx.restore();
 
-      ctx.drawImage(qrCanvas, frameX + pad, frameY + pad, frameSize - (pad * 2), frameSize - (pad * 2));
+      // 3c. Draw QR code inside white frame with padding
+      const pad = 24;
+      const qrInnerSize = frameSize - (pad * 2);
+      const qrInnerX = frameX + pad;
+      const qrInnerY = frameY + pad;
 
-      // Draw high-res mixer badge in center of QR frame
-      drawMixerBadge(ctx, frameX + (frameSize / 2), frameY + (frameSize / 2), Math.round((frameSize - (pad * 2)) * 0.11));
+      ctx.imageSmoothingEnabled = false;
+      ctx.drawImage(qrSource, qrInnerX, qrInnerY, qrInnerSize, qrInnerSize);
+      ctx.imageSmoothingEnabled = true;
 
-      // Technical crosshairs
-      ctx.strokeStyle = "#eb0029";
-      ctx.lineWidth = 1.5;
-      const chLen = 8;
-      // TL
-      ctx.beginPath(); ctx.moveTo(frameX - 6, frameY - 6); ctx.lineTo(frameX - 6 + chLen, frameY - 6); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(frameX - 6, frameY - 6); ctx.lineTo(frameX - 6, frameY - 6 + chLen); ctx.stroke();
-      // TR
-      ctx.beginPath(); ctx.moveTo(frameX + frameSize + 6, frameY - 6); ctx.lineTo(frameX + frameSize + 6 - chLen, frameY - 6); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(frameX + frameSize + 6, frameY - 6); ctx.lineTo(frameX + frameSize + 6, frameY - 6 + chLen); ctx.stroke();
-      // BL
-      ctx.beginPath(); ctx.moveTo(frameX - 6, frameY + frameSize + 6); ctx.lineTo(frameX - 6 + chLen, frameY + frameSize + 6); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(frameX - 6, frameY + frameSize + 6); ctx.lineTo(frameX - 6, frameY + frameSize + 6 - chLen); ctx.stroke();
-      // BR
-      ctx.beginPath(); ctx.moveTo(frameX + frameSize + 6, frameY + frameSize + 6); ctx.lineTo(frameX + frameSize + 6 - chLen, frameY + frameSize + 6); ctx.stroke();
-      ctx.beginPath(); ctx.moveTo(frameX + frameSize + 6, frameY + frameSize + 6); ctx.lineTo(frameX + frameSize + 6, frameY + frameSize + 6 - chLen); ctx.stroke();
+      // 3d. Draw High-Resolution Vector Mixer Badge in exact center of QR frame
+      const cx = frameX + (frameSize / 2);
+      const cy = frameY + (frameSize / 2);
+      const badgeR = Math.round(qrInnerSize * 0.11);
+      drawMixerBadge(ctx, cx, cy, badgeR);
 
-      // 4. Card Footer: Preset Name & Device
+      // 4. Divider above footer
+      const footDivY = frameY + frameSize + 24;
+      ctx.strokeStyle = "#1a1a24";
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(28, footDivY);
+      ctx.lineTo(cardW - 28, footDivY);
+      ctx.stroke();
+
+      // 5. Card Footer: PRESET & DEVICE
       const pName = profileNameInput ? profileNameInput.value.trim() : "Custom";
       const devKey = selDevice ? selDevice.value : "nothing_headphone_1";
       const devName = DEVICE_PROFILES[devKey]?.name || "Nothing HeadPhone (1)";
 
-      ctx.strokeStyle = "#202028";
-      ctx.beginPath();
-      ctx.moveTo(24, 450);
-      ctx.lineTo(cardW - 24, 450);
-      ctx.stroke();
+      const row1Y = footDivY + 36;
+      const row2Y = row1Y + 38;
+      const maxValW = cardW - 28 - 140; // available width for right-aligned values
 
+      // Row 1: PRESET
       ctx.fillStyle = "#71717a";
-      ctx.font = "bold 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+      ctx.font = "bold 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
       ctx.textAlign = "left";
-      ctx.fillText("PRESET:", 36, 476);
+      ctx.textBaseline = "middle";
+      ctx.fillText("PRESET:", 32, row1Y);
 
+      let pFontSize = 22;
+      ctx.font = `bold ${pFontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
+      while (ctx.measureText(pName || "Custom").width > maxValW && pFontSize > 13) {
+        pFontSize -= 1;
+        ctx.font = `bold ${pFontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
+      }
       ctx.fillStyle = "#ffffff";
-      ctx.font = "bold 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-      ctx.fillText(pName || "Custom", 96, 476);
+      ctx.textAlign = "right";
+      ctx.fillText(pName || "Custom", cardW - 32, row1Y);
 
+      // Row 2: DEVICE
       ctx.fillStyle = "#71717a";
-      ctx.font = "bold 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-      ctx.fillText("CALIBRATION:", 36, 506);
+      ctx.font = "bold 20px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+      ctx.textAlign = "left";
+      ctx.textBaseline = "middle";
+      ctx.fillText("DEVICE:", 32, row2Y);
 
+      let dFontSize = 22;
+      ctx.font = `bold ${dFontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
+      while (ctx.measureText(devName).width > maxValW && dFontSize > 13) {
+        dFontSize -= 1;
+        ctx.font = `bold ${dFontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
+      }
       ctx.fillStyle = "#eb0029";
-      ctx.font = "bold 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
-      ctx.fillText(devName, 130, 506);
+      ctx.textAlign = "right";
+      ctx.fillText(devName, cardW - 32, row2Y);
 
-      ctx.fillStyle = "#52525b";
-      ctx.font = "10px monospace";
-      ctx.textAlign = "center";
-      ctx.fillText("PARAMETRIC EQ & DISCOGRAPHY ENGINE • 8-BAND BIQUAD", cardW / 2, 545);
+      ctx.restore(); // Restore outer clip
 
       return cardCanvas.toDataURL("image/png");
     } catch (e) {
       console.warn("Card composition fallback:", e);
-      return qrCanvas.toDataURL("image/png");
+      return (qrSource instanceof HTMLCanvasElement ? qrSource.toDataURL("image/png") : (qrSource.src || null));
     }
   }
 
