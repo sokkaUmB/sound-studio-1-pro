@@ -1,4 +1,4 @@
-// js/i18n/locales/fr.js - Module de langue française
+﻿// js/i18n/locales/fr.js - Module de langue française
 (function() {
   const LocaleFR = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (Transducteur 40mm / HRTF Circum-Aural)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (Flagship Circum-Aural / Multi-Drivers)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (Transducteur 40mm / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (Transducteur 40mm / Contrôle des Basses)",
       nothing_ear_open: "Nothing Ear (open) (14.2mm Titane / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (Clip Ouvert / Conduction Aérienne)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Calibrage Nothing HeadPhone (1) : Transducteur 40mm en chambre circum-aurale fermée. Préserve l'impact profond des sous-basses, aère les résonances à 200-350Hz (-1 dB) pour une séparation nette entre double pédale et guitares rythmiques, ouvre la clarté des cymbales et l'espace sonore à 6.6kHz (+1 dB) et 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profil Nothing HeadPhone (1) Pro : Architecture circum-aurale multi-transducteurs flagship conçue pour une très haute définition et une scène sonore 3D.",
+      nothing_headphone_a: "Profil Nothing HeadPhone (a) : Casque circum-aural semi-transparent avec transducteur 40mm, compatibilité Hi-Res LDAC et équilibre dynamique.",
       cmf_headphone_pro: "Profil CMF Headphone Pro : Casque circum-aural avec transducteurs 40mm, compatibilité Hi-Res LDAC et contrôle dynamique.",
       nothing_ear_open: "Profil Nothing Ear (open) : Écouteurs sans fil ouverts avec transducteurs 14.2mm en titane et système acoustique directionnel Sound Seal.",
       cmf_clip_pro: "Profil CMF Clip Pro : Écouteurs à clip ouverts par conduction aérienne offrant confort d'écoute et conscience de l'environnement.",

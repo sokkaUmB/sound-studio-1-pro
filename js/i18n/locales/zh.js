@@ -1,4 +1,4 @@
-// js/i18n/locales/zh.js - 中文语言模块 (Mandarin Chinese)
+﻿// js/i18n/locales/zh.js - 中文语言模块 (Mandarin Chinese)
 (function() {
   const LocaleZH = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (40mm 单元 / HRTF 头戴式)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (旗舰多单元头戴式)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (40mm 单元 / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (40mm 单元 / 低频抑制头戴式)",
       nothing_ear_open: "Nothing Ear (open) (14.2mm 钛金属 / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (开放式耳夹 / 气传导)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Nothing HeadPhone (1) 硬件校准：40mm 动圈在全封闭耳罩声学腔体中。保持震撼的次重低音下潜，消除 200-350Hz (-1 dB) 的封闭腔体箱音共鸣，使双踩地鼓与节奏吉他分离如手术刀般精准；同时展开 6.6kHz (+1 dB) 和 13.2kHz (+1 dB) 的高频镲片通透度与声场空气感。",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro 专属配置：旗舰级多动圈单元头戴式架构，专为超高解析力与沉浸式 3D 声场打造。",
+      nothing_headphone_a: "Nothing HeadPhone (a) 专属配置：半透明轻量化头戴式耳机，搭载 40mm 动圈单元并支持 Hi-Res LDAC，频响通透均衡。",
       cmf_headphone_pro: "CMF Headphone Pro 专属配置：40mm 大动圈耳罩耳机，支持 Hi-Res LDAC 高清音频与动态频响控制。",
       nothing_ear_open: "Nothing Ear (open) 专属配置：开放式无线耳机，配备 14.2mm 镀钛动圈单元与定向 Sound Seal 音频防漏系统。",
       cmf_clip_pro: "CMF Clip Pro 专属配置：开放式气传导耳夹设计，全天候舒适佩戴并时刻感知环境声音。",

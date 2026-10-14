@@ -1,4 +1,4 @@
-// js/i18n/locales/ar.js - وحدة اللغة العربية الفصحى الحديثة (Arabic RTL)
+﻿// js/i18n/locales/ar.js - وحدة اللغة العربية الفصحى الحديثة (Arabic RTL)
 (function() {
   const LocaleAR = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (مشغل 40 ملم / HRTF فوق الأذن)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (الرائدة متعددة المشغلات فوق الأذن)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (مشغل 40 ملم / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (مشغل 40 ملم / تحكم بالباس فوق الأذن)",
       nothing_ear_open: "Nothing Ear (open) (14.2 ملم تيتانيوم / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (مشبك أذن مفتوح / توصيل هوائي)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "معايرة Nothing HeadPhone (1): مشغل 40 ملم في حجرة صوتية مغلقة فوق الأذن. يحافظ على تأثير الباس العميق، ويهوي رنين الحجرة عند 200-350Hz بمقدار (-1 dB) لفصل جراحي دقيق بين الدبل باص وجيتار الإيقاع، ويفتح تفاصيل الصنوج والمجال الصوتي عند 6.6kHz (+1 dB) و13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "ملف Nothing HeadPhone (1) Pro: بنية رائدة متعددة المشغلات فوق الأذن مصممة لدقة صوتية فائقة ومجال صوتي ثلاثي الأبعاد واسع.",
+      nothing_headphone_a: "ملف Nothing HeadPhone (a): سماعات نصف شفافة فوق الأذن مع مشغل 40 ملم، دعم Hi-Res LDAC وتوازن ترددي نقي.",
       cmf_headphone_pro: "ملف CMF Headphone Pro: سماعات فوق الأذن مع مشغلات 40 ملم ودعم Hi-Res LDAC وتحكم ديناميكي في الترددات.",
       nothing_ear_open: "ملف Nothing Ear (open): سماعات لاسلكية مفتوحة مع مشغلات 14.2 ملم مطلية بالتيتانيوم ونظام Sound Seal الصوتي الموجه.",
       cmf_clip_pro: "ملف CMF Clip Pro: سماعات أذن بمشبك مفتوح بتوصيل هوائي لراحة فائقة وإدراك كامل للمحيط.",

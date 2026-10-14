@@ -1,4 +1,4 @@
-// js/i18n/locales/it.js - Modulo Lingua Italiano
+﻿// js/i18n/locales/it.js - Modulo Lingua Italiano
 (function() {
   const LocaleIT = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (Driver 40mm / HRTF Over-Ear)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (Flagship Over-Ear / Multi-Driver)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (Driver 40mm / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (Driver 40mm / Bass Control Over-Ear)",
       nothing_ear_open: "Nothing Ear (open) (Driver 14.2mm Titanio / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (Open-Ear Clip / Conduzione d'Aria)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Calibrazione Nothing HeadPhone (1): Driver 40mm in camera acustica circumaurale over-ear. Mantiene l'impatto viscerale dei sub-bassi, sfiata le risonanze della camera chiusa a 200-350Hz (-1 dB) per una separazione chirurgica tra doppio pedale e chitarre ritmiche, preserva la naturale risposta HRTF sui medi, apre la chiarezza dei piatti e l'ariosità del soundstage a 6.6kHz (+1 dB) e 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profilo Nothing HeadPhone (1) Pro: Architettura circumaurale flagship multi-driver ad altissima fedeltà sonora e soundstage tridimensionale.",
+      nothing_headphone_a: "Profilo Nothing HeadPhone (a): Cuffia over-ear semi-trasparente con driver da 40mm, supporto Hi-Res LDAC, risposta equilibrata con medi ariosi e alti trasparenti.",
       cmf_headphone_pro: "Profilo CMF Headphone Pro: Cuffia over-ear con driver da 40mm e supporto Hi-Res LDAC con controllo dinamico delle frequenze.",
       nothing_ear_open: "Profilo Nothing Ear (open): Auricolari wireless aperti con driver da 14.2mm in titanio e tecnologia direzionale Sound Seal System.",
       cmf_clip_pro: "Profilo CMF Clip Pro: Auricolari open-ear clip-on a conduzione d'aria per il massimo comfort e consapevolezza ambientale.",

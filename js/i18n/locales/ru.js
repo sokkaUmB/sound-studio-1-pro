@@ -1,4 +1,4 @@
-// js/i18n/locales/ru.js - Модуль русского языка
+﻿// js/i18n/locales/ru.js - Модуль русского языка
 (function() {
   const LocaleRU = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (40-мм Драйвер / HRTF Over-Ear)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (Флагман Over-Ear / Мультидрайвер)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (40-мм Драйвер / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (40мм Драйвер / Контроль баса Over-Ear)",
       nothing_ear_open: "Nothing Ear (open) (14.2мм Титан / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (Клипсы открытого типа / Воздушная проводимость)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Калибровка Nothing HeadPhone (1): 40-мм драйвер в закрытой охватывающей камере. Сохраняет плотный саб-бас, устраняет гул чаш на 200-350Гц (-1 дБ) для чёткого разделения кардана и ритм-гитар, раскрывает тарелки и объём сцены на 6.6кГц (+1 дБ) и 13.2кГц (+1 дБ).",
       nothing_headphone_1_pro: "Профиль Nothing HeadPhone (1) Pro: Флагманская мультидрайверная архитектура для непревзойдённой детализации и трёхмерной сцены.",
+      nothing_headphone_a: "Профиль Nothing HeadPhone (a): Полупрозрачные полноразмерные наушники с 40-мм драйвером, Hi-Res LDAC и сбалансированной подачей.",
       cmf_headphone_pro: "Профиль CMF Headphone Pro: Полноразмерные наушники с 40-мм драйверами, поддержкой Hi-Res LDAC и динамическим контролем баса.",
       nothing_ear_open: "Профиль Nothing Ear (open): Беспроводные наушники открытого типа с 14.2-мм титановыми драйверами и системой Sound Seal.",
       cmf_clip_pro: "Профиль CMF Clip Pro: Клипсы открытого типа с воздушной проводимостью для комфорта и естественного восприятия окружения.",

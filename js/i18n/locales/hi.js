@@ -1,4 +1,4 @@
-// js/i18n/locales/hi.js - हिन्दी भाषा मॉड्यूल (Hindi)
+﻿// js/i18n/locales/hi.js - हिन्दी भाषा मॉड्यूल (Hindi)
 (function() {
   const LocaleHI = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (40mm ड्राइवर / HRTF ओवर-ईयर)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (फ्लैगशिप मल्टी-ड्राइवर ओवर-ईयर)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (40mm ड्राइवर / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (40mm ड्राइवर / बास नियंत्रण ओवर-ईयर)",
       nothing_ear_open: "Nothing Ear (open) (14.2mm टाइटेनियम / साउंड सील)",
       cmf_clip_pro: "CMF Clip Pro (ओपन-ईयर क्लिप / एयर कंडक्शन)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Nothing HeadPhone (1) कैलिब्रेशन: क्लोज्ड-कप 40mm ड्राइवर। सब-बास की गहराई बनाए रखता है, 200-350Hz (-1 dB) पर बॉक्स गूंज कम करता है ताकि ड्रम और गिटार स्पष्ट रहें, और 6.6kHz (+1 dB) तथा 13.2kHz (+1 dB) पर साउंडस्टेज को खुला बनाता है।",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro प्रोफ़ाइल: अल्ट्रा-हाई रिज़ॉल्यूशन और विस्तृत 3D साउंडस्टेज के लिए फ्लैगशिप मल्टी-ड्राइवर ओवर-ईयर आर्किटेक्चर।",
+      nothing_headphone_a: "Nothing HeadPhone (a) प्रोफ़ाइल: 40mm ड्राइवर, Hi-Res LDAC और संतुलित पारदर्शी ट्यूनिंग के साथ ओवर-ईयर हेडफ़ोन।",
       cmf_headphone_pro: "CMF Headphone Pro प्रोफ़ाइल: 40mm ड्राइवर, Hi-Res LDAC समर्थन और डायनामिक फ्रीक्वेंसी नियंत्रण के साथ ओवर-ईयर हेडफ़ोन।",
       nothing_ear_open: "Nothing Ear (open) प्रोफ़ाइल: 14.2mm टाइटेनियम-कोटेड ड्राइवर और दिशात्मक साउंड सील सिस्टम वाले ओपन-ईयर वायरलेस ईयरबड्स।",
       cmf_clip_pro: "CMF Clip Pro प्रोफ़ाइल: लंबे समय तक पहनने के आराम और परिवेश जागरूकता के लिए ओपन-ईयर क्लिप-ऑन एयर कंडक्शन ईयरबड्स।",

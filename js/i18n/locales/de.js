@@ -1,4 +1,4 @@
-// js/i18n/locales/de.js - Deutsches Sprachmodul
+﻿// js/i18n/locales/de.js - Deutsches Sprachmodul
 (function() {
   const LocaleDE = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (40-mm-Treiber / HRTF Over-Ear)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (Flaggschiff Over-Ear / Multi-Treiber)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (40-mm-Treiber / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (40mm Treiber / Bass-Kontrolle Over-Ear)",
       nothing_ear_open: "Nothing Ear (open) (14.2mm Titan / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (Open-Ear Clip / Luftleitung)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Kalibrierung Nothing HeadPhone (1): 40-mm-Treiber in geschlossener ohrumschließender Kammer. Bewahrt den tiefen Subbass-Punch, dämpft Gehäuseresonanzen bei 200-350Hz (-1 dB) für messerscharfe Trennung von Double-Bass und Rhythmusgitarren, öffnet Beckenbrillanz und Bühnenluft bei 6.6kHz (+1 dB) und 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profil Nothing HeadPhone (1) Pro: Flaggschiff Multi-Treiber Over-Ear-Architektur für höchste akustische Auflösung und dreidimensionale Klangbühne.",
+      nothing_headphone_a: "Profil Nothing HeadPhone (a): Semi-transparenter Over-Ear-Kopfhörer mit 40-mm-Treiber, Hi-Res LDAC und dynamischer Frequenzbalance.",
       cmf_headphone_pro: "Profil CMF Headphone Pro: Over-Ear-Kopfhörer mit 40-mm-Treibern, Hi-Res LDAC-Unterstützung und dynamischer Frequenzkontrolle.",
       nothing_ear_open: "Profil Nothing Ear (open): Offene kabellose Ohrhörer mit 14.2-mm-Titanteibern und gerichtetem Sound Seal System.",
       cmf_clip_pro: "Profil CMF Clip Pro: Offene Clip-Ohrhörer mit Luftleitung für hohen Tragekomfort und Umgebungswahrnehmung.",

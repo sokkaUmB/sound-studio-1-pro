@@ -1,4 +1,4 @@
-// js/i18n/locales/es.js - Módulo de idioma español
+﻿// js/i18n/locales/es.js - Módulo de idioma español
 (function() {
   const LocaleES = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (Driver 40mm / HRTF Circumaural)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (Insignia Circumaural / Multi-Driver)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (Driver 40mm / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (Driver 40mm / Control de Graves)",
       nothing_ear_open: "Nothing Ear (open) (14.2mm Titanio / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (Clip Abierto / Conducción Aérea)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -114,8 +116,9 @@
       studio_flat: "STUDIO REFERENCE"
     },
     device_descriptions: {
-      nothing_headphone_1: "Calibración Nothing HeadPhone (1): Driver de 40mm en cámara acústica circumaural cerrada. Mantiene el impacto de subgraves, ventila resonancias de la copa a 200-350Hz (-1 dB) para una separación nítida entre doble bombo y guitarras, abre la claridad de platos y amplitud sonora a 6.6kHz (+1 dB) y 13.2kHz (+1 dB).",
+      nothing_headphone_1: "Calibración Nothing HeadPhone (1): Driver de 40mm en cámara acústica circumaural cerrada. Mantiene el impacto de subgraves, ventila resonancias de la copa a 200-350Hz (-1 dB) para una separación nítida entre doble bombo y guitarras, abre la claridad de platos y amplitud sonora a 6.6kHz (+1 dB) e 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Perfil Nothing HeadPhone (1) Pro: Arquitectura circumaural insignia multi-driver diseñada para ultra alta resolución acústica y escena 3D envolvente.",
+      nothing_headphone_a: "Perfil Nothing HeadPhone (a): Auriculares circumaurales semitransparentes con driver de 40mm, soporte Hi-Res LDAC y respuesta balanceada.",
       cmf_headphone_pro: "Perfil CMF Headphone Pro: Auriculares circumaurales con transductores de 40mm, soporte Hi-Res LDAC y control dinámico de frecuencias.",
       nothing_ear_open: "Perfil Nothing Ear (open): Auriculares inalámbricos abiertos con transductores de 14.2mm en titanio y sistema acústico direccional Sound Seal.",
       cmf_clip_pro: "Perfil CMF Clip Pro: Auriculares abiertos tipo clip con conducción aérea para gran comodidad y escucha consciente del entorno.",

@@ -1,4 +1,4 @@
-// js/i18n/locales/en.js - English Language Module
+﻿// js/i18n/locales/en.js - English Language Module
 (function() {
   const LocaleEN = {
     meta: {
@@ -78,6 +78,7 @@
     devices: {
       nothing_headphone_1: "Nothing HeadPhone (1) (40mm Driver / HRTF Over-Ear)",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro (Flagship Over-Ear / Multi-Driver)",
+      nothing_headphone_a: "Nothing HeadPhone (a) (40mm Driver / Hi-Res LDAC)",
       cmf_headphone_pro: "CMF Headphone Pro (40mm Driver / Bass Control Over-Ear)",
       nothing_ear_open: "Nothing Ear (open) (14.2mm Titanium / Sound Seal)",
       cmf_clip_pro: "CMF Clip Pro (Open-Ear Clip / Air Conduction)",
@@ -97,6 +98,7 @@
     device_badges: {
       nothing_headphone_1: "NOTHING HEADPHONE (1)",
       nothing_headphone_1_pro: "NOTHING HEADPHONE (1) PRO",
+      nothing_headphone_a: "NOTHING HEADPHONE (A)",
       cmf_headphone_pro: "CMF HEADPHONE PRO",
       nothing_ear_open: "NOTHING EAR (OPEN)",
       cmf_clip_pro: "CMF CLIP PRO",
@@ -116,6 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Calibration Nothing HeadPhone (1): 40mm driver in over-ear circumaural acoustic chamber. Preserves visceral sub-bass impact, vents closed-cup resonances at 200-350Hz (-1 dB) for razor-sharp separation between double bass kicks and rhythm guitars, preserves natural pinna HRTF midrange response, opens cymbal clarity and soundstage air at 6.6kHz (+1 dB) and 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro Profile: Flagship multi-driver circumaural architecture engineered for ultra-high acoustic resolution and expansive 3D soundstaging.",
+      nothing_headphone_a: "Nothing HeadPhone (a) Profile: Semi-transparent over-ear headphones with 40mm driver, Hi-Res LDAC support, balanced response with airy midrange and transparent treble.",
       cmf_headphone_pro: "CMF Headphone Pro Profile: Over-ear headphone with 40mm drivers and Hi-Res LDAC support featuring dynamic frequency control.",
       nothing_ear_open: "Nothing Ear (open) Profile: Open-ear wireless earbuds with 14.2mm titanium-coated drivers and directional Sound Seal System.",
       cmf_clip_pro: "CMF Clip Pro Profile: Open-ear clip-on air-conduction earbuds delivering long-session comfort and situational awareness.",
