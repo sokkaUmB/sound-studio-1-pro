@@ -50,6 +50,21 @@
         { dGain: 2, dQ: -0.1 }   // CH8 (12000-20000 Hz)
       ]
     },
+    nothing_headphone_a: {
+      name: "Nothing HeadPhone (a)",
+      badge: "NOTHING HEADPHONE (A)",
+      description: "Profilo Nothing HeadPhone (a): Cuffia over-ear semi-trasparente con driver da 40mm, supporto Hi-Res LDAC, risposta equilibrata con medi ariosi e alti trasparenti.",
+      offsets: [
+        { dGain: 1, dQ: 0.0 },   // CH1 (20-99 Hz)
+        { dGain: -1, dQ: 0.1 },  // CH2 (100-199 Hz)
+        { dGain: -1, dQ: 0.0 },  // CH3 (200-399 Hz)
+        { dGain: 0, dQ: 0.0 },   // CH4 (400-999 Hz)
+        { dGain: 0, dQ: 0.0 },   // CH5 (1000-2999 Hz)
+        { dGain: 1, dQ: 0.0 },   // CH6 (3000-5999 Hz)
+        { dGain: 0, dQ: 0.0 },   // CH7 (6000-11999 Hz)
+        { dGain: 1, dQ: 0.0 }    // CH8 (12000-20000 Hz)
+      ]
+    },
     cmf_headphone_pro: {
       name: "CMF Headphone Pro",
       badge: "CMF HEADPHONE PRO",
