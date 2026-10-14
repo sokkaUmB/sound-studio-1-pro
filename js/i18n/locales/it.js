@@ -1,4 +1,4 @@
-﻿// js/i18n/locales/it.js - Modulo Lingua Italiano
+// js/i18n/locales/it.js - Modulo Lingua Italiano
 (function() {
   const LocaleIT = {
     meta: {
@@ -132,7 +132,7 @@
       cmf_buds_2: "Profilo CMF Buds 2 / 2a: Driver dinamico da 12.4mm con risposta in frequenza bilanciata e bassi energici.",
       cmf_buds_pro: "Calibrazione CMF Buds Pro: Bilanciamento del basso corposo (-1 dB a 110Hz) con incremento di chiarezza sul rullante a 3.3kHz (+1 dB).",
       cmf_buds: "Calibrazione standard CMF Buds: Snellimento della gamma medio-bassa (-1 dB) per risaltare la definizione ritmica.",
-      cmf_neckband_pro: "Profilo CMF Neckband Pro: Driver in titanio da 13.6mm con Ultra Bass 2.0 e 50dB di cancellazione attiva del rumore.",
+      cmf_neckband_pro: "Calibrazione CMF Neckband Pro: Driver titanio 13.6mm con Ultra Bass. De-mud sui medio-bassi (-1 dB a 250Hz), controllo sub-basso (+1 dB) e compensazione della gamma media/presenza (+1 dB a 1.5kHz, 3.3kHz e piatti) per bilanciare il tuning nativo a V e aprire le voci.",
       studio_flat: "Nessuna compensazione hardware applicata: curva fedele 1:1 al master discografico originale."
     },
     vault: {
