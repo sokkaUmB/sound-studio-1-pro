@@ -263,16 +263,16 @@
     cmf_neckband_pro: {
       name: "CMF Neckband Pro",
       badge: "CMF NECKBAND PRO",
-      description: "Profilo CMF Neckband Pro: Driver in titanio da 13.6mm con Ultra Bass 2.0 e 50dB di cancellazione attiva del rumore.",
+      description: "Calibrazione CMF Neckband Pro: Driver titanio 13.6mm con Ultra Bass. De-mud sui medio-bassi (-1 dB a 250Hz), controllo sub-basso (+1 dB) e compensazione della gamma media/presenza (+1 dB a 1.5kHz, 3.3kHz e piatti) per bilanciare il tuning nativo a V e aprire le voci.",
       offsets: [
-        { dGain: 3, dQ: -0.1 },  // CH1 (20-99 Hz)
-        { dGain: 1, dQ: 0.0 },   // CH2 (100-199 Hz)
-        { dGain: -1, dQ: 0.0 },  // CH3 (200-399 Hz)
+        { dGain: 1, dQ: 0.0 },   // CH1 (20-99 Hz) Sub-bass controllato
+        { dGain: 0, dQ: 0.0 },   // CH2 (100-199 Hz) Neutro anti-rimbombo
+        { dGain: -1, dQ: 0.1 },  // CH3 (200-399 Hz) Pulizia fango vocale
         { dGain: 0, dQ: 0.0 },   // CH4 (400-999 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH5 (1000-2999 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH6 (3000-5999 Hz)
-        { dGain: 1, dQ: 0.0 },   // CH7 (6000-11999 Hz)
-        { dGain: 0, dQ: 0.0 }    // CH8 (12000-20000 Hz)
+        { dGain: 1, dQ: 0.0 },   // CH5 (1000-2999 Hz) Recupero corpo vocale
+        { dGain: 1, dQ: 0.0 },   // CH6 (3000-5999 Hz) Definizione e presenza
+        { dGain: 1, dQ: 0.0 },   // CH7 (6000-11999 Hz) Brillantezza
+        { dGain: 1, dQ: 0.0 }    // CH8 (12000-20000 Hz) Spazialità e aria
       ]
     },
     studio_flat: {
