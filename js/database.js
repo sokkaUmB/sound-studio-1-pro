@@ -1,6 +1,6 @@
 ﻿// js/database.js - Surgically Calibrated PEQ Database for Nothing X
 // Catalogo arricchito: Pietre miliari mondiali + Top streaming per genere
-// Totale Artisti: 260 | Totale Album in Studio: 1825 | Profili PEQ Calibrati: 2123
+// Totale Artisti: 291 | Totale Album in Studio: 2060 | Profili PEQ Calibrati: 2389
 const MUSIC_DATABASE = {
   metal: {
     label: "Metal",
@@ -23076,6 +23076,847 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          vasco_rossi: {
+            label: "Vasco Rossi",
+            eq: {
+              name: "Vasco Master",
+              notes: "Firma rock d'autore italiano per Nothing X: punch solido a 52Hz e 140Hz su cassa e basso, controllo delle risonanze a 720Hz per pulire il mix, enfasi a 2400Hz per il timbro graffiato e roco di Vasco ed estensione aerea a 13500Hz sui piatti.",
+              bands: [
+                { freq: 52, gain: 2, q: 1.2 },
+                { freq: 140, gain: 1, q: 1.1 },
+                { freq: 300, gain: 0, q: 1.0 },
+                { freq: 720, gain: -1, q: 1.3 },
+                { freq: 2400, gain: 2, q: 1.2 },
+                { freq: 4800, gain: 1, q: 1.4 },
+                { freq: 8500, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              vr_ma_cosa_vuoi: {
+                label: "...Ma cosa vuoi che sia una canzone... (1978)",
+                eq: {
+                  name: "Cosa Vuoi 1978",
+                  notes: "Master analogico d'esordio cantautorale: calore a 55Hz e 160Hz per compensare il taglio vintage su nastro, corpo alle chitarre acustiche e pianoforte a 450Hz, voce giovanile presente a 2200Hz e addolcimento a 13000Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 160, gain: 2, q: 1.1 },
+                    { freq: 320, gain: 0, q: 1.0 },
+                    { freq: 450, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              vr_non_siamo_mica: {
+                label: "Non siamo mica gli americani! (1979)",
+                eq: {
+                  name: "Americani 1979",
+                  notes: "Transizione rock ballad con Albachiara: estensione sub a 50Hz, calore al basso a 150Hz, pulizia del fango a 650Hz, calore vocale a 2100Hz e rifinitura su pianoforte ed archi a 8500Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 13200, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              vr_colpa_d_alfredo: {
+                label: "Colpa d'Alfredo (1980)",
+                eq: {
+                  name: "Alfredo 1980",
+                  notes: "Ruvidezza hard rock bolognese: corpo solido a 58Hz, attacco del rullante a 180Hz, medi controllati a 800Hz e spinta graffiante a 2600Hz per le strofe parlate e chitarre di Solieri.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.1 },
+                    { freq: 310, gain: 0, q: 1.0 },
+                    { freq: 800, gain: -1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.4 },
+                    { freq: 8200, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              vr_siamo_solo_noi: {
+                label: "Siamo solo noi (1981)",
+                eq: {
+                  name: "Siamo Solo 1981",
+                  notes: "Inno rock generazionale: enfasi decisa a 55Hz e 135Hz per il celebre riff di basso di Golinelli, presenza d'impatto a 2500Hz per la voce rabbiosa e controllo sulle sibilanti analogiche a 5500Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2500, gain: 3, q: 1.2 },
+                    { freq: 5500, gain: -1, q: 1.4 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_vado_al_massimo: {
+                label: "Vado al massimo (1982)",
+                eq: {
+                  name: "Al Massimo 1982",
+                  notes: "Mix eclettico Sanremo: definizione del kick a 60Hz, separazione delle tastiere a 400Hz, voce penetrante e sfrontata a 2400Hz e apertura brillante a 9000Hz per il mix radiofonico.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 145, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 13800, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              vr_bollicine: {
+                label: "Bollicine (1983)",
+                eq: {
+                  name: "Bollicine 1983",
+                  notes: "Master new wave e rock: basso sintetico e cassa d'assalto a 54Hz/140Hz, ritmiche serrate a 700Hz, voce iconica in evidenza a 2300Hz e ariosita a 14000Hz per gli effetti synth e riverberi.",
+                  bands: [
+                    { freq: 54, gain: 3, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.1 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_cosa_succede: {
+                label: "Cosa succede in città (1985)",
+                eq: {
+                  name: "In Citta 1985",
+                  notes: "Produzione densa anni '80: controllo del kick compresso a 58Hz, pulizia del mid-bass a 280Hz, chitarre sature a 1900Hz e nitidezza sui piatti a 8800Hz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 1, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0, q: 1.1 },
+                    { freq: 1900, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              vr_ce_chi_dice_no: {
+                label: "C'è chi dice no (1987)",
+                eq: {
+                  name: "Chi Dice No 1987",
+                  notes: "Pietra miliare del rock da stadio: bassi profondi e granitici a 50Hz, solidita a 145Hz, crunch chitarristico potente a 2500Hz e spazialita epica a 13000Hz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 145, gain: 2, q: 1.1 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 720, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_liberi_liberi: {
+                label: "Liberi liberi (1989)",
+                eq: {
+                  name: "Liberi Lib 1989",
+                  notes: "Mix raffinato ed introspettivo: toni intimi, bassi vellutati a 52Hz/150Hz, calore del piano e delle chitarre a 500Hz e timbro vocale caldo e malinconico a 2200Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_gli_spari_sopra: {
+                label: "Gli spari sopra (1993)",
+                eq: {
+                  name: "Spari Sopra 1993",
+                  notes: "Mastering moderno di grande impatto americano: sub tellurico a 48Hz, muro di chitarre a 2200Hz, rullante secco a 190Hz e brillantezza cristallina a 14000Hz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 750, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_nessun_pericolo: {
+                label: "Nessun pericolo... per te (1996)",
+                eq: {
+                  name: "Nessun Per 1996",
+                  notes: "Sound duro e maturo con Sally: impatto ritmico a 52Hz/140Hz, profondita a 350Hz, resa dinamica per la voce nuda a 2100Hz e rifinitura sui dettagli acustici a 9500Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 350, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 9500, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              vr_canzoni_per_me: {
+                label: "Canzoni per me (1998)",
+                eq: {
+                  name: "Canzoni Me 1998",
+                  notes: "Mix acustico d'autore ed essenziale: risonanza rotonda a 56Hz, calore di contrabbasso e chitarre folk a 250Hz, intimita vocale a 2000Hz ed equilibrio aereo a 12500Hz.",
+                  bands: [
+                    { freq: 56, gain: 2, q: 1.1 },
+                    { freq: 145, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 0, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_stupido_hotel: {
+                label: "Stupido hotel (2001)",
+                eq: {
+                  name: "Stupido Hot 2001",
+                  notes: "Incursioni elettroniche e loop moderni: sub-bass compatto a 46Hz, pulizia sui bassi a 180Hz, definizione dei synth a 1200Hz e presenza vocale graffiante a 2700Hz.",
+                  bands: [
+                    { freq: 46, gain: 3, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 720, gain: -1, q: 1.3 },
+                    { freq: 2700, gain: 2, q: 1.2 },
+                    { freq: 4900, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 13800, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_buoni_o_cattivi: {
+                label: "Buoni o cattivi (2004)",
+                eq: {
+                  name: "Buoni Cattiv 04",
+                  notes: "Produzione hard rock moderno: basso distorto e kick potente a 50Hz/130Hz, chitarre pesanti a 2200Hz, attenuazione asprezza a 4500Hz e brillantezza a 13500Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 750, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: -1, q: 1.4 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_il_mondo_che_vorrei: {
+                label: "Il mondo che vorrei (2008)",
+                eq: {
+                  name: "Mondo Vorrei 08",
+                  notes: "Mastering ad alto volume tipico anni 2000: distensione dinamica a 52Hz, morbidezza sui medi a 750Hz per mitigare la compressione e voce scolpita a 2400Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 750, gain: -1, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13200, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              vr_vivere_o_niente: {
+                label: "Vivere o niente (2011)",
+                eq: {
+                  name: "Vivere Nient 11",
+                  notes: "Tessiture raffinate tra rock ed archi: bassi controllati a 50Hz, calore orchestrale a 320Hz, articolazione vocale definita a 2300Hz e ariosita a 14000Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 8700, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_sono_innocente: {
+                label: "Sono innocente (2014)",
+                eq: {
+                  name: "Sono Innoce 2014",
+                  notes: "Sound metallico e moderno: sub incisivo a 45Hz, velocita nei transienti di batteria a 160Hz, chitarre abrasive a 2600Hz e rifinitura ultra-high a 15000Hz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 780, gain: -1, q: 1.3 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.4 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              vr_siamo_qui: {
+                label: "Siamo qui (2021)",
+                eq: {
+                  name: "Siamo Qui 2021",
+                  notes: "Mastering contemporaneo Hi-Res: cassa organica e rotonda a 48Hz, separazione millimetrica degli strumenti a 600Hz, timbro vocale autentico a 2200Hz e aria a 16000Hz.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 1, q: 1.1 },
+                    { freq: 16000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          zucchero: {
+            label: "Zucchero",
+            eq: {
+              name: "Zucchero Master",
+              notes: "Impronta soul, blues e R&B mediterraneo per Nothing X: corpo vellutato del basso a 54Hz e 135Hz, calore dell'organo Hammond e sezione fiati a 550Hz, voce roca e potente a 2300Hz e dettaglio raffinato a 12500Hz.",
+              bands: [
+                { freq: 54, gain: 2, q: 1.1 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 280, gain: 0, q: 1.0 },
+                { freq: 550, gain: 1, q: 1.2 },
+                { freq: 2300, gain: 2, q: 1.3 },
+                { freq: 4500, gain: -1, q: 1.4 },
+                { freq: 8200, gain: 1, q: 1.1 },
+                { freq: 12500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              zuc_un_po_di_zucchero: {
+                label: "Un po' di Zucchero (1983)",
+                eq: {
+                  name: "Un Po Zucch 1983",
+                  notes: "Esordio pop melodico italiano: bassi morbidi a 60Hz, compensazione ritmica a 160Hz, voce giovanile pulita a 2100Hz e smussamento delle sibilanti a 6000Hz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 160, gain: 1, q: 1.1 },
+                    { freq: 320, gain: 0, q: 1.0 },
+                    { freq: 520, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4300, gain: 0, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_randy_jackson: {
+                label: "Zucchero & The Randy Jackson Band (1985)",
+                eq: {
+                  name: "Randy Jack 1985",
+                  notes: "Svolta funk/R&B californiana: slap bass e cassa dinamica a 52Hz/140Hz, fiati brillanti a 1800Hz, voce energica a 2400Hz e apertura a 11000Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_rispetto: {
+                label: "Rispetto (1986)",
+                eq: {
+                  name: "Rispetto 1986",
+                  notes: "Consolidamento soul rock: kick potente a 56Hz, rullante corposo a 180Hz, tastiere analogiche calde a 600Hz e ruggito vocale esaltato a 2500Hz.",
+                  bands: [
+                    { freq: 56, gain: 3, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.1 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13200, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_blues: {
+                label: "Blue's (1987)",
+                eq: {
+                  name: "Blues 1987",
+                  notes: "Capolavoro rhythm & blues con Memphis Horns: sub-bass rotondo a 50Hz, calore viscerale del basso a 130Hz, fiati penetranti a 2200Hz e piatti ariosi a 13000Hz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 580, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_oro_incenso_birra: {
+                label: "Oro, incenso e birra (1989)",
+                eq: {
+                  name: "Oro Incenso 1989",
+                  notes: "Master leggendario con Eric Clapton: cassa profonda a 48Hz, corpo valvolare a 300Hz, chitarra blues a 2400Hz e limpidezza a 14000Hz per i cori gospel.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.1 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 620, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_miserere: {
+                label: "Miserere (1992)",
+                eq: {
+                  name: "Miserere 1992",
+                  notes: "Toni scuri, rock e lirici con Pavarotti: estensione grave a 45Hz, spessore orchestrale a 350Hz, timbro drammatico a 2100Hz e riverberi solenni a 12000Hz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.2 },
+                    { freq: 350, gain: 1, q: 1.1 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 12000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_spirito_divino: {
+                label: "Spirito DiVino (1995)",
+                eq: {
+                  name: "Spirito Div 1995",
+                  notes: "Registrato a New Orleans con groove delta blues: calore a 55Hz, snare legnoso a 170Hz, organo caldo a 500Hz e voce esplosiva e graffiante a 2600Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 170, gain: 2, q: 1.1 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_bluesugar: {
+                label: "Bluesugar (1998)",
+                eq: {
+                  name: "Bluesugar 1998",
+                  notes: "Produzione ricca e psichedelica con Mark Knopfler: bassi avvolgenti a 48Hz, ritmiche calde a 250Hz, chitarre pulite a 2000Hz e ariosita a 13500Hz.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 620, gain: 0, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_shake: {
+                label: "Shake (2001)",
+                eq: {
+                  name: "Shake 2001",
+                  notes: "Incursioni dance/blues con John Lee Hooker in Baila: kick compatto ed energico a 52Hz/125Hz, voce compressa a 2400Hz e brillantezza moderna a 9500Hz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9500, gain: 1, q: 1.1 },
+                    { freq: 13200, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_fly: {
+                label: "Fly (2006)",
+                eq: {
+                  name: "Fly 2006",
+                  notes: "Produzione analogica curata da Don Was: basso vintage a 58Hz, chitarre acustiche calde a 400Hz, voce intima a 2200Hz e roll-off naturale a 14000Hz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 145, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 400, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 0, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_chocabeck: {
+                label: "Chocabeck (2010)",
+                eq: {
+                  name: "Chocabeck 2010",
+                  notes: "Atmosfere bucoliche e intime prodotte da Brendan O'Brien: risonanza profonda a 50Hz, calore del piano a 320Hz e dolcezza vocale a 2000Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8700, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_la_sesion_cubana: {
+                label: "La sesión cubana (2012)",
+                eq: {
+                  name: "Sesion Cuba 2012",
+                  notes: "Sonorita latine e percussioni tradizionali all'Avana: congas e kick a 65Hz/150Hz, sezione fiati vivace a 1800Hz e spazialita radiosa a 12000Hz.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.1 },
+                    { freq: 310, gain: 0, q: 1.0 },
+                    { freq: 620, gain: 0, q: 1.2 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 12000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_black_cat: {
+                label: "Black Cat (2016)",
+                eq: {
+                  name: "Black Cat 2016",
+                  notes: "Ritorno alle radici roots rock prodotte da T-Bone Burnett: dinamica aperta, percussioni ruvide a 55Hz, dobro a 2500Hz e trasparenza a 13000Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_doc: {
+                label: "D.O.C. (2019)",
+                eq: {
+                  name: "DOC 2019",
+                  notes: "Sintesi tra gospel e moderna musica elettronica: sub 808 calibrato a 44Hz, chiarezza ritmica a 180Hz, voce presente a 2300Hz e ariosita a 15000Hz.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_discover: {
+                label: "Discover (2021)",
+                eq: {
+                  name: "Discover 2021",
+                  notes: "Reinterpretazioni acustiche e duetti: calore d'ambiente a 50Hz, fedelta timbrica per le voci a 2200Hz e microdettaglio setoso a 14000Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              zuc_discover_2: {
+                label: "Discover II (2024)",
+                eq: {
+                  name: "Discover II 2024",
+                  notes: "Seconda parte del progetto cover: transienti raffinati a 48Hz, spazialita tridimensionale a 600Hz, voce frontale a 2400Hz e aria a 16000Hz.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 1, q: 1.1 },
+                    { freq: 16000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          ptn: {
+            label: "Pinguini Tattici Nucleari",
+            eq: {
+              name: "PTN Master EQ",
+              notes: "Indie pop-rock italiano contemporaneo: kick moderno e sub pulito a 48Hz/130Hz, separazione nitida tra chitarre acustiche e synth a 500Hz, voce frontale e chiara di Zanotti a 2600Hz e ariosita corale a 14000Hz.",
+              bands: [
+                { freq: 48, gain: 2, q: 1.1 },
+                { freq: 130, gain: 1, q: 1.2 },
+                { freq: 260, gain: 0, q: 1.0 },
+                { freq: 500, gain: 0, q: 1.2 },
+                { freq: 2600, gain: 2, q: 1.3 },
+                { freq: 4600, gain: 1, q: 1.2 },
+                { freq: 9000, gain: 1, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              ptn_il_re_e_nudo: {
+                label: "Il re è nudo (2014)",
+                eq: {
+                  name: "Re E Nudo 2014",
+                  notes: "Esordio autoprodotto ironico e folk rock: rinforzo della cassa a 55Hz, pienezza del basso a 150Hz, calore delle chitarre a 600Hz e voce grezza a 2400Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.1 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 1, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              ptn_diamo_un_calcio: {
+                label: "Diamo un calcio all'aldilà (2015)",
+                eq: {
+                  name: "Calcio Aldi 2015",
+                  notes: "Maturazione progressive indie rock: articolazione ritmica a 52Hz/140Hz, precisione negli intrecci polifonici a 700Hz e presenza vivace a 2500Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 700, gain: 0, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.2 },
+                    { freq: 8700, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              ptn_gioventu_brucata: {
+                label: "Gioventù brucata (2017)",
+                eq: {
+                  name: "Gioventu Bru 17",
+                  notes: "Crescita sonora con Irene e Tetris: kick compatto a 50Hz, basso morbido a 135Hz, pianoforte luminoso a 2200Hz e dettaglio sui piatti a 10000Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13800, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              ptn_fuori_dall_hype: {
+                label: "Fuori dall'hype (2019)",
+                eq: {
+                  name: "Fuori Hype 2019",
+                  notes: "Successo Sanremo con Ringo Starr: missaggio pop moderno, sub controllato a 46Hz, voce nitida e cristallina a 2800Hz e brillantezza a 13500Hz.",
+                  bands: [
+                    { freq: 46, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 1, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.2 },
+                    { freq: 2800, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              ptn_fake_news: {
+                label: "Fake News (2022)",
+                eq: {
+                  name: "Fake News 2022",
+                  notes: "Produzione da stadio ad alto impatto con Giovani Wannabe: bassi imponenti a 44Hz, equilibrio tra tastiere e chitarre a 450Hz, voce protagonista a 2700Hz e apertura a 15000Hz.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 450, gain: 0, q: 1.2 },
+                    { freq: 2700, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 1, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              ptn_hello_world: {
+                label: "Hello World (2024)",
+                eq: {
+                  name: "Hello World 2024",
+                  notes: "Mastering moderno ad alta risoluzione: bassi rotondi e definiti a 45Hz, trasparenza sulle armonie vocali a 2600Hz e ariosita spaziale a 16000Hz.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 128, gain: 1, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 520, gain: 0, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9100, gain: 1, q: 1.1 },
+                    { freq: 16000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          thegiornalisti: {
+            label: "Thegiornalisti",
+            eq: {
+              name: "Thegiornalisti",
+              notes: "Itpop e synthpop italiano anni '80 per Nothing X: cassa ritmica incisiva a 50Hz, calore del basso a 140Hz, pad di sintetizzatori avvolgenti a 600Hz, voce malinconica di Paradiso a 2300Hz e brillantezza a 12500Hz.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.2 },
+                { freq: 140, gain: 1, q: 1.1 },
+                { freq: 280, gain: 0, q: 1.0 },
+                { freq: 600, gain: 1, q: 1.2 },
+                { freq: 2300, gain: 2, q: 1.2 },
+                { freq: 4500, gain: 0, q: 1.3 },
+                { freq: 8500, gain: 1, q: 1.1 },
+                { freq: 12500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              tg_vol_1: {
+                label: "Vol. 1 (2011)",
+                eq: {
+                  name: "Vol 1 2011",
+                  notes: "Esordio lo-fi indie rock romano: calore analogico a 60Hz per compensare il mix grezzo, presenza del basso a 180Hz e voce roca a 2000Hz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.1 },
+                    { freq: 320, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 12000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              tg_vecchio: {
+                label: "Vecchio (2012)",
+                eq: {
+                  name: "Vecchio 2012",
+                  notes: "Atmosfere acustiche e intime con pianoforte: morbidezza a 55Hz, risonanza delle corde a 350Hz, timbro vocale autentico a 2200Hz ed equilibrio a 10000Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 1, q: 1.2 },
+                    { freq: 350, gain: 1, q: 1.1 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 0, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              tg_fuoricampo: {
+                label: "Fuoricampo (2014)",
+                eq: {
+                  name: "Fuoricampo 2014",
+                  notes: "La svolta synthpop con Promiscuità: batterie elettroniche a 52Hz/120Hz, sintetizzatori Juno a 550Hz e ritornelli aperti a 2500Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              tg_completamente: {
+                label: "Completamente Sold Out (2016)",
+                eq: {
+                  name: "Completamente 16",
+                  notes: "Esplosione mainstream con Riccione e Sold Out: punch moderno a 48Hz, rullanti riverberati a 200Hz, voce scolpita a 2600Hz e ariosita a 13000Hz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              tg_love: {
+                label: "Love (2018)",
+                eq: {
+                  name: "Love 2018",
+                  notes: "Produzione pop da classifica prodotta da Dardust: kick profondo a 45Hz, bass synth a 130Hz, voce vellutata a 2400Hz e lucentezza digitale a 14500Hz.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
           }
         }
       },
@@ -28194,6 +29035,541 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          caparezza: {
+            label: "Caparezza",
+            eq: {
+              name: "Caparezza Master",
+              notes: "Conscious rap e crossover rock per Nothing X: kick serrato a 48Hz per il groove hip hop, chiarezza del basso a 140Hz, pulizia sulle frequenze medie a 650Hz, articolazione chirurgica delle metriche a 2700Hz e ariosita a 13000Hz.",
+              bands: [
+                { freq: 48, gain: 2, q: 1.2 },
+                { freq: 140, gain: 1, q: 1.1 },
+                { freq: 280, gain: 0, q: 1.0 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2700, gain: 2, q: 1.3 },
+                { freq: 4800, gain: 1, q: 1.2 },
+                { freq: 8500, gain: 1, q: 1.1 },
+                { freq: 13000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              cap_punto_interrogativo: {
+                label: "?! (2000)",
+                eq: {
+                  name: "Punto Interr 00",
+                  notes: "Esordio di culto hip hop: kick punchy a 54Hz, rullanti boom bap a 190Hz, rime caustiche chiare a 2500Hz e campionamenti vintage controllati a 6000Hz.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 190, gain: 2, q: 1.1 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 620, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              cap_verita_supposte: {
+                label: "Verità supposte (2003)",
+                eq: {
+                  name: "Verita Supp 2003",
+                  notes: "Esplosione con Fuori dal tunnel: groove funky/rap a 50Hz/135Hz, chitarre rock a 2000Hz, voce frontale e tagliente a 2800Hz e brillantezza a 12500Hz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2800, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cap_habemus_capa: {
+                label: "Habemus Capa (2006)",
+                eq: {
+                  name: "Habemus Capa 06",
+                  notes: "Concept teatrale e satirico: bassi oscuri a 48Hz, arrangiamenti polifonici a 400Hz, timbro vocale sarcastico a 2600Hz e pulizia a 8000Hz.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 400, gain: 1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4700, gain: 0, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cap_le_dimensioni: {
+                label: "Le dimensioni del mio caos (2008)",
+                eq: {
+                  name: "Dimens Caos 2008",
+                  notes: "Fonoromanzo crossover rock/rap con Eroe e Vieni a ballare in Puglia: chitarre pesanti a 2200Hz, cassa d'assalto a 50Hz e voce penetrante a 2700Hz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 720, gain: -1, q: 1.3 },
+                    { freq: 2700, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cap_il_sogno_eretico: {
+                label: "Il sogno eretico (2011)",
+                eq: {
+                  name: "Sogno Eret 2011",
+                  notes: "Produzione ricca con Goodbye Malinconia: solidita a 46Hz, tastiere e sinfonismi a 550Hz, timbro scandito a 2600Hz e dettagli a 13500Hz.",
+                  bands: [
+                    { freq: 46, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cap_museica: {
+                label: "Museica (2014)",
+                eq: {
+                  name: "Museica 2014",
+                  notes: "Concept sulle opere d'arte premiato con la Targa Tenco: chitarre dinamiche, punch a 48Hz/140Hz, sibilanti smussate a 5500Hz e ariosita a 14000Hz.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 5500, gain: -1, q: 1.4 },
+                    { freq: 8700, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cap_prisoner_709: {
+                label: "Prisoner 709 (2017)",
+                eq: {
+                  name: "Prisoner 709 17",
+                  notes: "Sound introspettivo e metal con Ti fa stare bene: sub-bass profondo a 44Hz, chitarre djent/rock a 2200Hz e voce intima a 2500Hz.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 750, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cap_exuvia: {
+                label: "Exuvia (2021)",
+                eq: {
+                  name: "Exuvia 2021",
+                  notes: "Viaggio immersivo nella foresta sonora: sub avvolgente a 42Hz, percussioni tribali a 150Hz, atmosfere orchestrali a 700Hz e ariosita a 15000Hz.",
+                  bands: [
+                    { freq: 42, gain: 3, q: 1.2 },
+                    { freq: 150, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 700, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 2, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          jovanotti: {
+            label: "Jovanotti",
+            eq: {
+              name: "Jovanotti Master",
+              notes: "Eclettismo sonoro dal rap alle percussioni world per Nothing X: sub dinamico a 46Hz, corpo ritmico per basso e percussioni a 130Hz, calore etnico a 450Hz, timbro vocale ritmico e declamato a 2500Hz e ariosita a 14000Hz.",
+              bands: [
+                { freq: 46, gain: 2, q: 1.1 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 270, gain: 0, q: 1.0 },
+                { freq: 450, gain: 1, q: 1.2 },
+                { freq: 2500, gain: 2, q: 1.3 },
+                { freq: 4700, gain: 0, q: 1.2 },
+                { freq: 8800, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              jov_for_president: {
+                label: "Jovanotti for President (1988)",
+                eq: {
+                  name: "President 1988",
+                  notes: "Old school rap/dance italiana con Claudio Cecchetto: cassa 808 potente a 55Hz, snare brillante a 200Hz, voce giovanile ritmata a 2600Hz e piatti a 10000Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 160, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              jov_la_mia_moto: {
+                label: "La mia moto (1989)",
+                eq: {
+                  name: "La Mia Moto 1989",
+                  notes: "Party rap energico e spensierato: cassa rotonda a 58Hz, linea di basso a 150Hz, controllo asprezze a 4500Hz e voce in primo piano a 2400Hz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 680, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              jov_giovani: {
+                label: "Giovani Jovanotti (1990)",
+                eq: {
+                  name: "Giovani Jov 1990",
+                  notes: "Transizione funk/hip hop: groove enfatizzato a 52Hz/140Hz, chitarre funky a 1800Hz e addolcimento delle alte frequenze a 11000Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              jov_tribu_balla: {
+                label: "Una tribù che balla (1991)",
+                eq: {
+                  name: "Tribu Balla 1991",
+                  notes: "Svolta conscious hip hop e prime influenze etniche: kick d'impatto a 50Hz, percussioni definite a 350Hz e testo scandito a 2300Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 350, gain: 1, q: 1.1 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 13200, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_lorenzo_1992: {
+                label: "Lorenzo 1992 (1992)",
+                eq: {
+                  name: "Lorenzo 1992",
+                  notes: "Maturazione d'autore con Ragazzo fortunato e Non m'annoio: basso caldo a 54Hz, rullanti secchi a 180Hz e voce diretta e melodica a 2500Hz.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_lorenzo_1994: {
+                label: "Lorenzo 1994 (1994)",
+                eq: {
+                  name: "Lorenzo 1994",
+                  notes: "Capolavoro con Penso positivo e Serenata rap: sub profondo a 48Hz, chitarre crossover a 2000Hz e voce calda e ritmata a 2400Hz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 680, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_lorenzo_1997: {
+                label: "Lorenzo 1997 - L'albero (1997)",
+                eq: {
+                  name: "L Albero 1997",
+                  notes: "Contaminazioni world music con Bella: calore di strumenti a corda a 380Hz, percussioni vivaci a 800Hz e ariosita a 13000Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 380, gain: 1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_capo_horn: {
+                label: "Lorenzo 1999 - Capo Horn (1999)",
+                eq: {
+                  name: "Capo Horn 1999",
+                  notes: "Sonorita solari con Per te e Un raggio di sole: morbidezza nei bassi a 50Hz, chitarre acustiche avvolgenti a 400Hz e voce nitida a 2200Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 400, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_quinto_mondo: {
+                label: "Lorenzo 2002 - Il quinto mondo (2002)",
+                eq: {
+                  name: "Quinto Mondo 02",
+                  notes: "Mix polifonico con Salvami: groove percussivo a 52Hz/150Hz, fiati esplosivi a 2500Hz e dinamica aperta a 12000Hz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 620, gain: 0, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 8700, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              jov_buon_sangue: {
+                label: "Buon sangue (2005)",
+                eq: {
+                  name: "Buon Sangue 2005",
+                  notes: "Sperimentazione electro-funk con Mi fido di te: bass synth tagliente a 48Hz, beat sincopato a 130Hz e voce intima a 2200Hz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_safari: {
+                label: "Safari (2008)",
+                eq: {
+                  name: "Safari 2008",
+                  notes: "Produzione grandiosa con A te: bassi pieni a 50Hz, pianoforte emotivo a 320Hz, voce limpida a 2400Hz e riverberi ariosi a 14000Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 600, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 0, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_ora: {
+                label: "Ora (2011)",
+                eq: {
+                  name: "Ora 2011",
+                  notes: "Elettronica da club ed electro pop con Il più grande spettacolo: cassa club a 45Hz, synth brillanti a 3500Hz e voce esaltata a 2600Hz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_cc_2015: {
+                label: "Lorenzo 2015 CC. (2015)",
+                eq: {
+                  name: "Lorenzo 2015 CC",
+                  notes: "Produzione internazionale con Sabato e L'estate addosso: kick moderno a 44Hz, texture digitali a 1500Hz e lucentezza a 14500Hz.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.2 },
+                    { freq: 128, gain: 1, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4700, gain: 1, q: 1.3 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_oh_vita: {
+                label: "Oh, vita! (2017)",
+                eq: {
+                  name: "Oh Vita 2017",
+                  notes: "Produzione essenziale e cruda curata da Rick Rubin: chitarra acustica e voce in presa diretta, bassi caldi a 55Hz e roll-off morbido a 12500Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 550, gain: 0, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 0, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 0.9 }
+                  ]
+                }
+              },
+              jov_sulla_luna: {
+                label: "Lorenzo sulla Luna (2019)",
+                eq: {
+                  name: "Sulla Luna 2019",
+                  notes: "Concept analogico prodotto da Rick Rubin dedicato alla luna: suoni vellutati a 50Hz, spazialita notturna a 450Hz e voce calda a 2100Hz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 450, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jov_disco_del_sole: {
+                label: "Il disco del Sole (2022)",
+                eq: {
+                  name: "Disco Sole 2022",
+                  notes: "Festa itinerante tra afrobeat, pop ed elettronica: cassa travolgente a 46Hz, percussioni tropicali a 900Hz e ariosita a 15000Hz.",
+                  bands: [
+                    { freq: 46, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 900, gain: 1, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.3 },
+                    { freq: 9200, gain: 1, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          rose_villain: {
+            label: "Rose Villain",
+            eq: {
+              name: "Rose Villain Mas",
+              notes: "Dark pop e trap urbana per Nothing X: bassi pesanti 808 a 42Hz, punch secco a 120Hz per cassa e snare, taglio a 700Hz per pulire le risonanze, voce femminile brillante e sensuale a 2900Hz e lucentezza a 15000Hz.",
+              bands: [
+                { freq: 42, gain: 3, q: 1.1 },
+                { freq: 120, gain: 1, q: 1.2 },
+                { freq: 250, gain: 0, q: 1.0 },
+                { freq: 700, gain: -1, q: 1.3 },
+                { freq: 2900, gain: 2, q: 1.3 },
+                { freq: 4900, gain: 1, q: 1.2 },
+                { freq: 9500, gain: 1, q: 1.1 },
+                { freq: 15000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              rv_radio_gotham: {
+                label: "Radio Gotham (2023)",
+                eq: {
+                  name: "Radio Gotham 23",
+                  notes: "Sound oscuro e cyberpunk con Michelle Pfeiffer: sub tellurico a 40Hz, sintetizzatori graffianti a 1800Hz, voce distorta e pulita bilanciata a 2800Hz e riverberi spaziosi a 14000Hz.",
+                  bands: [
+                    { freq: 40, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 720, gain: -1, q: 1.3 },
+                    { freq: 2800, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              rv_radio_sakura: {
+                label: "Radio Sakura (2024)",
+                eq: {
+                  name: "Radio Sakura 24",
+                  notes: "Evoluzione pop e fioritura melodica con Click boom!: kick energico a 44Hz, chitarre melodiche a 500Hz, voce cristallina ed energica a 3000Hz e ariosita a 15500Hz.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.2 },
+                    { freq: 2900, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9500, gain: 2, q: 1.1 },
+                    { freq: 15500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          anna: {
+            label: "Anna",
+            eq: {
+              name: "Anna Master EQ",
+              notes: "Trap e baddie rap milanese per Nothing X: sub-bass imponente e aggressivo a 40Hz, attacco del kick a 115Hz, frequenze medie controllate a 600Hz, flow rap serrato e vocals in primo piano a 2900Hz e apertura tagliente a 14000Hz.",
+              bands: [
+                { freq: 40, gain: 3, q: 1.1 },
+                { freq: 115, gain: 2, q: 1.2 },
+                { freq: 240, gain: 0, q: 1.0 },
+                { freq: 600, gain: -1, q: 1.3 },
+                { freq: 2900, gain: 2, q: 1.3 },
+                { freq: 5000, gain: 1, q: 1.2 },
+                { freq: 9200, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              anna_vera_baddie: {
+                label: "Vera Baddie (2024)",
+                eq: {
+                  name: "Vera Baddie 2024",
+                  notes: "Album d'esordio da record con 30°C e Bando: sub 808 ultra-profondo a 38Hz, rullanti trap taglienti a 180Hz, voce frontale, acuta e ritmata a 2950Hz e brillantezza moderna a 15000Hz.",
+                  bands: [
+                    { freq: 38, gain: 3, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.1 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 620, gain: -1, q: 1.3 },
+                    { freq: 2950, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9400, gain: 2, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
           }
         }
       }
@@ -30374,6 +31750,2953 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          laura_pausini: {
+            label: "Laura Pausini",
+            eq: {
+              name: "Pausini Master",
+              notes: "Firma sonora pop internazionale: controllo del sub-kick a 55Hz, calore del registro medio a 140Hz, enfasi sulla proiezione vocale a 2.2kHz e ariosita cristallina a 14kHz su Nothing X.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.1 },
+                { freq: 140, gain: 1, q: 1.1 },
+                { freq: 280, gain: 0, q: 1.0 },
+                { freq: 700, gain: 1, q: 1.1 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 4500, gain: 1, q: 1.2 },
+                { freq: 7500, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              lp_laura_pausini: {
+                label: "Laura Pausini (1993)",
+                eq: {
+                  name: "Pausini 1993",
+                  notes: "Mix d'esordio dei primi anni 90: rinforzo della gamma bassa a 60Hz per compensare il mastering digitale giovanile e ammorbidimento a 4.5kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 680, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 1, q: 1.2 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_laura: {
+                label: "Laura (1994)",
+                eq: {
+                  name: "Laura 1994",
+                  notes: "Produzione pop melodica (Strani amori): corpo alle ritmiche di basso a 135Hz e risalto della limpidezza vocale naturale a 2.4kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 700, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_le_cose_che_vivi: {
+                label: "Le cose che vivi (1996)",
+                eq: {
+                  name: "Cose Che Vivi 96",
+                  notes: "Arrangiamenti acustici e sinfonici con la London Symphony: respiro orchestrale a 150Hz, calore alle chitarre e brillantezza setosa a 8.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_la_mia_risposta: {
+                label: "La mia risposta (1998)",
+                eq: {
+                  name: "Mia Risposta 98",
+                  notes: "Incursione nel soul e R&B moderno: groove di basso rotondo a 120Hz, snap del rullante a 2.2kHz e contenimento delle sibilanti a 7kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 7000, gain: 0, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_tra_te_e_il_mare: {
+                label: "Tra te e il mare (2000)",
+                eq: {
+                  name: "Tra Te E Il Mare",
+                  notes: "Mix pop-rock d'autore firmato Antonacci: attacco solido della cassa a 50Hz, chitarre acustiche incisive a 1.9kHz e ariosita aperta a 15kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_from_the_inside: {
+                label: "From the Inside (2002)",
+                eq: {
+                  name: "From The Inside",
+                  notes: "Mastering dance-pop americano: sub-bass compatto a 48Hz, scooping a 300Hz per pulire il mix e brillantezza brillante per i synth lead.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 300, gain: -2, q: 1.3 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_resta_in_ascolto: {
+                label: "Resta in ascolto (2004)",
+                eq: {
+                  name: "Resta In Ascolto",
+                  notes: "Svolta pop-rock grintosa: mordente delle chitarre elettriche a 850Hz, rullante granitico e risalto del timbro vocale graffiante a 2.6kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 850, gain: 2, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_io_canto: {
+                label: "Io canto (2006)",
+                eq: {
+                  name: "Io Canto 2006",
+                  notes: "Tributo alla canzone d'autore italiana: calore analogico sui bassi a 140Hz, naturalezza acustica delle corde e setosita sulle medie a 2kHz.",
+                  bands: [
+                    { freq: 58, gain: 1, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_primavera_in_anticipo: {
+                label: "Primavera in anticipo (2008)",
+                eq: {
+                  name: "Primavera 2008",
+                  notes: "Sound moderno e aperto: dinamica spaziosa per i duetti, bassi controllati a 54Hz e brillantezza sulle frequenze aeree a 15kHz.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_inedito: {
+                label: "Inedito (2011)",
+                eq: {
+                  name: "Inedito 2011",
+                  notes: "Mastering moderno ad alta intensita: rinforzo della cassa a 50Hz, precisione chirurgica sui transienti vocali a 2.5kHz e alti puliti.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.3 },
+                    { freq: 780, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 5200, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_simili: {
+                label: "Simili (2015)",
+                eq: {
+                  name: "Simili 2015",
+                  notes: "Contaminazioni synth-pop ed elettroniche: sub-kick vigoroso a 48Hz, controllo delle frequenze basse a 300Hz e brillantezza sui riverberi.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 300, gain: -2, q: 1.3 },
+                    { freq: 820, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_laura_xmas: {
+                label: "Laura Xmas (2016)",
+                eq: {
+                  name: "Laura Xmas 2016",
+                  notes: "Big band jazz e swing registrata con Patrick Williams: calore avvolgente del contrabbasso a 150Hz, corpo degli ottoni e archi vellutati.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 3, q: 1.2 },
+                    { freq: 340, gain: 1, q: 1.1 },
+                    { freq: 650, gain: 1, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lp_fatti_sentire: {
+                label: "Fatti sentire (2018)",
+                eq: {
+                  name: "Fatti Sentire 18",
+                  notes: "Pop raffinato con accenti reggaeton e ballad d'autore: punch a 60Hz, nitidezza nelle strofe a 2.2kHz e morbidezza alle alte frequenze.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_anime_parallele: {
+                label: "Anime parallele (2023)",
+                eq: {
+                  name: "Anime Parallele",
+                  notes: "Produzione contemporanea ad altissima definizione: sub profondo a 45Hz, trasparenza totale sulle medie e palco stereofonico arioso a 16kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 270, gain: -2, q: 1.3 },
+                    { freq: 850, gain: 1, q: 1.0 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9500, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lp_io_canto_2: {
+                label: "Io canto 2 (2026)",
+                eq: {
+                  name: "Io Canto 2 2026",
+                  notes: "Mastering acustico e orchestrale di nuova generazione: massima fedelta armonica sui duetti vocali a 2kHz e texture di archi lussureggianti.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          eros_ramazzotti: {
+            label: "Eros Ramazzotti",
+            eq: {
+              name: "Ramazzotti Mast",
+              notes: "Firma pop-rock mediterranea: definizione del basso elettrico a 120Hz, corpo a 250Hz, valorizzazione del peculiare timbro vocale a 1.8kHz e 3.5kHz.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.1 },
+                { freq: 120, gain: 2, q: 1.2 },
+                { freq: 250, gain: 1, q: 1.1 },
+                { freq: 700, gain: 1, q: 1.0 },
+                { freq: 1800, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 1, q: 1.2 },
+                { freq: 7500, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              er_cuori_agitati: {
+                label: "Cuori agitati (1985)",
+                eq: {
+                  name: "Cuori Agitati 85",
+                  notes: "Debutto synth-pop anni 80 (Terra promessa): estensione nei bassi a 60Hz e attenuazione del riverbero digitale vintage a 4.2kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 650, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 1, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 7200, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_nuovi_eroi: {
+                label: "Nuovi eroi (1986)",
+                eq: {
+                  name: "Nuovi Eroi 1986",
+                  notes: "Trionfo sanremese (Adesso tu): corpo acustico a 220Hz, morbidezza del basso e presenza vocale intima e calda a 1.7kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 1700, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 0, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_in_certi_momenti: {
+                label: "In certi momenti (1987)",
+                eq: {
+                  name: "Certi Momenti 87",
+                  notes: "Pop-rock internazionale (duetto Patsy Kensit): precisione ritmica, chitarre pulite e brillantezza rifinita sulle alte frequenze.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: 1, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_musica_e: {
+                label: "Musica è (1988)",
+                eq: {
+                  name: "Musica E 1988",
+                  notes: "Opera pop sinfonica e suite orchestrali: profondita dinamica nei bassi a 50Hz, calore negli archi a 160Hz e apertura grandiosa.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 160, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              er_in_ogni_senso: {
+                label: "In ogni senso (1990)",
+                eq: {
+                  name: "In Ogni Senso 90",
+                  notes: "Produzione transatlantica (Se bastasse una canzone): cassa decisa a 55Hz, ottoni vibranti a 1kHz e chiarezza vocale in primo piano.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_tutte_storie: {
+                label: "Tutte storie (1993)",
+                eq: {
+                  name: "Tutte Storie 93",
+                  notes: "Pietra miliare rock-pop (Cose della vita): chitarre graffianti a 2.4kHz, rullante con impatto a 180Hz e controllo delle asperita su Nothing X.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 850, gain: 2, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.2 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13800, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_dove_ce_musica: {
+                label: "Dove c'è musica (1996)",
+                eq: {
+                  name: "Dove C E Musica",
+                  notes: "Autoproduzione registrata a Los Angeles: groove solido di Nathan East a 115Hz, chitarre di Landau e mix rotondo ed impeccabile.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 115, gain: 3, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_stilelibero: {
+                label: "Stilelibero (2000)",
+                eq: {
+                  name: "Stilelibero 2000",
+                  notes: "Contaminazioni pop-dance e ritmiche serrate (Fuoco nel fuoco): cassa compressa a 50Hz, snap sulle percussioni e voce energica a 2.2kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              er_9: {
+                label: "9 (2003)",
+                eq: {
+                  name: "9 Ramazzotti 03",
+                  notes: "Scrittura intima e acustica (Un'emozione per sempre): calore del pianoforte, definizione sulle chitarre unplugged e naturalezza vocale.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 1900, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_calma_apparente: {
+                label: "Calma apparente (2005)",
+                eq: {
+                  name: "Calma Apparente",
+                  notes: "Produzione raffinata e duetti memorabili (con Anastacia): estensione del fronte stereo, punch deciso della sezione ritmica e acuti brillanti.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              er_ali_e_radici: {
+                label: "Ali e radici (2009)",
+                eq: {
+                  name: "Ali E Radici 09",
+                  notes: "Pop-rock energico da stadio: spinta alle basse a 54Hz, corpo alle chitarre distorte a 800Hz e chiarezza nei ritornelli corali.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 800, gain: 2, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_noi: {
+                label: "Noi (2012)",
+                eq: {
+                  name: "Noi 2012",
+                  notes: "Respiro internazionale e arrangiamenti pop sinfonici: sub-bassi potenti a 48Hz, definizione delle ritmiche elettroniche e voce setosa.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 300, gain: -1, q: 1.2 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_perfetto: {
+                label: "Perfetto (2015)",
+                eq: {
+                  name: "Perfetto 2015",
+                  notes: "Ritorno a sonorita roots rock e musicisti californiani di spicco: pasta sonora vintage, calore sui medi a 250Hz e chitarre acustiche limpide.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              er_vita_ce_ne: {
+                label: "Vita ce n'è (2018)",
+                eq: {
+                  name: "Vita Ce N E 2018",
+                  notes: "Pop solare e collaborazioni internazionali: sub-kick morbido ma presente a 52Hz, presenza vocale brillante e bilanciamento moderno.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              er_battito_infinito: {
+                label: "Battito infinito (2022)",
+                eq: {
+                  name: "Battito Infinito",
+                  notes: "Arrangiamenti eleganti e cinematografici: profondita sub a 50Hz, armoniche vocali vellutate a 2.1kHz e rifinitura ineccepibile del top end.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 4700, gain: 1, q: 1.1 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              er_una_storia_importante: {
+                label: "Una storia importante (2025)",
+                eq: {
+                  name: "Una Storia 2025",
+                  notes: "Celebrativo con grandi duetti: imaging sonoro maestoso, punch moderno alle percussioni e definizione chirurgica per ogni voce solista.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          tiziano_ferro: {
+            label: "Tiziano Ferro",
+            eq: {
+              name: "Tiziano Master",
+              notes: "Firma R&B e contemporary pop italiano: calore del registro baritonale a 150Hz, scooping a 320Hz per evitare impastamenti e corpo arioso a 14.5kHz.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.3 },
+                { freq: 150, gain: 2, q: 1.2 },
+                { freq: 320, gain: -1, q: 1.2 },
+                { freq: 750, gain: 1, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.3 },
+                { freq: 4800, gain: 1, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 14500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              tf_rosso_relativo: {
+                label: "Rosso relativo (2001)",
+                eq: {
+                  name: "Rosso Relativo",
+                  notes: "Sound d'esordio R&B/2-step (Xdono): sub-bass sincopato a 55Hz, attacco sui beat elettronici e vivacita sulle armonie vocali stratificate.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 1, q: 1.1 },
+                    { freq: 300, gain: -2, q: 1.3 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tf_111: {
+                label: "111 (2003)",
+                eq: {
+                  name: "111 Ferro 2003",
+                  notes: "Capolavoro soul e ballate struggenti (Sere nere): risonanza profonda del petto a 160Hz, archi avvolgenti e intimita vocale vellutata.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 160, gain: 3, q: 1.2 },
+                    { freq: 340, gain: 0, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              tf_nessuno_e_solo: {
+                label: "Nessuno è solo (2006)",
+                eq: {
+                  name: "Nessuno E Solo",
+                  notes: "Elettro-pop scuro e ritmiche aggressive (Stop! Dimentica): synth bass pulsante a 50Hz, snare compresso e mordente sui ritornelli.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -2, q: 1.3 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tf_alla_mia_eta: {
+                label: "Alla mia età (2008)",
+                eq: {
+                  name: "Alla Mia Eta 08",
+                  notes: "Scrittura pop matura ed orchestrale: equilibrio tra pianoforte a coda a 200Hz, cassa definita e apertura ariosa per i cori gospel.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tf_lamore_e_una_cosa_semplice: {
+                label: "L'amore è una cosa semplice (2011)",
+                eq: {
+                  name: "Amore E Semplice",
+                  notes: "Registrato a Los Angeles con band dal vivo: calore organico e tridimensionalita analogica, fiati corposi a 1.2kHz e microfoni a nastro.",
+                  bands: [
+                    { freq: 56, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.1 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              tf_il_mestiere_della_vita: {
+                label: "Il mestiere della vita (2016)",
+                eq: {
+                  name: "Mestiere Di Vita",
+                  notes: "Produzione moderna di Michele Canova: punch percussivo imponente a 48Hz, tagli sui bassi impastati e brillantezza sui campionamenti vocali.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 280, gain: -2, q: 1.3 },
+                    { freq: 820, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tf_accetto_miracoli: {
+                label: "Accetto miracoli (2019)",
+                eq: {
+                  name: "Accetto Miracoli",
+                  notes: "Produzione di Timbaland: sub 808 ultra-basso a 44Hz, hi-hat taglienti e voce solista estremamente ravvicinata e priva di mascheramenti.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.4 },
+                    { freq: 110, gain: 1, q: 1.0 },
+                    { freq: 270, gain: -2, q: 1.4 },
+                    { freq: 800, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9500, gain: 3, q: 1.3 },
+                    { freq: 16000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tf_il_mondo_e_nostro: {
+                label: "Il mondo è nostro (2022)",
+                eq: {
+                  name: "Mondo E Nostro",
+                  notes: "Pop intimo ed autobiografico: bassi vellutati a 52Hz, presenza calda nei toni bassi della voce e riverberi spaziosi e rilassanti.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.1 },
+                    { freq: 300, gain: -1, q: 1.2 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tf_sono_un_grande: {
+                label: "Sono un grande (2025)",
+                eq: {
+                  name: "Sono Un Grande",
+                  notes: "Nuovo capitolo con Sugar Music: equilibrio tra eleganza cantautorale italiana ed energia moderna, dinamica vocale piena e potente.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          giorgia: {
+            label: "Giorgia",
+            eq: {
+              name: "Giorgia Master",
+              notes: "Firma soul e virtuosismo vocale: calore e spessore a 140Hz, corpo armonico a 260Hz, proiezione brillante a 2.6kHz e setosita priva di sibilanti a 14.5kHz.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.1 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.1 },
+                { freq: 700, gain: 1, q: 1.0 },
+                { freq: 2600, gain: 2, q: 1.3 },
+                { freq: 4800, gain: 1, q: 1.2 },
+                { freq: 7800, gain: 0, q: 1.2 },
+                { freq: 14500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              gio_giorgia: {
+                label: "Giorgia (1994)",
+                eq: {
+                  name: "Giorgia 1994",
+                  notes: "Album di debutto (E poi): calore analogico sulle ritmiche a 130Hz, risalto della limpidezza vocale giovanile e morbidezza sugli acuti.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 680, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 0, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              gio_come_thelma_e_louise: {
+                label: "Come Thelma & Louise (1995)",
+                eq: {
+                  name: "Thelma Louise 95",
+                  notes: "Trionfo sanremese (Come saprei): estensione per i crescendo vocali, controllo delle asprezze a 4.5kHz e archi aperti ed espressivi.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_mangio_troppa_cioccolata: {
+                label: "Mangio troppa cioccolata (1997)",
+                eq: {
+                  name: "Cioccolata 1997",
+                  notes: "Produzione groove firmata Pino Daniele: basso funky corposo a 115Hz, chitarre ritmiche pulite e voce calda, sciolta e dinamica.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 115, gain: 3, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              gio_girasole: {
+                label: "Girasole (1999)",
+                eq: {
+                  name: "Girasole 1999",
+                  notes: "Pop-soul solare e raffinato: punch alla cassa a 58Hz, corpo al pianoforte a 250Hz e sfumature vocali cristalline nei passaggi acuti.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.1 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_senza_ali: {
+                label: "Senza ali (2001)",
+                eq: {
+                  name: "Senza Ali 2001",
+                  notes: "Sessioni a Minneapolis con i musicisti di Prince (Di sole e d'azzurro): ritmiche funk solide, rullante secco e voce sontuosa in primo piano.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 120, gain: 3, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_ladra_di_vento: {
+                label: "Ladra di vento (2003)",
+                eq: {
+                  name: "Ladra Di Vento",
+                  notes: "Sperimentazione elettronica e trip-hop (Gocce di memoria): sub-bassi profondi a 48Hz, atmosfera rarefatta e voce intima al microfono.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_stonata: {
+                label: "Stonata (2007)",
+                eq: {
+                  name: "Stonata 2007",
+                  notes: "Pop organico e duetto storico con Mina: grande naturalezza timbrica, calore del contrabbasso a 150Hz e separazione stereofonica impeccabile.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              gio_dietro_le_apparenze: {
+                label: "Dietro le apparenze (2011)",
+                eq: {
+                  name: "Dietro Apparenze",
+                  notes: "Dance-pop di respiro europeo prodotto da Michele Canova: cassa incisiva a 52Hz, sintetizzatori scolpiti a 850Hz e brillantezza radiosa.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 290, gain: -2, q: 1.3 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2700, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_senza_paura: {
+                label: "Senza paura (2013)",
+                eq: {
+                  name: "Senza Paura 2013",
+                  notes: "Produzione pop-dance internazionale (duetto con Alicia Keys): kick moderno, riverberi spaziosi e gestione chirurgica della presenza vocale.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_oronero: {
+                label: "Oronero (2016)",
+                eq: {
+                  name: "Oronero 2016",
+                  notes: "Eleganza cantautorale ed elettronica moderna: bassi calibrati a 48Hz, profondita emotiva nelle frequenze fondamentali e ariosita a 16kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_pop_heart: {
+                label: "Pop Heart (2018)",
+                eq: {
+                  name: "Pop Heart 2018",
+                  notes: "Album di cover in studio con arrangiamenti potenti: sub rotondo e moderno, definizione dei sample e brillantezza per le variazioni vocali.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 820, gain: 1, q: 1.1 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_blu: {
+                label: "Blu (2023)",
+                eq: {
+                  name: "Blu Giorgia 2023",
+                  notes: "Nu-soul e R&B contemporaneo (Parole dette male): sub-bass vellutato a 46Hz, calore analogico e texture vocale morbidamente dettagliata.",
+                  bands: [
+                    { freq: 46, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gio_g: {
+                label: "G (2025)",
+                eq: {
+                  name: "G Giorgia 2025",
+                  notes: "Produzione ultra-contemporanea Epic/Sony: transienti scattanti, estensione alle frequenze estreme e palcoscenico tridimensionale su Nothing X.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.1 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9500, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          biagio_antonacci: {
+            label: "Biagio Antonacci",
+            eq: {
+              name: "Antonacci Master",
+              notes: "Firma pop-rock mediterranea: corpo del basso a 130Hz, risonanza delle chitarre acustiche a 350Hz, timbro vocale ruvido e viscerale a 2.2kHz.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.1 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 350, gain: 1, q: 1.1 },
+                { freq: 800, gain: 1, q: 1.1 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8500, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              ba_sono_cose_che_capitano: {
+                label: "Sono cose che capitano (1989)",
+                eq: {
+                  name: "Cose Che Capitan",
+                  notes: "Debutto d'autore con Ron: calore analogico di fine anni 80, corpo alla chitarra classica e naturalezza priva di enfasi artificiali.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 1900, gain: 1, q: 1.2 },
+                    { freq: 4000, gain: 0, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              ba_adagio_biagio: {
+                label: "Adagio Biagio (1991)",
+                eq: {
+                  name: "Adagio Biagio 91",
+                  notes: "Transizione pop-rock: attacco delle percussioni acustiche a 135Hz, apertura delle medie per dare risalto al testo e agli archi.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_liberatemi: {
+                label: "Liberatemi (1992)",
+                eq: {
+                  name: "Liberatemi 1992",
+                  notes: "Produzione trascinante di Mauro Malavasi: groove pulsante a 55Hz, chitarre incalzanti e ritornello esplosivo con grande slancio a 2.4kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 820, gain: 2, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_biagio_antonacci: {
+                label: "Biagio Antonacci (1994)",
+                eq: {
+                  name: "Antonacci 1994",
+                  notes: "Maturita artistica (Non e mai stato subito): definizione degli arpeggi, basso rotondo e trasparenza sul registro medio-alto.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_il_mucchio: {
+                label: "Il mucchio (1996)",
+                eq: {
+                  name: "Il Mucchio 1996",
+                  notes: "Sonorita rock grintose con Mel Gaynor alla batteria: rullante compresso a 200Hz, chitarre elettriche spigolose e bassi energici.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 850, gain: 2, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.2 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13800, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_mi_fai_stare_bene: {
+                label: "Mi fai stare bene (1998)",
+                eq: {
+                  name: "Fai Stare Bene",
+                  notes: "Successo multimilionario (Iris, Quanto tempo e ancora): percussioni latine brillanti, chitarre spagnole croccanti e voce vicina ed esuberante.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ba_9_nov_2001: {
+                label: "9/nov/2001 (2001)",
+                eq: {
+                  name: "9 Nov 2001",
+                  notes: "Introspezione e ballad eleganti: calore del pianoforte a coda a 220Hz, morbidezza della cassa e controllo delle frequenze aspre.",
+                  bands: [
+                    { freq: 56, gain: 1, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 1900, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_convivendo_parte_1: {
+                label: "Convivendo Parte I (2004)",
+                eq: {
+                  name: "Convivendo I",
+                  notes: "Groove moderno e incalzante (Non ci facciamo compagnia): attacco secco del basso a 115Hz, presenza vocale marcata a 2.3kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 115, gain: 3, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_convivendo_parte_2: {
+                label: "Convivendo Parte II (2005)",
+                eq: {
+                  name: "Convivendo II",
+                  notes: "Ritmi coinvolgenti (Pazzo di lei, Sappi amore mio): calore delle chitarre acustiche, bassi rotondi e aperture corali distese a 8kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_vicky_love: {
+                label: "Vicky Love (2007)",
+                eq: {
+                  name: "Vicky Love 2007",
+                  notes: "Pop d'autore con sfumature elettro-rock: definizione delle linee di basso a 125Hz, brillantezza sulle chitarre e ritmiche scattanti.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_inaspettata: {
+                label: "Inaspettata (2010)",
+                eq: {
+                  name: "Inaspettata 2010",
+                  notes: "Produzione pop moderna con duetti (Leona Lewis): impatto energico della cassa a 52Hz, presenza vocale potente e acuti definiti.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 780, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ba_sapessi_dire_no: {
+                label: "Sapessi dire no (2012)",
+                eq: {
+                  name: "Sapessi Dire No",
+                  notes: "Acustica intima ed elegante (Ti dedico tutto): contrabbasso caldo a 140Hz, precisione sugli arpeggi di chitarra a 2kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_lamore_comporta: {
+                label: "L'amore comporta (2014)",
+                eq: {
+                  name: "L Amore Comporta",
+                  notes: "Registrato a Los Angeles con Michele Canova: punch moderno dei transienti a 48Hz, chiarezza sulle medie e brillantezza aperta.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 270, gain: -2, q: 1.3 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ba_dediche_e_manie: {
+                label: "Dediche e manie (2017)",
+                eq: {
+                  name: "Dediche E Manie",
+                  notes: "Contaminazioni urban e ritmiche contemporanee: sub solido a 45Hz, snap sulle percussioni e risalto del fraseggio vocale diretto.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 820, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_chiaramente_visibili_dallo_spazio: {
+                label: "Chiaramente visibili dallo spazio (2019)",
+                eq: {
+                  name: "Chiaramente 2019",
+                  notes: "Produzione organica di Taketo Gohara: microfonazione d'epoca, pasta sonora calda e morbida, assenza totale di fatica d'ascolto.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 3, q: 1.2 },
+                    { freq: 330, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 1, q: 1.2 },
+                    { freq: 4200, gain: 0, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ba_linizio: {
+                label: "L'inizio (2024)",
+                eq: {
+                  name: "L Inizio 2024",
+                  notes: "Energia rinnovata e modernita: kick profondo a 50Hz, chitarre vivide e dinamica vocale scattante e presente nel mix frontale.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ba_mustang: {
+                label: "Mustang (2026)",
+                eq: {
+                  name: "Mustang 2026",
+                  notes: "Rock mediterraneo potente ed energico: chitarre elettriche corpose a 850Hz, sezione ritmica d'impatto e voce graffiante al centro.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 850, gain: 2, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          otto_otto_tre: {
+            label: "883",
+            eq: {
+              name: "883 Master",
+              notes: "Firma pop-dance e cantautorale anni 90 firmata Cecchetto: bassi synth a 65Hz, calore ritmico a 140Hz, voce parlata/cantata nitida a 1.8kHz e 3.2kHz.",
+              bands: [
+                { freq: 65, gain: 2, q: 1.2 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 280, gain: 0, q: 1.0 },
+                { freq: 700, gain: 1, q: 1.1 },
+                { freq: 1800, gain: 2, q: 1.3 },
+                { freq: 3200, gain: 1, q: 1.2 },
+                { freq: 8000, gain: 2, q: 1.2 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              "883_hanno_ucciso_luomo_ragno": {
+                label: "Hanno ucciso l'Uomo Ragno (1992)",
+                eq: {
+                  name: "Uomo Ragno 1992",
+                  notes: "Debutto generazionale eurodance: enfatizzazione del sub-synth a 60Hz per dare peso alla drum machine e controllo delle asprezze dei campionatori.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 680, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              "883_nord_sud_ovest_est": {
+                label: "Nord sud ovest est (1993)",
+                eq: {
+                  name: "Nord Sud Ovest",
+                  notes: "Trionfo commerciale pop-dance (Come mai): cassa punchy a 55Hz, brillantezza sulle chitarre acustiche e rullante Roland scattante.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              "883_la_donna_il_sogno_e_il_grande_incubo": {
+                label: "La donna il sogno & il grande incubo (1995)",
+                eq: {
+                  name: "Donna Sogno Inc",
+                  notes: "Transizione verso il pop-rock (Gli anni): chitarre elettriche piene a 800Hz, calore sul ritornello corale e batteria d'impatto.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 800, gain: 2, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              "883_la_dura_legge_del_gol": {
+                label: "La dura legge del gol! (1997)",
+                eq: {
+                  name: "Dura Legge Gol",
+                  notes: "Pieno assetto band rock (La regola dell'amico): rullante acustico potente a 180Hz, chitarre distorte graffianti e voce limpida.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 850, gain: 2, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              "883_grazie_mille": {
+                label: "Grazie mille (1999)",
+                eq: {
+                  name: "Grazie Mille 99",
+                  notes: "Arrangiamenti solari con sezione fiati e archi: corpo al pianoforte, calore sulle frequenze medio-basse e brillantezza naturale.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              "883_uno_in_piu": {
+                label: "1 in + (2001)",
+                eq: {
+                  name: "1 In Piu 2001",
+                  notes: "Ultimo capitolo 883 (Bella vera): modernita electro-pop anni 2000, cassa sub compressa a 50Hz e presenza vocale lucidissima.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          max_pezzali: {
+            label: "Max Pezzali",
+            eq: {
+              name: "Max Pezzali Mast",
+              notes: "Firma pop cantautorale solista: solidita del basso a 135Hz, corpo alla voce narrante a 260Hz, proiezione melodica a 2kHz e alti vellutati.",
+              bands: [
+                { freq: 60, gain: 2, q: 1.2 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.1 },
+                { freq: 750, gain: 1, q: 1.0 },
+                { freq: 2000, gain: 2, q: 1.3 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 7800, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              mp_il_mondo_insieme_a_te: {
+                label: "Il mondo insieme a te (2004)",
+                eq: {
+                  name: "Mondo Insieme Te",
+                  notes: "Esordio solista acustico ed intimo: calore degli arpeggi, morbidezza della sezione ritmica a 140Hz e timbro vocale rassicurante.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mp_time_out: {
+                label: "Time Out (2007)",
+                eq: {
+                  name: "Time Out 2007",
+                  notes: "Pop-rock estivo e ritmico (Torno subito): cassa decisa a 54Hz, rullante brillante a 2.4kHz e apertura energetica sulle alte frequenze.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mp_terraferma: {
+                label: "Terraferma (2011)",
+                eq: {
+                  name: "Terraferma 2011",
+                  notes: "Maturita pop d'autore (Il mio secondo tempo): corpo alle tastiere e al pianoforte, basso profondo a 125Hz e pulizia nelle frequenze medie.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mp_astronave_max: {
+                label: "Astronave Max (2015)",
+                eq: {
+                  name: "Astronave Max",
+                  notes: "Omaggio al synth-pop anni 80: cassa elettronica compressa a 50Hz, sintetizzatori analogici definiti a 850Hz e brillantezza stereo.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              mp_qualcosa_di_nuovo: {
+                label: "Qualcosa di nuovo (2020)",
+                eq: {
+                  name: "Qualcosa Nuovo",
+                  notes: "Produzione moderna e collaborazioni con giovani producer: sub-bassi morbidi a 48Hz, freschezza percussiva e voce nitida e presente.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.3 },
+                    { freq: 130, gain: 1, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.1 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          cesare_cremonini: {
+            label: "Cesare Cremonini",
+            eq: {
+              name: "Cremonini Master",
+              notes: "Firma pop d'autore britannico-mediterranea: corpo del pianoforte a coda a 220Hz, dinamica del basso a 120Hz, voce articolata a 2.4kHz e ariosita Abbey Road a 14kHz.",
+              bands: [
+                { freq: 52, gain: 2, q: 1.2 },
+                { freq: 120, gain: 2, q: 1.2 },
+                { freq: 220, gain: 2, q: 1.2 },
+                { freq: 750, gain: 1, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.3 },
+                { freq: 4800, gain: 1, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              cc_bagus: {
+                label: "Bagus (2002)",
+                eq: {
+                  name: "Bagus 2002",
+                  notes: "Debutto solista grandioso (PadreMadre): ampiezza orchestrale, profondita del pianoforte acustico e calore del contrabbasso a 140Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              cc_maggese: {
+                label: "Maggese (2005)",
+                eq: {
+                  name: "Maggese 2005",
+                  notes: "Registrato agli Abbey Road Studios con la London Symphony: timbrica orchestrale sontuosa, fiati ariosi a 1kHz e texture vellutata.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              cc_il_primo_bacio_sulla_luna: {
+                label: "Il primo bacio sulla Luna (2008)",
+                eq: {
+                  name: "Primo Bacio Luna",
+                  notes: "Spinta pop-rock (Dicono di me): batteria viva e presente, chitarre elettriche croccanti a 850Hz e voce graffiante e dinamica.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 850, gain: 2, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              cc_la_teoria_dei_colori: {
+                label: "La teoria dei colori (2012)",
+                eq: {
+                  name: "Teoria Colori",
+                  notes: "Pietra miliare del pop italiano moderno (Il comico, Una come te): cassa scolpita a 52Hz, pianoforte scintillante e bilanciamento perfetto.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              cc_logico: {
+                label: "Logico (2014)",
+                eq: {
+                  name: "Logico 2014",
+                  notes: "Contaminazione electro-pop di classe (Logico #1, GreyGoose): sub-synth rotondo a 48Hz, snare clap scattante e riverberi lussuosi.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              cc_possibili_scenari: {
+                label: "Possibili scenari (2017)",
+                eq: {
+                  name: "Possibili Scenar",
+                  notes: "Produzione sinfonico-elettronica visionaria (Poetica, Nessuno vuole essere Robin): bassi tellurici a 45Hz, archi cinematografici e ariosita sublime.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9500, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              cc_la_ragazza_del_futuro: {
+                label: "La ragazza del futuro (2022)",
+                eq: {
+                  name: "Ragazza Futuro",
+                  notes: "Opera d'autore ad alta dinamica: grande tridimensionalita del palco, archi registrati a Bologna e voce trasparente e ricca di armoniche.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              cc_alaska_baby: {
+                label: "Alaska Baby (2024)",
+                eq: {
+                  name: "Alaska Baby 2024",
+                  notes: "Mastering internazionale (British Grove Londra): punch tellurico a 46Hz, chitarre acustiche cristalline e spazialita ampia su Nothing X.",
+                  bands: [
+                    { freq: 46, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              cc_amateur: {
+                label: "Amateur (2026)",
+                eq: {
+                  name: "Amateur 2026",
+                  notes: "Sessioni londinesi a Studio 13: impatto ritmico moderno con influssi urban, transienti asciutti ed esaltazione dei dettagli vocali.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 820, gain: 1, q: 1.1 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9500, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          marco_mengoni: {
+            label: "Marco Mengoni",
+            eq: {
+              name: "Mengoni Master",
+              notes: "Firma pop-soul dinamica e virtuosa: corpo vocale a 160Hz, scooping a 320Hz per eliminare risonanze, presenza incisiva a 2.4kHz e acuti setosi a 14.5kHz.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.3 },
+                { freq: 160, gain: 1, q: 1.1 },
+                { freq: 320, gain: -1, q: 1.3 },
+                { freq: 750, gain: 1, q: 1.1 },
+                { freq: 2400, gain: 2, q: 1.4 },
+                { freq: 4800, gain: 1, q: 1.2 },
+                { freq: 8800, gain: 2, q: 1.2 },
+                { freq: 14500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              mm_solo_2_0: {
+                label: "Solo 2.0 (2011)",
+                eq: {
+                  name: "Solo 2 0 2011",
+                  notes: "Debutto in studio rock ed elettronico: batteria potente, rullante graffiante a 2.2kHz e controllo degli acuti gridati senza asperita.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 0, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mm_pronto_a_correre: {
+                label: "Pronto a correre (2013)",
+                eq: {
+                  name: "Pronto A Correre",
+                  notes: "Vittoria a Sanremo (L'essenziale): bilanciamento impeccabile tra pianoforte acustico, cassa calda a 55Hz ed espressivita vocale pura.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              mm_parole_in_circolo: {
+                label: "Parole in circolo (2015)",
+                eq: {
+                  name: "Parole Circolo",
+                  notes: "Grande pop contemporaneo (Guerriero): sub-kick moderno a 48Hz, cori maestosi, definizione vocale cristallina ed ariosita a 15kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 280, gain: -2, q: 1.3 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              mm_le_cose_che_non_ho: {
+                label: "Le cose che non ho (2015)",
+                eq: {
+                  name: "Cose Che Non Ho",
+                  notes: "Seconda parte del progetto (Ti ho voluto bene veramente): calore soul, pianoforte avvolgente a 220Hz e voce intima e vellutata.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mm_atlantico: {
+                label: "Atlantico (2018)",
+                eq: {
+                  name: "Atlantico 2018",
+                  notes: "World pop e ritmi afro-latini (Hola): percussioni organiche dettagliate, bassi caldi e spazialita tridimensionale sul fronte sonoro.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0, q: 1.0 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              mm_materia_terra: {
+                label: "Materia (Terra) (2021)",
+                eq: {
+                  name: "Materia Terra 21",
+                  notes: "Radici soul, blues e gospel (Cambia un uomo): saturazione a nastro, calore del basso a 140Hz e cori vibranti aperti nel campo stereo.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 3, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mm_materia_pelle: {
+                label: "Materia (Pelle) (2022)",
+                eq: {
+                  name: "Materia Pelle 22",
+                  notes: "Clubbing contemporaneo e contaminazioni urban (No Stress): sub tellurico a 45Hz, rullanti serrati e brillantezza per le parti vocali pitchate.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.4 },
+                    { freq: 115, gain: 1, q: 1.0 },
+                    { freq: 270, gain: -2, q: 1.3 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 5200, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              mm_materia_prisma: {
+                label: "Materia (Prisma) (2023)",
+                eq: {
+                  name: "Materia Prisma",
+                  notes: "Trionfo sanremese (Due vite): dinamica maestosa dall'arpeggio di piano sussurrato al climax con archi e synth moderni ad alta definizione.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          ultimo: {
+            label: "Ultimo",
+            eq: {
+              name: "Ultimo Master",
+              notes: "Firma pop-cantautorale da stadio: risonanza calda del pianoforte a 220Hz, cassa moderna a 55Hz, presenza vocale viscerale e diretta a 2.2kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.2 },
+                { freq: 135, gain: 1, q: 1.1 },
+                { freq: 220, gain: 2, q: 1.2 },
+                { freq: 750, gain: 1, q: 1.1 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8200, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              ult_pianeti: {
+                label: "Pianeti (2017)",
+                eq: {
+                  name: "Pianeti 2017",
+                  notes: "Debutto indipendente spontaneo (Pianeti, Chiave): compensazione del calore sui medi, piano acustico intimo e voce naturale e sincera.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 0, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ult_peter_pan: {
+                label: "Peter Pan (2018)",
+                eq: {
+                  name: "Peter Pan 2018",
+                  notes: "Vittoria a Sanremo Nuove Proposte (Il ballo delle incertezze): cassa con attacco solido a 52Hz, rullante incisivo e cori emotivi.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4600, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ult_colpa_delle_favole: {
+                label: "Colpa delle favole (2019)",
+                eq: {
+                  name: "Colpa Delle Favo",
+                  notes: "Pietra miliare da record (I tuoi particolari): dinamica potente tra strofe intime e ritornelli esplosivi, grande respiro a 14.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 1, q: 1.1 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ult_solo: {
+                label: "Solo (2021)",
+                eq: {
+                  name: "Solo Ultimo 2021",
+                  notes: "Album introspettivo e cupo (22 settembre): bassi profondi a 48Hz, pianoforte scuro e presenza vocale ravvicinata senza riverberi eccessivi.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ult_alba: {
+                label: "Alba (2023)",
+                eq: {
+                  name: "Alba 2023",
+                  notes: "Ballate sinfoniche e arrangiamenti orchestrali da stadio: archi maestosi, profondita sub a 50Hz e trasparenza sui passaggi delicati.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 780, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4700, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ult_altrove: {
+                label: "Altrove (2024)",
+                eq: {
+                  name: "Altrove 2024",
+                  notes: "Canzoni acustiche e luminose: chitarre acustiche e piano Rhodes in primo piano, cassa morbida a 54Hz e brillantezza naturale all'ascolto.",
+                  bands: [
+                    { freq: 54, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ult_il_giorno_che_aspettavo: {
+                label: "Il giorno che aspettavo (2026)",
+                eq: {
+                  name: "Giorno Aspettavo",
+                  notes: "Produzione ad altissima fedelta per grandi stadi (Acquario): kick potente e definito a 48Hz, transienti puliti e vocalita energica.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 5000, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          annalisa: {
+            label: "Annalisa",
+            eq: {
+              name: "Annalisa Master",
+              notes: "Firma electro-pop e synth-pop moderna: solidita sub-bass a 55Hz, trasparenza sui medio-bassi a 280Hz per evitare mascheramento del cantato, proiezione cristallina del soprano a 2.4kHz e ariosita a 14.5kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 135, gain: 1, q: 1.2 },
+                { freq: 280, gain: -1, q: 1.3 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.3 },
+                { freq: 4200, gain: -1, q: 1.4 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 14500, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              ann_nali: {
+                label: "Nali (2011)",
+                eq: {
+                  name: "Nali 2011",
+                  notes: "Produzione pop-acustica d'esordio: corpo del pianoforte a 140Hz, calore del registro medio a 680Hz e contenimento delle sibilanti a 4.5kHz per valorizzare la freschezza vocale giovanile.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.1 },
+                    { freq: 680, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ann_mentre_tutto_cambia: {
+                label: "Mentre tutto cambia (2012)",
+                eq: {
+                  name: "Mentre Tutto",
+                  notes: "Pop-rock orchestrale raffinato: calore d'archi a 260Hz, attacco del rullante a 2.2kHz e controllo della risonanza in gamma alta per una resa setosa e dinamica su Nothing X.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ann_non_so_ballare: {
+                label: "Non so ballare (2013)",
+                eq: {
+                  name: "Non So Ballare",
+                  notes: "Arrangiamenti eleganti con inflessioni jazz/cantautorali: contrabbasso organico a 120Hz, corpo vocale caldo a 720Hz e alti vellutati a 9kHz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ann_splende: {
+                label: "Splende (2015)",
+                eq: {
+                  name: "Splende 2015",
+                  notes: "Svolta pop-rock energica: spinta kick a 60Hz, chitarre elettriche corpose a 800Hz e controllo selettivo del picco a 4kHz per evitare asprezze metalliche.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: -2, q: 1.4 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ann_se_avessi_un_cuore: {
+                label: "Se avessi un cuore (2016)",
+                eq: {
+                  name: "Se Avessi Cuore",
+                  notes: "Transizione verso l'electro-pop nordico: sub-bass profondo a 50Hz, sintetizzatori analogici definiti a 1.8kHz e riverberi eterei a 15kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.3 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              ann_bye_bye: {
+                label: "Bye Bye (2018)",
+                eq: {
+                  name: "Bye Bye 2018",
+                  notes: "Urban pop contemporaneo curato da Michele Canova: transienti percussivi veloci a 120Hz, snap della voce in primo piano a 2.5kHz e brillantezza radiosa a 8.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.4 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ann_nuda: {
+                label: "Nuda (2020)",
+                eq: {
+                  name: "Nuda 2020",
+                  notes: "Pop sofisticato e intimo: linearita nei bassi a 55Hz, presenza vocale avvolgente a 2.2kHz e controllo delle sibilanti a 4.2kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 750, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              ann_vortice: {
+                label: "E poi siamo finiti nel vortice (2023)",
+                eq: {
+                  name: "Nel Vortice",
+                  notes: "Trionfo synth-pop anni 80 ed Italo-disco (Zef/Simonetta): cassa 4x4 rotonda a 52Hz, bassline serrata a 125Hz, voce cristallina a 2.6kHz e scintillio a 15kHz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.3 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2600, gain: 3, q: 1.4 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          elodie: {
+            label: "Elodie",
+            eq: {
+              name: "Elodie Master",
+              notes: "Timbro scuro e sensuale con produzioni urban clubbing: sub-bass profondo a 50Hz, calore nei medi a 650Hz, attacco vocale deciso a 2.2kHz e mitigazione delle asprezze a 4.5kHz.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.2 },
+                { freq: 120, gain: 1, q: 1.1 },
+                { freq: 250, gain: -1, q: 1.2 },
+                { freq: 650, gain: 1, q: 1.0 },
+                { freq: 2200, gain: 2, q: 1.4 },
+                { freq: 4500, gain: -1, q: 1.3 },
+                { freq: 9000, gain: 2, q: 1.2 },
+                { freq: 15000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              elo_un_altra_vita: {
+                label: "Un'altra vita (2016)",
+                eq: {
+                  name: "Un Altra Vita",
+                  notes: "Pop-soul melodico d'esordio (prod. Emma Marrone): calore organico a 140Hz, corpo pieno della voce a 700Hz e gamma alta morbida e vellutata.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              elo_tutta_colpa_mia: {
+                label: "Tutta colpa mia (2017)",
+                eq: {
+                  name: "Tutta Colpa Mia",
+                  notes: "Pop classico e orchestrale sanremese: enfasi sugli archi a 250Hz, definizione del rullante a 2kHz e contenimento delle frequenze taglienti a 4kHz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: -1, q: 1.4 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              elo_this_is_elodie: {
+                label: "This Is Elodie (2020)",
+                eq: {
+                  name: "This Is Elodie",
+                  notes: "Svolta urban, R&B e dancehall: kick profondo a 48Hz, bassline serrata a 115Hz, voce asciutta e in primo piano a 2.4kHz e snap percussivo a 9kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.4 },
+                    { freq: 680, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              elo_ok_respira: {
+                label: "OK. Respira (2023)",
+                eq: {
+                  name: "OK Respira",
+                  notes: "Elettronica da clubbing raffinata e dance-pop (Dardust): cassa 4x4 pulsante a 50Hz, sintetizzatori brillanti a 2.5kHz e top-end arioso e scintillante a 15kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.3 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          angelina_mango: {
+            label: "Angelina Mango",
+            eq: {
+              name: "Angelina Master",
+              notes: "Pop urbano moderno e crossover latino: sub-bass dinamico a 50Hz, pulizia nei medio-bassi a 270Hz, focus sul vibrato e melisma a 2.5kHz e vivacita percussiva a 8.8kHz.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.3 },
+                { freq: 140, gain: 1, q: 1.2 },
+                { freq: 270, gain: -1, q: 1.2 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 2500, gain: 2, q: 1.4 },
+                { freq: 4600, gain: -1, q: 1.3 },
+                { freq: 8800, gain: 2, q: 1.2 },
+                { freq: 15500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              am_poke_melodrama: {
+                label: "Poké melodrama (2024)",
+                eq: {
+                  name: "Poke Melodrama",
+                  notes: "Poliedricita tra cumbia, drum and bass e ballad: 808 calibrata a 48Hz, ritmi sincopati nitidi a 130Hz, voce frontale e articolata a 2.6kHz ed estensione aerea a 15kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          alessandra_amoroso: {
+            label: "Alessandra Amoroso",
+            eq: {
+              name: "Amoroso Master",
+              notes: "Vocalita potente con timbro sabbiato e radici soul-pop: calore a 130Hz, pienezza del registro medio a 750Hz, proiezione vocale a 2.1kHz e controllo del belting a 4.2kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 260, gain: 0, q: 1.1 },
+                { freq: 750, gain: 1, q: 1.0 },
+                { freq: 2100, gain: 2, q: 1.3 },
+                { freq: 4200, gain: -2, q: 1.4 },
+                { freq: 8500, gain: 1, q: 1.2 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              aa_senza_nuvole: {
+                label: "Senza nuvole (2009)",
+                eq: {
+                  name: "Senza Nuvole",
+                  notes: "Produzione pop-soul classica: corposita del pianoforte a 150Hz, calore del rullante a 300Hz e controllo selettivo della dinamica vocale a 4kHz.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: -2, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              aa_il_mondo_in_un_secondo: {
+                label: "Il mondo in un secondo (2010)",
+                eq: {
+                  name: "Mondo Secondo",
+                  notes: "Arrangiamenti sinfonici e pop d'autore (Dado Parisini): calore degli archi a 240Hz, corpo pieno della voce a 750Hz e ampiezza orchestrale a 14kHz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              aa_amore_puro: {
+                label: "Amore puro (2013)",
+                eq: {
+                  name: "Amore Puro",
+                  notes: "Produzione internazionale di Tiziano Ferro e Michele Canova: bassi synth morbidi a 50Hz, groove R&B a 120Hz e voce scolpita e luminosa a 2.4kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.3 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              aa_alessandra_amoroso: {
+                label: "Alessandra Amoroso (2015)",
+                eq: {
+                  name: "Amoroso 2015",
+                  notes: "Mix latin pop per il mercato internazionale: chitarre acustiche luminose a 2kHz, calore ritmico latino a 130Hz e alti aperti e brillanti.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              aa_vivere_a_colori: {
+                label: "Vivere a colori (2016)",
+                eq: {
+                  name: "Vivere A Colori",
+                  notes: "Esplosione uptempo electro-pop e ritmi funk moderni: kick potente a 55Hz, linea di basso elastica a 125Hz e rullante brillante a 2.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.3 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              aa_10: {
+                label: "10 (2018)",
+                eq: {
+                  name: "10 Amoroso",
+                  notes: "Sintesi del decennale tra pop radiofonico e ballate intime: equilibrio nei medio-bassi a 260Hz, voce centrale rassicurante a 2.1kHz e riverberi naturali a 13.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              aa_tutto_accade: {
+                label: "Tutto accade (2021)",
+                eq: {
+                  name: "Tutto Accade",
+                  notes: "Produzione contemporanea (Dardust, Takagi & Ketra): sub-bass tondo a 50Hz, groove percussivo asciutto a 120Hz e dettaglio ultra-nitido sul cantato a 2.4kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -2, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              aa_io_non_sarei: {
+                label: "Io non sarei (2025)",
+                eq: {
+                  name: "Io Non Sarei",
+                  notes: "Sonorita elettroniche moderne e groove urban (Zef): transienti veloci della cassa a 52Hz, armoniche vocali setose a 2.5kHz e spazialita high-end estesa su Nothing X.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.3 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          emma: {
+            label: "Emma",
+            eq: {
+              name: "Emma Master",
+              notes: "Timbro graffiante di contralto con attacco rock-pop: kick e basso solidi a 55Hz e 125Hz, pienezza delle chitarre a 800Hz, bite vocale a 2.3kHz e controllo asperita a 4kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 125, gain: 2, q: 1.2 },
+                { freq: 290, gain: -1, q: 1.3 },
+                { freq: 800, gain: 1, q: 1.1 },
+                { freq: 2300, gain: 2, q: 1.3 },
+                { freq: 4000, gain: -2, q: 1.5 },
+                { freq: 8000, gain: 1, q: 1.2 },
+                { freq: 13500, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              em_a_me_piace_cosi: {
+                label: "A me piace così (2010)",
+                eq: {
+                  name: "A Me Piace Cosi",
+                  notes: "Pop-rock d'esordio diretto ed energico: corpo caldo del basso a 140Hz, presenza del rullante a 2.1kHz e controllo della compressione radiofonica a 4kHz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: -2, q: 1.4 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              em_saro_libera: {
+                label: "Sarò libera (2011)",
+                eq: {
+                  name: "Saro Libera",
+                  notes: "Pop d'autore intenso e passionale: chitarre ritmiche definite a 700Hz, focus sul registro medio-basso della voce a 250Hz e distacco acustico su Nothing X.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              em_schiena: {
+                label: "Schiena (2013)",
+                eq: {
+                  name: "Schiena 2013",
+                  notes: "Produzione moderna di Brando: cassa rotonda a 52Hz, synth-bass percussivo a 120Hz e voce scolpita in primo piano a 2.4kHz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.3 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: -2, q: 1.4 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              em_adesso: {
+                label: "Adesso (2015)",
+                eq: {
+                  name: "Adesso 2015",
+                  notes: "Elettronica scura e drum machine moderne (Matt Howe): sub-bass incisivo a 48Hz, frequenze medie asciutte a 700Hz e ariosita stereo a 14kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.2 },
+                    { freq: 280, gain: -2, q: 1.4 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              em_essere_qui: {
+                label: "Essere qui (2018)",
+                eq: {
+                  name: "Essere Qui",
+                  notes: "Master analogico registrato agli Abbey Road Studios: calore valvolare a 150Hz, groove funk-rock organico e vellutatezza naturale delle alte.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 150, gain: 3, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              em_fortuna: {
+                label: "Fortuna (2019)",
+                eq: {
+                  name: "Fortuna 2019",
+                  notes: "Sonorita electro-rock anni 80: cassa serrata a 58Hz, chitarre graffianti a 2.5kHz e brillantezza ritmica ad alta energia.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.3 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4100, gain: -1, q: 1.4 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              em_souvenir: {
+                label: "Souvenir (2023)",
+                eq: {
+                  name: "Souvenir 2023",
+                  notes: "Urban pop contemporaneo asciutto e viscerale: 808 calibrata a 50Hz, voce ravvicinata e intima a 2.2kHz e transienti nitidi a 8.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          levante: {
+            label: "Levante",
+            eq: {
+              name: "Levante Master",
+              notes: "Cantautorato indie-pop ed electro-acustico raffinato: corpo degli strumenti acustici a 140Hz, chiarezza del sillabato vocale a 2.2kHz e apertura ariosa a 15kHz.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.0 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 270, gain: -1, q: 1.2 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 4500, gain: -1, q: 1.4 },
+                { freq: 9000, gain: 2, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              lev_manuale_distruzione: {
+                label: "Manuale distruzione (2014)",
+                eq: {
+                  name: "Manuale Distruz",
+                  notes: "Indie-pop acustico d'esordio: risonanza della chitarra acustica a 220Hz, voce naturale ed intima a 2.1kHz e controllo delle sibilanti a 4.5kHz.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 1, q: 1.1 },
+                    { freq: 650, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lev_abbi_cura_di_te: {
+                label: "Abbi cura di te (2015)",
+                eq: {
+                  name: "Abbi Cura Di Te",
+                  notes: "Arrangiamenti solari ed archi eleganti: calore ritmico a 130Hz, trasparenza nei medio-bassi a 280Hz e dolcezza della sezione archi a 8.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              lev_nel_caos_di_stanze_stupefacenti: {
+                label: "Nel caos di stanze stupefacenti (2017)",
+                eq: {
+                  name: "Nel Caos",
+                  notes: "Pop stratificato con sintetizzatori e ritmi incalzanti: kick rotondo a 55Hz, presenza vocale marcata a 2.4kHz e brillantezza moderna a 9kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.3 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              lev_magmamemoria: {
+                label: "Magmamemoria (2019)",
+                eq: {
+                  name: "Magmamemoria",
+                  notes: "Produzione maestosa ed orchestrale: sub-bass profondo a 50Hz, calore del registro grave vocale a 240Hz e riverberi ampi e setosi a 15kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              lev_opera_futura: {
+                label: "Opera futura (2023)",
+                eq: {
+                  name: "Opera Futura",
+                  notes: "Elettronica minimalista e synth scuri: impatto percussivo secco a 52Hz, voce emotiva e frontale a 2.5kHz e contenimento delle alte harsh a 4.2kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 1, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          the_kolors: {
+            label: "The Kolors",
+            eq: {
+              name: "The Kolors Mst",
+              notes: "Funk-pop ritmico e funk-rock in stile 80s: kick punch a 55Hz, basso elastico e slappato a 115Hz, snap delle chitarre funky a 2.5kHz e brillantezza dance.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.2 },
+                { freq: 115, gain: 2, q: 1.3 },
+                { freq: 280, gain: -2, q: 1.4 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2500, gain: 3, q: 1.4 },
+                { freq: 4200, gain: -1, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              tk_i_want: {
+                label: "I Want (2014)",
+                eq: {
+                  name: "I Want 2014",
+                  notes: "Indie rock ed electro-dance d'esordio in lingua inglese: rullante energico a 2.2kHz, chitarre ritmiche affilate e cassa asciutta a 60Hz.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              tk_out: {
+                label: "Out (2015)",
+                eq: {
+                  name: "Out 2015",
+                  notes: "Blockbuster funk-pop (Everytime): groove serrato di basso a 115Hz, chitarra ritmica in levare a 2.4kHz e falsetto limpido e brillante.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 115, gain: 3, q: 1.3 },
+                    { freq: 280, gain: -2, q: 1.4 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 3, q: 1.4 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tk_you: {
+                label: "You (2017)",
+                eq: {
+                  name: "You 2017",
+                  notes: "Produzione electro-funk internazionale: sub-bass rotondo a 50Hz, sintetizzatori analogici definiti a 2kHz e transizione fluida verso il club pop.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          irama: {
+            label: "Irama",
+            eq: {
+              name: "Irama Master",
+              notes: "Fusione urban contemporanea, trap e melodia drammatica: 808 imponente a 48Hz, pulizia nei medio-bassi a 260Hz, proiezione del cantato a 2.3kHz e top-end nitido a 14.5kHz.",
+              bands: [
+                { freq: 48, gain: 3, q: 1.3 },
+                { freq: 125, gain: 1, q: 1.1 },
+                { freq: 260, gain: -1, q: 1.2 },
+                { freq: 650, gain: 1, q: 1.0 },
+                { freq: 2300, gain: 2, q: 1.3 },
+                { freq: 4500, gain: -1, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 14500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              ira_irama: {
+                label: "Irama (2016)",
+                eq: {
+                  name: "Irama 2016",
+                  notes: "Esordio hip-hop cantautorale acustico: chitarre ritmiche calde a 220Hz, cassa definita a 60Hz e timbro vocale schietto e naturale.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              ira_giovani: {
+                label: "Giovani (2018)",
+                eq: {
+                  name: "Giovani 2018",
+                  notes: "Pop-rock e cantautorato melodico moderno: calore del basso a 130Hz, attacco del rullante a 2.2kHz e controllo delle consonanti sibilanti su Nothing X.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8500, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              ira_smesso_di_pensare: {
+                label: "Il giorno in cui ho smesso di pensare (2022)",
+                eq: {
+                  name: "Smesso Di Pensa",
+                  notes: "Urban-latin e pop di caratura internazionale: 808 profondissima a 45Hz, voci processate intime a 2.4kHz e brillantezza cristallina a 15kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.3 },
+                    { freq: 680, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          olly: {
+            label: "Olly",
+            eq: {
+              name: "Olly Master",
+              notes: "Pop-dance ritmico contemporaneo ed electro-acustico (JVLI): kick solido a 55Hz per cassa in quattro, separazione a 270Hz per la chitarra, brillantezza autotune a 2.4kHz.",
+              bands: [
+                { freq: 55, gain: 3, q: 1.2 },
+                { freq: 130, gain: 1, q: 1.2 },
+                { freq: 270, gain: -2, q: 1.3 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.4 },
+                { freq: 4400, gain: -1, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              oll_gira_il_mondo_gira: {
+                label: "Gira, il mondo gira (2023)",
+                eq: {
+                  name: "Gira Mondo Gira",
+                  notes: "Pop-dance esplosivo e drop incalzanti: impatto del sub a 50Hz, groove veloce a 125Hz, voce compressa e presente a 2.5kHz e scintillio a 9kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.4 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              oll_tutta_vita: {
+                label: "Tutta vita (2024)",
+                eq: {
+                  name: "Tutta Vita",
+                  notes: "Cantautorato pop acustico ed energico: corpo caldo delle chitarre a 140Hz, ritmica serrata e trascinante, e voce naturale a 2.2kHz senza asprezze sui driver Nothing X.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.3 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          studio_3: {
+            label: "Studio 3",
+            eq: {
+              name: "Studio 3 Master",
+              notes: "Polifonia pop melodica a tre voci anni 2000: calore del basso a 140Hz, separazione delle armonie a 280Hz, risalto dell'intelligibilita vocale a 2.2kHz e alte setose.",
+              bands: [
+                { freq: 60, gain: 1, q: 1.0 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 280, gain: -1, q: 1.2 },
+                { freq: 750, gain: 1, q: 1.1 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 4200, gain: -1, q: 1.4 },
+                { freq: 8000, gain: 2, q: 1.2 },
+                { freq: 13000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              s3_forse_un_angelo: {
+                label: "Forse un angelo (2006)",
+                eq: {
+                  name: "Forse Un Angelo",
+                  notes: "Pop melodico d'esordio romantico: calore acustico a 150Hz, armonie vocali avvolgenti a 700Hz e controllo del picco commerciale a 4kHz.",
+                  bands: [
+                    { freq: 65, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: -1, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 0, q: 1.0 }
+                  ]
+                }
+              },
+              s3_lentamente: {
+                label: "Lentamente (2007)",
+                eq: {
+                  name: "Lentamente",
+                  notes: "Ballad pop orchestrali e ritmiche solari: morbidezza nei medio-bassi a 260Hz, presenza delle tre voci distinte a 2.1kHz e archi aperti a 8.5kHz.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              s3_incontenibile: {
+                label: "Incontenibile (2008)",
+                eq: {
+                  name: "Incontenibile",
+                  notes: "Euro-pop ed electro-dance scatenato (Amore incontenibile): cassa in quattro a 58Hz, sintetizzatori brillanti a 2.4kHz e percussioni serrate a 9kHz.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.3 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              s3_respiro: {
+                label: "Respiro (2010)",
+                eq: {
+                  name: "Respiro 2010",
+                  notes: "Maturazione cantautorale introspettiva: corpo chitarristico a 140Hz, vocalita matura e frontale a 2.2kHz e linearita naturale su tutta la gamma alta.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              s3_capitolo_ii: {
+                label: "Capitolo II (2012)",
+                eq: {
+                  name: "Capitolo II",
+                  notes: "Pop moderno contemporaneo: basso sintetico definito a 120Hz, snap della voce a 2.3kHz e riverberi spaziosi a 14kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4300, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
           }
         }
       }
@@ -31053,6 +35376,129 @@ const MUSIC_DATABASE = {
                     { freq: 4700, gain: 2, q: 1.3 },
                     { freq: 9200, gain: 3, q: 1.2 },
                     { freq: 17000, gain: 3, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          mahmood: {
+            label: "Mahmood",
+            eq: {
+              name: "Mahmood Master",
+              notes: "Urban pop ed electro-R&B mediterraneo per Nothing X: sub tellurico a 44Hz per gli 808 moderni, punch a 125Hz, controllo a 600Hz, enfasi a 2800Hz per i falsetti arabi e ariosita a 14500Hz.",
+              bands: [
+                { freq: 44, gain: 2, q: 1.1 },
+                { freq: 125, gain: 1, q: 1.2 },
+                { freq: 260, gain: 0, q: 1.0 },
+                { freq: 600, gain: -1, q: 1.2 },
+                { freq: 2800, gain: 2, q: 1.3 },
+                { freq: 4800, gain: 1, q: 1.2 },
+                { freq: 9200, gain: 1, q: 1.1 },
+                { freq: 14500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              mah_gioventu_bruciata: {
+                label: "Gioventù bruciata (2019)",
+                eq: {
+                  name: "Gioventu Bru 19",
+                  notes: "Vittoria a Sanremo con Soldi: clapping percussivi nitidi, kick 808 compatto a 45Hz, melismi vocali definiti a 2600Hz e aria a 13000Hz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 1, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.2 },
+                    { freq: 2600, gain: 2, q: 1.3 },
+                    { freq: 4700, gain: 1, q: 1.2 },
+                    { freq: 8800, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              mah_ghettolimpo: {
+                label: "Ghettolimpo (2021)",
+                eq: {
+                  name: "Ghettolimpo 2021",
+                  notes: "Sound mitologico e sonico con Klan e Rubini: bassi profondi a 42Hz, pad orientali a 500Hz, voce vellutata e precisa a 2800Hz e apertura a 14500Hz.",
+                  bands: [
+                    { freq: 42, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 1, q: 1.2 },
+                    { freq: 250, gain: 0, q: 1.0 },
+                    { freq: 500, gain: 0, q: 1.2 },
+                    { freq: 2800, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              mah_nei_letti: {
+                label: "Nei letti degli altri (2024)",
+                eq: {
+                  name: "Nei Letti 2024",
+                  notes: "Produzione contemporanea con Tuta Gold: bassi distorti club/baile funk a 40Hz, transienti velocissimi a 160Hz e resa vocale chirurgica a 3000Hz.",
+                  bands: [
+                    { freq: 40, gain: 3, q: 1.2 },
+                    { freq: 160, gain: 1, q: 1.2 },
+                    { freq: 270, gain: 0, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2900, gain: 2, q: 1.3 },
+                    { freq: 4900, gain: 1, q: 1.2 },
+                    { freq: 9400, gain: 2, q: 1.1 },
+                    { freq: 15500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          madame: {
+            label: "Madame",
+            eq: {
+              name: "Madame Master",
+              notes: "Urban cantautorale e rap poetico per Nothing X: bassi rotondi ed espressivi a 45Hz/130Hz, corpo caldo a 320Hz, estensione vocale unica con timbro caldo a 2400Hz e brillantezza a 13500Hz.",
+              bands: [
+                { freq: 45, gain: 2, q: 1.1 },
+                { freq: 130, gain: 1, q: 1.2 },
+                { freq: 320, gain: 1, q: 1.0 },
+                { freq: 650, gain: 0, q: 1.2 },
+                { freq: 2400, gain: 2, q: 1.3 },
+                { freq: 5000, gain: 0, q: 1.3 },
+                { freq: 8800, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              mad_madame: {
+                label: "Madame (2021)",
+                eq: {
+                  name: "Madame 2021",
+                  notes: "Esordio di rottura con Voce: sub calibrato a 46Hz, ritmiche trap/pop a 140Hz, interpretazione vocale emotiva ed articolata a 2500Hz e ariosita a 13000Hz.",
+                  bands: [
+                    { freq: 46, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.2 },
+                    { freq: 2500, gain: 2, q: 1.3 },
+                    { freq: 4800, gain: 0, q: 1.3 },
+                    { freq: 8600, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              mad_l_amore: {
+                label: "L'amore (2023)",
+                eq: {
+                  name: "L Amore 2023",
+                  notes: "Ricerca sonora sofisticata con Il bene nel male: archi organici a 400Hz, kick profondo a 44Hz, voce naturale ed empatica a 2300Hz e ariosita a 14500Hz.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 1, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.0 },
+                    { freq: 400, gain: 1, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.3 },
+                    { freq: 4700, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 0.9 }
                   ]
                 }
               }
@@ -36681,6 +41127,144 @@ const MUSIC_DATABASE = {
                     { freq: 4500, gain: 2, q: 1.2 },
                     { freq: 9200, gain: 2, q: 1.1 },
                     { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          il_volo: {
+            label: "Il Volo",
+            eq: {
+              name: "Il Volo Master",
+              notes: "Pop lirico e crossover operistico: imponenza dei bassi orchestrali a 55Hz, calore di violoncelli a 130Hz, squillo tenorile e baritonale a 2.2kHz, contenimento ottoni a 4.2kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 260, gain: 0, q: 1.1 },
+                { freq: 700, gain: 1, q: 1.0 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 4200, gain: -2, q: 1.4 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              iv_il_volo: {
+                label: "Il Volo (2010)",
+                eq: {
+                  name: "Il Volo 2010",
+                  notes: "Debutto orchestrale sinfonico ad Abbey Road: corpo solenne degli archi a 140Hz, formante di canto a 2kHz e riverbero naturale della grande sala a 14kHz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -2, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              iv_we_are_love: {
+                label: "We Are Love / Mas Que Amor (2012)",
+                eq: {
+                  name: "We Are Love",
+                  notes: "Produzione magistrale di Humberto Gatica e Tony Renis: calore del basso a 125Hz, apertura vocale a 2.2kHz ed equilibrio impeccabile tra orchestra e sezione ritmica pop.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4000, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              iv_grande_amore: {
+                label: "L'amore si muove / Grande Amore (2015)",
+                eq: {
+                  name: "Grande Amore",
+                  notes: "Trionfo sanremese: impatto potente della cassa a 55Hz, maestosita del crescendo a 680Hz, squillo tenorile nei ritornelli a 2.4kHz e archi brillanti.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 680, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -2, q: 1.4 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              iv_notte_magica: {
+                label: "Notte Magica (2016)",
+                eq: {
+                  name: "Notte Magica",
+                  notes: "Tributo ai Tre Tenori con Placido Domingo: spazialita del palco all'aperto, calore naturale dell'orchestra a 150Hz e distacco acustico su Nothing X.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: -1, q: 1.4 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              iv_musica: {
+                label: "Musica (2019)",
+                eq: {
+                  name: "Musica 2019",
+                  notes: "Modernizzazione pop-crossover (Musica che resta): cassa solida a 52Hz, rullante definito a 2.2kHz e trasparenza sui passaggi polifonici a tre voci.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              iv_sings_morricone: {
+                label: "Il Volo Sings Morricone (2021)",
+                eq: {
+                  name: "Sings Morricone",
+                  notes: "Tributo al Maestro Morricone con la Roma Sinfonietta: archi struggenti a 240Hz, corni ed ottoni controllati a 4kHz e dinamica sinfonica purissima.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: -2, q: 1.4 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              iv_ad_astra: {
+                label: "Ad Astra (2024)",
+                eq: {
+                  name: "Ad Astra 2024",
+                  notes: "Capitolo di inediti moderni (Capolavoro): ritmiche elettroniche contemporanee a 50Hz, armonie vocali avveniristiche a 2.5kHz e ariosita estesa a 15.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.3 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: -1, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.1 }
                   ]
                 }
               }
