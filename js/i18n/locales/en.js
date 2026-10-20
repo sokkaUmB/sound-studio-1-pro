@@ -116,7 +116,7 @@
       studio_flat: "STUDIO REFERENCE"
     },
     device_descriptions: {
-      nothing_headphone_1: "Calibration Nothing HeadPhone (1): 40mm driver in over-ear circumaural acoustic chamber. Preserves visceral sub-bass impact, vents closed-cup resonances at 200-350Hz (-1 dB) for razor-sharp separation between double bass kicks and rhythm guitars, preserves natural pinna HRTF midrange response, opens cymbal clarity and soundstage air at 6.6kHz (+1 dB) and 13.2kHz (+1 dB).",
+      nothing_headphone_1: "Nothing HeadPhone (1) Calibration: 40mm circumaural driver. Sub-bass recovery (+1 dB at 55Hz), chamber resonance de-mud at 100-350Hz (-1 dB), vocal transition (+1 dB at 1.5kHz), surgical presence correction (+3 dB, Q 1.4 at 4.8kHz), sibilance protection (0 dB) and natural air at 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro Profile: Flagship multi-driver circumaural architecture engineered for ultra-high acoustic resolution and expansive 3D soundstaging.",
       nothing_headphone_a: "Nothing HeadPhone (a) Profile: Semi-transparent over-ear headphones with 40mm driver, Hi-Res LDAC support, balanced response with airy midrange and transparent treble.",
       cmf_headphone_pro: "CMF Headphone Pro Profile: Over-ear headphone with 40mm drivers and Hi-Res LDAC support featuring dynamic frequency control.",

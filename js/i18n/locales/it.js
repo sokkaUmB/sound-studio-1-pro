@@ -116,7 +116,7 @@
       studio_flat: "STUDIO REFERENCE"
     },
     device_descriptions: {
-      nothing_headphone_1: "Calibrazione Nothing HeadPhone (1): Driver 40mm in camera acustica circumaurale over-ear. Mantiene l'impatto viscerale dei sub-bassi, sfiata le risonanze della camera chiusa a 200-350Hz (-1 dB) per una separazione chirurgica tra doppio pedale e chitarre ritmiche, preserva la naturale risposta HRTF sui medi, apre la chiarezza dei piatti e l'ariosità del soundstage a 6.6kHz (+1 dB) e 13.2kHz (+1 dB).",
+      nothing_headphone_1: "Calibrazione Nothing HeadPhone (1): Driver 40mm circumaurale over-ear. Recupero sub-bassi (+1 dB a 55Hz), de-mud risonanza camera a 100-350Hz (-1 dB), transizione vocale (+1 dB a 1.5kHz), correzione chirurgica presenza (+3 dB, Q 1.4 a 4.8kHz), controllo anti-sibilanti (0 dB) e ariosità naturale a 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profilo Nothing HeadPhone (1) Pro: Architettura circumaurale flagship multi-driver ad altissima fedeltà sonora e soundstage tridimensionale.",
       nothing_headphone_a: "Profilo Nothing HeadPhone (a): Cuffia over-ear semi-trasparente con driver da 40mm, supporto Hi-Res LDAC, risposta equilibrata con medi ariosi e alti trasparenti.",
       cmf_headphone_pro: "Profilo CMF Headphone Pro: Cuffia over-ear con driver da 40mm e supporto Hi-Res LDAC con controllo dinamico delle frequenze.",
