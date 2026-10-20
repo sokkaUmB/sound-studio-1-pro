@@ -1,5 +1,5 @@
 // sw.js - Service Worker per Sound Studio (1) Pro for Nothing Ear (PWA Offline)
-const CACHE_NAME = "sound-studio-1-pro-v25";
+const CACHE_NAME = "sound-studio-1-pro-v26";
 
 const ASSETS_TO_CACHE = [
   "./",
