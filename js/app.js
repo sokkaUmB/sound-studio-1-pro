@@ -23,16 +23,16 @@
     nothing_headphone_1: {
       name: "Nothing HeadPhone (1)",
       badge: "NOTHING HEADPHONE (1)",
-      description: "Calibrazione Nothing HeadPhone (1): Driver 40mm in camera acustica circumaurale over-ear. Mantiene l'impatto viscerale dei sub-bassi, sfiata le risonanze della camera chiusa a 200-350Hz (-1 dB) per una separazione chirurgica tra doppio pedale e chitarre ritmiche, preserva la naturale risposta HRTF sui medi, apre la chiarezza dei piatti e l'ariosità del soundstage a 6.6kHz (+1 dB) e 13.2kHz (+1 dB).",
+      description: "Calibrazione Nothing HeadPhone (1): Driver 40mm circumaurale over-ear. Recupero sub-bassi (+1 dB a 55Hz), de-mud risonanza camera a 100-350Hz (-1 dB), transizione vocale (+1 dB a 1.5kHz), correzione chirurgica presenza (+3 dB, Q 1.4 a 4.8kHz), controllo anti-sibilanti (0 dB) e ariosità naturale a 13.2kHz (+1 dB).",
       offsets: [
-        { dGain: 0, dQ: 0.1 },   // CH1 (20-99 Hz)
-        { dGain: -1, dQ: 0.2 },  // CH2 (100-199 Hz)
-        { dGain: -1, dQ: 0.0 },  // CH3 (200-399 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH4 (400-999 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH5 (1000-2999 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH6 (3000-5999 Hz)
-        { dGain: 1, dQ: -0.1 },  // CH7 (6000-11999 Hz)
-        { dGain: 1, dQ: 0.0 }    // CH8 (12000-20000 Hz)
+        { dGain: 1, dQ: 0.0 },   // CH1 (20-99 Hz) -> Recupero sub-bassi (+1 dB)
+        { dGain: -1, dQ: 0.2 },  // CH2 (100-199 Hz) -> Pulizia risonanza camera (-1 dB)
+        { dGain: -1, dQ: 0.0 },  // CH3 (200-399 Hz) -> De-mud e separazione (-1 dB)
+        { dGain: 0, dQ: 0.0 },   // CH4 (400-999 Hz) -> Gamma media neutrale (0 dB)
+        { dGain: 1, dQ: 0.0 },   // CH5 (1000-2999 Hz) -> Transizione vocale (+1 dB)
+        { dGain: 3, dQ: 0.4 },   // CH6 (3000-5999 Hz) -> Correzione presenza (+3 dB, Q +0.4)
+        { dGain: 0, dQ: 0.0 },   // CH7 (6000-11999 Hz) -> Sicurezza anti-sibilanti (0 dB)
+        { dGain: 1, dQ: 0.0 }    // CH8 (12000-20000 Hz) -> Aria e soundstage (+1 dB)
       ]
     },
     nothing_headphone_1_pro: {
