@@ -23,16 +23,16 @@
     nothing_headphone_1: {
       name: "Nothing HeadPhone (1)",
       badge: "NOTHING HEADPHONE (1)",
-      description: "Calibrazione Nothing HeadPhone (1): Driver 40mm circumaurale over-ear. Recupero sub-bassi (+1 dB a 55Hz), de-mud risonanza camera a 100-350Hz (-1 dB), transizione vocale (+1 dB a 1.5kHz), correzione chirurgica presenza (+3 dB, Q 1.4 a 4.8kHz), controllo anti-sibilanti (0 dB) e ariosità naturale a 13.2kHz (+1 dB).",
+      description: "Calibrazione Nothing HeadPhone (1): Driver 40mm circumaurale over-ear. Recupero sub-bassi (+1 dB a 55Hz), pulizia risonanza camera a 160Hz (-1 dB, Q 1.2), de-mud e separazione a 240Hz (-1 dB), gamma media neutrale a 500Hz, transizione vocale a 1400Hz (+1 dB), correzione presenza a 4800Hz (+3 dB, Q 1.4), anti-sibilanti a 8000Hz (0 dB) e ariosità naturale a 13.2kHz (+1 dB).",
       offsets: [
-        { dGain: 1, dQ: 0.0 },   // CH1 (20-99 Hz) -> Recupero sub-bassi (+1 dB)
-        { dGain: -1, dQ: 0.2 },  // CH2 (100-199 Hz) -> Pulizia risonanza camera (-1 dB)
-        { dGain: -1, dQ: 0.0 },  // CH3 (200-399 Hz) -> De-mud e separazione (-1 dB)
-        { dGain: 0, dQ: 0.0 },   // CH4 (400-999 Hz) -> Gamma media neutrale (0 dB)
-        { dGain: 1, dQ: 0.0 },   // CH5 (1000-2999 Hz) -> Transizione vocale (+1 dB)
-        { dGain: 3, dQ: 0.4 },   // CH6 (3000-5999 Hz) -> Correzione presenza (+3 dB, Q +0.4)
-        { dGain: 0, dQ: 0.0 },   // CH7 (6000-11999 Hz) -> Sicurezza anti-sibilanti (0 dB)
-        { dGain: 1, dQ: 0.0 }    // CH8 (12000-20000 Hz) -> Aria e soundstage (+1 dB)
+        { freq: 55, dGain: 1, dQ: 0.0 },     // CH1 (20-99 Hz): 55 Hz, +1 dB, Q 1.0
+        { freq: 160, dGain: -1, dQ: 0.2 },   // CH2 (100-199 Hz): 160 Hz, -1 dB, Q 1.2
+        { freq: 240, dGain: -1, dQ: 0.0 },   // CH3 (200-399 Hz): 240 Hz, -1 dB, Q 1.0
+        { freq: 500, dGain: 0, dQ: 0.0 },    // CH4 (400-999 Hz): 500 Hz, 0 dB, Q 1.0
+        { freq: 1400, dGain: 1, dQ: 0.0 },   // CH5 (1000-2999 Hz): 1400 Hz, +1 dB, Q 1.0
+        { freq: 4800, dGain: 3, dQ: 0.4 },   // CH6 (3000-5999 Hz): 4800 Hz, +3 dB, Q 1.4
+        { freq: 8000, dGain: 0, dQ: 0.0 },   // CH7 (6000-11999 Hz): 8000 Hz, 0 dB, Q 1.0
+        { freq: 13200, dGain: 1, dQ: 0.0 }   // CH8 (12000-20000 Hz): 13200 Hz, +1 dB, Q 1.0
       ]
     },
     nothing_headphone_1_pro: {
@@ -543,7 +543,7 @@
     return rawBands.map((b, i) => {
       const r = BAND_RANGES[i];
       const off = prof.offsets[i] || { dGain: 0, dQ: 0 };
-      const f = Number(b.freq) || r.default;
+      const f = (off.freq !== undefined) ? off.freq : (Number(b.freq) || r.default);
       const g = Math.max(-6, Math.min(6, Math.round((Number(b.gain) || 0) + (off.dGain || 0))));
       const q = Math.max(0.1, Math.min(10.0, Math.round(((Number(b.q) || 1.0) + (off.dQ || 0)) * 10) / 10));
       return {
@@ -1096,7 +1096,7 @@
     return bands.map((b, i) => {
       const r = BAND_RANGES[i];
       const off = prof.offsets[i] || { dGain: 0, dQ: 0 };
-      const f = Number(b.freq) || r.default;
+      const f = Number(b.freq) || (off.freq !== undefined ? off.freq : r.default);
       const g = Math.max(-6, Math.min(6, Math.round((Number(b.gain) || 0) - (off.dGain || 0))));
       const q = Math.max(0.1, Math.min(10.0, Math.round(((Number(b.q) || 1.0) - (off.dQ || 0)) * 10) / 10));
       return {
