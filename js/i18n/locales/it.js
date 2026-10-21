@@ -118,7 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Calibrazione Nothing HeadPhone (1): Driver 40mm circumaurale over-ear. Recupero sub-bassi (55Hz / +1 dB), risonanza camera a 160Hz (-1 dB, Q 1.2), de-mud a 240Hz (-1 dB), centro 500Hz, transizione vocale a 1400Hz (+1 dB), correzione presenza a 4800Hz (+3 dB, Q 1.4), 8000Hz (0 dB) e ariosità a 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profilo Nothing HeadPhone (1) Pro: Architettura circumaurale flagship multi-driver ad altissima fedeltà sonora e soundstage tridimensionale.",
-      nothing_headphone_a: "Profilo Nothing HeadPhone (a): Cuffia over-ear semi-trasparente con driver da 40mm, supporto Hi-Res LDAC, risposta equilibrata con medi ariosi e alti trasparenti.",
+      nothing_headphone_a: "Calibrazione Nothing HeadPhone (a): Driver 40mm circumaurale. Asciugatura sub-basso a 55Hz (-1 dB), controllo gonfiore cassa a 140Hz (-1 dB, Q 1.2), correzione dip corpo vocale a 280Hz (+1 dB, Q 1.3), medi puri a 500Hz e 1400Hz, compensazione presenza a 4800Hz (+2 dB, Q 1.5), anti-sibilanti a 8000Hz (0 dB) e acuti bilanciati a 13.2kHz (0 dB).",
       cmf_headphone_pro: "Profilo CMF Headphone Pro: Cuffia over-ear con driver da 40mm e supporto Hi-Res LDAC con controllo dinamico delle frequenze.",
       nothing_ear_open: "Profilo Nothing Ear (open): Auricolari wireless aperti con driver da 14.2mm in titanio e tecnologia direzionale Sound Seal System.",
       cmf_clip_pro: "Profilo CMF Clip Pro: Auricolari open-ear clip-on a conduzione d'aria per il massimo comfort e consapevolezza ambientale.",

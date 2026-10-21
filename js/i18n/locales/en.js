@@ -118,7 +118,7 @@
     device_descriptions: {
       nothing_headphone_1: "Nothing HeadPhone (1) Calibration: 40mm circumaural driver. Sub-bass (55Hz / +1 dB), chamber resonance at 160Hz (-1 dB, Q 1.2), de-mud at 240Hz (-1 dB), mid core at 500Hz, vocal transition at 1400Hz (+1 dB), presence correction at 4800Hz (+3 dB, Q 1.4), 8000Hz (0 dB), and air at 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Nothing HeadPhone (1) Pro Profile: Flagship multi-driver circumaural architecture engineered for ultra-high acoustic resolution and expansive 3D soundstaging.",
-      nothing_headphone_a: "Nothing HeadPhone (a) Profile: Semi-transparent over-ear headphones with 40mm driver, Hi-Res LDAC support, balanced response with airy midrange and transparent treble.",
+      nothing_headphone_a: "Nothing HeadPhone (a) Calibration: 40mm circumaural driver. Sub-bass trimming at 55Hz (-1 dB), punch control at 140Hz (-1 dB, Q 1.2), vocal body dip recovery at 280Hz (+1 dB, Q 1.3), pure midrange at 500Hz and 1400Hz, presence compensation at 4800Hz (+2 dB, Q 1.5), sibilance protection at 8000Hz (0 dB), and natural highs at 13.2kHz (0 dB).",
       cmf_headphone_pro: "CMF Headphone Pro Profile: Over-ear headphone with 40mm drivers and Hi-Res LDAC support featuring dynamic frequency control.",
       nothing_ear_open: "Nothing Ear (open) Profile: Open-ear wireless earbuds with 14.2mm titanium-coated drivers and directional Sound Seal System.",
       cmf_clip_pro: "CMF Clip Pro Profile: Open-ear clip-on air-conduction earbuds delivering long-session comfort and situational awareness.",
