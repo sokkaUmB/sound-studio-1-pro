@@ -1,4 +1,4 @@
-﻿// js/i18n/locales/es.js - Módulo de idioma español
+// js/i18n/locales/es.js - Módulo de idioma español
 (function() {
   const LocaleES = {
     meta: {
@@ -116,9 +116,9 @@
       studio_flat: "STUDIO REFERENCE"
     },
     device_descriptions: {
-      nothing_headphone_1: "Calibración Nothing HeadPhone (1): Driver de 40mm en cámara acústica circumaural cerrada. Mantiene el impacto de subgraves, ventila resonancias de la copa a 200-350Hz (-1 dB) para una separación nítida entre doble bombo y guitarras, abre la claridad de platos y amplitud sonora a 6.6kHz (+1 dB) e 13.2kHz (+1 dB).",
+      nothing_headphone_1: "Calibración Nothing HeadPhone (1): Driver de 40mm circumaural. Recuperación de subgraves (55Hz / +1 dB), ventilación resonancia cámara a 160Hz (-1 dB, Q 1.2), de-mud a 240Hz (-1 dB), centro medios a 500Hz, transición vocal a 1400Hz (+1 dB), corrección presencia a 4800Hz (+3 dB, Q 1.4), protección de sibilancias a 8000Hz (0 dB) y amplitud a 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Perfil Nothing HeadPhone (1) Pro: Arquitectura circumaural insignia multi-driver diseñada para ultra alta resolución acústica y escena 3D envolvente.",
-      nothing_headphone_a: "Perfil Nothing HeadPhone (a): Auriculares circumaurales semitransparentes con driver de 40mm, soporte Hi-Res LDAC y respuesta balanceada.",
+      nothing_headphone_a: "Calibración Nothing HeadPhone (a): Driver de 40mm circumaural. Reducción de subgraves a 55Hz (-1 dB), control de pegada a 140Hz (-1 dB, Q 1.2), corrección del dip de cuerpo vocal a 280Hz (+1 dB, Q 1.3), medios neutros a 500Hz y 1400Hz, compensación de presencia a 4800Hz (+2 dB, Q 1.5), protección de sibilancias a 8000Hz (0 dB) y agudos naturales a 13.2kHz (0 dB).",
       cmf_headphone_pro: "Perfil CMF Headphone Pro: Auriculares circumaurales con transductores de 40mm, soporte Hi-Res LDAC y control dinámico de frecuencias.",
       nothing_ear_open: "Perfil Nothing Ear (open): Auriculares inalámbricos abiertos con transductores de 14.2mm en titanio y sistema acústico direccional Sound Seal.",
       cmf_clip_pro: "Perfil CMF Clip Pro: Auriculares abiertos tipo clip con conducción aérea para gran comodidad y escucha consciente del entorno.",

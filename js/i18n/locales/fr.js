@@ -1,4 +1,4 @@
-﻿// js/i18n/locales/fr.js - Module de langue française
+// js/i18n/locales/fr.js - Module de langue française
 (function() {
   const LocaleFR = {
     meta: {
@@ -116,9 +116,9 @@
       studio_flat: "STUDIO REFERENCE"
     },
     device_descriptions: {
-      nothing_headphone_1: "Calibrage Nothing HeadPhone (1) : Transducteur 40mm en chambre circum-aurale fermée. Préserve l'impact profond des sous-basses, aère les résonances à 200-350Hz (-1 dB) pour une séparation nette entre double pédale et guitares rythmiques, ouvre la clarté des cymbales et l'espace sonore à 6.6kHz (+1 dB) et 13.2kHz (+1 dB).",
+      nothing_headphone_1: "Calibrage Nothing HeadPhone (1) : Transducteur 40mm circum-aural. Récupération des sous-basses (55Hz / +1 dB), aération résonance chambre à 160Hz (-1 dB, Q 1.2), de-mud à 240Hz (-1 dB), centre médium à 500Hz, transition vocale à 1400Hz (+1 dB), correction présence à 4800Hz (+3 dB, Q 1.4), protection sibilance à 8000Hz (0 dB) et aération à 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profil Nothing HeadPhone (1) Pro : Architecture circum-aurale multi-transducteurs flagship conçue pour une très haute définition et une scène sonore 3D.",
-      nothing_headphone_a: "Profil Nothing HeadPhone (a) : Casque circum-aural semi-transparent avec transducteur 40mm, compatibilité Hi-Res LDAC et équilibre dynamique.",
+      nothing_headphone_a: "Calibrage Nothing HeadPhone (a) : Transducteur 40mm circum-aural. Atténuation des sous-basses à 55Hz (-1 dB), contrôle du punch à 140Hz (-1 dB, Q 1.2), récupération du corps vocal à 280Hz (+1 dB, Q 1.3), médiums neutres à 500Hz et 1400Hz, compensation présence à 4800Hz (+2 dB, Q 1.5), protection sibilance à 8000Hz (0 dB) et aigus naturels à 13.2kHz (0 dB).",
       cmf_headphone_pro: "Profil CMF Headphone Pro : Casque circum-aural avec transducteurs 40mm, compatibilité Hi-Res LDAC et contrôle dynamique.",
       nothing_ear_open: "Profil Nothing Ear (open) : Écouteurs sans fil ouverts avec transducteurs 14.2mm en titane et système acoustique directionnel Sound Seal.",
       cmf_clip_pro: "Profil CMF Clip Pro : Écouteurs à clip ouverts par conduction aérienne offrant confort d'écoute et conscience de l'environnement.",

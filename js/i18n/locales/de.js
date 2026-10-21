@@ -1,4 +1,4 @@
-﻿// js/i18n/locales/de.js - Deutsches Sprachmodul
+// js/i18n/locales/de.js - Deutsches Sprachmodul
 (function() {
   const LocaleDE = {
     meta: {
@@ -116,9 +116,9 @@
       studio_flat: "STUDIO REFERENCE"
     },
     device_descriptions: {
-      nothing_headphone_1: "Kalibrierung Nothing HeadPhone (1): 40-mm-Treiber in geschlossener ohrumschließender Kammer. Bewahrt den tiefen Subbass-Punch, dämpft Gehäuseresonanzen bei 200-350Hz (-1 dB) für messerscharfe Trennung von Double-Bass und Rhythmusgitarren, öffnet Beckenbrillanz und Bühnenluft bei 6.6kHz (+1 dB) und 13.2kHz (+1 dB).",
+      nothing_headphone_1: "Kalibrierung Nothing HeadPhone (1): 40-mm-Treiber circumaural. Subbass-Verstärkung (55Hz / +1 dB), Kammerresonanz-Dämpfung bei 160Hz (-1 dB, Q 1.2), De-Mud bei 240Hz (-1 dB), Mittenkern bei 500Hz, Stimmübergang bei 1400Hz (+1 dB), Präsenzkompensation bei 4800Hz (+3 dB, Q 1.4), Zischlautschutz bei 8000Hz (0 dB) und Luftigkeit bei 13.2kHz (+1 dB).",
       nothing_headphone_1_pro: "Profil Nothing HeadPhone (1) Pro: Flaggschiff Multi-Treiber Over-Ear-Architektur für höchste akustische Auflösung und dreidimensionale Klangbühne.",
-      nothing_headphone_a: "Profil Nothing HeadPhone (a): Semi-transparenter Over-Ear-Kopfhörer mit 40-mm-Treiber, Hi-Res LDAC und dynamischer Frequenzbalance.",
+      nothing_headphone_a: "Kalibrierung Nothing HeadPhone (a): 40-mm-Treiber circumaural. Subbass-Reduktion bei 55Hz (-1 dB), Punch-Dämpfung bei 140Hz (-1 dB, Q 1.2), Stimmkörper-Kompensation bei 280Hz (+1 dB, Q 1.3), reine Mitten bei 500Hz und 1400Hz, Präsenzkorrektur bei 4800Hz (+2 dB, Q 1.5), Zischlautschutz bei 8000Hz (0 dB) und lineare Höhen bei 13.2kHz (0 dB).",
       cmf_headphone_pro: "Profil CMF Headphone Pro: Over-Ear-Kopfhörer mit 40-mm-Treibern, Hi-Res LDAC-Unterstützung und dynamischer Frequenzkontrolle.",
       nothing_ear_open: "Profil Nothing Ear (open): Offene kabellose Ohrhörer mit 14.2-mm-Titanteibern und gerichtetem Sound Seal System.",
       cmf_clip_pro: "Profil CMF Clip Pro: Offene Clip-Ohrhörer mit Luftleitung für hohen Tragekomfort und Umgebungswahrnehmung.",
