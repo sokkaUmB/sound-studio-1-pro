@@ -53,16 +53,16 @@
     nothing_headphone_a: {
       name: "Nothing HeadPhone (a)",
       badge: "NOTHING HEADPHONE (A)",
-      description: "Profilo Nothing HeadPhone (a): Cuffia over-ear semi-trasparente con driver da 40mm, supporto Hi-Res LDAC, risposta equilibrata con medi ariosi e alti trasparenti.",
+      description: "Calibrazione Nothing HeadPhone (a): Driver 40mm circumaurale. Asciugatura sub-basso a 55Hz (-1 dB), controllo gonfiore cassa a 140Hz (-1 dB, Q 1.2), correzione dip corpo vocale a 280Hz (+1 dB, Q 1.3), medi puri a 500Hz e 1400Hz, compensazione presenza a 4800Hz (+2 dB, Q 1.5), anti-sibilanti a 8000Hz (0 dB) e acuti bilanciati a 13.2kHz (0 dB).",
       offsets: [
-        { dGain: 1, dQ: 0.0 },   // CH1 (20-99 Hz)
-        { dGain: -1, dQ: 0.1 },  // CH2 (100-199 Hz)
-        { dGain: -1, dQ: 0.0 },  // CH3 (200-399 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH4 (400-999 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH5 (1000-2999 Hz)
-        { dGain: 1, dQ: 0.0 },   // CH6 (3000-5999 Hz)
-        { dGain: 0, dQ: 0.0 },   // CH7 (6000-11999 Hz)
-        { dGain: 1, dQ: 0.0 }    // CH8 (12000-20000 Hz)
+        { freq: 55,    dGain: -1, dQ: 0.2 },   // CH1 (20-99 Hz): 55 Hz, -1 dB, Q 1.2 (asciuga enfasi sub-basso)
+        { freq: 140,   dGain: -1, dQ: 0.2 },   // CH2 (100-199 Hz): 140 Hz, -1 dB, Q 1.2 (elimina gonfiore cassa)
+        { freq: 280,   dGain:  1, dQ: 0.3 },   // CH3 (200-399 Hz): 280 Hz, +1 dB, Q 1.3 (corregge il dip, ridà corpo)
+        { freq: 500,   dGain:  0, dQ: 0.0 },   // CH4 (400-999 Hz): 500 Hz, 0 dB, Q 1.0 (gamma media pura)
+        { freq: 1400,  dGain:  0, dQ: 0.0 },   // CH5 (1000-2999 Hz): 1400 Hz, 0 dB, Q 1.0 (trasparenza vocale)
+        { freq: 4800,  dGain:  2, dQ: 0.5 },   // CH6 (3000-5999 Hz): 4800 Hz, +2 dB, Q 1.5 (colma deficit con campana dolce)
+        { freq: 8000,  dGain:  0, dQ: 0.0 },   // CH7 (6000-11999 Hz): 8000 Hz, 0 dB, Q 1.0 (anti-sibilanti)
+        { freq: 13200, dGain:  0, dQ: 0.0 }    // CH8 (12000-20000 Hz): 13200 Hz, 0 dB, Q 1.0 (acuti estesi naturali)
       ]
     },
     cmf_headphone_pro: {
