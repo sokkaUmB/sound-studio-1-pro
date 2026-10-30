@@ -15,9 +15,9 @@
 
 [![Live Web App](https://img.shields.io/badge/Live_Web_App-sound--studio--1--pro.pages.dev-22c55e.svg?logo=cloudflare-pages&logoColor=white)](https://sound-studio-1-pro.pages.dev/)
 [![Licenza: CC BY-NC 4.0](https://img.shields.io/badge/Licenza-CC_BY--NC_4.0-red.svg)](LICENSE.md)
-[![Preset](https://img.shields.io/badge/Profili_Acustici-1.231_Calibrati-38bdf8.svg)](#-catalogo-discografico--database-acustico)
-[![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-funzionalità-principali)
-[![Nothing X](https://img.shields.io/badge/Protocollo-Nothing_X_PEQ-white.svg)](#-come-funziona)
+[![Preset](https://img.shields.io/badge/Profili_Acustici-1.231_Calibrati-38bdf8.svg)](#-catalogo-discografico-curato-1231-profili)
+[![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-100-offline--standalone-pwa-zero-cdn-esterne)
+[![Nothing X](https://img.shields.io/badge/Protocollo-Nothing_X_PEQ-white.svg)](#-protocollo-qr-code-nothing-x-nativo)
 [![Sostieni con Revolut](https://img.shields.io/badge/Sostieni-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
 [![Autore](https://img.shields.io/badge/Autore-sokkaUmB-lightgrey.svg)](#-autore--copyright)
 
@@ -26,7 +26,30 @@
 🌐 **Web App Online:** [**sound-studio-1-pro.pages.dev**](https://sound-studio-1-pro.pages.dev/)  
 🌐 **Leggi in altre lingue:** [🇬🇧 **English**](README.md)
 
+<br>
+
+[![Interfaccia Desktop Sound Studio (1) Pro](docs/screenshots/desktop-hero.png)](https://sound-studio-1-pro.pages.dev/)
+
 </div>
+
+---
+
+## 📑 Indice dei Contenuti
+
+- [🎧 Panoramica](#-panoramica)
+- [✨ Funzionalità Principali](#-funzionalità-principali)
+  - [🎛️ Motore PEQ a 8 Bande & Curva Parametrica su Canvas](#️-motore-peq-a-8-bande--curva-parametrica-su-canvas)
+  - [📚 Catalogo Discografico Curato (1.231 Profili)](#-catalogo-discografico-curato-1231-profili)
+  - [📱 Protocollo QR Code Nothing X Nativo](#-protocollo-qr-code-nothing-x-nativo)
+  - [🌐 100% Offline & Standalone PWA](#-100-offline--standalone-pwa-zero-cdn-esterne)
+  - [🌍 Supporto Multilingua (9 Lingue)](#-supporto-multilingua-9-lingue)
+- [🎧 Dispositivi Nothing & CMF Supportati](#-dispositivi-nothing--cmf-supportati)
+- [🚀 Come Funziona e Guida all'Uso](#-come-funziona-e-guida-alluso)
+- [🛠️ Struttura del Progetto](#️-struttura-del-progetto)
+- [👤 Autore & Copyright](#-autore--copyright)
+- [☕ Sostieni il Progetto](#-sostieni-il-progetto)
+- [📄 Licenza d'Uso](#-licenza-duso)
+- [⚠️ Esclusione di Responsabilità (Disclaimer)](#️-esclusione-di-responsabilità-disclaimer)
 
 ---
 
@@ -41,43 +64,109 @@ Dotata di un **equalizzatore parametrico (PEQ) a 8 bande con filtri biquad inter
 ## ✨ Funzionalità Principali
 
 ### 🎛️ Motore PEQ a 8 Bande & Curva Parametrica su Canvas
-- Visualizzatore in tempo reale della risposta in frequenza con nodi di controllo interattivi e trascinabili.
-- Controllo parametrico completo su tutti gli 8 canali audio (Frequenza: 20 Hz – 20.000 Hz, Guadagno: da -6 dB a +6 dB, Fattore Q: da 0.1 a 10.0).
-- Compensazione hardware automatica calibrata sulla fisica acustica dei diversi driver (es. transienti rapidi dei driver ceramici rispetto allo smorzamento dei diaframmi dinamici).
 
-### 📚 Catalogo Discografico Curato (1.231 Profili)
-- Calibrazioni di mastering meticolose che coprono **139 artisti leggendari** e **1.071 album storici**.
-- Copertura generi enciclopedica: **Progressive Metal, Thrash, Heavy Metal, Death, Doom, Rock, Jazz, Classica e Pop**.
-- Ricerca istantanea con autocompletamento in tempo reale per artista, album e anno di uscita.
+<div align="center">
+  <img src="docs/screenshots/peq-visualizer.png" alt="Visualizzatore Curva PEQ" width="100%">
+</div>
 
-### 📱 Protocollo QR Code Nothing X Nativo
-- Generazione del payload ufficiale compresso con algoritmo **zlib (deflate) in Base64**, pienamente conforme al parser firmware di Nothing X.
-- **⚡ Apertura Diretta**: pulsante dedicato per avviare all'istante l'app Nothing X su Android per importare la card o scansionare il preset.
-- Esportazione **Audio Card ad alta risoluzione (300 DPI)** con tipografia Nothing OS a matrice di punti, cornice protetta e badge mixer a 9 barre per la condivisione e il salvataggio in galleria.
-
-### 🌐 100% Offline & Standalone PWA (Zero CDN Esterne)
-- Architettura self-hosted: tutte le librerie esterne ([`qrcode.min.js`](js/qrcode.min.js), [`pako.min.js`](js/pako.min.js)) sono memorizzate localmente.
-- Caching con Service Worker (`sw.js`) per un funzionamento istantaneo senza connessione internet o in modalità aereo.
-- Installabile come Progressive Web App (PWA) su Android, iOS, Windows, macOS e Linux.
-
-### 🌍 Supporto Multilingua (9 Lingue)
-- Interfaccia, etichette e notifiche toast tradotte al 100% in:
-  - 🇮🇹 Italiano, 🇬🇧 Inglese, 🇫🇷 Francese, 🇩🇪 Tedesco, 🇪🇸 Spagnolo, 🇷🇺 Russo, 🇨🇳 Cinese Mandarino, 🇮🇳 Hindi e 🇸🇦 Arabo Standard Moderno (con layout nativo RTL da destra a sinistra).
+- **Risposta Biquad in Tempo Reale**: Canvas interattivo della risposta in frequenza con nodi di controllo trascinabili che calcolano dinamicamente le funzioni di trasferimento biquad.
+- **Controllo Parametrico Totale**: 8 canali di frequenza discreti lungo l'intero spettro udibile umano:
+  - **Intervallo di Frequenza**: da 20 Hz a 20.000 Hz
+  - **Guadagno (Gain)**: da -6 dB a +6 dB (precisione 0.1 dB)
+  - **Fattore Q (Campana)**: da 0.1 a 10.0
+- **Preset Rapidi Istantanei**: commutazione con un clic tra *Flat (Reset)*, *V-Shape (Rock/Metal)*, *Bass Boost*, *Vocal Clarity*, *Treble Air* e *Calore Analogico*.
 
 ---
 
-## 🚀 Come Funziona
+### 📚 Catalogo Discografico Curato (1.231 Profili)
+
+- **Calibrazioni Discografiche Approfondite**: Profili acustici meticolosi che coprono **139 artisti leggendari** e **1.071 album storici**.
+- **Copertura Generi Enciclopedica**: Progressive Metal, Thrash, Heavy Metal, Death, Doom, Rock, Metalcore, Nu-Metal, Folk Metal, Power Metal, Jazz, Classica e Pop.
+- **Ricerca Istantanea con Autocompletamento**: Motore di ricerca fuzzy in tempo reale per band, titolo album o anno di pubblicazione con supporto da tastiera.
+- **Note Tecniche di Mastering**: Dettagli analitici su saturazione a nastro, gamma dinamica, risonanze di missaggio e collocazione delle voci per ciascun album.
+
+---
+
+### 📱 Protocollo QR Code Nothing X Nativo
+
+<div align="center">
+  <img src="docs/screenshots/qr-card-preview.png" alt="Audio Card Nothing X con QR Code" width="380">
+</div>
+
+- **Conformità Firmware Ufficiale**: Generazione del payload ufficiale compresso con algoritmo **zlib (deflate) in Base64**, pienamente conforme al parser firmware di Nothing OS e Nothing X.
+- **Live Sync Istantaneo**: Il codice QR e i metadati si aggiornano istantaneamente a ogni tocco sui fader o cambio album.
+- **⚡ Apertura Diretta**: Pulsante dedicato per avviare all'istante l'app Nothing X su Android per importare la card o scansionare il preset.
+- **Esportazione Audio Card ad Alta Risoluzione (300 DPI)**: Scheda grafica con tipografia a matrice di punti in stile Nothing OS, badge del modello e mixer per il salvataggio in galleria.
+
+---
+
+### 🌐 100% Offline & Standalone PWA (Zero CDN Esterne)
+
+<div align="center">
+  <img src="docs/screenshots/mobile-view.png" alt="Vista Smartphone PWA" width="340">
+</div>
+
+- **Architettura Self-Hosted**: Tutte le librerie ([`qrcode.min.js`](js/qrcode.min.js), [`pako.min.js`](js/pako.min.js)) sono memorizzate localmente nel repository senza chiamate a server di terze parti.
+- **Caching con Service Worker (`sw.js`)**: Strategia cache-first per un funzionamento istantaneo senza connessione internet o in modalità aereo.
+- **Installabile come PWA Cross-Platform**: Installabile come applicazione progressiva su Android, iOS, Windows, macOS e Linux.
+
+---
+
+### 🌍 Supporto Multilingua (9 Lingue)
+
+Interfaccia utente, fader, etichette tecniche e notifiche tradotte al 100% in:
+- 🇮🇹 Italiano, 🇬🇧 Inglese, 🇫🇷 Francese, 🇩🇪 Tedesco, 🇪🇸 Spagnolo, 🇷🇺 Russo, 🇨🇳 Cinese Mandarino, 🇮🇳 Hindi e 🇸🇦 Arabo Standard Moderno (con layout nativo RTL da destra a sinistra).
+
+---
+
+## 🎧 Dispositivi Nothing & CMF Supportati
+
+Sound Studio (1) Pro applica curve di compensazione acustica fisica calibrate sul diametro del driver, sulla cavità del padiglione e sui materiali dei diaframmi:
+
+| Categoria | Dispositivo | Tipologia Driver & Profilo di Calibrazione |
+| :--- | :--- | :--- |
+| **Cuffie Over-Ear** | **Nothing HeadPhone (1)** | Driver 40mm circumaurale. Recupero sub-bassi (55Hz / +1 dB), pulizia risonanza camera (160Hz / -1 dB, Q 1.2), de-mud a 240Hz, correzione presenza vocale a 4.8kHz (+3 dB). |
+| | **Nothing HeadPhone (1) Pro** | Architettura flagship multi-driver over-ear con soundstage tridimensionale. |
+| | **Nothing HeadPhone (a)** | Driver 40mm, asciugatura sub-basso e compensazione presenza a 4.8kHz (+2 dB, Q 1.5). |
+| | **CMF Headphone Pro** | Driver 40mm dinamico con controllo delle risonanze medio-basse e Hi-Res LDAC. |
+| **Design Aperto & Half In-Ear** | **Nothing Ear (open)** | Driver titanio da 14.2mm con compensazione acustica Sound Seal. |
+| | **CMF Clip Pro** | Design earhook a conduzione d'aria con rinforzo dei bassi aperti. |
+| | **Nothing Ear (stick)** | Driver 12.6mm half in-ear con recupero delle perdite di sigillatura a bassa frequenza. |
+| **Auricolari Nothing Flagship** | **Nothing Ear (2024)** | Driver ceramico: compensazione transienti rapidi e profilo acustico liscio a 6kHz. |
+| | **Nothing Ear (a)** | Auricolare dinamico a doppia camera ad alto impatto. |
+| | **Nothing Ear (2)** | Driver in grafene con attenuazione anti-fatica a 6kHz e sub-bassi precisi. |
+| | **Nothing Ear (1)** | Calibrazione originale con tuning Teenage Engineering. |
+| **Gamma CMF by Nothing** | **CMF Buds Pro 2** | Doppio driver coassiale con de-mudding ultra-bass. |
+| | **CMF Buds 2 Plus** | Doppio driver Hi-Res LDAC con estensione naturale degli alti. |
+| | **CMF Buds 2 / 2a** | Driver dinamico 12.4mm a risposta lineare bilanciata. |
+| | **CMF Buds Pro** | Calibrazione focalizzata sulla chiarezza del midrange vocale. |
+| | **CMF Buds** | Profilo standard per driver in-ear dinamico. |
+| | **CMF Neckband Pro** | Driver 13.6mm in titanio con compensazione per cancellazione rumore ibrida da 50dB. |
+| **Riferimento Studio** | **Direct Studio Master** | Risposta lineare 1:1 identica al master di registrazione originale senza offset. |
+
+---
+
+## 🚀 Come Funziona e Guida all'Uso
 
 ```mermaid
 flowchart LR
-    A["1. Scegli Genere & Album"] --> B["2. Regola la Curva PEQ a 8 Bande"]
+    A["1. Scegli Dispositivo & Preset"] --> B["2. Regola la Curva PEQ a 8 Bande"]
     B --> C["3. Genera il QR Nothing X"]
     C --> D["4. Inquadra o Apri Nothing X"]
 ```
 
-1. **Seleziona un Album**: Cerca tra i 1.231 preset del catalogo o seleziona un archetipo di genere.
-2. **Esamina la Curva Acustica**: Il canvas interattivo a 8 bande si aggiorna in tempo reale con le note tecniche di mastering.
-3. **Genera & Importa**: Il codice QR Nothing X si aggiorna all'istante. Inquadralo con la fotocamera di Nothing X o premi **"Apri Nothing X"** per trasferire il profilo ai tuoi auricolari in un secondo.
+1. **Seleziona il Dispositivo e l'Album**:
+   - Scegli il tuo modello hardware dal menu a tendina (es. *Nothing HeadPhone (1)* o *Nothing Ear 2024*).
+   - Cerca un artista o un album nella barra di ricerca istantanea, oppure usa i selettori a cascata **Genere → Sottogenere → Artista → Album**.
+2. **Esamina e Ottimizza la Curva PEQ**:
+   - Leggi le note tecniche di missaggio dell'album.
+   - Trascina i nodi interattivi direttamente sul canvas oppure modifica frequenza, guadagno e Q tramite i controlli a 8 bande.
+3. **Importa il Profilo in Nothing X**:
+   - **Metodo A (Scansione QR)**: Apri l'app **Nothing X** sul tuo smartphone, vai su Equalizzatore → Avanzate → Scansiona QR, e inquadra lo schermo.
+   - **Metodo B (Apertura Diretta)**: Da dispositivo mobile Android, premi il pulsante **"⚡ Apri Nothing X"** per avviare direttamente l'app.
+   - **Metodo C (Salva Audio Card)**: Premi **"💾 Salva QR in Galleria"** per salvare l'elegante scheda fotografica in stile Nothing OS sul tuo rullino.
+4. **Installazione PWA Offline**:
+   - Dal browser Chrome, Edge o Safari tocca **"Installa applicazione"** o **"Aggiungi a schermata Home"**. L'app continuerà a funzionare anche senza connessione internet.
 
 ---
 
@@ -91,6 +180,12 @@ sound-studio-1-pro/
 ├── LICENSE.md                 # Testo legale licenza CC BY-NC 4.0
 ├── README.md                  # Documentazione ufficiale in inglese
 ├── README.it.md               # Documentazione ufficiale in italiano (questo file)
+├── docs/
+│   └── screenshots/           # Screenshot applicazione ad alta risoluzione
+│       ├── desktop-hero.png   # Panoramica interfaccia desktop completa
+│       ├── peq-visualizer.png # Dettaglio visualizzatore curve biquad e fader
+│       ├── qr-card-preview.png# Anteprima Audio Card con codice QR Nothing X
+│       └── mobile-view.png    # Vista ottimizzata per smartphone (PWA)
 ├── css/
 │   └── style.css              # Stili tema dark/light & font dot-matrix Nothing OS
 ├── js/
