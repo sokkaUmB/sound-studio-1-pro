@@ -15,7 +15,7 @@
 
 [![Live Web App](https://img.shields.io/badge/Live_Web_App-sound--studio--1--pro.pages.dev-22c55e.svg?logo=cloudflare-pages&logoColor=white)](https://sound-studio-1-pro.pages.dev/)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-red.svg)](LICENSE.md)
-[![Presets](https://img.shields.io/badge/Acoustic_Profiles-1%2C231_Calibrated-38bdf8.svg)](#-curated-acoustic-database-1231-profiles)
+[![Presets](https://img.shields.io/badge/Acoustic_Profiles-3%2C028_Calibrated-38bdf8.svg)](#-curated-acoustic-database-1231-profiles)
 [![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-100-offline--standalone-pwa-zero-external-cdns)
 [![Nothing X](https://img.shields.io/badge/Protocol-Nothing_X_PEQ-white.svg)](#-hardware-nothing-x-qr-code-protocol)
 [![Support via Revolut](https://img.shields.io/badge/Support-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
@@ -39,7 +39,7 @@
 - [🎧 Overview](#-overview)
 - [✨ Key Features](#-key-features)
   - [🎛️ Interactive 8-Band PEQ Engine & Canvas Curve](#️-interactive-8-band-peq-engine--canvas-curve)
-  - [📚 Curated Acoustic Database (1,231 Profiles)](#-curated-acoustic-database-1231-profiles)
+  - [📚 Curated Acoustic Database (3,028 Profiles)](#-curated-acoustic-database-1231-profiles)
   - [📱 Hardware Nothing X QR Code Protocol](#-hardware-nothing-x-qr-code-protocol)
   - [🌐 100% Offline & Standalone PWA](#-100-offline--standalone-pwa-zero-external-cdns)
   - [🌍 Multi-Language Support (9 Locales)](#-multi-language-support-9-languages)
@@ -57,7 +57,7 @@
 
 **Sound Studio (1) Pro** is an open-source, high-fidelity acoustic mastering suite engineered specifically for the Nothing audio ecosystem — including **Nothing Ear**, **Nothing Ear (a)**, **Nothing Ear (2)**, **Nothing HeadPhone (1)**, and **CMF Buds**.
 
-Featuring an interactive **8-band biquad parametric equalizer (PEQ)** and an extensive discography database of **1,231 studio-calibrated album profiles**, it generates instant, hardware-compliant QR codes that can be scanned or imported directly into the official **Nothing X** app.
+Featuring an interactive **8-band biquad parametric equalizer (PEQ)** and an extensive discography database of **3,028 studio-calibrated album profiles**, it generates instant, hardware-compliant QR codes that can be scanned or imported directly into the official **Nothing X** app.
 
 ---
 
@@ -78,9 +78,9 @@ Featuring an interactive **8-band biquad parametric equalizer (PEQ)** and an ext
 
 ---
 
-### 📚 Curated Acoustic Database (1,231 Profiles)
+### 📚 Curated Acoustic Database (3,028 Profiles)
 
-- **Deep Discographic Calibrations**: Hand-tuned acoustic profiles covering **139 legendary bands/artists** and **1,071 iconic albums**.
+- **Deep Discographic Calibrations**: Hand-tuned acoustic profiles covering **436 bands/artists** and **2,592 albums**.
 - **Encyclopedic Genre Coverage**: Progressive Metal, Thrash, Heavy Metal, Death, Doom, Rock, Metalcore, Nu-Metal, Folk Metal, Power Metal, Jazz, Classical, and Pop.
 - **Instant Search with Autocomplete**: Real-time fuzzy search by artist, album name, or release year with keyboard navigation.
 - **Studio Mastering Notes**: Dedicated commentary on mix characteristics, tape saturation, dynamic range, and vocal placement for every album.
@@ -190,7 +190,7 @@ sound-studio-1-pro/
 │   └── style.css              # Nothing OS dark/light theme & dot-matrix typography
 ├── js/
 │   ├── app.js                 # UI controllers, Canvas visualizer & event router
-│   ├── database.js            # 1,231 calibrated studio profiles (139 artists)
+│   ├── database.js            # 1,231 calibrated studio profiles (436 artists)
 │   ├── protocol.js            # Nothing X QR compression & binary encoder
 │   ├── pako.min.js            # Local zlib deflation engine
 │   ├── qrcode.min.js          # Local QR matrix generator

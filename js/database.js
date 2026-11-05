@@ -1,6 +1,6 @@
 ﻿// js/database.js - Surgically Calibrated PEQ Database for Nothing X
-// Catalogo arricchito: Pietre miliari mondiali + Top streaming per genere
-// Totale Artisti: 291 | Totale Album in Studio: 2060 | Profili PEQ Calibrati: 2389
+// Catalogo ampliato: Pietre miliari mondiali + Top streaming per genere (Pop, Rock, Metal, Hip-Hop, Jazz, Electronic, Classical, Latin, Afrobeats)
+// Totale Artisti: 436 | Totale Album in Studio: 2592 | Profili PEQ Calibrati: 3028
 const MUSIC_DATABASE = {
   metal: {
     label: "Metal",
@@ -27343,6 +27343,5471 @@ const MUSIC_DATABASE = {
                 }
               }
             }
+          },
+          norah_jones: {
+            label: "Norah Jones",
+            eq: {
+              name: "Norah Jones Sign",
+              notes: "Fusione tra jazz vocale acustico, folk e calore analogico: voce sussurrata a 2.2kHz, corpo pettorale a 230Hz e chitarre acustiche setose.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 230, gain: 2, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 0.5, q: 1.1 },
+                { freq: 8000, gain: 1, q: 1.1 },
+                { freq: 14000, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              come_away_with_me: {
+                label: "Come Away with Me (2002)",
+                eq: {
+                  name: "Come Away With",
+                  notes: "Produzione di Arif Mardin: intimita straordinaria, contrabbasso caldo e rotondo a 120Hz, voce priva di sibilanti e piano upright avvolgente.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0, q: 1.2 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              feels_like_home: {
+                label: "Feels Like Home (2004)",
+                eq: {
+                  name: "Feels Like Home",
+                  notes: "Radici country-blues piu marcate: chitarre slide e Wurlitzer valorizzati a 800Hz, cassa morbida a 55Hz e voce in primo piano con presenza vellutata.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              not_too_late: {
+                label: "Not Too Late (2007)",
+                eq: {
+                  name: "Not Too Late",
+                  notes: "Sound scuro e acusticamente organico: violoncelli e fiati caldi a 280Hz, percussioni vintage e riverberi naturali aperti a 13kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 2, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              day_breaks: {
+                label: "Day Breaks (2016)",
+                eq: {
+                  name: "Day Breaks",
+                  notes: "Ritorno al piano jazz Blue Note con Wayne Shorter: sustain ricco del pianoforte, contrabbasso teso a 110Hz e voce cristallina e dinamica.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          diana_krall: {
+            label: "Diana Krall",
+            eq: {
+              name: "Diana Krall Sign",
+              notes: "Mastering audiofilo Al Schmitt: voce da contralto vellutata e sensuale, pianoforte a coda Steinway ricco a 250Hz e archi sontuosi e morbidi.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 125, gain: 1.5, q: 1.2 },
+                { freq: 250, gain: 2, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 0.5, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              the_look_of_love: {
+                label: "The Look of Love (2001)",
+                eq: {
+                  name: "The Look Of Love",
+                  notes: "Arrangiamenti orchestrali di Claus Ogerman con la LSO: profondita cinematografica, archi setosi e calore erotico della voce a 220Hz.",
+                  bands: [
+                    { freq: 40, gain: 1, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2.5, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              when_i_look_in_your_eyes: {
+                label: "When I Look in Your Eyes (1999)",
+                eq: {
+                  name: "Look In Your Eye",
+                  notes: "Reference per test impianti hi-fi: chitarra di Russell Malone scolpita, contrabbasso acustico impeccabile a 115Hz e voce scolpita al centro.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 115, gain: 2, q: 1.3 },
+                    { freq: 260, gain: 1.5, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              live_in_paris: {
+                label: "Live in Paris (2002)",
+                eq: {
+                  name: "Live in Paris",
+                  notes: "Registrazione all'Olympia: spazialita olografica del palcoscenico parigino, applausi avvolgenti a 13kHz e dinamica dal pianissimo al fortissimo.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              quiet_nights: {
+                label: "Quiet Nights (2009)",
+                eq: {
+                  name: "Quiet Nights",
+                  notes: "Omaggio alla Bossa Nova: chitarre acustiche calde a 200Hz, cassa delicata e percussioni brasiliane soffuse per un ascolto rilassante.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 0, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          gregory_porter: {
+            label: "Gregory Porter",
+            eq: {
+              name: "Gregory Porter",
+              notes: "Baritono gospel-jazz potente e caloroso: pienezza del petto a 160Hz, intelligibilita vocale a 2.6kHz, groove dell'organo Hammond e cassa solida.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 160, gain: 2.5, q: 1.2 },
+                { freq: 300, gain: 1, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2500, gain: 1.5, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              liquid_spirit: {
+                label: "Liquid Spirit (2013)",
+                eq: {
+                  name: "Liquid Spirit",
+                  notes: "Vincitore Grammy: handclaps ritmici a 3kHz, contrabbasso pulsante a 110Hz e voce monumentale che riempie il fronte sonoro senza saturare.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.1 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              take_me_to_the_alley: {
+                label: "Take Me to the Alley (2016)",
+                eq: {
+                  name: "Take Me To Alley",
+                  notes: "Atmosfere intime e spirituali: risonanza calda del flicorno a 1.2kHz, pianoforte riflessivo a 320Hz e voce baritonale profonda e rassicurante.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 150, gain: 2.5, q: 1.2 },
+                    { freq: 320, gain: 1.5, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              nat_king_cole_and_me: {
+                label: "Nat King Cole & Me (2017)",
+                eq: {
+                  name: "Nat Cole & Me",
+                  notes: "Omaggio con la London Studio Orchestra: maestosita orchestrale con violini setosi a 8kHz, fiati caldi e voce regale e corposa.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              all_rise: {
+                label: "All Rise (2020)",
+                eq: {
+                  name: "All Rise",
+                  notes: "Produzione soul-jazz ricca e corale: fiati squillanti a 3.5kHz, basso elettrico moderno a 65Hz e cori gospel ampiamente distribuiti nel campo stereo.",
+                  bands: [
+                    { freq: 65, gain: 2.5, q: 1.2 },
+                    { freq: 145, gain: 1.5, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          nina_simone: {
+            label: "Nina Simone",
+            eq: {
+              name: "Nina Simone Sign",
+              notes: "Intensita drammatica e cruda vulnerabilita: corpo vocale scuro a 260Hz, pianoforte classico-blues incisivo a 2kHz e controllo delle sibilanti vintage.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.0 },
+                { freq: 135, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: 2, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 4000, gain: 0.5, q: 1.2 },
+                { freq: 7000, gain: -0.5, q: 1.3 },
+                { freq: 13000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              i_put_a_spell_on_you: {
+                label: "I Put a Spell on You (1965)",
+                eq: {
+                  name: "Put A Spell On",
+                  notes: "Arrangiamenti d'archi Philips: enfasi espressiva della voce, calore dell'orchestra a 300Hz e dinamica tragica esaltata sui medi.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              pastel_blues: {
+                label: "Pastel Blues (1965)",
+                eq: {
+                  name: "Pastel Blues",
+                  notes: "Include Sinnerman e Strange Fruit: battito ossessivo delle mani a 2.8kHz, rullante secco e voce lacerante restituita con spessore analogico.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              little_girl_blue: {
+                label: "Little Girl Blue (1959)",
+                eq: {
+                  name: "Little Girl Blue",
+                  notes: "Debutto Bethlehem Records: contrappunto bachiano al pianoforte a 320Hz, contrabbasso essenziale a 115Hz e voce giovanile piena e rotonda.",
+                  bands: [
+                    { freq: 60, gain: 0.5, q: 1.0 },
+                    { freq: 115, gain: 2, q: 1.3 },
+                    { freq: 320, gain: 1.5, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 0, q: 1.1 },
+                    { freq: 7200, gain: 0.5, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              wild_is_the_wind: {
+                label: "Wild Is the Wind (1966)",
+                eq: {
+                  name: "Wild Is The Wind",
+                  notes: "Interpretazione viscerale e straziante: riverbero naturale di sala valorizzato a 13.5kHz, fiati scuri e voce carica di sfumature emotive a 1.8kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 1800, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          ella_fitzgerald: {
+            label: "Ella Fitzgerald",
+            eq: {
+              name: "Ella Fitzgerald",
+              notes: "The First Lady of Song: intonazione perfetta, scat brillante a 3.2kHz, estensione vocale prodigiosa, controllo del registro medio-basso e ariosita d'orchestra.",
+              bands: [
+                { freq: 50, gain: 0.5, q: 1.0 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: 1.5, q: 1.1 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 2400, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              ella_and_louis: {
+                label: "Ella and Louis (1956)",
+                eq: {
+                  name: "Ella and Louis",
+                  notes: "Produzione Verve con l'Oscar Peterson Quartet: contrasto tra la voce di seta di Ella e la grana d'ottone di Louis, bassi acustici saldi a 120Hz.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              sings_the_cole_porter_song_book: {
+                label: "Sings the Cole Porter Song Book (1956)",
+                eq: {
+                  name: "Cole Porter Book",
+                  notes: "Arrangiamenti sinfonici di Buddy Bregman: grande respiro orchestrale, violini aperti a 14kHz e voce che domina con purezza cristallina.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              clap_hands_here_comes_charlie: {
+                label: "Clap Hands Here Comes Charlie (1961)",
+                eq: {
+                  name: "Clap Hands Char",
+                  notes: "Incisione stereo audiophile Verve: trio ritmico frizzante con Herb Ellis alla chitarra, voce viva e naturale e spazzole di Gus Johnson scintillanti.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.3 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2500, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          billie_holiday: {
+            label: "Billie Holiday",
+            eq: {
+              name: "Billie Holiday",
+              notes: "Fraseggio doloroso e poetico: calore intimo a 240Hz per il corpo vocale segnato dal tempo, addolcimento del tape hiss a 6.5kHz e presenza a 2kHz.",
+              bands: [
+                { freq: 60, gain: 0.5, q: 1.0 },
+                { freq: 135, gain: 1.5, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2000, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 0.5, q: 1.1 },
+                { freq: 6500, gain: -1, q: 1.4 },
+                { freq: 12500, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              lady_in_satin: {
+                label: "Lady in Satin (1958)",
+                eq: {
+                  name: "Lady in Satin",
+                  notes: "Orchestrazioni commoventi di Ray Ellis: voce crepuscolare ed emotiva, archi densi a 400Hz e controllo accurato delle frequenze aspre.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.1 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 0, q: 1.2 },
+                    { freq: 7000, gain: -0.5, q: 1.3 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              strange_fruit: {
+                label: "Strange Fruit (1939)",
+                eq: {
+                  name: "Strange Fruit",
+                  notes: "Registrazione Commodore storica a 78 giri: restauro timbrico con riduzione del rumore di fondo, messa a fuoco dei medi vocali a 1.6kHz e 800Hz.",
+                  bands: [
+                    { freq: 70, gain: -1, q: 1.2 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 1600, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 0.5, q: 1.2 },
+                    { freq: 6500, gain: -2, q: 1.5 },
+                    { freq: 12000, gain: 0, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          frank_sinatra: {
+            label: "Frank Sinatra",
+            eq: {
+              name: "Frank Sinatra",
+              notes: "The Voice: microfono Telefunken U47 valvolare con timbro baritonale vellutato a 180Hz, precisione di pronuncia a 2.5kHz e archi swing maestosi.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2300, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              in_the_wee_small_hours: {
+                label: "In the Wee Small Hours (1955)",
+                eq: {
+                  name: "Wee Small Hours",
+                  notes: "Il concept album della solitudine notturna: arrangiamenti di Nelson Riddle, contrabbasso felpato a 120Hz e voce intima e desolata senza riverberi invadenti.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              songs_for_swingin_lovers: {
+                label: "Songs for Swingin' Lovers (1956)",
+                eq: {
+                  name: "Swingin Lovers",
+                  notes: "Puro dinamismo swing: botta della big band a 800Hz, crescendo travolgente di I've Got You Under My Skin e ottoni squillanti a 4.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              come_fly_with_me: {
+                label: "Come Fly with Me (1958)",
+                eq: {
+                  name: "Come Fly With Me",
+                  notes: "Arrangiamenti esuberanti di Billy May: impatto percussivo ed espansione stereo nei Capitol Studios di Hollywood con aria a 14kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 1.5, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              strangers_in_the_night: {
+                label: "Strangers in the Night (1966)",
+                eq: {
+                  name: "Strangers Night",
+                  notes: "Era Reprise pop-jazz orchestrale: chitarra 12 corde brillante, basso elettrico morbido a 70Hz e fraseggio rilassato e maturo di Frank.",
+                  bands: [
+                    { freq: 60, gain: 1.5, q: 1.1 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          sarah_vaughan: {
+            label: "Sarah Vaughan",
+            eq: {
+              name: "Sarah Vaughan",
+              notes: "The Divine One: controllo del vibrato operistico, corpo timbrico scuro e opulento a 220Hz, acuti brillanti e setosi a 8.5kHz senza asprezze.",
+              bands: [
+                { freq: 50, gain: 0.5, q: 1.0 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 230, gain: 2, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 1, q: 1.1 },
+                { freq: 8500, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              sarah_vaughan_with_clifford_brown: {
+                label: "Sarah Vaughan with Clifford Brown (1954)",
+                eq: {
+                  name: "Vaughan Clifford",
+                  notes: "Vertice assoluto del bop vocale EmArcy: tromba d'oro di Clifford Brown a 2.4kHz, flauto di Herbie Mann e calore vellutato del contrabbasso a 125Hz.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4100, gain: 0.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              after_hours: {
+                label: "After Hours (1961)",
+                eq: {
+                  name: "After Hours",
+                  notes: "Accompagnamento minimale di sola chitarra (Mundell Lowe) e contrabbasso (George Duvivier): silenzio avvolgente e voce nuda e maestosa.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 120, gain: 2.5, q: 1.3 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          nat_king_cole: {
+            label: "Nat King Cole",
+            eq: {
+              name: "Nat King Cole",
+              notes: "Timbro baritonale morbido come il fumo di tabacco: risonanza vellutata a 190Hz, dizione perfetta a 2.2kHz e orchestrazioni maestose di Gordon Jenkins.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 125, gain: 2, q: 1.2 },
+                { freq: 210, gain: 2, q: 1.1 },
+                { freq: 680, gain: -0.5, q: 1.1 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 4000, gain: 0.5, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              unforgettable: {
+                label: "Unforgettable (1952)",
+                eq: {
+                  name: "Unforgettable",
+                  notes: "Sessione classica Capitol: voce calda e avvolgente con microfono RCA 44BX, archi nostalgici e pianismo elegante di Nat a 300Hz.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 0, q: 1.1 },
+                    { freq: 7200, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              the_very_thought_of_you: {
+                label: "The Very Thought of You (1958)",
+                eq: {
+                  name: "Very Thought You",
+                  notes: "Registrazione stereo Capitol Tower: campo sonoro tridimensionale, archi dorati e voce al centro con un'intimita da brividi.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 2, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              love_is_the_thing: {
+                label: "Love Is the Thing (1957)",
+                eq: {
+                  name: "Love Is The Thin",
+                  notes: "Primo album stereo di Nat King Cole: lussureggianti violini orchestrali aperti a 13.5kHz, calore romantico e totale assenza di fatica d'ascolto.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 2, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          louis_armstrong: {
+            label: "Louis Armstrong",
+            eq: {
+              name: "Louis Armstrong",
+              notes: "Satchmo: voce roca inconfondibile, squillo radioso della tromba Selmer a 2.8kHz e swing travolgente con percussioni della New Orleans tradizionale.",
+              bands: [
+                { freq: 55, gain: 0.5, q: 1.0 },
+                { freq: 135, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: 1.5, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2500, gain: 2, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 7800, gain: 1, q: 1.1 },
+                { freq: 13000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              louis_armstrong_plays_wc_handy: {
+                label: "Louis Armstrong Plays W.C. Handy (1954)",
+                eq: {
+                  name: "Plays WC Handy",
+                  notes: "Columbia di George Avakian: tromba solida e tagliente con Velma Middleton, clarinetto caldo di Edmond Hall e contrabbasso dinamico a 130Hz.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              satchmo_plays_king_oliver: {
+                label: "Satchmo Plays King Oliver (1960)",
+                eq: {
+                  name: "Satchmo Oliver",
+                  notes: "Incisione audiofila Audio Fidelity in stereo: dinamica esplosiva della sezione fiati, rullante vivo e tromba di Louis protagonista assoluta.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2600, gain: 2, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              ella_and_louis: {
+                label: "Ella and Louis (1956)",
+                eq: {
+                  name: "Ella & Louis",
+                  notes: "Calibrazione dedicata al timbro ruvido di Armstrong nel celebre duetto: tromba calda senza spigolosita e contrasto timbrico limpido.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          melody_gardot: {
+            label: "Melody Gardot",
+            eq: {
+              name: "Melody Gardot",
+              notes: "Jazz-noir crepuscolare e sofisticato: voce sussurrata a microfono ravvicinato, contrabbasso caldo a 120Hz, ottoni muti e archi cinematografici.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 120, gain: 2, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 4000, gain: 0.5, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              my_one_and_only_thrill: {
+                label: "My One and Only Thrill (2009)",
+                eq: {
+                  name: "One Only Thrill",
+                  notes: "Arrangiamenti di Vince Mendoza e produzione di Larry Klein: eleganza orchestrale lussureggiante, chitarre acustiche e voce vellutata e ipnotica.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 230, gain: 2, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              currency_of_man: {
+                label: "Currency of Man (2015)",
+                eq: {
+                  name: "Currency Of Man",
+                  notes: "Svolta funky, blues e cinematografica: basso elettrico potente a 60Hz, fiati ruvidi e graffianti a 3kHz e riverberi vintage ampi.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          jamie_cullum: {
+            label: "Jamie Cullum",
+            eq: {
+              name: "Jamie Cullum Sig",
+              notes: "Crossover energico tra jazz acustico, pop e soul: percussioni sul coperchio del piano, cassa punchy a 55Hz, presenza vocale dinamica a 2.5kHz.",
+              bands: [
+                { freq: 55, gain: 2, q: 1.1 },
+                { freq: 135, gain: 1.5, q: 1.2 },
+                { freq: 270, gain: 1, q: 1.1 },
+                { freq: 720, gain: 0, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              twentysomething: {
+                label: "Twentysomething (2003)",
+                eq: {
+                  name: "Twentysomething",
+                  notes: "Registrazione analogica dal vivo in studio: contrabbasso vigoroso a 125Hz, attacco percussivo dei tasti e freschezza contemporanea dei piatti.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              catching_tales: {
+                label: "Catching Tales (2005)",
+                eq: {
+                  name: "Catching Tales",
+                  notes: "Produzione di Stewart Levine con influenze hip-hop jazz: sub-bassi tesi a 60Hz, fiati funk compatti e voce in primo piano con calore radiofonico.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.1 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2500, gain: 1.5, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          michael_buble: {
+            label: "Michael Buble",
+            eq: {
+              name: "Michael Buble",
+              notes: "Crooner moderno e Big Band pop-jazz con produzione David Foster: voce nitida e lucida a 2.4kHz, fiati scintillanti, bassi compatti e ariosita moderna.",
+              bands: [
+                { freq: 55, gain: 1.5, q: 1.1 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 250, gain: 1.5, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8500, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              michael_buble: {
+                label: "Michael Buble (2003)",
+                eq: {
+                  name: "Michael Buble",
+                  notes: "Debutto internazionale con classico swing orchestrale: voce centrale brillante, contrabbasso solido a 120Hz e archi aperti a 13.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              its_time: {
+                label: "It's Time (2005)",
+                eq: {
+                  name: "It's Time",
+                  notes: "Include Home e Feeling Good: dinamica maestosa della big band nei crescendo a 3.5kHz, cassa e basso potenti a 55Hz e grande impatto emotivo.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              call_me_irresponsible: {
+                label: "Call Me Irresponsible (2007)",
+                eq: {
+                  name: "Irresponsible",
+                  notes: "Vincitore Grammy: arrangiamenti dorati, percussioni latine frizzanti a 9kHz, corpo vocale ricco e bassi ben controllati.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              crazy_love: {
+                label: "Crazy Love (2009)",
+                eq: {
+                  name: "Crazy Love",
+                  notes: "Produzione lucida e universale: brani pop e swing con transienti rapidi, armonie vocali avvolgenti e calore da radio di classe.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 1.5, q: 1.2 },
+                    { freq: 4600, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          esperanza_spalding: {
+            label: "Esperanza Spalding",
+            eq: {
+              name: "E Spalding Sign",
+              notes: "Virtuosismo al contrabbasso acustico e basso fretless unito a voce di soprano agile e luminosa: bassi definiti a 115Hz, brillantezza vocale a 3kHz e ariosita.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 115, gain: 2.5, q: 1.3 },
+                { freq: 280, gain: 1, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.1 },
+                { freq: 2400, gain: 1.5, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8500, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              esperanza: {
+                label: "Esperanza (2008)",
+                eq: {
+                  name: "Esperanza",
+                  notes: "Debutto internazionale acclamato: contrabbasso cantabile in primo piano a 125Hz, percussioni afro-brasiliane e voce fresca e flessibile a 2.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 2.5, q: 1.3 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2500, gain: 1.5, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              chamber_music_society: {
+                label: "Chamber Music Society (2010)",
+                eq: {
+                  name: "Chamber Music",
+                  notes: "Fusione cameristica jazz e classica con archi: violoncello e contrabbasso caldi a 240Hz, trasparenza acustica sublime e voce pura.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 115, gain: 2, q: 1.3 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              radio_music_society: {
+                label: "Radio Music Society (2012)",
+                eq: {
+                  name: "Radio Music",
+                  notes: "Jazz-funk moderno e soul orchestrale: fiati possenti, basso elettrico scattante a 65Hz, cori polifonici e dinamica radiosa.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.1 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          samara_joy: {
+            label: "Samara Joy",
+            eq: {
+              name: "Samara Joy Sign",
+              notes: "Rivelazione del vocal jazz tradizionale: timbro vellutato e profondo alla Sarah Vaughan, ricchezza armonica a 220Hz, estensione nobile e spazialita moderna.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 125, gain: 1.5, q: 1.2 },
+                { freq: 220, gain: 2, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2300, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 1, q: 1.1 },
+                { freq: 8500, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              linger_awhile: {
+                label: "Linger Awhile (2022)",
+                eq: {
+                  name: "Linger Awhile",
+                  notes: "Album vincitore Grammy su Verve: ripresa pura del quartetto acustico al Sear Sound di NY, contrabbasso cantabile a 115Hz e voce sublime.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 115, gain: 2, q: 1.3 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              portrait: {
+                label: "Portrait (2024)",
+                eq: {
+                  name: "Portrait",
+                  notes: "Ottetto jazz di respiro contemporaneo: arrangiamenti raffinati con sezione fiati, interplay fluido, calore analogico e dinamica trasparente.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: 1.5, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      bebop_hardbop: {
+        label: "Bebop & Hard Bop",
+        eq: {
+          name: "Bebop Master",
+          notes: "Dinamica acustica rapida, ottoni aperti e contrabbasso articolato",
+          bands: [
+            { freq: 50, gain: 1, q: 1.1 },
+            { freq: 140, gain: 2, q: 1.2 },
+            { freq: 280, gain: 1, q: 1.1 },
+            { freq: 750, gain: 0, q: 1.3 },
+            { freq: 2000, gain: 2, q: 1.2 },
+            { freq: 4000, gain: 1, q: 1.2 },
+            { freq: 8000, gain: 2, q: 1.1 },
+            { freq: 14000, gain: 2, q: 0.9 }
+          ]
+        },
+        artists: {
+          miles_davis: {
+            label: "Miles Davis",
+            eq: {
+              name: "Miles Signature",
+              notes: "Timbro iconico della tromba con sordina Harmon: calore intimo a 240Hz, presenza penetrante a 3.5kHz e ariosità setosa a 13kHz per i riverberi della 30th Street.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2000, gain: 1.5, q: 1.3 },
+                { freq: 3800, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              kind_of_blue: {
+                label: "Kind of Blue (1959)",
+                eq: {
+                  name: "Kind of Blue",
+                  notes: "Capolavoro modale alla Columbia 30th Street: corpo setoso al contrabbasso di Chambers a 140Hz, calore al piano di Evans e apertura sui piatti di Cobb.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 13500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              bitches_brew: {
+                label: "Bitches Brew (1970)",
+                eq: {
+                  name: "Bitches Brew",
+                  notes: "Rivoluzione jazz-fusion elettrica: sub-bassi potenti per i doppi bassi, definizione dei Fender Rhodes e controllo delle frequenze taglienti dell'eco tape loop.",
+                  bands: [
+                    { freq: 40, gain: 2.5, q: 1.2 },
+                    { freq: 110, gain: 2, q: 1.1 },
+                    { freq: 320, gain: 1, q: 1.3 },
+                    { freq: 800, gain: -1, q: 1.2 },
+                    { freq: 2400, gain: 1.5, q: 1.4 },
+                    { freq: 4500, gain: 1, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              birth_of_the_cool: {
+                label: "Birth of the Cool (1957)",
+                eq: {
+                  name: "Birth of Cool",
+                  notes: "Nonetto arrangiato da Gil Evans: esaltazione della gamma media per corno francese e tuba, pulizia del roll-off monofonico vintage anni '40/'50.",
+                  bands: [
+                    { freq: 60, gain: 1.5, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.3 },
+                    { freq: 350, gain: 1.5, q: 1.2 },
+                    { freq: 600, gain: -1, q: 1.5 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 1.5, q: 1.3 },
+                    { freq: 7500, gain: 1.5, q: 1.1 },
+                    { freq: 12500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              sketches_of_spain: {
+                label: "Sketches of Spain (1960)",
+                eq: {
+                  name: "Sketches Spain",
+                  notes: "Concierto de Aranjuez e folklore iberico: dinamica orchestrale lussureggiante, tromba e flicorno vellutati e ariosità per le percussioni classiche.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.1 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 750, gain: -0.5, q: 1.4 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3600, gain: 1, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              round_about_midnight: {
+                label: "'Round About Midnight (1957)",
+                eq: {
+                  name: "Round Midnight",
+                  notes: "Debutto Columbia con Coltrane: intimità notturna della sordina Harmon, timbro pastoso del sax tenore e presenza chiara per il tocco pianistico di Red Garland.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              in_a_silent_way: {
+                label: "In a Silent Way (1969)",
+                eq: {
+                  name: "In A Silent Way",
+                  notes: "Ambiente etereo proto-ambient/fusion: esaltazione dei dettagli tridimensionali dei Rhodes di Corea/Hancock, chitarra di McLaughlin e charleston di Tony Williams.",
+                  bands: [
+                    { freq: 40, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 1.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.0 },
+                    { freq: 720, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1.5, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 0.9 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              milestones: {
+                label: "Milestones (1958)",
+                eq: {
+                  name: "Milestones",
+                  notes: "Sestetto stellare con Adderley e Coltrane: spinta ritmica serrata, corpo pieno al contrabbasso di Chambers e brillantezza armonica per gli scambi serrati di fiati.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4100, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              porgy_and_bess: {
+                label: "Porgy and Bess (1959)",
+                eq: {
+                  name: "Porgy and Bess",
+                  notes: "Adattamento di Gershwin con orchestra di Gil Evans: maestosità dell'ottone grave, dolcezza setosa al flugelhorn e riverbero spaziale da cattedrale sonora.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 1900, gain: 1.5, q: 1.1 },
+                    { freq: 3700, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 13500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          john_coltrane: {
+            label: "John Coltrane",
+            eq: {
+              name: "Coltrane Master",
+              notes: "Morfologia armonica dei 'sheets of sound': corposità a 250Hz sul registro grave del tenore, grinta tagliente a 3.2kHz e risonanza d'aria per il soprano a 12kHz.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 260, gain: 1.5, q: 1.1 },
+                { freq: 600, gain: -1, q: 1.4 },
+                { freq: 2200, gain: 2, q: 1.2 },
+                { freq: 4000, gain: 2.5, q: 1.2 },
+                { freq: 8500, gain: 1.5, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              blue_train: {
+                label: "Blue Train (1957)",
+                eq: {
+                  name: "Blue Train",
+                  notes: "Classico Blue Note registrato a Hackensack da Van Gelder: botta acustica di Paul Chambers, ottoni vigorosi e rimshot incisivi di Philly Joe Jones.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              giant_steps: {
+                label: "Giant Steps (1960)",
+                eq: {
+                  name: "Giant Steps",
+                  notes: "Progressioni Coltrane changes all'Atlantic: tenore fulmineo e penetrante a 3kHz, contrabbasso di Paul Chambers focalizzato e accordi percussivi al piano.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.3 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              my_favorite_things: {
+                label: "My Favorite Things (1961)",
+                eq: {
+                  name: "My Favorite Thg",
+                  notes: "Ascesa del sax soprano: controllo del bite acuto a 4kHz per prevenire asprezze, calore al piano a blocchi di McCoy Tyner e groove di Elvin Jones.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1, q: 1.3 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              a_love_supreme: {
+                label: "A Love Supreme (1965)",
+                eq: {
+                  name: "A Love Supreme",
+                  notes: "Opera spirituale al Van Gelder Studio: ostinato profondo al contrabbasso di Garrison, piatti scintillanti di Elvin Jones e canto estatico del sax tenore.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 1.5, q: 1.1 },
+                    { freq: 620, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4300, gain: 2, q: 1.1 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              ascension: {
+                label: "Ascension (1966)",
+                eq: {
+                  name: "Ascension",
+                  notes: "Free jazz orchestrale travolgente: separazione timbrica degli 11 fiati, gestione della densità sui medi e pulizia delle risonanze sovrapposte ad alto volume.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.2 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 330, gain: 0.5, q: 1.3 },
+                    { freq: 750, gain: -1.5, q: 1.5 },
+                    { freq: 2000, gain: 1, q: 1.3 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          thelonious_monk: {
+            label: "Thelonious Monk",
+            eq: {
+              name: "Monk Signature",
+              notes: "Accenti percussivi e dissonanze pianistiche: esaltazione dell'attacco del martelletto a 2.8kHz, corpo legnoso a 180Hz e aria naturale per i silenzi drammatici.",
+              bands: [
+                { freq: 50, gain: 1, q: 1.0 },
+                { freq: 140, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2200, gain: 2, q: 1.2 },
+                { freq: 3800, gain: 1.5, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              brilliant_corners: {
+                label: "Brilliant Corners (1957)",
+                eq: {
+                  name: "Brilliant Corner",
+                  notes: "Capolavoro Riverside con Rollins e Roach: definizione dei tempi sincopati e della celesta, tenore maestoso e contrabbasso granitico.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.4 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4100, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              monks_dream: {
+                label: "Monk's Dream (1963)",
+                eq: {
+                  name: "Monk's Dream",
+                  notes: "Produzione Columbia ad alta fedeltà con Charlie Rouse: pianoforte limpido, respiro dei piatti di Frankie Dunlop e corpo morbido al contrabbasso di John Ore.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 620, gain: -0.5, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              thelonious_himself: {
+                label: "Thelonious Himself (1957)",
+                eq: {
+                  name: "Monk Himself",
+                  notes: "Piano solo intimo e introspettivo: focalizzazione sulla risonanza della cassa armonica Steinway, decadimento naturale e sfumature dinamiche del tocco.",
+                  bands: [
+                    { freq: 60, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 1.5, q: 1.2 },
+                    { freq: 7800, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              underground: {
+                label: "Underground (1968)",
+                eq: {
+                  name: "Underground",
+                  notes: "Tarda era Columbia: brillantezza moderna dei transienti, interplay acustico del quartetto bilanciato e punch incisivo per 'Green Chimneys'.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 8600, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          charlie_parker: {
+            label: "Charlie Parker",
+            eq: {
+              name: "Bird Signature",
+              notes: "Il padre del Bebop: compensazione vintage sui registri estremi, calore legnoso all'alto sax a 260Hz e fuoco espressivo sui medi a 2.5kHz.",
+              bands: [
+                { freq: 65, gain: 2, q: 1.0 },
+                { freq: 160, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2400, gain: 2.5, q: 1.2 },
+                { freq: 4200, gain: 1.5, q: 1.2 },
+                { freq: 7500, gain: 2, q: 1.0 },
+                { freq: 12500, gain: 3, q: 0.9 }
+              ]
+            },
+            albums: {
+              bird_and_diz: {
+                label: "Bird and Diz (1952)",
+                eq: {
+                  name: "Bird and Diz",
+                  notes: "Sessioni storiche con Dizzy, Monk e Buddy Rich: apertura delle alte frequenze per recuperare la brillantezza monofonica e separazione tra tromba e contralto.",
+                  bands: [
+                    { freq: 70, gain: 2.5, q: 1.1 },
+                    { freq: 165, gain: 2.5, q: 1.3 },
+                    { freq: 320, gain: 1.5, q: 1.2 },
+                    { freq: 750, gain: -1, q: 1.4 },
+                    { freq: 2500, gain: 2.5, q: 1.3 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 7800, gain: 2, q: 1.1 },
+                    { freq: 12000, gain: 3, q: 0.9 }
+                  ]
+                }
+              },
+              charlie_parker_with_strings: {
+                label: "Charlie Parker with Strings (1950)",
+                eq: {
+                  name: "Bird w Strings",
+                  notes: "Bird con sezione d'archi: ammorbidimento delle medie aspre, calore sinfonico avvolgente e timbro lirico del sax contralto in primo piano.",
+                  bands: [
+                    { freq: 60, gain: 2, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 350, gain: 1.5, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1, q: 1.3 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 13000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              swedish_schnapps: {
+                label: "Swedish Schnapps (1958)",
+                eq: {
+                  name: "Swedish Schnapps",
+                  notes: "Incisioni Verve con Max Roach e Kenny Dorham: dinamica serrata, contrasto ritmico netto e definizione cromatica dell'articolazione di Parker.",
+                  bands: [
+                    { freq: 65, gain: 2, q: 1.0 },
+                    { freq: 155, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4300, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 13500, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          art_blakey: {
+            label: "Art Blakey & The Jazz Messengers",
+            eq: {
+              name: "Blakey Messeng",
+              notes: "Il motore del Hard Bop: potenza della cassa e del rullante a 110Hz e 3.5kHz, ride metallico scintillante e impatto vigoroso dei fiati.",
+              bands: [
+                { freq: 45, gain: 2, q: 1.1 },
+                { freq: 115, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: 1, q: 1.0 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 2.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              moanin: {
+                label: "Moanin' (1959)",
+                eq: {
+                  name: "Moanin Profile",
+                  notes: "Inno Hard Bop con Lee Morgan e Benny Golson: call-and-response gospel vibrante, rullante fragoroso e corpo robusto per il basso di Jymie Merritt.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              },
+              a_night_in_tunisia: {
+                label: "A Night in Tunisia (1961)",
+                eq: {
+                  name: "Night in Tunisia",
+                  notes: "Frenesia poliritmica con solo leggendario di Blakey: percussività esplosiva, dinamica dei tom senza distorsione e ottoni fiammeggianti.",
+                  bands: [
+                    { freq: 40, gain: 2.5, q: 1.2 },
+                    { freq: 110, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 600, gain: -1, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              the_big_beat: {
+                label: "The Big Beat (1960)",
+                eq: {
+                  name: "The Big Beat",
+                  notes: "Include 'Dat Dere': swing viscerale, accordi bluesy di Bobby Timmons e kick drum incisivo che detta la cadenza.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              free_for_all: {
+                label: "Free for All (1965)",
+                eq: {
+                  name: "Free For All",
+                  notes: "Intensità torrenziale al limite della saturazione Van Gelder: controllo dei medi per evitare affaticamento, tenuta sui bassi e sfogo dell'energia pura.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 0.5, q: 1.3 },
+                    { freq: 750, gain: -1.5, q: 1.4 },
+                    { freq: 2000, gain: 1, q: 1.3 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              buhainas_delight: {
+                label: "Buhaina's Delight (1963)",
+                eq: {
+                  name: "Buhaina Delight",
+                  notes: "Formazione con Freddie Hubbard e Wayne Shorter: armonie complesse, interplay sofisticato tra piatti ride e tromba brillante.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          sonny_rollins: {
+            label: "Sonny Rollins",
+            eq: {
+              name: "Rollins Sax Col",
+              notes: "Suono mastodontico e autorevole del Colosso del sax tenore: pienezza a 220Hz, attacco deciso a 3.4kHz e dinamica travolgente.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 250, gain: 2, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 3600, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              saxophone_colossus: {
+                label: "Saxophone Colossus (1957)",
+                eq: {
+                  name: "Sax Colossus",
+                  notes: "Inno 'St. Thomas' e 'Blue 7': calibrazione perfetta del timbro cavernoso del tenore, percussioni calypso di Roach e solidità di Tommy Potter.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 2, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              tenor_madness: {
+                label: "Tenor Madness (1956)",
+                eq: {
+                  name: "Tenor Madness",
+                  notes: "Lo storico duello Sonny Rollins vs John Coltrane: differenziazione timbrica tra il corpo caldo di Rollins e il morso tagliente di Coltrane.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4100, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              the_bridge: {
+                label: "The Bridge (1962)",
+                eq: {
+                  name: "The Bridge",
+                  notes: "Ritorno leggendario con Jim Hall: interplay sublime con la chitarra elettrica jazz, morbidezza analogica e spazialità stereo raffinata.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3700, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              way_out_west: {
+                label: "Way Out West (1957)",
+                eq: {
+                  name: "Way Out West",
+                  notes: "Trio pianoless registrato da Roy DuNann per Contemporary: immagine stereo estrema ma naturale, respiro spaziale del sax e percussioni cristalline di Manne.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 260, gain: 1.5, q: 1.1 },
+                    { freq: 600, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2.5, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          dexter_gordon: {
+            label: "Dexter Gordon",
+            eq: {
+              name: "Dexter Gordon",
+              notes: "Stile laid-back e suono profondo: ricchezza armonica nei medio-bassi a 200Hz, calore romantico e chiarezza nei passaggi bop veloci.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 3700, gain: 1.5, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              go: {
+                label: "Go! (1962)",
+                eq: {
+                  name: "Go! Dexter",
+                  notes: "Capolavoro assoluto con 'Cheese Cake': ritmo dondolante di Billy Higgins, contrabbasso rotondo di Butch Warren e tenore gigantesco e rilassato.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1.5, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              our_man_in_paris: {
+                label: "Our Man in Paris (1963)",
+                eq: {
+                  name: "Our Man Paris",
+                  notes: "Registrato a Parigi con Bud Powell e Kenny Clarke: atmosfera da jazz club europeo, piano boppistico incisivo e sax lirico ed emozionante.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.4 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              one_flight_up: {
+                label: "One Flight Up (1965)",
+                eq: {
+                  name: "One Flight Up",
+                  notes: "Con 'Tanya': lunghe esplorazioni modali, tromba calda di Donald Byrd, contrabbasso solido di NHØP e respiro spaziale d'insieme.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              doin_allright: {
+                label: "Doin' Allright (1961)",
+                eq: {
+                  name: "Doin Allright",
+                  notes: "Rientro discografico con Freddie Hubbard: smalto giovanile della tromba, swing impeccabile di Al Harewood e timbro nobile del tenore.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          cannonball_adderley: {
+            label: "Cannonball Adderley",
+            eq: {
+              name: "Cannonball Sig",
+              notes: "Il re del soul-jazz e hard bop: timbro radioso, bluesy e scattante dell'alto sax a 2.5kHz, calore vocale nel fraseggio e groove contagioso.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 270, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2300, gain: 2, q: 1.2 },
+                { freq: 4000, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              somethin_else: {
+                label: "Somethin' Else (1958)",
+                eq: {
+                  name: "Somethin Else",
+                  notes: "Vertice Blue Note con Miles Davis sideman: intesa magica 'Autumn Leaves', calore avvolgente del contrabbasso di Hank Jones e dinamica da brividi.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              mercy_mercy_mercy: {
+                label: "Mercy, Mercy, Mercy! (1966)",
+                eq: {
+                  name: "Mercy Mercy Mrcy",
+                  notes: "Live in studio con pubblico caldo: piano elettrico Wurlitzer di Joe Zawinul vibrante, battito di mani coinvolgente e calore soul contagioso.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 1.5, q: 1.0 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              them_dirty_blues: {
+                label: "Them Dirty Blues (1960)",
+                eq: {
+                  name: "Dirty Blues",
+                  notes: "Contiene 'Work Song': groove terroso hard bop, cornetta pungente di Nat Adderley e basso pulsante di Sam Jones.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4100, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          clifford_brown: {
+            label: "Clifford Brown",
+            eq: {
+              name: "Clifford Brown",
+              notes: "Perfezione timbrica della tromba Hard Bop: purezza cristallina sui medio-alti a 3kHz, rotondità senza asperità e brillantezza radiosa a 13kHz.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.0 },
+                { freq: 140, gain: 1.5, q: 1.2 },
+                { freq: 280, gain: 1, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2400, gain: 2.5, q: 1.2 },
+                { freq: 4000, gain: 2, q: 1.2 },
+                { freq: 8200, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              brown_and_roach: {
+                label: "Clifford Brown & Max Roach (1954)",
+                eq: {
+                  name: "Brown and Roach",
+                  notes: "Quintetto leggendario con Harold Land: virtuosismo mozzafiato, piatto ride nitidissimo di Roach e squillo aureo della tromba.",
+                  bands: [
+                    { freq: 60, gain: 1.5, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              },
+              study_in_brown: {
+                label: "Study in Brown (1955)",
+                eq: {
+                  name: "Study in Brown",
+                  notes: "Brani immortali come 'Cherokee': articolazione velocissima delle note, controllo delle risonanze e apertura aerea sui piatti.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2500, gain: 2.5, q: 1.2 },
+                    { freq: 4100, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              brown_roach_inc: {
+                label: "Brown and Roach Incorporated (1955)",
+                eq: {
+                  name: "Brown Roach Inc",
+                  notes: "Sinergia telepatica tra tromba e batteria: stacchi ritmici nitidi, definizione del contrabbasso di George Morrow e dinamica esplosiva.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          horace_silver: {
+            label: "Horace Silver",
+            eq: {
+              name: "Horace Silver",
+              notes: "Pioniere del funky bop: ostinati percussivi della mano sinistra a 150Hz, accordi secchi e ritmati, e fiati vivaci e squillanti.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 130, gain: 2.5, q: 1.2 },
+                { freq: 270, gain: 1, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2200, gain: 2, q: 1.2 },
+                { freq: 3800, gain: 1.5, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              song_for_father: {
+                label: "Song for My Father (1965)",
+                eq: {
+                  name: "Song For Father",
+                  notes: "Celebre ritmo bossa/hard bop: linea di basso memorabile a 120Hz, tenore caldo di Joe Henderson e piano ritmico brillante.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              blowin_blues_away: {
+                label: "Blowin' the Blues Away (1959)",
+                eq: {
+                  name: "Blowin Blues Aw",
+                  notes: "Con Blue Mitchell e Junior Cook: energia contagiosa, shuffle incalzante e squillo brillante dei fiati all'unisono.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              cape_verdean_blue: {
+                label: "The Cape Verdean Blues (1966)",
+                eq: {
+                  name: "Cape Verdean Bl",
+                  notes: "Radici afro-capoverdiane con Woody Shaw e J.J. Johnson: poliritmie esotiche, ottoni taglienti e presenza profonda della cassa.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          lee_morgan: {
+            label: "Lee Morgan",
+            eq: {
+              name: "Lee Morgan Sig",
+              notes: "Tromba sfacciata, virtuosistica e blues: attacco tagliente a 3.2kHz, calore rotondo nei medi e brillantezza sfolgorante degli armonici.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 270, gain: 1, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2300, gain: 2.5, q: 1.2 },
+                { freq: 4000, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              the_sidewinder: {
+                label: "The Sidewinder (1964)",
+                eq: {
+                  name: "The Sidewinder",
+                  notes: "Il boom commerciale del soul-jazz: ritmo boogaloo trascinante di Billy Higgins, contrabbasso solido e tromba sfacciata ed esuberante.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.2 },
+                    { freq: 4100, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              search_new_land: {
+                label: "Search for the New Land (1966)",
+                eq: {
+                  name: "Search New Land",
+                  notes: "Atmosfere meditative e modali con Wayne Shorter e Herbie Hancock: dinamica dilatata, riverberi spaziosi e calore sofisticato.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 700, gain: -0.5, q: 1.4 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              cornbread: {
+                label: "Cornbread (1967)",
+                eq: {
+                  name: "Cornbread",
+                  notes: "Contiene 'Ceora': morbidezza lirica della ballata bop, accompagnamento vellutato del pianoforte e timbro caldo della sezione fiati.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          wayne_shorter: {
+            label: "Wayne Shorter",
+            eq: {
+              name: "Shorter Master",
+              notes: "Mistero, poesia modale e timbro penetrante: esaltazione delle armoniche del sax tenore e soprano a 2.6kHz, corpo denso e ariosità cangiante.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2200, gain: 2, q: 1.2 },
+                { freq: 3900, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              speak_no_evil: {
+                label: "Speak No Evil (1966)",
+                eq: {
+                  name: "Speak No Evil",
+                  notes: "Vertice dell'era Blue Note: interplay magico con Hubbard ed Evans, atmosfera cupa e suggestiva, contrabbasso di Ron Carter nitido e rotondo.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2.5, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              juju: {
+                label: "Juju (1965)",
+                eq: {
+                  name: "Juju Shorter",
+                  notes: "Con la sezione ritmica di Coltrane (Tyner e Elvin Jones): poliritmie fiammeggianti, energia viscerale e fraseggio spigoloso del sax.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 620, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              night_dreamer: {
+                label: "Night Dreamer (1964)",
+                eq: {
+                  name: "Night Dreamer",
+                  notes: "Debutto da leader su Blue Note: lirismo notturno in 3/4, dolcezza degli accordi di pianoforte e timbro scuro e vellutato del sax tenore.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              all_seeing_eye: {
+                label: "The All Seeing Eye (1966)",
+                eq: {
+                  name: "All Seeing Eye",
+                  notes: "Avanguardia a largo organico: stratificazione di fiati complessi, gestione dell'impatto timbrico e pulizia della gamma medio-bassa.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.1 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.2 },
+                    { freq: 720, gain: -1.5, q: 1.5 },
+                    { freq: 2000, gain: 1, q: 1.3 },
+                    { freq: 4300, gain: 1.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          charles_mingus: {
+            label: "Charles Mingus",
+            eq: {
+              name: "Mingus Bass Lab",
+              notes: "Il gigante del contrabbasso jazz: attacco delle dita sulle corde a 140Hz, ruggito tellurico, polifonia tumultuosa dei fiati e swing feroce.",
+              bands: [
+                { freq: 45, gain: 2.5, q: 1.1 },
+                { freq: 120, gain: 3, q: 1.2 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              mingus_ah_um: {
+                label: "Mingus Ah Um (1959)",
+                eq: {
+                  name: "Mingus Ah Um",
+                  notes: "Capolavoro Columbia con 'Goodbye Pork Pie Hat': corpo cavernoso del contrabbasso, calore evangelico dei fiati e dinamica esplosiva in 'Better Git It'.",
+                  bands: [
+                    { freq: 45, gain: 2.5, q: 1.1 },
+                    { freq: 125, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              black_saint_sinner: {
+                label: "The Black Saint and the Sinner Lady (1963)",
+                eq: {
+                  name: "Black Saint Lady",
+                  notes: "Suite orchestrale monumentale: chitarra flamenco acustica brillante, sax contralto lancinante di Mariano e impatto percussivo sinfonico.",
+                  bands: [
+                    { freq: 40, gain: 2.5, q: 1.2 },
+                    { freq: 115, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 0.9 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              pithecanthropus: {
+                label: "Pithecanthropus Erectus (1956)",
+                eq: {
+                  name: "Pithecanthropus",
+                  notes: "Pietra miliare Atlantic: urla selvagge dei fiati controllate nei medi, walking bass incalzante e contrasti timbrici primitivi ed entusiasmanti.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.0 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              blues_and_roots: {
+                label: "Blues & Roots (1960)",
+                eq: {
+                  name: "Blues and Roots",
+                  notes: "Radici blues e gospel allo stato puro: 'Moanin' di Mingus con baritono ruggente, percussioni terrose e calore trascinante.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3900, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          dizzy_gillespie: {
+            label: "Dizzy Gillespie",
+            eq: {
+              name: "Dizzy Signature",
+              notes: "Tromba svettante a campana curva e ritmi afro-cubani: brillantezza stellare a 3.5kHz, precisione dei congas e agilità travolgente nei registri sovracuti.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.0 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 270, gain: 1, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2400, gain: 2.5, q: 1.2 },
+                { freq: 4200, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              birks_works: {
+                label: "Birks Works (1957)",
+                eq: {
+                  name: "Birks Works",
+                  notes: "Big band potente e sfavillante per Verve: ottoni taglienti ma controllati, swing poderoso della ritmica e solo pirotecnici di Dizzy.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4100, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              french_riviera: {
+                label: "Dizzy on the French Riviera (1962)",
+                eq: {
+                  name: "French Riviera",
+                  notes: "Influenze bossa nova e mediterranee: percussioni morbide e ariose, flauto e sax vellutati, e tromba solare dal timbro dorato.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -0.5, q: 1.3 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              afro: {
+                label: "Afro (1954)",
+                eq: {
+                  name: "Afro Dizzy",
+                  notes: "Pietra miliare del Cu-Bop con Chico O'Farrill e Chano Pozo: impatto tellurico dei tamburi batá, poliritmie dense e tromba infuocata.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 13500, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          max_roach: {
+            label: "Max Roach",
+            eq: {
+              name: "Max Roach Master",
+              notes: "Il melodista della batteria moderna: accordatura intonata dei tom a 160Hz, precisione chirurgica del piatto ride a 8.5kHz e cassa definita.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.1 },
+                { freq: 120, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: 1, q: 1.0 },
+                { freq: 650, gain: -1, q: 1.4 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 4000, gain: 2.5, q: 1.2 },
+                { freq: 8500, gain: 2.5, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              we_insist: {
+                label: "We Insist! Freedom Now Suite (1960)",
+                eq: {
+                  name: "We Insist Suite",
+                  notes: "Manifesto dei diritti civili: grido lacerante ed emotivo di Abbey Lincoln, tamburi africani e tensione percussiva drammatica.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2.5, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              deeds_not_words: {
+                label: "Deeds Not Words (1958)",
+                eq: {
+                  name: "Deeds Not Words",
+                  notes: "Quintetto con tuba e tromba di Booker Little: articolazione timbrica unica dei bassi di tuba, rullante secco e piatti cristallini.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1.5, q: 1.1 },
+                    { freq: 680, gain: -1, q: 1.4 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 2, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              percussion_bitter: {
+                label: "Percussion Bitter Sweet (1961)",
+                eq: {
+                  name: "Percussion Bittr",
+                  notes: "Poliritmie d'avanguardia con Eric Dolphy e Mal Waldron: timbri spigolosi del sax contralto/clarinetto basso e percussioni multiformi stratificate.",
+                  bands: [
+                    { freq: 45, gain: 2, q: 1.1 },
+                    { freq: 115, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 620, gain: -1, q: 1.4 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4300, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 0.9 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      cool_modal_jazz: {
+        label: "Cool & Modal Jazz",
+        eq: {
+          name: "Cool Modal",
+          notes: "Calore intimo, armoniche del piano e spazzole vellutate",
+          bands: [
+            { freq: 55, gain: 2, q: 1.1 },
+            { freq: 140, gain: 2, q: 1.2 },
+            { freq: 320, gain: 0, q: 1.3 },
+            { freq: 800, gain: 1, q: 1.4 },
+            { freq: 2100, gain: 2, q: 1.4 },
+            { freq: 4000, gain: 1, q: 1.3 },
+            { freq: 7500, gain: 1, q: 1.2 },
+            { freq: 13500, gain: 0, q: 1.0 }
+          ]
+        },
+        artists: {
+          bill_evans: {
+            label: "Bill Evans",
+            eq: {
+              name: "Bill Evans Sign",
+              notes: "Accento sul tocco impressionista del pianoforte Steinway: calore armonico a 280Hz, contrabbasso di Scott LaFaro scolpito a 130Hz e spazzole di Paul Motian ariose a 13.5kHz.",
+              bands: [
+                { freq: 45, gain: 0.5, q: 1.0 },
+                { freq: 130, gain: 2, q: 1.3 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -0.5, q: 1.0 },
+                { freq: 2200, gain: 1, q: 1.2 },
+                { freq: 4200, gain: 0.5, q: 1.1 },
+                { freq: 7500, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              waltz_for_debby: {
+                label: "Waltz for Debby (1961)",
+                eq: {
+                  name: "Waltz for Debby",
+                  notes: "Live al Village Vanguard: microfonaggio intimo con rumori d'ambiente naturali, contrabbasso cantabile a 135Hz e piatti con spazzole vellutate a 14kHz.",
+                  bands: [
+                    { freq: 40, gain: 0, q: 1.0 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.0 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2100, gain: 1, q: 1.1 },
+                    { freq: 4500, gain: 0.5, q: 1.0 },
+                    { freq: 8000, gain: 1.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              sunday_at_the_village_vanguard: {
+                label: "Sunday at the Village Vanguard (1961)",
+                eq: {
+                  name: "Sunday Vanguard",
+                  notes: "Registrazione Riverside di Orrin Keepnews: valorizzazione dell'interplay tra trio, dinamica trasparente e riverbero del locale controllato a 500Hz.",
+                  bands: [
+                    { freq: 45, gain: 0.5, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.3 },
+                    { freq: 310, gain: 1, q: 1.1 },
+                    { freq: 520, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.0 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              undercurrent: {
+                label: "Undercurrent (1962)",
+                eq: {
+                  name: "Undercurrent",
+                  notes: "Duo intimo piano e chitarra con Jim Hall: separazione armonica millimetrica, calore delle corde a 260Hz e dolcezza priva di asprezze sulle alte.",
+                  bands: [
+                    { freq: 50, gain: 0, q: 1.0 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: 2, q: 1.2 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3800, gain: -0.5, q: 1.3 },
+                    { freq: 7200, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              explorations: {
+                label: "Explorations (1961)",
+                eq: {
+                  name: "Explorations",
+                  notes: "Sessione in studio a New York: pianoforte rotondo e denso a 300Hz, definizione delle ghost notes sul rullante a 2.4kHz e bassi puliti.",
+                  bands: [
+                    { freq: 45, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 300, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -0.5, q: 1.1 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0, q: 1.0 },
+                    { freq: 7600, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              portrait_in_jazz: {
+                label: "Portrait in Jazz (1960)",
+                eq: {
+                  name: "Portrait in Jazz",
+                  notes: "Debutto del leggendario trio con LaFaro: contrabbasso propulsivo esaltato a 120Hz, attacco perlato dei tasti a 2kHz e piatti ride nitidi.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.3 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 750, gain: -0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4400, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          chet_baker: {
+            label: "Chet Baker",
+            eq: {
+              name: "Chet Baker Sign",
+              notes: "Timbro sussurrato e fragile della voce unito alla tromba con sordina: enfasi vocale a 1.8kHz, calore intimo a 240Hz e attenuazione del soffio aspro a 6kHz.",
+              bands: [
+                { freq: 55, gain: 0.5, q: 1.0 },
+                { freq: 135, gain: 1.5, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.2 },
+                { freq: 3500, gain: 0.5, q: 1.3 },
+                { freq: 6800, gain: -0.5, q: 1.4 },
+                { freq: 13000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              chet_baker_sings: {
+                label: "Chet Baker Sings (1954)",
+                eq: {
+                  name: "Chet Sings",
+                  notes: "Capolavoro West Coast Jazz: voce a condensatore d'epoca ravvicinata, corpo vellutato a 220Hz e delicatezza romantica sui medi senza sibilanti.",
+                  bands: [
+                    { freq: 60, gain: 0, q: 1.0 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 220, gain: 2.5, q: 1.1 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 0, q: 1.1 },
+                    { freq: 7000, gain: -1, q: 1.3 },
+                    { freq: 12500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              chet: {
+                label: "Chet (1959)",
+                eq: {
+                  name: "Chet (1959)",
+                  notes: "The Lyrical Trumpet of Chet Baker: tromba calda e riflessiva con Bill Evans e Herbie Mann, ottone setoso a 2.2kHz e contrabbasso profondo a 110Hz.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 800, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              it_could_happen_to_you: {
+                label: "It Could Happen to You (1958)",
+                eq: {
+                  name: "Could Happen You",
+                  notes: "Scat singing leggero e swing sobrio: dinamica agile, risonanza del rullante a 180Hz ed estremo acuto aperto a 14kHz per un respiro naturale.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 0.5, q: 1.1 },
+                    { freq: 7200, gain: 0.5, q: 1.0 },
+                    { freq: 14000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          dave_brubeck: {
+            label: "Dave Brubeck",
+            eq: {
+              name: "Brubeck Sign",
+              notes: "Firma acustica del Classic Quartet: sax contralto etereo di Desmond a 1.2kHz, accordi percussivi di pianoforte a 350Hz e batteria dinamica di Morello.",
+              bands: [
+                { freq: 50, gain: 1, q: 1.0 },
+                { freq: 125, gain: 1.5, q: 1.2 },
+                { freq: 320, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              time_out: {
+                label: "Time Out (1959)",
+                eq: {
+                  name: "Time Out",
+                  notes: "Columbia 30th Street Studio: iconico assolo di batteria su Take Five a 115Hz, sax dry al centro a 1.5kHz e spazialita stereofonica pura a 14kHz.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              time_further_out: {
+                label: "Time Further Out (1961)",
+                eq: {
+                  name: "Time Further Out",
+                  notes: "Continuazione delle metriche dispari: precisione chirurgica dei piatti ride a 8.5kHz, contrabbasso solido di Wright a 130Hz e pianismo incisivo.",
+                  bands: [
+                    { freq: 45, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.3 },
+                    { freq: 320, gain: 1, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 1, q: 1.2 },
+                    { freq: 4300, gain: 0.5, q: 1.0 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              jazz_impressions_of_new_york: {
+                label: "Jazz Impressions of New York (1964)",
+                eq: {
+                  name: "Impressions NY",
+                  notes: "Soundtrack urbano e sofisticato: enfasi melodica sul sax a 1.6kHz, risonanze calde dei registri bassi a 140Hz e brillantezza non affaticante.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 330, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          stan_getz: {
+            label: "Stan Getz",
+            eq: {
+              name: "Stan Getz Sign",
+              notes: "Il suono 'The Sound': tenore lirico e vellutato con morbidezza a 1.2kHz, chitarra nylon brasiliana a 300Hz e percussioni ariosissime a 13kHz.",
+              bands: [
+                { freq: 55, gain: 0.5, q: 1.0 },
+                { freq: 135, gain: 1.5, q: 1.2 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 0.5, q: 1.2 },
+                { freq: 7500, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              getz_gilberto: {
+                label: "Getz/Gilberto (1964)",
+                eq: {
+                  name: "Getz/Gilberto",
+                  notes: "A&R Studios con Phil Ramone: voce sussurrata di Astrud a 2.5kHz, chitarra intima di Joao a 250Hz e tenore dorato di Getz perfettamente avvolgente.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.1 },
+                    { freq: 650, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.3 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              jazz_samba: {
+                label: "Jazz Samba (1962)",
+                eq: {
+                  name: "Jazz Samba",
+                  notes: "Incisione leggendaria con Charlie Byrd nella chiesa di All Souls: riverbero acustico arioso, chitarra classica nitida e percussioni sincopate.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 720, gain: -0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 7800, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              focus: {
+                label: "Focus (1961)",
+                eq: {
+                  name: "Focus",
+                  notes: "Arrangiamenti per archi di Eddie Sauter: separazione tra la densita dell'orchestra a 400Hz e le linee improvvisate del sax tenore a 2.1kHz.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.1 },
+                    { freq: 600, gain: -1, q: 1.3 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          gerry_mulligan: {
+            label: "Gerry Mulligan",
+            eq: {
+              name: "Mulligan Sign",
+              notes: "Bari Sax monumentale e contrappunto senza pianoforte: risonanza lignea a 115Hz, morso dell'ancia a 1.4kHz e morbidezza nelle armonie corali.",
+              bands: [
+                { freq: 45, gain: 1, q: 1.0 },
+                { freq: 115, gain: 2.5, q: 1.3 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 0.5, q: 1.1 },
+                { freq: 7200, gain: 1, q: 1.1 },
+                { freq: 13000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              night_lights: {
+                label: "Night Lights (1963)",
+                eq: {
+                  name: "Night Lights",
+                  notes: "Atmosfera notturna e decadente: Mulligan al pianoforte e baritono con Art Farmer al flicorno, calore setoso a 220Hz e archi soffusi a 12kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 680, gain: -0.5, q: 1.1 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 3900, gain: 0, q: 1.0 },
+                    { freq: 7000, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              gerry_mulligan_quartet: {
+                label: "Gerry Mulligan Quartet (1952)",
+                eq: {
+                  name: "Mulligan Quartet",
+                  notes: "Pianoless Quartet con Chet Baker: trasparenza timbrica tra baritono e tromba, bassi agili a 130Hz e riduzione del rumore di fondo monofonico.",
+                  bands: [
+                    { freq: 60, gain: 0, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.3 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 6800, gain: -0.5, q: 1.4 },
+                    { freq: 12000, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          mccoy_tyner: {
+            label: "McCoy Tyner",
+            eq: {
+              name: "McCoy Tyner Sign",
+              notes: "Accordi per quarte potenti e dinamica percussiva titanica: corpo maestoso nei registri bassi a 140Hz, squillo a 2.8kHz e crash aperti a 13.5kHz.",
+              bands: [
+                { freq: 45, gain: 1.5, q: 1.0 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 320, gain: 1, q: 1.1 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 2400, gain: 1.5, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              the_real_mccoy: {
+                label: "The Real McCoy (1967)",
+                eq: {
+                  name: "The Real McCoy",
+                  notes: "Masterpiece Blue Note di Van Gelder: botta percussiva di Elvin Jones a 55Hz, tenore fiammeggiante di Joe Henderson a 1.8kHz e piano maestoso.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.1 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              sahara: {
+                label: "Sahara (1972)",
+                eq: {
+                  name: "Sahara",
+                  notes: "Spiritual Jazz esplosivo e poliritmico: percussioni africane e koto definiti sui medi, bordoni ipnotici a 60Hz ed estensione dinamica senza clip.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.0 },
+                    { freq: 145, gain: 1.5, q: 1.2 },
+                    { freq: 330, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0.5, q: 1.0 },
+                    { freq: 2500, gain: 1.5, q: 1.2 },
+                    { freq: 4800, gain: 1, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          joe_henderson: {
+            label: "Joe Henderson",
+            eq: {
+              name: "Joe Henderson",
+              notes: "Fraseggio modale incisivo e timbro granulare del sax tenore: calore gutturale a 250Hz, proiezione tagliente a 2.5kHz e contrasto ritmico netto.",
+              bands: [
+                { freq: 50, gain: 1, q: 1.0 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 250, gain: 1.5, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2300, gain: 1.5, q: 1.2 },
+                { freq: 4500, gain: 1, q: 1.1 },
+                { freq: 7800, gain: 1, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              page_one: {
+                label: "Page One (1963)",
+                eq: {
+                  name: "Page One",
+                  notes: "Debutto storico con Blue Bossa e Recorda Me: groove bossa-hard bop, tromba squillante di Kenny Dorham e corpo caldo del contrabbasso a 125Hz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              inner_urge: {
+                label: "Inner Urge (1966)",
+                eq: {
+                  name: "Inner Urge",
+                  notes: "Intensita bruciante in quartetto con McCoy Tyner: sustain granitico del sax, attacco dei tasti focalizzato a 2.4kHz e bassi rapidi senza code.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 135, gain: 1.5, q: 1.3 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 8200, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              mode_for_joe: {
+                label: "Mode for Joe (1966)",
+                eq: {
+                  name: "Mode for Joe",
+                  notes: "Settetto sontuoso con Lee Morgan e Bobby Hutcherson: vibrafono brillante a 3.5kHz, sezione ottoni potente e corposa a 400Hz.",
+                  bands: [
+                    { freq: 55, gain: 1, q: 1.0 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 320, gain: 1.5, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1, q: 1.2 },
+                    { freq: 4200, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          paul_desmond: {
+            label: "Paul Desmond",
+            eq: {
+              name: "Paul Desmond Sig",
+              notes: "Timbro asciutto come un Dry Martini: dolcezza diafana del contralto a 1.5kHz, calore intimo a 300Hz e controllo rigoroso delle asperita a 5kHz.",
+              bands: [
+                { freq: 50, gain: 0.5, q: 1.0 },
+                { freq: 130, gain: 1.5, q: 1.2 },
+                { freq: 280, gain: 2, q: 1.1 },
+                { freq: 700, gain: 0, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 0, q: 1.2 },
+                { freq: 7000, gain: 1, q: 1.1 },
+                { freq: 13000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              take_ten: {
+                label: "Take Ten (1963)",
+                eq: {
+                  name: "Take Ten",
+                  notes: "Incontro con la chitarra di Jim Hall: interplay cameristico raffinatissimo, morbidezza analogica RCA Victor e chitarra jazz vellutata a 250Hz.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 250, gain: 2, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.0 },
+                    { freq: 1900, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              glad_to_be_unhappy: {
+                label: "Glad to Be Unhappy (1965)",
+                eq: {
+                  name: "Glad Be Unhappy",
+                  notes: "Ballad intime e crepuscolari: spazio e silenzio valorizzati, contrabbasso morbido di Percy Heath a 120Hz e soavita melodica senza sforzo.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 1700, gain: 1.5, q: 1.2 },
+                    { freq: 3700, gain: -0.5, q: 1.2 },
+                    { freq: 7200, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          wes_montgomery: {
+            label: "Wes Montgomery",
+            eq: {
+              name: "Wes Montgomery",
+              notes: "Tecnica del pollice e linee per ottave: corpo tondo Gibson L-5 a 220Hz, assenza di click del plettro, brillantezza legnosa a 2.2kHz e contrabbasso saldo.",
+              bands: [
+                { freq: 50, gain: 1, q: 1.0 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 240, gain: 2, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2100, gain: 1.5, q: 1.2 },
+                { freq: 4000, gain: 0.5, q: 1.1 },
+                { freq: 7500, gain: 1, q: 1.1 },
+                { freq: 13000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              the_incredible_jazz_guitar: {
+                label: "The Incredible Jazz Guitar (1960)",
+                eq: {
+                  name: "Incredible Jazz",
+                  notes: "Sessione Riverside con Tommy Flanagan: walking bass nitido a 120Hz, timbro caldo e cremoso della chitarra e dinamica swing impeccabile.",
+                  bands: [
+                    { freq: 45, gain: 0.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.3 },
+                    { freq: 260, gain: 1.5, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 0.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              smokin_at_the_half_note: {
+                label: "Smokin' at the Half Note (1965)",
+                eq: {
+                  name: "Smokin Half Note",
+                  notes: "Live incendiativo con il Wynton Kelly Trio: punch dell'amplificatore valvolare, piano bluesy a 300Hz e applausi realistici ad alta frequenza.",
+                  bands: [
+                    { freq: 55, gain: 1.5, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          grant_green: {
+            label: "Grant Green",
+            eq: {
+              name: "Grant Green Sign",
+              notes: "Attacco percussivo e lineare con plettro, equalizzazione flat dell'amplificatore: focus sui medio-alti a 2.5kHz, fondo funk a 125Hz e ride scintillante.",
+              bands: [
+                { freq: 55, gain: 1, q: 1.0 },
+                { freq: 125, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.1 },
+                { freq: 750, gain: 0, q: 1.0 },
+                { freq: 2400, gain: 2, q: 1.2 },
+                { freq: 4300, gain: 1, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 0.9 }
+              ]
+            },
+            albums: {
+              idle_moments: {
+                label: "Idle Moments (1965)",
+                eq: {
+                  name: "Idle Moments",
+                  notes: "Capolavoro slow-tempo di Van Gelder: vibrafono sognante di Hutcherson, chitarra lirica a note singole e calore avvolgente del contrabbasso.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 1, q: 1.1 },
+                    { freq: 7800, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              green_street: {
+                label: "Green Street (1961)",
+                eq: {
+                  name: "Green Street",
+                  notes: "Trio puro chitarra-basso-batteria: massima intimita, contrabbasso di Paul Chambers robusto a 115Hz e piatti spazzolati di Ben Dixon limpidi.",
+                  bands: [
+                    { freq: 55, gain: 0.5, q: 1.0 },
+                    { freq: 115, gain: 2.5, q: 1.3 },
+                    { freq: 270, gain: 1, q: 1.1 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 0.5, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          modern_jazz_quartet: {
+            label: "Modern Jazz Quartet",
+            eq: {
+              name: "MJQ Signature",
+              notes: "Third Stream Jazz da camera: vibrafono cristallino di Milt Jackson a 3.8kHz, tocco barocco di John Lewis e contrabbasso ad arco e pizzicato.",
+              bands: [
+                { freq: 45, gain: 0.5, q: 1.0 },
+                { freq: 125, gain: 1.5, q: 1.2 },
+                { freq: 300, gain: 1, q: 1.1 },
+                { freq: 680, gain: -0.5, q: 1.1 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 4200, gain: 1.5, q: 1.1 },
+                { freq: 8200, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              django: {
+                label: "Django (1956)",
+                eq: {
+                  name: "Django",
+                  notes: "Eleganza formale e swing discreto: lamine del vibrafono ricche di sustain a 4kHz, contrabbasso definito a 130Hz e pianoforte equilibrato.",
+                  bands: [
+                    { freq: 50, gain: 0.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.1 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 1, q: 1.2 },
+                    { freq: 4100, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              concorde: {
+                label: "Concorde (1955)",
+                eq: {
+                  name: "Concorde",
+                  notes: "Registrazione Prestige: timbro asciutto e compatto, batteria precisa di Connie Kay e risonanze metalliche rotonde del vibrafono a 2.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 0, q: 1.0 },
+                    { freq: 135, gain: 1.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.1 },
+                    { freq: 650, gain: -0.5, q: 1.1 },
+                    { freq: 2400, gain: 1.5, q: 1.2 },
+                    { freq: 4400, gain: 1, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.1 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              fontessa: {
+                label: "Fontessa (1956)",
+                eq: {
+                  name: "Fontessa",
+                  notes: "Debutto su Atlantic: dinamica ampia, microfonatura d'avanguardia di Tom Dowd, bassi profondi a 110Hz e riverbero naturale della stanza.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 110, gain: 2, q: 1.3 },
+                    { freq: 280, gain: 1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 1, q: 1.2 },
+                    { freq: 4000, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      jazz_fusion: {
+        label: "Jazz Fusion",
+        eq: {
+          name: "Fusion Master",
+          notes: "Punch slap bass, sintetizzatori analogici definiti e chitarre ritmiche",
+          bands: [
+            { freq: 55, gain: 2, q: 1.1 },
+            { freq: 140, gain: 2, q: 1.2 },
+            { freq: 320, gain: 0, q: 1.2 },
+            { freq: 800, gain: 1, q: 1.2 },
+            { freq: 2200, gain: 2, q: 1.3 },
+            { freq: 4200, gain: 1, q: 1.2 },
+            { freq: 8000, gain: 2, q: 1.2 },
+            { freq: 14000, gain: 1, q: 1.0 }
+          ]
+        },
+        artists: {
+          herbie_hancock: {
+            label: "Herbie Hancock",
+            eq: {
+              name: "Hancock Master",
+              notes: "Sintesi perfetta tra jazz modale, funk analogico e fusion elettronica: punch del clavinet e Rhodes a 130Hz, corpo a 300Hz e trasparenza a 14kHz.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.2 },
+                { freq: 135, gain: 2, q: 1.1 },
+                { freq: 310, gain: 1, q: 1.4 },
+                { freq: 720, gain: -1, q: 1.3 },
+                { freq: 2200, gain: 2, q: 1.5 },
+                { freq: 4400, gain: 1.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14500, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              maiden_voyage: {
+                label: "Maiden Voyage (1965)",
+                eq: {
+                  name: "Maiden Voyage",
+                  notes: "Capolavoro modale Blue Note: corpo acustico del pianoforte a 150Hz, calore dei fiati a 850Hz e setosita delle spazzole Rudy Van Gelder a 8kHz.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.5 },
+                    { freq: 850, gain: 1.5, q: 1.2 },
+                    { freq: 2100, gain: 1, q: 1.4 },
+                    { freq: 4200, gain: 0.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              sextant: {
+                label: "Sextant (1973)",
+                eq: {
+                  name: "Sextant Fusion",
+                  notes: "Periodo Mwandishi: sintetizzatori ARP 2600 cosmici, sub-basso tellurico a 45Hz, texture spaziali e riverberi modulati controllati a 3.5kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 120, gain: 1.5, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.4 },
+                    { freq: 650, gain: -1.5, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.5 },
+                    { freq: 3500, gain: 1.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              head_hunters: {
+                label: "Head Hunters (1973)",
+                eq: {
+                  name: "Head Hunters",
+                  notes: "Pietra miliare jazz-funk: linea di basso 'Chameleon' esaltata a 55Hz, bite percussivo del Clavinet a 2.4kHz e groove compatto di Harvey Mason.",
+                  bands: [
+                    { freq: 55, gain: 3.5, q: 1.4 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.5 },
+                    { freq: 750, gain: -1, q: 1.4 },
+                    { freq: 2400, gain: 2.5, q: 1.6 },
+                    { freq: 4600, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              thrust: {
+                label: "Thrust (1974)",
+                eq: {
+                  name: "Thrust Funk",
+                  notes: "Batteria virtuosistica di Mike Clark: rullante secco a 220Hz, snap a 3.2kHz, slap bass di Paul Jackson e fraseggio Rhodes cristallino.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 220, gain: 1.5, q: 1.5 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3200, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              man_child: {
+                label: "Man-Child (1975)",
+                eq: {
+                  name: "Man-Child EQ",
+                  notes: "Funk orchestrale con chitarre wah-wah e fiati potenti: enfasi low-end a 60Hz, calore del Fender Rhodes a 280Hz e brillantezza degli ottoni a 5kHz.",
+                  bands: [
+                    { freq: 60, gain: 2.5, q: 1.2 },
+                    { freq: 145, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 1.5, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2000, gain: 1.5, q: 1.4 },
+                    { freq: 5000, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              secrets: {
+                label: "Secrets (1976)",
+                eq: {
+                  name: "Secrets Fusion",
+                  notes: "Produzione disco-funk e jazz fuso: basso sintetico Moog a 52Hz, trasparenza del vocoder a 2.5kHz e piatti aperti a 10kHz.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2500, gain: 2, q: 1.5 },
+                    { freq: 4800, gain: 1.5, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              mr_hands: {
+                label: "Mr. Hands (1980)",
+                eq: {
+                  name: "Mr Hands PEQ",
+                  notes: "Presenza leggendaria di Jaco Pastorius in 4 A.M.: esaltazione dei medi del fretless a 800Hz e slap pulito con dinamica impeccabile.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 1.5, q: 1.1 },
+                    { freq: 320, gain: 1, q: 1.3 },
+                    { freq: 800, gain: 2.5, q: 1.5 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              future_shock: {
+                label: "Future Shock (1983)",
+                eq: {
+                  name: "Future Shock",
+                  notes: "Rivoluzione electro-funk / hip-hop con Rockit: drum machine DMX a 60Hz, scratch vinilico di GrandMixer D.ST a 3.5kHz e synth taglienti.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.4 },
+                    { freq: 125, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.3 },
+                    { freq: 750, gain: -0.5, q: 1.2 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 3500, gain: 3, q: 1.4 },
+                    { freq: 9500, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          weather_report: {
+            label: "Weather Report",
+            eq: {
+              name: "Weather Report",
+              notes: "Master fusion Zawinul/Shorter/Pastorius: sub-basso controllato a 50Hz, armoniche del fretless a 750Hz, calore del Rhodes e ariosita soprano a 13kHz.",
+              bands: [
+                { freq: 50, gain: 2, q: 1.2 },
+                { freq: 135, gain: 1.5, q: 1.1 },
+                { freq: 310, gain: 1, q: 1.3 },
+                { freq: 750, gain: 2, q: 1.4 },
+                { freq: 2100, gain: 1.5, q: 1.3 },
+                { freq: 4600, gain: 1.5, q: 1.2 },
+                { freq: 8400, gain: 2, q: 1.1 },
+                { freq: 13500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              sweetnighter: {
+                label: "Sweetnighter (1973)",
+                eq: {
+                  name: "Sweetnighter",
+                  notes: "La svolta funk di Zawinul: basso ipnotico a 60Hz, groove percussivo denso e texture di sintetizzatore analogico calde a 2.2kHz.",
+                  bands: [
+                    { freq: 60, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.4 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 1, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              mysterious_traveller: {
+                label: "Mysterious Traveller (1974)",
+                eq: {
+                  name: "Mystic Travel",
+                  notes: "Stratificazione sonora poliritmica: estensione atmosferica a 45Hz, polifonia analogica definita a 2kHz e piatti delicati a 9kHz.",
+                  bands: [
+                    { freq: 45, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2000, gain: 2, q: 1.4 },
+                    { freq: 4800, gain: 1.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tale_spinnin: {
+                label: "Tale Spinnin' (1975)",
+                eq: {
+                  name: "Tale Spinnin",
+                  notes: "Groove travolgente di Leon 'Ndugu' Chancler e Alphonso Johnson: cassa nitida a 65Hz, calore nei medi e sax melodico esaltato.",
+                  bands: [
+                    { freq: 65, gain: 2.5, q: 1.3 },
+                    { freq: 145, gain: 2, q: 1.1 },
+                    { freq: 280, gain: 1, q: 1.3 },
+                    { freq: 720, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.5 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              black_market: {
+                label: "Black Market (1976)",
+                eq: {
+                  name: "Black Market",
+                  notes: "Debutto del basso fretless di Jaco: armoniche vocali dello strumento a 750Hz, melodramma sintetico a 2.5kHz e percussioni afrocubane vivide.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 138, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 2.5, q: 1.5 },
+                    { freq: 2500, gain: 2, q: 1.4 },
+                    { freq: 4600, gain: 1.5, q: 1.2 },
+                    { freq: 8600, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              heavy_weather: {
+                label: "Heavy Weather (1977)",
+                eq: {
+                  name: "Heavy Weather",
+                  notes: "Masterpiece assoluto (Birdland, A Remark You Made): morbidezza e risonanza del cantabile di Pastorius, apertura scintillante e headroom perfetta.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.1 },
+                    { freq: 300, gain: 1, q: 1.4 },
+                    { freq: 800, gain: 2.5, q: 1.5 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              mr_gone: {
+                label: "Mr. Gone (1978)",
+                eq: {
+                  name: "Mr Gone Master",
+                  notes: "Sperimentazione timbrica con filtri synth avanzati e sequenze ritmiche: sub energico a 48Hz, chiarezza a 2.8kHz e separazione stereo eccellente.",
+                  bands: [
+                    { freq: 48, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 1.5, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.4 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2800, gain: 2, q: 1.4 },
+                    { freq: 4800, gain: 1.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          chick_corea: {
+            label: "Chick Corea",
+            eq: {
+              name: "Corea Signature",
+              notes: "Virtuosismo pianistico latino e fusion: attacco cristallino sui tasti a 2.5kHz, calore delle ottave basse a 150Hz e ariosita acustica a 14kHz.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.1 },
+                { freq: 150, gain: 2, q: 1.2 },
+                { freq: 320, gain: 1, q: 1.4 },
+                { freq: 680, gain: -0.5, q: 1.2 },
+                { freq: 2500, gain: 2.5, q: 1.5 },
+                { freq: 4600, gain: 1.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              return_to_forever: {
+                label: "Return to Forever (1972)",
+                eq: {
+                  name: "RTF Debut",
+                  notes: "Classic ECM sound: flauto etereo di Joe Farrell, voce e percussioni di Flora Purim, Rhodes incantato e basso acustico di Stanley Clarke rotondo.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.1 },
+                    { freq: 160, gain: 2, q: 1.2 },
+                    { freq: 330, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              light_as_a_feather: {
+                label: "Light as a Feather (1973)",
+                eq: {
+                  name: "Light Feather",
+                  notes: "Spain e 500 Miles High: ritmo samba-jazz serrato di Airto Moreira, calore del Rhodes a 280Hz e fraseggio brillante del pianoforte elettrico.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1.5, q: 1.4 },
+                    { freq: 650, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4800, gain: 1.5, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              romantic_warrior: {
+                label: "Romantic Warrior (1976)",
+                eq: {
+                  name: "Romantic Warrior",
+                  notes: "Vertice del jazz rock sinfonico: chitarra elettrizzante di Al Di Meola a 3kHz, slap fulmineo di Clarke a 120Hz e sintetizzatori Minimoog maestosi.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              the_leprechaun: {
+                label: "The Leprechaun (1976)",
+                eq: {
+                  name: "The Leprechaun",
+                  notes: "Arrangiamenti solisti barocchi e fiabeschi: fiati dorati a 1.2kHz, archi ariosi e risonanze acustiche bilanciate per un palcoscenico ampio.",
+                  bands: [
+                    { freq: 52, gain: 1.5, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              my_spanish_heart: {
+                label: "My Spanish Heart (1976)",
+                eq: {
+                  name: "My Spanish Heart",
+                  notes: "Flamenco jazz monumentale: battito delle mani e nacchere brillanti a 8.5kHz, chitarre acustiche calde a 200Hz e synth archi voluttuosi.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 1.5, q: 1.2 },
+                    { freq: 310, gain: 1.5, q: 1.3 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4700, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              elektric_band: {
+                label: "The Elektric Band (1986)",
+                eq: {
+                  name: "Elektric Band",
+                  notes: "Era digitale FM (Yamaha DX7) con John Patitucci e Dave Weckl: rullante iper-definito a 200Hz/3.5kHz, precisione chirurgica e brillantezza hi-end.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.4 },
+                    { freq: 700, gain: 0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          mahavishnu_orchestra: {
+            label: "Mahavishnu Orchestra",
+            eq: {
+              name: "Mahavishnu Orck",
+              notes: "Intensita spirituale e potenza proto-metal/fusion: chitarra Gibson a doppio manico incisiva a 2.5kHz, violino amplificato e batteria poliritmica.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.3 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 280, gain: 0.5, q: 1.4 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2500, gain: 2.5, q: 1.5 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              the_inner_mounting_flame: {
+                label: "The Inner Mounting Flame (1971)",
+                eq: {
+                  name: "Mounting Flame",
+                  notes: "Impatto raw e selvaggio: chitarra distorta Marshall di McLaughlin e pattern di Billy Cobham: calore a 120Hz e chiarezza nei medio-alti.",
+                  bands: [
+                    { freq: 58, gain: 2, q: 1.2 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.3 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              birds_of_fire: {
+                label: "Birds of Fire (1973)",
+                eq: {
+                  name: "Birds of Fire",
+                  notes: "Produzione iconica di Ken Scott: precisione chirurgica del violino elettrico di Jerry Goodman a 3kHz e gong e piatti cobhamiani a 14kHz.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 720, gain: -0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 4400, gain: 2.5, q: 1.3 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              apocalypse: {
+                label: "Apocalypse (1974)",
+                eq: {
+                  name: "Apocalypse Orch",
+                  notes: "Prodotto da George Martin con la London Symphony Orchestra: magnifica apertura sinfonica, controllo dei bassi profondi e archi ariosi.",
+                  bands: [
+                    { freq: 48, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              visions_of_the_emerald_beyond: {
+                label: "Visions of the Emerald Beyond (1975)",
+                eq: {
+                  name: "Emerald Beyond",
+                  notes: "Mix funk-jazz psichedelico: basso di Ralphe Armstrong rotondo e funk, Jean-Luc Ponty al violino stellare e dinamica raffinata.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.3 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          jaco_pastorius: {
+            label: "Jaco Pastorius",
+            eq: {
+              name: "Jaco Pastorius",
+              notes: "Firma acustica Bass of Doom: boost essenziale sui medi a 750Hz per il growl, punch a 140Hz, attenuazione del fango a 280Hz e armoniche scintillanti.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.2 },
+                { freq: 140, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: -1, q: 1.5 },
+                { freq: 750, gain: 3.5, q: 1.6 },
+                { freq: 2200, gain: 2, q: 1.5 },
+                { freq: 4200, gain: 1.5, q: 1.2 },
+                { freq: 8000, gain: 2, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              jaco_pastorius: {
+                label: "Jaco Pastorius (1976)",
+                eq: {
+                  name: "Jaco Debut 1976",
+                  notes: "Donna Lee e Continuum: timbro fretless rivoluzionario, corpo caldo sulle corde basse, risonanza delle armoniche artificiali a 2.2kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.4 },
+                    { freq: 780, gain: 3.5, q: 1.6 },
+                    { freq: 2200, gain: 2.5, q: 1.5 },
+                    { freq: 4000, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              word_of_mouth: {
+                label: "Word of Mouth (1981)",
+                eq: {
+                  name: "Word of Mouth",
+                  notes: "Big band ambiziosa e caleidoscopica: sezione fiati brillante a 4.5kHz, armonica di Toots Thielemans setosa e basso potente al centro del mix.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 3, q: 1.5 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              invitation: {
+                label: "Invitation (1983)",
+                eq: {
+                  name: "Invitation Live",
+                  notes: "Live travolgente a Tokyo: dinamica travolgente della big band, corpo ritmico poderoso di Peter Erskine a 130Hz e assoli di Jaco scolpiti.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 720, gain: 3, q: 1.5 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          john_mclaughlin: {
+            label: "John McLaughlin",
+            eq: {
+              name: "McLaughlin Peq",
+              notes: "Articolazione ultra-rapida tra acustico e sintetico: definizione dell'attacco del plettro a 3kHz, calore delle corde a 140Hz e chiarezza cristallina.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.1 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 300, gain: 0.5, q: 1.4 },
+                { freq: 680, gain: -0.5, q: 1.3 },
+                { freq: 2600, gain: 2.5, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8800, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              extrapolation: {
+                label: "Extrapolation (1969)",
+                eq: {
+                  name: "Extrapolation",
+                  notes: "Post-bop d'avanguardia britannico con John Surman e Brian Odgers: calore acustico del contrabbasso a 130Hz, tono legnoso e cassa vintage.",
+                  bands: [
+                    { freq: 50, gain: 1, q: 1.0 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 320, gain: 1.5, q: 1.3 },
+                    { freq: 750, gain: 0.5, q: 1.2 },
+                    { freq: 2000, gain: 1.5, q: 1.3 },
+                    { freq: 4000, gain: 1, q: 1.2 },
+                    { freq: 7500, gain: 1.5, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              my_goals_beyond: {
+                label: "My Goal's Beyond (1971)",
+                eq: {
+                  name: "My Goals Beyond",
+                  notes: "Chitarra acustica solista e devozione a Sri Chinmoy: risonanza naturale della cassa armonica a 180Hz, sfumature intime e spazzole di Cobham.",
+                  bands: [
+                    { freq: 45, gain: 1, q: 1.0 },
+                    { freq: 180, gain: 2.5, q: 1.3 },
+                    { freq: 330, gain: 1, q: 1.4 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4800, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              the_promise: {
+                label: "The Promise (1995)",
+                eq: {
+                  name: "The Promise EQ",
+                  notes: "Reunion stellare con Jeff Beck, Sting, Pastorius (archivio) e DeFrancesco: organo Hammond corposo a 250Hz e assoli chitarristici taglienti.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 250, gain: 1.5, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4600, gain: 1.5, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              floating_point: {
+                label: "Floating Point (2008)",
+                eq: {
+                  name: "Floating Point",
+                  notes: "Incontro con i maestri indiani contemporanei (Chaurasia, Mahadevan, Selvaganesh): tabla fulminee a 2.8kHz, bassi caldi e chitarra synth impeccabile.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 720, gain: 1, q: 1.3 },
+                    { freq: 2800, gain: 2.5, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          pat_metheny: {
+            label: "Pat Metheny",
+            eq: {
+              name: "Metheny Master",
+              notes: "Iconico timbro Gibson hollowbody con delay/chorus e synth Roland GR-300: medi morbidi e rotondi a 800Hz, calore a 160Hz e apertura acustica broad.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.1 },
+                { freq: 160, gain: 2.5, q: 1.2 },
+                { freq: 320, gain: 1, q: 1.3 },
+                { freq: 800, gain: 2, q: 1.4 },
+                { freq: 2300, gain: 1.5, q: 1.3 },
+                { freq: 4500, gain: 1.5, q: 1.2 },
+                { freq: 8500, gain: 2.5, q: 1.1 },
+                { freq: 14000, gain: 2.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              bright_size_life: {
+                label: "Bright Size Life (1976)",
+                eq: {
+                  name: "Bright Size Life",
+                  notes: "Trio storico ECM con Jaco Pastorius e Bob Moses: dialogo serrato chitarra-fretless, calore legnoso a 150Hz e trasparenza naturale Manfred Eicher.",
+                  bands: [
+                    { freq: 50, gain: 1.5, q: 1.1 },
+                    { freq: 150, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.4 },
+                    { freq: 750, gain: 2.5, q: 1.5 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              offramp: {
+                label: "Offramp (1982)",
+                eq: {
+                  name: "Offramp Synth",
+                  notes: "L'introduzione della Synclavier e Roland GR-300 ('Are You Going with Me?'): bassi ampi e avvolgenti a 55Hz, sustain melodico infinito e piatti setosi.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 0.5, q: 1.3 },
+                    { freq: 700, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4800, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              still_life_talking: {
+                label: "Still Life Talking (1987)",
+                eq: {
+                  name: "Still Life Talk",
+                  notes: "Poliritmia brasiliana e melodie solari (Last Train Home, Minuano): percussioni di Armando Marcal chiare a 8kHz, voci corali e sitar guitar a fuoco.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 145, gain: 2, q: 1.1 },
+                    { freq: 290, gain: 1, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4600, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              },
+              letter_from_home: {
+                label: "Letter from Home (1989)",
+                eq: {
+                  name: "Letter From Home",
+                  notes: "Poesia acustico-elettronica sofisticata: calore del basso fretless di Steve Rodby a 130Hz, pianoforte di Lyle Mays incantevole e ariosita 14kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.3 },
+                    { freq: 720, gain: 0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              },
+              secret_story: {
+                label: "Secret Story (1992)",
+                eq: {
+                  name: "Secret Story",
+                  notes: "Capolavoro orchestrale con la London Orchestra: ampiezza dinamica cinematografica, timpani profondi a 40Hz e archi commoventi a 3.5kHz.",
+                  bands: [
+                    { freq: 40, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2100, gain: 1.5, q: 1.3 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          billy_cobham: {
+            label: "Billy Cobham",
+            eq: {
+              name: "Cobham Master",
+              notes: "Potenza poliritmica e dinamica esplosiva alla batteria: doppia cassa scultorea a 55Hz, attacco del rullante a 2.4kHz e brillantezza dei piatti a 10kHz.",
+              bands: [
+                { freq: 55, gain: 3, q: 1.4 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.4 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.2 },
+                { freq: 9000, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              spectrum: {
+                label: "Spectrum (1973)",
+                eq: {
+                  name: "Spectrum Fusion",
+                  notes: "Icona assoluta jazz-rock (Red Baron, Stratus): riff di basso monolitico di Lee Sklar a 60Hz, chitarra di Tommy Bolin abrasiva e kick potente.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.4 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 13800, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              crosswinds: {
+                label: "Crosswinds (1974)",
+                eq: {
+                  name: "Crosswinds EQ",
+                  notes: "Contrasto tra delicatezza tropicale e fusion robusta (Spanish Moss): flauto dorato, corpo acustico a 140Hz e rullante profondo.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              total_eclipse: {
+                label: "Total Eclipse (1974)",
+                eq: {
+                  name: "Total Eclipse",
+                  notes: "Arrangiamenti complessi con fiati maestosi (Michael e Randy Brecker): spinta di fiati a 1.5kHz, rimbalzo secco della doppia cassa e groove compatto.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4600, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              a_funky_thide_of_sings: {
+                label: "A Funky Thide of Sings (1975)",
+                eq: {
+                  name: "Funky Thide",
+                  notes: "Groove funk stellare con sezione ottoni aggressiva: slap bass solido a 55Hz/2.2kHz, rullante con crack penetrante a 3.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 700, gain: 0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          jean_luc_ponty: {
+            label: "Jean-Luc Ponty",
+            eq: {
+              name: "Ponty Signature",
+              notes: "Violino elettrico a 5 corde (Barcus-Berry / Zeta) processato con phaser/delay: corpo a 300Hz, brillantezza setosa a 4.5kHz ed estensione a 14kHz.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.1 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 300, gain: 1.5, q: 1.3 },
+                { freq: 700, gain: -0.5, q: 1.2 },
+                { freq: 2400, gain: 2, q: 1.4 },
+                { freq: 4500, gain: 2.5, q: 1.3 },
+                { freq: 8800, gain: 2.5, q: 1.1 },
+                { freq: 14500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              imaginary_voyage: {
+                label: "Imaginary Voyage (1976)",
+                eq: {
+                  name: "Imaginary Voyage",
+                  notes: "Suite sinfonica fusion: arpeggiatori brillanti, basso di Tom Fowler rotondo a 130Hz e fraseggio fluido del violino con riverbero avvolgente.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              enigmatic_ocean: {
+                label: "Enigmatic Ocean (1977)",
+                eq: {
+                  name: "Enigmatic Ocean",
+                  notes: "Capolavoro assoluto con Allan Holdsworth e Ralphe Armstrong: sweep picking ultra-veloce a 2.5kHz, assoli di violino siderali e dinamica stellare.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.4 },
+                    { freq: 720, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4600, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              cosmic_messenger: {
+                label: "Cosmic Messenger (1978)",
+                eq: {
+                  name: "Cosmic Messenger",
+                  notes: "Texture spaziali con sequencer polifonici e chitarre di Joaquin Lievano: kick preciso a 58Hz, synth caldi e violino brillante mai aspro.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4800, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              individual_choice: {
+                label: "Individual Choice (1983)",
+                eq: {
+                  name: "Indiv Choice",
+                  notes: "Fusion futurista ed elettronica con sintetizzatori Oberheim e la presenza di George Duke e Allan Holdsworth: kick digitale e riverberi ampi.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 0.5, q: 1.3 },
+                    { freq: 2600, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          marcus_miller: {
+            label: "Marcus Miller",
+            eq: {
+              name: "Marcus Signature",
+              notes: "Il suono di basso slap Fender Jazz Bass '77 definitivo: scoop sui medi a 500Hz, sub-punch a 55Hz, calore a 130Hz e percussivita brillante a 3.5kHz.",
+              bands: [
+                { freq: 55, gain: 3.5, q: 1.3 },
+                { freq: 130, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: -1, q: 1.5 },
+                { freq: 550, gain: -2, q: 1.4 },
+                { freq: 2200, gain: 2, q: 1.4 },
+                { freq: 3500, gain: 3, q: 1.5 },
+                { freq: 8500, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              the_sun_dont_lie: {
+                label: "The Sun Don't Lie (1993)",
+                eq: {
+                  name: "Sun Dont Lie",
+                  notes: "Capolavoro solista (Panther, Rampage): slap bass dirompente, clarino basso vellutato a 180Hz e groove R&B/jazz ad altissima fedelta.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.4 },
+                    { freq: 600, gain: -1.5, q: 1.4 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2.5, q: 1.4 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tales: {
+                label: "Tales (1995)",
+                eq: {
+                  name: "Tales Miller",
+                  notes: "Campionamenti storici di Miles Davis e Lester Young: beat hip-hop jazz caldi, profondita del sub-basso a 48Hz e timbro percussivo limpido.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 650, gain: -1.5, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2.5, q: 1.4 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              m2: {
+                label: "M² (2001)",
+                eq: {
+                  name: "M2 Grammy Master",
+                  notes: "Vincitore del Grammy per Best Contemporary Jazz Album: arrangiamento virtuosistico di 'Power', punch dinamico e ottoni scolpiti a 4.5kHz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.5 },
+                    { freq: 580, gain: -1.5, q: 1.4 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4500, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              renaissance: {
+                label: "Renaissance (2012)",
+                eq: {
+                  name: "Renaissance",
+                  notes: "Ritorno a una produzione organica e calda con giovani talenti (Maurice Brown, Kris Bowers): calore acustico a 160Hz e slap rotondo.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 150, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.3 },
+                    { freq: 650, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              laid_black: {
+                label: "Laid Black (2018)",
+                eq: {
+                  name: "Laid Black",
+                  notes: "Incrocio contemporaneo tra trap, neo-soul e jazz fusion: sub tellurico a 42Hz per 808, chiarezza vocale a 2.5kHz e rullante tagliente.",
+                  bands: [
+                    { freq: 42, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 700, gain: -1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          casiopea: {
+            label: "Casiopea",
+            eq: {
+              name: "Casiopea Master",
+              notes: "J-Fusion leggendario di Issei Noro e Minoru Mukaiya: chitarra fluida, slap bass Yamaha energico a 125Hz/3.5kHz e synth cristallini a 9kHz.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.3 },
+                { freq: 125, gain: 2, q: 1.2 },
+                { freq: 290, gain: 0.5, q: 1.4 },
+                { freq: 720, gain: -0.5, q: 1.3 },
+                { freq: 2500, gain: 2.5, q: 1.5 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 8800, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              casiopea_debut: {
+                label: "Casiopea (1979)",
+                eq: {
+                  name: "Casiopea Debut",
+                  notes: "Debutto folgorante con ospiti Brecker Brothers e David Sanborn: groove funk serrato a 60Hz, ottoni radiosi e chitarra con phaser caldo.",
+                  bands: [
+                    { freq: 60, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              eyes_of_the_mind: {
+                label: "Eyes of the Mind (1979)",
+                eq: {
+                  name: "Eyes of the Mind",
+                  notes: "Registrato a Los Angeles con Harvey Mason e Bob James: produzione lussuosa californiana, calore del piano elettrico e bassi corposi a 140Hz.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.3 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 1.5, q: 1.2 },
+                    { freq: 8600, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              mint_jams: {
+                label: "Mint Jams (1982)",
+                eq: {
+                  name: "Mint Jams Live",
+                  notes: "Il vertice live della J-Fusion (Asayake, Domino Line): leggendario assolo di slap bass di Tetsuo Sakurai a 130Hz/3.8kHz e piatti iper-definiti.",
+                  bands: [
+                    { freq: 58, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 3800, gain: 3, q: 1.4 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              photographs: {
+                label: "Photographs (1983)",
+                eq: {
+                  name: "Photographs",
+                  notes: "Equilibrio perfetto tra melodia pop-fusion e raffinatezza esecutiva: kick bilanciato a 55Hz, tastiere analogiche luminose e chitarra canora.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              jive_jive: {
+                label: "Jive Jive (1983)",
+                eq: {
+                  name: "Jive Jive",
+                  notes: "Registrato a Londra: sonata ritmica incalzante, dinamica energica nei medio-bassi e brillantezza scintillante nei passaggi solisti veloci.",
+                  bands: [
+                    { freq: 56, gain: 2.5, q: 1.3 },
+                    { freq: 128, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.4 },
+                    { freq: 720, gain: 0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4300, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14200, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          t_square: {
+            label: "T-Square",
+            eq: {
+              name: "T-Square Master",
+              notes: "L'apice della J-Fusion melodica guidata dall'EWI (Electronic Wind Instrument) di Masato Honda/Takeshi Itoh: lead brillante a 3.2kHz e groove ritmico.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.3 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 290, gain: 0.5, q: 1.4 },
+                { freq: 700, gain: -0.5, q: 1.3 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 8800, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              adventures: {
+                label: "Adventures (1984)",
+                eq: {
+                  name: "Adventures 1984",
+                  notes: "Melodie solari e arrangiamenti frizzanti: basso slap a 135Hz, chitarra ritmica funk a 2.2kHz e apertura ariosa sui piatti.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 8600, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              truth: {
+                label: "Truth (1987)",
+                eq: {
+                  name: "Truth F1 Anthem",
+                  notes: "L'inno iconico della Formula 1 giapponese: tema travolgente all'EWI valorizzato a 3.2kHz, basso martellante a 60Hz e rullante energico a 200Hz.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.3 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 3200, gain: 3, q: 1.4 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              wave: {
+                label: "Wave (1989)",
+                eq: {
+                  name: "Wave Album",
+                  notes: "Sonorita estive e brezze jazz-pop: calore del basso a 140Hz, synth brass scintillanti e chitarra acustica nitida a 4.5kHz.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              human: {
+                label: "Human (1993)",
+                eq: {
+                  name: "Human T-Square",
+                  notes: "Era d'oro con Masato Honda al sax contralto ed EWI: dinamica virtuosistica, slap percussivo e mix moderno con headroom impeccabile.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 720, gain: 0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          hiromi_uehara: {
+            label: "Hiromi Uehara",
+            eq: {
+              name: "Hiromi Signature",
+              notes: "Energia vulcanica al pianoforte acustico Yamaha: attacco martellante a 2.5kHz, estensione dinamica da sussurri a fortissimo, cassa e synth controllati.",
+              bands: [
+                { freq: 48, gain: 2.5, q: 1.3 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 310, gain: 0.5, q: 1.4 },
+                { freq: 680, gain: -0.5, q: 1.3 },
+                { freq: 2500, gain: 2.5, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.2 },
+                { freq: 8800, gain: 2.5, q: 1.2 },
+                { freq: 14500, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              another_mind: {
+                label: "Another Mind (2003)",
+                eq: {
+                  name: "Another Mind",
+                  notes: "Debutto prodigioso prodotto da Ahmad Jamal: tocco pianistico potente a 150Hz, contrasti ritmici esplosivi e piatti trasparenti a 9kHz.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2.5, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4600, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              brain: {
+                label: "Brain (2004)",
+                eq: {
+                  name: "Brain Hiromi",
+                  notes: "Incursioni nel progressive jazz con sintetizzatori Nord Lead e clavinet: bassi potenti di Tony Grey a 120Hz e brillantezza polifonica ad alta definizione.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.3 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.4 },
+                    { freq: 720, gain: -0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              spiral: {
+                label: "Spiral (2006)",
+                eq: {
+                  name: "Spiral Hiromi",
+                  notes: "Composizioni cicliche complesse: precisione ritmica chirurgica, corpo risonante del gran coda da concerto ed estremi di banda nitidi.",
+                  bands: [
+                    { freq: 48, gain: 2, q: 1.2 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              voice: {
+                label: "Voice (2011)",
+                eq: {
+                  name: "The Trio Voice",
+                  notes: "The Trio Project con Anthony Jackson (contrabass guitar a 6 corde) e Simon Phillips: impatto tellurico a 45Hz e rullante Tama scolpito a 2.5kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.4 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              sonicwonderland: {
+                label: "Sonicwonderland (2023)",
+                eq: {
+                  name: "Sonicwonderland",
+                  notes: "Hiromi's Sonicwonder: funk elettronico moderno, synth bass pesante a 42Hz, tromba elettrificata con wah di Adam O'Farrill e punch strabiliante.",
+                  bands: [
+                    { freq: 42, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.4 },
+                    { freq: 700, gain: 0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 4400, gain: 2.5, q: 1.3 },
+                    { freq: 9200, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      contemporary_nu_jazz: {
+        label: "Contemporary Nu-Jazz & UK Jazz",
+        eq: {
+          name: "Nu-Jazz Master",
+          notes: "Crossover moderno con bassi profondi e ritmiche organiche",
+          bands: [
+            { freq: 50, gain: 3, q: 1.2 },
+            { freq: 130, gain: 2, q: 1.1 },
+            { freq: 300, gain: 0, q: 1.2 },
+            { freq: 750, gain: 1, q: 1.1 },
+            { freq: 2200, gain: 2, q: 1.3 },
+            { freq: 4500, gain: 1, q: 1.2 },
+            { freq: 8500, gain: 2, q: 1.2 },
+            { freq: 15000, gain: 1, q: 1.0 }
+          ]
+        },
+        artists: {
+          kamasi_washington: {
+            label: "Kamasi Washington",
+            eq: {
+              name: "Kamasi Master",
+              notes: "Spiritual jazz colossale: tenore torrenziale valorizzato a 1.8kHz/3.5kHz, doppia batteria e contrabbasso caldi a 140Hz e apertura corale maestosa.",
+              bands: [
+                { freq: 45, gain: 2.5, q: 1.2 },
+                { freq: 140, gain: 2.5, q: 1.2 },
+                { freq: 300, gain: 1, q: 1.3 },
+                { freq: 700, gain: -0.5, q: 1.2 },
+                { freq: 1800, gain: 2.5, q: 1.4 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              the_epic: {
+                label: "The Epic (2015)",
+                eq: {
+                  name: "The Epic Triple",
+                  notes: "Triplo album monumentale: cori gospel, orchestra e sezioni ritmiche West Coast Get Down; estensione nei bassi profondi e brillantezza corale a 9kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2.5, q: 1.3 },
+                    { freq: 8800, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              },
+              heaven_and_earth: {
+                label: "Heaven and Earth (2018)",
+                eq: {
+                  name: "Heaven And Earth",
+                  notes: "Dicotomia concettuale tra realta terrena e cosmica: pugni percussivi afrobeat a 60Hz, archi sontuosi e sax ruggente con headroom estesa.",
+                  bands: [
+                    { freq: 48, gain: 2.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 720, gain: 0.5, q: 1.3 },
+                    { freq: 2200, gain: 2.5, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              fearless_movement: {
+                label: "Fearless Movement (2024)",
+                eq: {
+                  name: "Fearless Move",
+                  notes: "Orientato alla danza, funk e collaborazioni contemporanee (Andre 3000, George Clinton): kick moderno a 52Hz, fiati serrati e groove energico.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4000, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          badbadnotgood: {
+            label: "BADBADNOTGOOD",
+            eq: {
+              name: "BBNG Master",
+              notes: "Estetica vintage analogica: calore del basso a nastro a 120Hz, kick morbido a 50Hz, Rhodes satinato e saturazione organica a 2.2kHz.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.3 },
+                { freq: 125, gain: 2.5, q: 1.2 },
+                { freq: 300, gain: 1, q: 1.4 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2200, gain: 2, q: 1.4 },
+                { freq: 4200, gain: 1.5, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              bbng_iii: {
+                label: "III (2014)",
+                eq: {
+                  name: "BBNG III",
+                  notes: "Prime composizioni totalmente originali: groove hip-hop scuri, batteria secca e polverosa di Alexander Sowinski, e contrabbasso profondo.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 0.5, q: 1.4 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4000, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 1.5, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              bbng_iv: {
+                label: "IV (2016)",
+                eq: {
+                  name: "BBNG IV",
+                  notes: "Collaborazioni eclettiche con Kaytranada, Sampha, Mick Jenkins: basso funk avvolgente a 55Hz, calore neo-soul e sax di Leland Whitty in evidenza.",
+                  bands: [
+                    { freq: 55, gain: 3.5, q: 1.3 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              talk_memory: {
+                label: "Talk Memory (2021)",
+                eq: {
+                  name: "Talk Memory",
+                  notes: "Jazz sinfonico e psichedelico con arrangiamenti di Arthur Verocai: archi espansivi a 3kHz, riverberi a piastra analogici e cassa calda.",
+                  bands: [
+                    { freq: 45, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2100, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          yussef_dayes: {
+            label: "Yussef Dayes",
+            eq: {
+              name: "Dayes Master",
+              notes: "Groove drumming afro-cubano e UK jazz: accordatura alta del rullante con rimshot secco a 2.8kHz, kick controllato a 55Hz e piatti traslucidi a 12kHz.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.3 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 280, gain: 0.5, q: 1.4 },
+                { freq: 700, gain: -0.5, q: 1.3 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 9000, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              what_kinda_music: {
+                label: "What Kinda Music (2020)",
+                eq: {
+                  name: "What Kinda Music",
+                  notes: "Collaborazione con Tom Misch (Blue Note): chitarre lo-fi calde a 300Hz, cassa ipnotica a 50Hz, groove poliritmico e voce intima.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1.5, q: 1.4 },
+                    { freq: 680, gain: -1, q: 1.3 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4000, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              black_classical_music: {
+                label: "Black Classical Music (2023)",
+                eq: {
+                  name: "Black Class Mus",
+                  notes: "Capolavoro solista: dinamica percussiva sensazionale, corpo del basso fretless di Rocco Palladino a 140Hz e ottoni vibranti a 3.5kHz.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.3 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          alfa_mist: {
+            label: "Alfa Mist",
+            eq: {
+              name: "Alfa Mist Master",
+              notes: "Accordi malinconici al Rhodes, beat hip-hop boom-bap rallentati e trombe sommesse: sub-basso rotondo a 50Hz e intimita sui medi a 1.5kHz.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.3 },
+                { freq: 135, gain: 2.5, q: 1.2 },
+                { freq: 310, gain: 1.5, q: 1.4 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2100, gain: 2, q: 1.4 },
+                { freq: 4200, gain: 1, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              antiphon: {
+                label: "Antiphon (2017)",
+                eq: {
+                  name: "Antiphon",
+                  notes: "Classico del Nu-Jazz londinese (Brian): dialoghi familiari registrati, assoli di chitarra di Mansur Brown a 2.5kHz e groove ipnotico a 55Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.4 },
+                    { freq: 680, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4400, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              structuralism: {
+                label: "Structuralism (2019)",
+                eq: {
+                  name: "Structuralism",
+                  notes: "Strutture armoniche introspettive: archi delicati a 3.5kHz, calore del piano verticale e rullante attutito con texture analogica.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.2 },
+                    { freq: 145, gain: 2.5, q: 1.2 },
+                    { freq: 320, gain: 1, q: 1.4 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.3 },
+                    { freq: 4200, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              bring_suns: {
+                label: "Bring Suns (2021)",
+                eq: {
+                  name: "Bring Suns",
+                  notes: "Album epico con l'orchestra di archi: apertura widescreen, sub-basso profondo a 45Hz per i cambi ritmici e ottoni taglienti.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              variables: {
+                label: "Variables (2023)",
+                eq: {
+                  name: "Variables",
+                  notes: "Contrasto tra rap londinese serrato, trio jazz acustico ed elettronica: punch della cassa a 58Hz, limpidezza vocale e Rhodes avvolgente.",
+                  bands: [
+                    { freq: 58, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          shabaka_hutchings: {
+            label: "Shabaka Hutchings",
+            eq: {
+              name: "Shabaka Master",
+              notes: "Guida spirituale della scena UK: potenza del sax tenore e clarinetto basso, tuba energica a 55Hz e poliritmia percussiva caraibico-africana.",
+              bands: [
+                { freq: 55, gain: 3, q: 1.3 },
+                { freq: 140, gain: 2, q: 1.2 },
+                { freq: 300, gain: 0.5, q: 1.4 },
+                { freq: 750, gain: 1.5, q: 1.4 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              your_queen_is_a_reptile: {
+                label: "Your Queen Is a Reptile (2018)",
+                eq: {
+                  name: "Queen Is Reptile",
+                  notes: "Con Sons of Kemet: doppia batteria e tuba distorta di Theon Cross a 50Hz; assoli frenetici di sax a 2.5kHz con impatto viscerale punk-jazz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.4 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 1.5, q: 1.4 },
+                    { freq: 2500, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              black_to_the_future: {
+                label: "Black to the Future (2021)",
+                eq: {
+                  name: "Black To Future",
+                  notes: "Poesia militante e groove afro-caraibico (Kojey Radical, Moor Mother): linea di sub robusta, voci chiare a 2kHz e percussioni brillanti.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: 0.5, q: 1.3 },
+                    { freq: 2200, gain: 2.5, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              afrikan_culture: {
+                label: "Afrikan Culture (2022)",
+                eq: {
+                  name: "Afrikan Culture",
+                  notes: "Svolta contemplativa ai flauti (Shakuhachi) e kora: risonanza meditativa a 250Hz, soffio intimo a 3.5kHz e quiete acustica pristina.",
+                  bands: [
+                    { freq: 45, gain: 1.5, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.2 },
+                    { freq: 320, gain: 1.5, q: 1.4 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2000, gain: 1.5, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          ezra_collective: {
+            label: "Ezra Collective",
+            eq: {
+              name: "Ezra Master",
+              notes: "Vincitori del Mercury Prize: celebrazione festosa tra afrobeat di Fela Kuti, salsa e grime jazz; rullante esplosivo e fiati in primo piano.",
+              bands: [
+                { freq: 58, gain: 3, q: 1.3 },
+                { freq: 130, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: 0.5, q: 1.4 },
+                { freq: 700, gain: 0.5, q: 1.3 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 4400, gain: 2, q: 1.2 },
+                { freq: 8800, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              you_cant_steal_my_joy: {
+                label: "You Can't Steal My Joy (2019)",
+                eq: {
+                  name: "Cant Steal Joy",
+                  notes: "Energia contagiosa con Jorja Smith e Loyle Carner: kick solido a 60Hz, basso dub di TJ Koleoso presente e tromba squillante di Ife Ogunjobi.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 720, gain: -0.5, q: 1.2 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              where_im_meant_to_be: {
+                label: "Where I'm Meant to Be (2022)",
+                eq: {
+                  name: "Where Im Meant",
+                  notes: "Mercury Prize winner: batteria incalzante di Femi Koleoso a 130Hz/2.5kHz, fiati trionfali e pianoforte brillante di Joe Armon-Jones.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              dance_no_one_is_watching: {
+                label: "Dance, No One's Watching (2024)",
+                eq: {
+                  name: "Dance No Watch",
+                  notes: "Inno al dancefloor notturno e alle comunita: groove house/highlife pulsante a 50Hz, ottoni radiosi e ritmica trascinante.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 700, gain: 0.5, q: 1.3 },
+                    { freq: 2600, gain: 2.5, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          robert_glasper: {
+            label: "Robert Glasper",
+            eq: {
+              name: "Glasper Master",
+              notes: "Architetto della fusione tra neo-soul, hip-hop moderno e piano jazz: tocco laid-back al Rhodes, sub-basso compatto a 50Hz e calore organico a 250Hz.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.3 },
+                { freq: 135, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: 1, q: 1.4 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2200, gain: 2, q: 1.4 },
+                { freq: 4200, gain: 1.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              in_my_element: {
+                label: "In My Element (2007)",
+                eq: {
+                  name: "In My Element",
+                  notes: "Piano trio acustico Blue Note con Vicente Archer e Damion Reid: medley J Dilla/Herbie Hancock, corpo di pianoforte ricco a 150Hz e piatti fini.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 150, gain: 2.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              black_radio: {
+                label: "Black Radio (2012)",
+                eq: {
+                  name: "Black Radio I",
+                  notes: "Grammy per Best R&B Album (con Erykah Badu, Lupe Fiasco, Lalah Hathaway): batteria hip-hop serrata di Chris Dave a 60Hz e vocoder sinuoso.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              black_radio_2: {
+                label: "Black Radio 2 (2013)",
+                eq: {
+                  name: "Black Radio II",
+                  notes: "Produzione R&B ultra-lucida (Common, Norah Jones, Snoop Dogg): definizione della voce a 2.5kHz, punch morbido e Rhodes vellutato.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2500, gain: 2.5, q: 1.4 },
+                    { freq: 4600, gain: 1.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              black_radio_iii: {
+                label: "Black Radio III (2022)",
+                eq: {
+                  name: "Black Radio III",
+                  notes: "Grammy winner: soundstage moderno e profondo, bassi 808 calibrati a 45Hz per le produzioni moderne e trasparenza vocale di prima classe.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.4 },
+                    { freq: 720, gain: 0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          nubya_garcia: {
+            label: "Nubya Garcia",
+            eq: {
+              name: "Nubya Garcia",
+              notes: "Timbro tenorile robusto, profondo e carico di spiritualita afro-caraibica: corpo del fusto a 220Hz, mordente del bocchino a 3.2kHz e calore ritmico dub.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.3 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 280, gain: 1, q: 1.4 },
+                { freq: 700, gain: -0.5, q: 1.3 },
+                { freq: 2200, gain: 2.5, q: 1.4 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              source: {
+                label: "Source (2020)",
+                eq: {
+                  name: "Source Debut",
+                  notes: "Debutto osannato dalla critica internazionale: fusione di cumbia, dub reggae e spiritual jazz; sub-basso potente a 48Hz e sax cantabile e maestoso.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              odyssey: {
+                label: "Odyssey (2024)",
+                eq: {
+                  name: "Odyssey Album",
+                  notes: "Orchestrazioni cinematografiche con archi lussuosi e ritmiche elettroniche spezzate: bassi avvolgenti a 55Hz e apertura sonora spettacolare a 12kHz.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 310, gain: 0.5, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          snarky_puppy: {
+            label: "Snarky Puppy",
+            eq: {
+              name: "Snarky Master",
+              notes: "Collettivo guidato da Michael League: tre chitarre, tre tastiere, sezione ottoni micidiale e percussioni; separazione strumentale e dinamica live in studio.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.3 },
+                { freq: 135, gain: 2, q: 1.2 },
+                { freq: 280, gain: 0.5, q: 1.4 },
+                { freq: 720, gain: 0.5, q: 1.3 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8800, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              groundup: {
+                label: "GroundUP (2012)",
+                eq: {
+                  name: "GroundUP",
+                  notes: "Registrazione live di fronte a pubblico con cuffie a Brooklyn (Thing of Gold): calore del Moog bass a 55Hz, fiati brillanti e Rhodes intriso di chorus.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 13800, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              we_like_it_here: {
+                label: "We Like It Here (2014)",
+                eq: {
+                  name: "We Like It Here",
+                  notes: "Registrato a Kytopia (Utrecht), vertice assoluto (Lingus, What About Me?): leggendario assolo di synth di Cory Henry a 2.5kHz e batteria devastante di Larnell Lewis.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              culcha_vulcha: {
+                label: "Culcha Vulcha (2016)",
+                eq: {
+                  name: "Culcha Vulcha",
+                  notes: "Grammy per Best Contemporary Instrumental Album, registrato in Texas: groove funk terroso, percussioni deliziose a 8kHz e slide guitar esaltata.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.3 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.4 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              empire_central: {
+                label: "Empire Central (2022)",
+                eq: {
+                  name: "Empire Central",
+                  notes: "Omaggio sonoro a Dallas registrato dal vivo in 8 giorni: tributo a Bernard Wright, tre batterie sincronizzate a 60Hz e potenza d'impatto straordinaria.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.4 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 720, gain: 0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      smooth_jazz: {
+        label: "Smooth Jazz",
+        eq: {
+          name: "Smooth Jazz",
+          notes: "Timbrica vellutata, compressione radiofonica e ariosita morbida",
+          bands: [
+            { freq: 60, gain: 2, q: 1.2 },
+            { freq: 150, gain: 2, q: 1.1 },
+            { freq: 350, gain: 0, q: 1.2 },
+            { freq: 900, gain: 1, q: 1.1 },
+            { freq: 2200, gain: 2, q: 1.3 },
+            { freq: 4500, gain: 1, q: 1.2 },
+            { freq: 8000, gain: 2, q: 1.2 },
+            { freq: 14000, gain: 1, q: 1.0 }
+          ]
+        },
+        artists: {
+          kenny_g: {
+            label: "Kenny G",
+            eq: {
+              name: "Kenny G Master",
+              notes: "Icona del sax soprano Selmer Mark VI: frequenze canore esaltate a 3.5kHz, calore vellutato a 250Hz, bassi sintetici controllati e riverbero setoso a 14kHz.",
+              bands: [
+                { freq: 50, gain: 1.5, q: 1.1 },
+                { freq: 145, gain: 2, q: 1.2 },
+                { freq: 280, gain: 1.5, q: 1.4 },
+                { freq: 650, gain: -0.5, q: 1.2 },
+                { freq: 2200, gain: 2, q: 1.4 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              duotones: {
+                label: "Duotones (1986)",
+                eq: {
+                  name: "Duotones Songb",
+                  notes: "Il successo globale con Songbird: timbro puro e romantico del soprano, morbidezza analogica anni '80 e percussioni elettroniche discrete.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 1, q: 1.3 },
+                    { freq: 650, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 3600, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              silhouette: {
+                label: "Silhouette (1988)",
+                eq: {
+                  name: "Silhouette",
+                  notes: "Melodie sinuose e arrangiamenti vellutati: pianoforte elettrico intimo a 300Hz, riverbero stereo avvolgente e risonanza lirica del sax.",
+                  bands: [
+                    { freq: 52, gain: 1.5, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.2 },
+                    { freq: 300, gain: 1.5, q: 1.3 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              breathless: {
+                label: "Breathless (1992)",
+                eq: {
+                  name: "Breathless",
+                  notes: "L'album strumentale piu venduto della storia (Forever in Love): produzione pristina di Walter Afanasieff, bassi avvolgenti a 50Hz e note celestiali.",
+                  bands: [
+                    { freq: 50, gain: 2, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 1, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              the_moment: {
+                label: "The Moment (1996)",
+                eq: {
+                  name: "The Moment",
+                  notes: "Smooth jazz raffinato e contaminazioni latine (Havana): chitarre acustiche calde a 200Hz, percussioni setose e lead di soprano brillante.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.4 },
+                    { freq: 720, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.1 },
+                    { freq: 14000, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          george_benson: {
+            label: "George Benson",
+            eq: {
+              name: "Benson Master",
+              notes: "Timbro chitarristico Ibanez GB10 caldo e vellutato abbinato allo scat vocale all'unisono: corpo a 180Hz, chiarezza a 2.4kHz e ariosita R&B.",
+              bands: [
+                { freq: 52, gain: 2, q: 1.2 },
+                { freq: 150, gain: 2.5, q: 1.2 },
+                { freq: 300, gain: 1, q: 1.4 },
+                { freq: 700, gain: -0.5, q: 1.3 },
+                { freq: 2400, gain: 2.5, q: 1.5 },
+                { freq: 4500, gain: 1.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              breezin: {
+                label: "Breezin' (1976)",
+                eq: {
+                  name: "Breezin Classic",
+                  notes: "Produzione leggendaria di Tommy LiPuma con Claus Ogerman: 'This Masquerade', chitarra con tocco morbido a 180Hz, archi sontuosi e kick soffice.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.2 },
+                    { freq: 160, gain: 2.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              in_flight: {
+                label: "In Flight (1977)",
+                eq: {
+                  name: "In Flight EQ",
+                  notes: "Continuazione della formula platino (Nature Boy): calore del basso a 130Hz, piano Fender Rhodes e chitarra jazz scorrevole e limpida.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2, q: 1.4 },
+                    { freq: 4500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              give_me_the_night: {
+                label: "Give Me the Night (1980)",
+                eq: {
+                  name: "Give Me Night",
+                  notes: "Masterclass disco-funk prodotta da Quincy Jones e Bruce Swedien: rullante Acusonic impeccabile a 200Hz, snap ritmico a 3.2kHz e bassline irresistibile.",
+                  bands: [
+                    { freq: 58, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 750, gain: 0.5, q: 1.3 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              album_20_20: {
+                label: "20/20 (1985)",
+                eq: {
+                  name: "20 20 Benson",
+                  notes: "Produzione sofisticata pop-soul anni '80 (Nothing's Gonna Change My Love for You): sintetizzatori DX7 vellutati, voce solare in primo piano e hi-end pulito.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.2 },
+                    { freq: 2400, gain: 2.5, q: 1.4 },
+                    { freq: 4600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          grover_washington_jr: {
+            label: "Grover Washington, Jr.",
+            eq: {
+              name: "Grover Master",
+              notes: "Il padrino dello smooth jazz: calore sensuale del sax contralto, soprano e tenore; medi vellutati a 800Hz, calore analogico a 150Hz e bassi cremosi.",
+              bands: [
+                { freq: 52, gain: 2, q: 1.2 },
+                { freq: 145, gain: 2.5, q: 1.2 },
+                { freq: 300, gain: 1, q: 1.4 },
+                { freq: 800, gain: 2, q: 1.4 },
+                { freq: 2300, gain: 2, q: 1.4 },
+                { freq: 4200, gain: 1.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              mister_magic: {
+                label: "Mister Magic (1975)",
+                eq: {
+                  name: "Mister Magic",
+                  notes: "Arrangiamenti storici di Bob James per CTI Records: clavinet e Rhodes groovy, basso di Gary King a 130Hz e assoli di sax caldi e penetranti.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 1, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 4400, gain: 1.5, q: 1.2 },
+                    { freq: 8200, gain: 2, q: 1.1 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              feels_so_good: {
+                label: "Feels So Good (1975)",
+                eq: {
+                  name: "Feels So Good",
+                  notes: "Produzione soul-jazz rilassata e irresistibile: interplay magistrale con Eric Gale e Steve Gadd, cassa calda e timbro canoro del sax.",
+                  bands: [
+                    { freq: 52, gain: 2, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 310, gain: 1, q: 1.3 },
+                    { freq: 720, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              winelight: {
+                label: "Winelight (1980)",
+                eq: {
+                  name: "Winelight Master",
+                  notes: "Vincitore di 2 Grammy ('Just the Two of Us' con Bill Withers): basso slap morbido di Marcus Miller a 130Hz, steel drum caraibica e sax seducente.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.2 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          boney_james: {
+            label: "Boney James",
+            eq: {
+              name: "Boney James",
+              notes: "Pioniere dell'Urban Jazz contemporaneo: fusione sensuale tra sax tenore/soprano intimista e basi R&B/Hip-Hop; sub-bass a 45Hz e calore vellutato.",
+              bands: [
+                { freq: 45, gain: 3, q: 1.3 },
+                { freq: 130, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: 0.5, q: 1.4 },
+                { freq: 650, gain: -1, q: 1.3 },
+                { freq: 2200, gain: 2.5, q: 1.4 },
+                { freq: 3800, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.1 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              sweet_thing: {
+                label: "Sweet Thing (1997)",
+                eq: {
+                  name: "Sweet Thing",
+                  notes: "Disco d'oro: groove R&B anni '90 sinuoso e caldo, kick profondo a 50Hz, calore del tenore nelle frequenze medie e chitarre jazz wah-wah.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.3 },
+                    { freq: 135, gain: 2.5, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2300, gain: 2, q: 1.4 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              ride: {
+                label: "Ride (2001)",
+                eq: {
+                  name: "Ride Boney James",
+                  notes: "Collaborazioni con Jaheim, Trina Broussard: groove urban moderni, bassi rotondi e corpo canoro del sax sempre morbido e presente a 2.4kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 280, gain: 0.5, q: 1.4 },
+                    { freq: 700, gain: -0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.4 },
+                    { freq: 4000, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              solid: {
+                label: "Solid (2020)",
+                eq: {
+                  name: "Solid Album",
+                  notes: "Produzione solida e rilassata: basso compatto a 52Hz, trasparenza percussiva contemporanea e timbro tenorile intimo e avvolgente.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 290, gain: 0.5, q: 1.3 },
+                    { freq: 680, gain: -0.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              detour: {
+                label: "Detour (2022)",
+                eq: {
+                  name: "Detour Jazz",
+                  notes: "Con ospiti come Lalah Hathaway e Dontae Winslow: sub energico a 45Hz per beat moderni, ottoni caldi e apertura setosa ad alta frequenza.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -0.5, q: 1.4 },
+                    { freq: 720, gain: 0.5, q: 1.3 },
+                    { freq: 2400, gain: 2.5, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
           }
         }
       }
@@ -36463,6 +41928,6568 @@ const MUSIC_DATABASE = {
                     { freq: 4000, gain: 2, q: 1.2 },
                     { freq: 9500, gain: 3, q: 1.2 },
                     { freq: 15500, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      riddim: {
+        label: "Riddim & Heavy Dubstep",
+        eq: {
+          name: "Riddim Impact",
+          notes: "Sub-bass estremo a 45Hz, scoop medio-basso e snap a 3.5kHz",
+          bands: [
+            { freq: 45, gain: 4, q: 1.4 },
+            { freq: 120, gain: 1, q: 1.1 },
+            { freq: 280, gain: -2, q: 1.3 },
+            { freq: 700, gain: 1, q: 1.2 },
+            { freq: 2400, gain: 2, q: 1.5 },
+            { freq: 4500, gain: 2, q: 1.3 },
+            { freq: 8500, gain: 2, q: 1.2 },
+            { freq: 15000, gain: 2, q: 1.0 }
+          ]
+        },
+        artists: {
+          subtronics: {
+            label: "Subtronics",
+            eq: {
+              name: "Subtronics Mst",
+              notes: "Firma Heavy Dubstep/Wonky Riddim: sub 42Hz tellurico e pulito, attenuazione anti-fango a 260Hz, enfatizzazione delle formanti vocali/laser a 2.3kHz e controllo controllato del transiente snare a 4.5kHz.",
+              bands: [
+                { freq: 42, gain: 4.5, q: 1.4 },
+                { freq: 115, gain: 1.5, q: 1.2 },
+                { freq: 260, gain: -2.5, q: 1.5 },
+                { freq: 680, gain: 1, q: 1.3 },
+                { freq: 2300, gain: 3, q: 1.6 },
+                { freq: 4500, gain: 2, q: 1.4 },
+                { freq: 8500, gain: 1, q: 1.2 },
+                { freq: 15000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              fractals: {
+                label: "Fractals (2022)",
+                eq: {
+                  name: "Fractals 2022",
+                  notes: "Ottimizzazione per il debut album: sub-bass rotondo a 40Hz, pulizia delle frequenze boxy a 280Hz e spinta chirurgica a 2.5kHz per valorizzare i growl FM e le melodie modulari.",
+                  bands: [
+                    { freq: 40, gain: 4, q: 1.3 },
+                    { freq: 120, gain: 1, q: 1.1 },
+                    { freq: 280, gain: -2, q: 1.4 },
+                    { freq: 720, gain: 0.5, q: 1.2 },
+                    { freq: 2500, gain: 2.5, q: 1.5 },
+                    { freq: 4200, gain: 1.5, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tesseract: {
+                label: "TESSERACT (2024)",
+                eq: {
+                  name: "Tesseract 2024",
+                  notes: "Mix iper-moderno e tridimensionale: sub 38Hz ad alta escursione, snare crack incisivo a 200Hz, midrange aggressivo a 2.2kHz e apertura sparkle a 16kHz per esaltare l'ampiezza stereo.",
+                  bands: [
+                    { freq: 38, gain: 4.5, q: 1.5 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 240, gain: -3, q: 1.6 },
+                    { freq: 650, gain: 1.2, q: 1.4 },
+                    { freq: 2200, gain: 3.2, q: 1.7 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8800, gain: 1.5, q: 1.2 },
+                    { freq: 16000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              string_theory: {
+                label: "String Theory (2020)",
+                eq: {
+                  name: "String Theory",
+                  notes: "EP sperimentale e granulare: boost corposo del kick a 125Hz, controllo risonanze aspre a 5kHz e focalizzazione a 1.8kHz sui bassi wobble metallici.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2.2, q: 1.2 },
+                    { freq: 270, gain: -2.2, q: 1.3 },
+                    { freq: 700, gain: 0.8, q: 1.2 },
+                    { freq: 1800, gain: 2.5, q: 1.4 },
+                    { freq: 4000, gain: 1, q: 1.2 },
+                    { freq: 7800, gain: 1.2, q: 1.1 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              wooked_on_tronics: {
+                label: "Wooked on Tronics (2019)",
+                eq: {
+                  name: "Wooked on Tronic",
+                  notes: "Wonky dubstep crudo e distorsivo: punch massiccio a 44Hz, taglio del fango a 250Hz e boost sui transienti a 3.8kHz per far risaltare lo schiocco del rullante.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.4 },
+                    { freq: 118, gain: 1.8, q: 1.2 },
+                    { freq: 250, gain: -2.8, q: 1.5 },
+                    { freq: 750, gain: 1, q: 1.3 },
+                    { freq: 2100, gain: 2.2, q: 1.4 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 8000, gain: 0.5, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          excision: {
+            label: "Excision",
+            eq: {
+              name: "Excision Master",
+              notes: "Bass Cannon Sound: impatto subsonico devastante a 40Hz, bass-punch solido a 110Hz, taglio deciso dei medio-bassi a 260Hz per evitare saturazione e mordente metallico sui 2.4kHz.",
+              bands: [
+                { freq: 40, gain: 5, q: 1.5 },
+                { freq: 110, gain: 2.5, q: 1.3 },
+                { freq: 260, gain: -3, q: 1.6 },
+                { freq: 650, gain: 1, q: 1.2 },
+                { freq: 2400, gain: 3.5, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1.5, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              apex: {
+                label: "Apex (2018)",
+                eq: {
+                  name: "Apex 2018",
+                  notes: "Heavy dubstep da festival: massima pressione a 42Hz, punch secco della cassa a 115Hz e apertura d'aria a 14kHz per i crash e i piatti orchestrali.",
+                  bands: [
+                    { freq: 42, gain: 4.8, q: 1.4 },
+                    { freq: 115, gain: 2.2, q: 1.2 },
+                    { freq: 280, gain: -2.5, q: 1.5 },
+                    { freq: 700, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              onyx: {
+                label: "Onyx (2022)",
+                eq: {
+                  name: "Onyx 2022",
+                  notes: "Produzione contemporanea iper-compressa: sub a 38Hz ultra-controllato, notch a 240Hz per garantire pulizia assoluta e boost di aggressività a 2.6kHz.",
+                  bands: [
+                    { freq: 38, gain: 5.2, q: 1.6 },
+                    { freq: 105, gain: 2, q: 1.3 },
+                    { freq: 240, gain: -3.5, q: 1.7 },
+                    { freq: 620, gain: 1, q: 1.3 },
+                    { freq: 2600, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2.2, q: 1.4 },
+                    { freq: 8600, gain: 1.5, q: 1.2 },
+                    { freq: 15500, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              codename_x: {
+                label: "Codename X (2015)",
+                eq: {
+                  name: "Codename X 2015",
+                  notes: "Robo-dubstep classico: frequenza fondamentale cassa a 120Hz rinforzata, scoop caldo a 300Hz e grinding mid a 2.0kHz per i famosi growl robotici.",
+                  bands: [
+                    { freq: 45, gain: 4.2, q: 1.3 },
+                    { freq: 120, gain: 2.8, q: 1.2 },
+                    { freq: 300, gain: -2, q: 1.4 },
+                    { freq: 680, gain: 1.5, q: 1.2 },
+                    { freq: 2000, gain: 3.2, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              virus: {
+                label: "Virus (2016)",
+                eq: {
+                  name: "Virus 2016",
+                  notes: "Mix cupo e claustrofobico: enfasi tellurica a 40Hz, attenuazione risonanze nasali a 500Hz e brillantezza rullante a 5.0kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.6, q: 1.4 },
+                    { freq: 112, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2.8, q: 1.5 },
+                    { freq: 500, gain: -1, q: 1.4 },
+                    { freq: 2300, gain: 2.8, q: 1.5 },
+                    { freq: 5000, gain: 2.5, q: 1.4 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              the_paradox: {
+                label: "The Paradox (2016)",
+                eq: {
+                  name: "The Paradox 2016",
+                  notes: "Show visual & sound design: colpo a 44Hz sismico, mid-range graffiante a 2.5kHz per sintetizzatori alieni e hi-hats definiti a 9kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.5, q: 1.4 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -2.6, q: 1.4 },
+                    { freq: 720, gain: 0.8, q: 1.3 },
+                    { freq: 2500, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 1.8, q: 1.2 },
+                    { freq: 15000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          virtual_riot: {
+            label: "Virtual Riot",
+            eq: {
+              name: "Virtual Riot Mst",
+              notes: "Sound design di livello chirurgico: sub puro a 45Hz, scoop morbido a 280Hz per massima separazione armonica, boost di chiarezza a 2.0kHz e ariosità setosa a 15kHz.",
+              bands: [
+                { freq: 45, gain: 3.8, q: 1.3 },
+                { freq: 115, gain: 1.8, q: 1.1 },
+                { freq: 280, gain: -2.2, q: 1.4 },
+                { freq: 750, gain: 0.8, q: 1.2 },
+                { freq: 2000, gain: 2.8, q: 1.5 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8500, gain: 1.5, q: 1.2 },
+                { freq: 15000, gain: 2.2, q: 1.1 }
+              ]
+            },
+            albums: {
+              simulation: {
+                label: "Simulation (2021)",
+                eq: {
+                  name: "Simulation 2021",
+                  notes: "Colorwave e future riddim: sub 42Hz tonale preciso, esaltazione dei micro-dettagli melodici a 1.8kHz e lucentezza digitale a 16kHz.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.4 },
+                    { freq: 118, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: -2.5, q: 1.5 },
+                    { freq: 700, gain: 1, q: 1.3 },
+                    { freq: 1800, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 1.8, q: 1.2 },
+                    { freq: 16000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              save_yourself: {
+                label: "Save Yourself (2019)",
+                eq: {
+                  name: "Save Yourself 19",
+                  notes: "Heavy dubstep melodico: peso tellurico a 44Hz, punch della cassa a 110Hz e spinta graffiante sui synth a 2.4kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.2, q: 1.4 },
+                    { freq: 110, gain: 2.2, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2400, gain: 2.8, q: 1.4 },
+                    { freq: 4400, gain: 1.8, q: 1.3 },
+                    { freq: 8200, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              preset_junkies: {
+                label: "Preset Junkies (2018)",
+                eq: {
+                  name: "Preset Junkies",
+                  notes: "Celebrazione del synth patch design: bassi compatti a 48Hz, attenuazione medi fangosi a 320Hz e brillantezza estrema a 5.2kHz per snare e zap.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 1.8, q: 1.1 },
+                    { freq: 320, gain: -2.4, q: 1.4 },
+                    { freq: 800, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2.6, q: 1.5 },
+                    { freq: 5200, gain: 2.4, q: 1.4 },
+                    { freq: 8600, gain: 1.4, q: 1.2 },
+                    { freq: 14500, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              german_engineering: {
+                label: "German Engineering (2018)",
+                eq: {
+                  name: "German Engineer",
+                  notes: "Trituramento heavy riddim: sub secco a 40Hz, attenuazione 250Hz per consentire chop velocissimi e boost metallico tagliente a 2.8kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.5, q: 1.5 },
+                    { freq: 112, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -3, q: 1.6 },
+                    { freq: 650, gain: 0.8, q: 1.3 },
+                    { freq: 2800, gain: 3.2, q: 1.6 },
+                    { freq: 4600, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.2 },
+                    { freq: 13800, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              still_kids: {
+                label: "Still Kids (2019)",
+                eq: {
+                  name: "Still Kids 2019",
+                  notes: "Lollipop e future bass melodico: bassi caldi e controllati a 50Hz, corpo acustico a 220Hz e morbida apertura vocale a 3.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 1.8, q: 1.1 },
+                    { freq: 220, gain: 1, q: 1.2 },
+                    { freq: 600, gain: -1, q: 1.3 },
+                    { freq: 1900, gain: 2.2, q: 1.4 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 1.6, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          svdden_death: {
+            label: "SVDDEN DEATH",
+            eq: {
+              name: "Svdden Death Mst",
+              notes: "Oscurità VOYD & Tearout: sub-bass opprimente a 38Hz, scoop chirurgico a 250Hz contro la fangosità del riverbero e boost feroce a 2.6kHz per il caratteristico screech metallico.",
+              bands: [
+                { freq: 38, gain: 4.8, q: 1.5 },
+                { freq: 115, gain: 2, q: 1.3 },
+                { freq: 250, gain: -3.2, q: 1.6 },
+                { freq: 600, gain: 1.2, q: 1.4 },
+                { freq: 2600, gain: 3.5, q: 1.6 },
+                { freq: 4800, gain: 2.4, q: 1.4 },
+                { freq: 8500, gain: 1, q: 1.2 },
+                { freq: 14000, gain: 1.2, q: 1.0 }
+              ]
+            },
+            albums: {
+              voyd_vol_1: {
+                label: "VOYD Vol 1 (2018)",
+                eq: {
+                  name: "VOYD Vol 1",
+                  notes: "Ritmi marziali e suoni demoniaci: sub a 40Hz monolitico, taglio netto a 270Hz e picco distorto su frequenze pettorali a 2.4kHz.",
+                  bands: [
+                    { freq: 40, gain: 5, q: 1.5 },
+                    { freq: 110, gain: 2.2, q: 1.2 },
+                    { freq: 270, gain: -3, q: 1.5 },
+                    { freq: 650, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 0.8, q: 1.2 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              voyd_vol_2: {
+                label: "VOYD Vol 2 (2022)",
+                eq: {
+                  name: "VOYD Vol 2",
+                  notes: "Produzione monumentale: sub a 36Hz profondo e denso, notch anti-risonanza a 300Hz e risalto del transiente a martello sui 4.2kHz.",
+                  bands: [
+                    { freq: 36, gain: 5.2, q: 1.6 },
+                    { freq: 105, gain: 2.4, q: 1.3 },
+                    { freq: 300, gain: -3.5, q: 1.7 },
+                    { freq: 620, gain: 1.2, q: 1.4 },
+                    { freq: 2700, gain: 3.4, q: 1.6 },
+                    { freq: 4200, gain: 2.5, q: 1.4 },
+                    { freq: 8800, gain: 1.2, q: 1.2 },
+                    { freq: 15000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              junkworld: {
+                label: "Junkworld (2017)",
+                eq: {
+                  name: "Junkworld 2017",
+                  notes: "Riddim grezzo delle origini: kick compatto a 120Hz, sub essenziale a 46Hz e spinta sulle medie legnose a 800Hz e 2.0kHz.",
+                  bands: [
+                    { freq: 46, gain: 3.8, q: 1.3 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 260, gain: -2.2, q: 1.4 },
+                    { freq: 800, gain: 1.8, q: 1.3 },
+                    { freq: 2000, gain: 2.5, q: 1.4 },
+                    { freq: 4400, gain: 1.8, q: 1.3 },
+                    { freq: 7800, gain: 0.8, q: 1.1 },
+                    { freq: 13000, gain: 0.8, q: 1.0 }
+                  ]
+                }
+              },
+              spelljam: {
+                label: "Spelljam (2017)",
+                eq: {
+                  name: "Spelljam 2017",
+                  notes: "Bassi sintetici caotici e ritmi ipnotici: colpo a 42Hz, pulizia a 240Hz e accentuazione delle armoniche alte dei lead a 3.2kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.2, q: 1.4 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 240, gain: -2.6, q: 1.5 },
+                    { freq: 700, gain: 1, q: 1.3 },
+                    { freq: 2200, gain: 2.8, q: 1.5 },
+                    { freq: 3200, gain: 2.2, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          hol: {
+            label: "HOL!",
+            eq: {
+              name: "HOL! Master EQ",
+              notes: "Pioniere del modern French Riddim: transienti laser a 2.5kHz, sub sine a 45Hz a blocco solido e attenuazione aggressiva a 280Hz per chop fulminei.",
+              bands: [
+                { freq: 45, gain: 4.2, q: 1.4 },
+                { freq: 118, gain: 1.8, q: 1.2 },
+                { freq: 280, gain: -3.2, q: 1.6 },
+                { freq: 720, gain: 1.2, q: 1.3 },
+                { freq: 2500, gain: 3.8, q: 1.6 },
+                { freq: 4600, gain: 2.2, q: 1.3 },
+                { freq: 8600, gain: 1.2, q: 1.2 },
+                { freq: 14500, gain: 1.2, q: 1.0 }
+              ]
+            },
+            albums: {
+              black_hole: {
+                label: "Black Hole (2021)",
+                eq: {
+                  name: "Black Hole 2021",
+                  notes: "Spazio intergalattico e riddim minimale: bassi a 40Hz puliti, attenuazione a 250Hz e spinta su clap metallici a 4.0kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.5, q: 1.4 },
+                    { freq: 110, gain: 1.8, q: 1.2 },
+                    { freq: 250, gain: -3, q: 1.5 },
+                    { freq: 680, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4000, gain: 2.4, q: 1.4 },
+                    { freq: 8400, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              somewhere: {
+                label: "Somewhere (2022)",
+                eq: {
+                  name: "Somewhere 2022",
+                  notes: "EP melodico e aggressivo: sub 44Hz intonato, punch al petto a 120Hz e presenza dei synth a pettine a 2.2kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2.5, q: 1.4 },
+                    { freq: 750, gain: 0.8, q: 1.2 },
+                    { freq: 2200, gain: 3, q: 1.5 },
+                    { freq: 4400, gain: 1.8, q: 1.3 },
+                    { freq: 8500, gain: 1.4, q: 1.2 },
+                    { freq: 15000, gain: 1.6, q: 1.1 }
+                  ]
+                }
+              },
+              country_riddim: {
+                label: "Country Riddim (2023)",
+                eq: {
+                  name: "Country Riddim",
+                  notes: "L'inno mondiale del riddim: kick e sub a 42Hz devastanti, mid-range laser a 2.6kHz amplificato per tagliare qualsiasi impianto Nothing X.",
+                  bands: [
+                    { freq: 42, gain: 5, q: 1.5 },
+                    { freq: 115, gain: 2.2, q: 1.3 },
+                    { freq: 260, gain: -3.5, q: 1.7 },
+                    { freq: 700, gain: 1.5, q: 1.4 },
+                    { freq: 2600, gain: 4, q: 1.7 },
+                    { freq: 4800, gain: 2.5, q: 1.4 },
+                    { freq: 8800, gain: 1.5, q: 1.2 },
+                    { freq: 15500, gain: 1.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          wooli: {
+            label: "Wooli",
+            eq: {
+              name: "Wooli Master",
+              notes: "Briddim titanico (Melodic + Heavy): sub 40Hz poderoso, punch a 115Hz, intelligenza vocale ed enfasi sulle campane/synth melodici a 2.2kHz.",
+              bands: [
+                { freq: 40, gain: 4.5, q: 1.4 },
+                { freq: 115, gain: 2.2, q: 1.2 },
+                { freq: 270, gain: -2.5, q: 1.5 },
+                { freq: 700, gain: 1, q: 1.3 },
+                { freq: 2200, gain: 3, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1.5, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              destination: {
+                label: "Destination (2022)",
+                eq: {
+                  name: "Destination 22",
+                  notes: "Viaggio sonoro melodico/dubstep: bassi profondi a 42Hz, calore equilibrato a 180Hz e ariosità aperta a 14.5kHz per le aperture vocali.",
+                  bands: [
+                    { freq: 42, gain: 4.2, q: 1.4 },
+                    { freq: 118, gain: 1.8, q: 1.2 },
+                    { freq: 260, gain: -2.2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2100, gain: 2.6, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8200, gain: 1.4, q: 1.2 },
+                    { freq: 14500, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              resurrection: {
+                label: "Resurrection (2021)",
+                eq: {
+                  name: "Resurrection 21",
+                  notes: "Collaborazioni heavy con Excision: pressione tellurica a 38Hz, taglio fango a 280Hz e mordente chitarristico e di synth a 2.5kHz.",
+                  bands: [
+                    { freq: 38, gain: 4.8, q: 1.5 },
+                    { freq: 110, gain: 2.4, q: 1.3 },
+                    { freq: 280, gain: -3, q: 1.6 },
+                    { freq: 650, gain: 1, q: 1.3 },
+                    { freq: 2500, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8600, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              titans: {
+                label: "Titans (2022)",
+                eq: {
+                  name: "Titans 2022",
+                  notes: "EP da battaglia epico: sub massiccio a 44Hz, colpo di rullante corposo a 125Hz e snap incisivo ad alta definizione a 4.8kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.6, q: 1.4 },
+                    { freq: 125, gain: 2.5, q: 1.2 },
+                    { freq: 250, gain: -2.6, q: 1.5 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2300, gain: 3, q: 1.5 },
+                    { freq: 4800, gain: 2.4, q: 1.4 },
+                    { freq: 8800, gain: 1.4, q: 1.2 },
+                    { freq: 15200, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          ray_volpe: {
+            label: "Ray Volpe",
+            eq: {
+              name: "Ray Volpe Master",
+              notes: "Laser Dubstep energico: punch kick a 115Hz, laser synths brillanti a 2.6kHz, sub a 44Hz definito e transiente snare cristallino a 4.6kHz.",
+              bands: [
+                { freq: 44, gain: 4.2, q: 1.4 },
+                { freq: 115, gain: 2, q: 1.2 },
+                { freq: 260, gain: -2.5, q: 1.5 },
+                { freq: 700, gain: 1, q: 1.3 },
+                { freq: 2600, gain: 3.5, q: 1.6 },
+                { freq: 4600, gain: 2.2, q: 1.3 },
+                { freq: 8500, gain: 1.5, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              laserbeam: {
+                label: "Laserbeam (2022)",
+                eq: {
+                  name: "Laserbeam 2022",
+                  notes: "Hit mondiale festivaliera: sub preciso a 42Hz, taglio a 280Hz per dare spazio al laser lead a 2.8kHz e crack del rullante a 5kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.5, q: 1.5 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -3, q: 1.6 },
+                    { freq: 720, gain: 1, q: 1.3 },
+                    { freq: 2800, gain: 3.8, q: 1.6 },
+                    { freq: 5000, gain: 2.4, q: 1.4 },
+                    { freq: 8800, gain: 1.5, q: 1.2 },
+                    { freq: 15500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              volpetron: {
+                label: "VOLPETRON (2023)",
+                eq: {
+                  name: "VOLPETRON 2023",
+                  notes: "Produzione iper-moderna: sub a 38Hz compatto, esaltazione dei synth glitch a 2.4kHz e apertura ariosa sui piatti a 14kHz.",
+                  bands: [
+                    { freq: 38, gain: 4.4, q: 1.4 },
+                    { freq: 110, gain: 1.8, q: 1.2 },
+                    { freq: 250, gain: -2.8, q: 1.5 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              legend_of_the_volpetron: {
+                label: "Legend of the Volpetron (2022)",
+                eq: {
+                  name: "Legend Volpetron",
+                  notes: "EP concettuale ad alto impatto: bassi veloci e scolpiti a 46Hz, pulizia a 300Hz e snare punch a 200Hz con schiocco a 4.2kHz.",
+                  bands: [
+                    { freq: 46, gain: 4, q: 1.3 },
+                    { freq: 120, gain: 2.2, q: 1.2 },
+                    { freq: 300, gain: -2.4, q: 1.4 },
+                    { freq: 750, gain: 1.2, q: 1.3 },
+                    { freq: 2500, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.4, q: 1.2 },
+                    { freq: 14800, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          crankdat: {
+            label: "Crankdat",
+            eq: {
+              name: "Crankdat Master",
+              notes: "High-energy dubstep e trap-step: kick martellante a 110Hz, sub sismico a 42Hz, mordente aggressivo a 2.2kHz e transienti rapidi a 4.5kHz.",
+              bands: [
+                { freq: 42, gain: 4.6, q: 1.4 },
+                { freq: 110, gain: 2.5, q: 1.3 },
+                { freq: 260, gain: -2.8, q: 1.5 },
+                { freq: 700, gain: 1, q: 1.3 },
+                { freq: 2200, gain: 3.2, q: 1.5 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8500, gain: 1.4, q: 1.2 },
+                { freq: 15000, gain: 1.8, q: 1.1 }
+              ]
+            },
+            albums: {
+              mechanized_mayhem: {
+                label: "Mechanized Mayhem (2020)",
+                eq: {
+                  name: "Mech Mayhem 2020",
+                  notes: "Suoni robotici industriali: sub solido a 45Hz, scoop a 270Hz per ripulire la distorsione del cabinet e risalto a 2.0kHz per i growl meccanici.",
+                  bands: [
+                    { freq: 45, gain: 4.2, q: 1.4 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2.5, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2000, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.1 },
+                    { freq: 13800, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              fearworld: {
+                label: "Fearworld (2019)",
+                eq: {
+                  name: "Fearworld 2019",
+                  notes: "Heavy bass dark: enfasi tellurica a 40Hz, punch della cassa a 118Hz e apertura su sfrigolii e scream a 5.0kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.8, q: 1.5 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -3, q: 1.6 },
+                    { freq: 720, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 5000, gain: 2.4, q: 1.4 },
+                    { freq: 8600, gain: 1.2, q: 1.2 },
+                    { freq: 14200, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              slaughter_house: {
+                label: "Slaughter House (2023)",
+                eq: {
+                  name: "Slaughter House",
+                  notes: "Tearout / Heavy Riddim: sub 38Hz estremo, taglio a 280Hz per garantire pulizia durante drop frenetici e transienti taglienti a 2.5kHz.",
+                  bands: [
+                    { freq: 38, gain: 5, q: 1.6 },
+                    { freq: 108, gain: 2.4, q: 1.3 },
+                    { freq: 280, gain: -3.4, q: 1.6 },
+                    { freq: 650, gain: 1.2, q: 1.3 },
+                    { freq: 2500, gain: 3.6, q: 1.6 },
+                    { freq: 4600, gain: 2.5, q: 1.4 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15200, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          infekt: {
+            label: "INFEKT",
+            eq: {
+              name: "INFEKT Master EQ",
+              notes: "Pure Riddim Minimalista: sub sinusoidale a 46Hz cristallino, taglio radicale del fango a 260Hz per consentire chop ritmici puliti e armoniche a 2.2kHz.",
+              bands: [
+                { freq: 46, gain: 4.5, q: 1.5 },
+                { freq: 115, gain: 1.8, q: 1.2 },
+                { freq: 260, gain: -3.5, q: 1.7 },
+                { freq: 750, gain: 1.5, q: 1.4 },
+                { freq: 2200, gain: 3, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1, q: 1.2 },
+                { freq: 14000, gain: 1.2, q: 1.0 }
+              ]
+            },
+            albums: {
+              breakout: {
+                label: "Breakout (2021)",
+                eq: {
+                  name: "Breakout 2021",
+                  notes: "Riddim puro da club: focus su kick a 120Hz, sub a 44Hz e presenza del colpo di rullante a 1.8kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.2, q: 1.4 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -3, q: 1.5 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 1800, gain: 2.8, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 13500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              veggie_riddim: {
+                label: "Veggie Riddim (2023)",
+                eq: {
+                  name: "Veggie Riddim 23",
+                  notes: "Traccia iconica del sound riddim: sub a 48Hz intonato e risonanze legnose a 850Hz valorizzate, con hi-hats puliti a 9kHz.",
+                  bands: [
+                    { freq: 48, gain: 4.4, q: 1.5 },
+                    { freq: 118, gain: 1.6, q: 1.2 },
+                    { freq: 250, gain: -3.2, q: 1.6 },
+                    { freq: 850, gain: 1.8, q: 1.4 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 1.4, q: 1.2 },
+                    { freq: 14500, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              rewind: {
+                label: "Rewind (2020)",
+                eq: {
+                  name: "Rewind 2020",
+                  notes: "Old school riddim groove: punch caldo a 112Hz, scoop a 270Hz e transienti controllati a 4.0kHz.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.3 },
+                    { freq: 112, gain: 2.2, q: 1.2 },
+                    { freq: 270, gain: -2.8, q: 1.5 },
+                    { freq: 700, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 2.6, q: 1.4 },
+                    { freq: 4000, gain: 1.8, q: 1.3 },
+                    { freq: 8200, gain: 0.8, q: 1.1 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          marauda: {
+            label: "MARAUDA",
+            eq: {
+              name: "MARAUDA Master",
+              notes: "Tearout estremo e violento: sub a 38Hz tellurico, scoop drastico a 270Hz per domare il wall of sound, boost feroce a 2.6kHz e 4.8kHz per il morso dei growl.",
+              bands: [
+                { freq: 38, gain: 5, q: 1.6 },
+                { freq: 110, gain: 2.4, q: 1.3 },
+                { freq: 270, gain: -3.8, q: 1.8 },
+                { freq: 620, gain: 1, q: 1.3 },
+                { freq: 2600, gain: 3.8, q: 1.7 },
+                { freq: 4800, gain: 2.5, q: 1.4 },
+                { freq: 8500, gain: 1.2, q: 1.2 },
+                { freq: 14500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              malignant: {
+                label: "Malignant (2019)",
+                eq: {
+                  name: "Malignant 2019",
+                  notes: "Debutto tearout apocalittico: sub a 40Hz monolitico, punch aggressivo a 115Hz e risalto del rumore bianco nei drop a 2.4kHz.",
+                  bands: [
+                    { freq: 40, gain: 5, q: 1.5 },
+                    { freq: 115, gain: 2.5, q: 1.3 },
+                    { freq: 260, gain: -3.5, q: 1.7 },
+                    { freq: 650, gain: 1.2, q: 1.3 },
+                    { freq: 2400, gain: 3.5, q: 1.6 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 14000, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              ascendance: {
+                label: "Ascendance (2021)",
+                eq: {
+                  name: "Ascendance 2021",
+                  notes: "Evoluzione cinematografica: estensione sub a 36Hz, controllo delle risonanze metalliche aspre a 5.2kHz e massima chiarezza stereo a 15kHz.",
+                  bands: [
+                    { freq: 36, gain: 5.2, q: 1.6 },
+                    { freq: 108, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -3.6, q: 1.8 },
+                    { freq: 680, gain: 0.8, q: 1.3 },
+                    { freq: 2700, gain: 3.6, q: 1.6 },
+                    { freq: 5200, gain: 2, q: 1.4 },
+                    { freq: 8800, gain: 1.4, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              elevate: {
+                label: "Elevate (2020)",
+                eq: {
+                  name: "Elevate 2020",
+                  notes: "Ritmiche martellanti a 140 BPM: kick solido a 120Hz, taglio dei bassi impastati a 250Hz e boost alle medie perforanti a 2.2kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.6, q: 1.4 },
+                    { freq: 120, gain: 2.6, q: 1.3 },
+                    { freq: 250, gain: -3.2, q: 1.6 },
+                    { freq: 700, gain: 1, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.2 },
+                    { freq: 13800, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          zomboy: {
+            label: "Zomboy",
+            eq: {
+              name: "Zomboy Master EQ",
+              notes: "Dubstep da arena britannico: sub potente a 44Hz, rullante caratteristico con punch a 115Hz e body a 200Hz, medi taglienti a 2.4kHz e brillantezza a 8.5kHz.",
+              bands: [
+                { freq: 44, gain: 4.4, q: 1.4 },
+                { freq: 115, gain: 2.2, q: 1.2 },
+                { freq: 270, gain: -2.4, q: 1.4 },
+                { freq: 700, gain: 1, q: 1.3 },
+                { freq: 2400, gain: 3.2, q: 1.5 },
+                { freq: 4600, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1.6, q: 1.2 },
+                { freq: 15000, gain: 1.8, q: 1.1 }
+              ]
+            },
+            albums: {
+              the_outbreak: {
+                label: "The Outbreak (2014)",
+                eq: {
+                  name: "The Outbreak 14",
+                  notes: "Classico brostep: sub massiccio a 46Hz, colpo di rullante punchy a 125Hz e sgranatura aggressiva sui wobble synth a 2.0kHz.",
+                  bands: [
+                    { freq: 46, gain: 4.2, q: 1.3 },
+                    { freq: 125, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -2, q: 1.4 },
+                    { freq: 750, gain: 1.2, q: 1.3 },
+                    { freq: 2000, gain: 3, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8000, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              rott_n_roll_pt_1: {
+                label: "Rott N Roll Pt 1 (2017)",
+                eq: {
+                  name: "Rott N Roll Pt 1",
+                  notes: "Produzione metallica e secca: sub 42Hz tonale, taglio del fango a 260Hz e transienti ad alta velocità a 4.5kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.5, q: 1.4 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -2.8, q: 1.5 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2300, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 8600, gain: 1.4, q: 1.2 },
+                    { freq: 14800, gain: 1.6, q: 1.1 }
+                  ]
+                }
+              },
+              rott_n_roll_pt_2: {
+                label: "Rott N Roll Pt 2 (2019)",
+                eq: {
+                  name: "Rott N Roll Pt 2",
+                  notes: "Evoluzione heavy riddim/dubstep: sub 40Hz profondo, scoop a 280Hz e armoniche dei lead a 2.6kHz accentuate.",
+                  bands: [
+                    { freq: 40, gain: 4.6, q: 1.5 },
+                    { freq: 112, gain: 2.2, q: 1.2 },
+                    { freq: 280, gain: -3, q: 1.6 },
+                    { freq: 700, gain: 1, q: 1.3 },
+                    { freq: 2600, gain: 3.4, q: 1.6 },
+                    { freq: 4800, gain: 2.2, q: 1.3 },
+                    { freq: 8800, gain: 1.5, q: 1.2 },
+                    { freq: 15200, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              resurrected: {
+                label: "Resurrected (2015)",
+                eq: {
+                  name: "Resurrected 2015",
+                  notes: "Album di remix e VIP: kick corposo a 118Hz, scoop a 250Hz e brillantezza rullante a 5.0kHz.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.3 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -2.2, q: 1.4 },
+                    { freq: 720, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 2.8, q: 1.4 },
+                    { freq: 5000, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14200, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      phonk: {
+        label: "Phonk & Drift Phonk",
+        eq: {
+          name: "Drift Phonk",
+          notes: "808 saturo, campanacci analogici in evidenza e voce lo-fi definita",
+          bands: [
+            { freq: 50, gain: 4, q: 1.4 },
+            { freq: 130, gain: 2, q: 1.2 },
+            { freq: 260, gain: 0, q: 1.3 },
+            { freq: 800, gain: 1, q: 1.2 },
+            { freq: 2200, gain: 2, q: 1.4 },
+            { freq: 4500, gain: 2, q: 1.3 },
+            { freq: 8500, gain: 3, q: 1.2 },
+            { freq: 15000, gain: 2, q: 1.0 }
+          ]
+        },
+        artists: {
+          kordhell: {
+            label: "Kordhell",
+            eq: {
+              name: "Kordhell Master",
+              notes: "Icona Drift Phonk: 808 sub saturo a 48Hz, corpo campana TR-808 a 720Hz, mordente del cowbell a 2.4kHz e calore tape saturato a 4.2kHz.",
+              bands: [
+                { freq: 48, gain: 5, q: 1.4 },
+                { freq: 125, gain: 2.5, q: 1.3 },
+                { freq: 270, gain: -2, q: 1.4 },
+                { freq: 720, gain: 1.5, q: 1.3 },
+                { freq: 2400, gain: 3.5, q: 1.6 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1.2, q: 1.2 },
+                { freq: 14000, gain: 1, q: 1.0 }
+              ]
+            },
+            albums: {
+              beat_tape: {
+                label: "Beat Tape (2021)",
+                eq: {
+                  name: "Beat Tape 2021",
+                  notes: "Lo-fi Memphis phonk: calore analogico a 130Hz, sub a 50Hz pastoso e riduzione dell'asprezza digitale a 8kHz.",
+                  bands: [
+                    { freq: 50, gain: 4.2, q: 1.3 },
+                    { freq: 130, gain: 2.8, q: 1.2 },
+                    { freq: 290, gain: -1.5, q: 1.3 },
+                    { freq: 750, gain: 1.8, q: 1.3 },
+                    { freq: 2200, gain: 2.6, q: 1.4 },
+                    { freq: 3800, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 0.5, q: 1.1 },
+                    { freq: 13000, gain: 0.8, q: 1.0 }
+                  ]
+                }
+              },
+              murder_in_my_mind: {
+                label: "Murder In My Mind (2022)",
+                eq: {
+                  name: "Murder In My Mnd",
+                  notes: "La traccia phonk più celebre: 808 rimbombante a 46Hz, punch kick a 120Hz, cowbell penetrante a 2.6kHz con Q stretto e controllo sibilanti a 7.5kHz.",
+                  bands: [
+                    { freq: 46, gain: 5.5, q: 1.5 },
+                    { freq: 120, gain: 2.8, q: 1.3 },
+                    { freq: 260, gain: -2.5, q: 1.5 },
+                    { freq: 700, gain: 1.8, q: 1.4 },
+                    { freq: 2600, gain: 4, q: 1.8 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 7500, gain: 0.8, q: 1.3 },
+                    { freq: 14500, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              million_ways: {
+                label: "Million Ways (2022)",
+                eq: {
+                  name: "Million Ways 22",
+                  notes: "Drift phonk melodico: bassi a 48Hz compatti, attenuazione risonanze scatolari a 280Hz e voce filtrata valorizzata a 1.8kHz.",
+                  bands: [
+                    { freq: 48, gain: 4.8, q: 1.4 },
+                    { freq: 122, gain: 2.2, q: 1.2 },
+                    { freq: 280, gain: -2.2, q: 1.4 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 1800, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.4, q: 1.2 },
+                    { freq: 14000, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              hellraiser: {
+                label: "Hellraiser (2022)",
+                eq: {
+                  name: "Hellraiser 2022",
+                  notes: "Aggressività estrema: sub-distortion spinta a 44Hz, colpo di cassa a 115Hz e cowbell armonico tagliente a 2.8kHz.",
+                  bands: [
+                    { freq: 44, gain: 5.2, q: 1.5 },
+                    { freq: 115, gain: 2.6, q: 1.3 },
+                    { freq: 250, gain: -2.8, q: 1.5 },
+                    { freq: 680, gain: 1.4, q: 1.3 },
+                    { freq: 2800, gain: 3.8, q: 1.7 },
+                    { freq: 4600, gain: 2.4, q: 1.3 },
+                    { freq: 8400, gain: 1, q: 1.2 },
+                    { freq: 13800, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          dvrst: {
+            label: "DVRST",
+            eq: {
+              name: "DVRST Master EQ",
+              notes: "Atmospheric Drift Phonk: sub-bass morbido e profondo a 44Hz, calore analogico a 120Hz, synthwave cowbell sognante a 2.0kHz e riverberi eterei a 15kHz.",
+              bands: [
+                { freq: 44, gain: 4.2, q: 1.3 },
+                { freq: 120, gain: 2, q: 1.2 },
+                { freq: 270, gain: -1.8, q: 1.3 },
+                { freq: 750, gain: 1, q: 1.2 },
+                { freq: 2000, gain: 2.8, q: 1.4 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              close_eyes: {
+                label: "Close Eyes (2021)",
+                eq: {
+                  name: "Close Eyes 2021",
+                  notes: "Capolavoro drift phonk: 808 rotondo a 42Hz, armonia del cowbell a 2.2kHz esaltata senza risultare stridula e apertura scintillante a 16kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.5, q: 1.4 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.4 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4400, gain: 2.2, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2.8, q: 1.1 }
+                  ]
+                }
+              },
+              autumn_winds: {
+                label: "Autumn Winds (2021)",
+                eq: {
+                  name: "Autumn Winds 21",
+                  notes: "Phonk malinconico e melodico: calore a 130Hz, sub controllato a 46Hz e medi intimi a 1.6kHz per i campionamenti vocali.",
+                  bands: [
+                    { freq: 46, gain: 3.8, q: 1.3 },
+                    { freq: 130, gain: 2.2, q: 1.1 },
+                    { freq: 280, gain: -1.5, q: 1.3 },
+                    { freq: 780, gain: 0.8, q: 1.2 },
+                    { freq: 1600, gain: 2.5, q: 1.4 },
+                    { freq: 3800, gain: 1.8, q: 1.2 },
+                    { freq: 8500, gain: 1.5, q: 1.2 },
+                    { freq: 14500, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              silent_scream: {
+                label: "Silent Scream (2022)",
+                eq: {
+                  name: "Silent Scream 22",
+                  notes: "Atmosfere notturne e veloci: punch secco della cassa a 115Hz, pulizia a 250Hz e presenza dei synth a campana a 2.4kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 2.4, q: 1.2 },
+                    { freq: 250, gain: -2.2, q: 1.4 },
+                    { freq: 700, gain: 1, q: 1.2 },
+                    { freq: 2400, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.6, q: 1.2 },
+                    { freq: 15200, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          hensonn: {
+            label: "Hensonn",
+            eq: {
+              name: "Hensonn Master",
+              notes: "Drift Phonk orientale & cinematico: sub 808 solido a 45Hz, punch a 118Hz, valorizzazione dei timbri orientali e del cowbell a 2.2kHz e spazialità a 14kHz.",
+              bands: [
+                { freq: 45, gain: 4.4, q: 1.4 },
+                { freq: 118, gain: 2, q: 1.2 },
+                { freq: 270, gain: -2, q: 1.4 },
+                { freq: 720, gain: 1.2, q: 1.3 },
+                { freq: 2200, gain: 3.2, q: 1.5 },
+                { freq: 4400, gain: 2, q: 1.3 },
+                { freq: 8600, gain: 1.6, q: 1.2 },
+                { freq: 14500, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              sahara: {
+                label: "Sahara (2021)",
+                eq: {
+                  name: "Sahara 2021",
+                  notes: "Hit virale globale: sub 808 ipnotico a 44Hz, snap della percussione a 120Hz e lead esotico potenziato a 2.5kHz con Q chirurgico.",
+                  bands: [
+                    { freq: 44, gain: 4.8, q: 1.4 },
+                    { freq: 120, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -2.4, q: 1.5 },
+                    { freq: 700, gain: 1.4, q: 1.3 },
+                    { freq: 2500, gain: 3.6, q: 1.6 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8800, gain: 1.8, q: 1.2 },
+                    { freq: 15000, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              flare: {
+                label: "Flare (2022)",
+                eq: {
+                  name: "Flare 2022",
+                  notes: "Energia da corsa notturna: cassa punchy a 112Hz, sub intonato a 46Hz e brillantezza sui charleston veloci a 9kHz.",
+                  bands: [
+                    { freq: 46, gain: 4.2, q: 1.3 },
+                    { freq: 112, gain: 2.4, q: 1.2 },
+                    { freq: 280, gain: -1.8, q: 1.4 },
+                    { freq: 740, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 2.8, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              shadows: {
+                label: "Shadows (2022)",
+                eq: {
+                  name: "Shadows 2022",
+                  notes: "Toni cupi e riverberati: sub tellurico a 40Hz, pulizia a 250Hz per non impastare le basse e riverbero d'ambiente valorizzato a 15kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.6, q: 1.4 },
+                    { freq: 115, gain: 1.8, q: 1.2 },
+                    { freq: 250, gain: -2.6, q: 1.5 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2300, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1.4, q: 1.2 },
+                    { freq: 15000, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          pharmacist: {
+            label: "Pharmacist",
+            eq: {
+              name: "Pharmacist Mst",
+              notes: "Raw Drift Phonk & Memphis Rap Chops: 808 saturo e distorto a 48Hz, attenuazione del fango a 260Hz, mordente acido del cowbell a 2.5kHz e calore nastro a 4kHz.",
+              bands: [
+                { freq: 48, gain: 5, q: 1.5 },
+                { freq: 120, gain: 2.5, q: 1.3 },
+                { freq: 260, gain: -2.5, q: 1.5 },
+                { freq: 720, gain: 1.5, q: 1.3 },
+                { freq: 2500, gain: 3.5, q: 1.6 },
+                { freq: 4000, gain: 2, q: 1.3 },
+                { freq: 8200, gain: 1, q: 1.2 },
+                { freq: 13500, gain: 1.2, q: 1.0 }
+              ]
+            },
+            albums: {
+              north_memphis: {
+                label: "North Memphis (2020)",
+                eq: {
+                  name: "North Memphis 20",
+                  notes: "Inno cult del drift phonk: 808 sgranato a 46Hz, colpo al petto a 125Hz, voce campionata a 650Hz e cowbell sferzante a 2.6kHz.",
+                  bands: [
+                    { freq: 46, gain: 5.2, q: 1.5 },
+                    { freq: 125, gain: 2.8, q: 1.3 },
+                    { freq: 270, gain: -2.6, q: 1.5 },
+                    { freq: 650, gain: 1.8, q: 1.4 },
+                    { freq: 2600, gain: 3.8, q: 1.7 },
+                    { freq: 4200, gain: 2.2, q: 1.3 },
+                    { freq: 8000, gain: 0.8, q: 1.2 },
+                    { freq: 13000, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              overdose: {
+                label: "Overdose (2021)",
+                eq: {
+                  name: "Overdose 2021",
+                  notes: "Distorsione tape estrema: sub a 44Hz tellurico, notch anti-fischio a 5kHz e risalto delle percussioni trap a 118Hz.",
+                  bands: [
+                    { freq: 44, gain: 4.8, q: 1.4 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -2.4, q: 1.4 },
+                    { freq: 700, gain: 1.2, q: 1.3 },
+                    { freq: 2300, gain: 3, q: 1.5 },
+                    { freq: 5000, gain: 1.5, q: 1.4 },
+                    { freq: 8500, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              b2: {
+                label: "B2 (2021)",
+                eq: {
+                  name: "B2 2021",
+                  notes: "Ritmi veloci e cowbell insistente: sub compatto a 50Hz, scoop a 280Hz e massima presenza dell'arpeggio a 2.4kHz.",
+                  bands: [
+                    { freq: 50, gain: 4.4, q: 1.4 },
+                    { freq: 122, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -2.2, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.2 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4400, gain: 1.8, q: 1.3 },
+                    { freq: 8600, gain: 1.2, q: 1.2 },
+                    { freq: 13800, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          playaphonk: {
+            label: "PlayaPhonk",
+            eq: {
+              name: "PlayaPhonk Mst",
+              notes: "Groove Phonk & Nu Memphis: 808 rotondo a 46Hz, risonanza analogica a 120Hz, corpo melodico a 700Hz e chiarezza cowbell a 2.4kHz.",
+              bands: [
+                { freq: 46, gain: 4.6, q: 1.4 },
+                { freq: 120, gain: 2.2, q: 1.2 },
+                { freq: 270, gain: -2, q: 1.4 },
+                { freq: 700, gain: 1.4, q: 1.3 },
+                { freq: 2400, gain: 3.4, q: 1.5 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1.4, q: 1.2 },
+                { freq: 14500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              phonky_town: {
+                label: "Phonky Town (2021)",
+                eq: {
+                  name: "Phonky Town 2021",
+                  notes: "Hit colossale: 808 ultra-presente a 45Hz, kick punch a 115Hz, cowbell intonato e brillante a 2.5kHz ed eliminazione del rimbombo a 260Hz.",
+                  bands: [
+                    { freq: 45, gain: 5, q: 1.5 },
+                    { freq: 115, gain: 2.5, q: 1.3 },
+                    { freq: 260, gain: -2.6, q: 1.5 },
+                    { freq: 720, gain: 1.6, q: 1.3 },
+                    { freq: 2500, gain: 3.8, q: 1.6 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              keraunos: {
+                label: "Keraunos (2021)",
+                eq: {
+                  name: "Keraunos 2021",
+                  notes: "Drift phonk iper-aggressivo: distorsione sub a 42Hz, cassa martellante a 110Hz e cowbell tagliente a 2.8kHz per il massimo impatto.",
+                  bands: [
+                    { freq: 42, gain: 5.2, q: 1.5 },
+                    { freq: 110, gain: 2.8, q: 1.3 },
+                    { freq: 250, gain: -3, q: 1.6 },
+                    { freq: 680, gain: 1.2, q: 1.3 },
+                    { freq: 2800, gain: 3.8, q: 1.7 },
+                    { freq: 4800, gain: 2.4, q: 1.4 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          slowboy: {
+            label: "Slowboy",
+            eq: {
+              name: "Slowboy Master",
+              notes: "Brazilian Phonk / Funk Phonk: 808 elastico a 50Hz, rullanti funk tipici a 1.2kHz, mordente percussivo a 2.4kHz e snap brillante a 4.5kHz.",
+              bands: [
+                { freq: 50, gain: 4.6, q: 1.4 },
+                { freq: 125, gain: 2.2, q: 1.2 },
+                { freq: 280, gain: -2.2, q: 1.4 },
+                { freq: 720, gain: 1.2, q: 1.3 },
+                { freq: 2400, gain: 3.2, q: 1.5 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8600, gain: 1.5, q: 1.2 },
+                { freq: 14800, gain: 1.8, q: 1.1 }
+              ]
+            },
+            albums: {
+              brazilian_phonk: {
+                label: "Brazilian Phonk (2023)",
+                eq: {
+                  name: "Brazilian Phonk",
+                  notes: "Fusione funk carioca e drift phonk: colpi di tom a 130Hz esaltati, sub saltellante a 48Hz e campanacci metallici a 2.6kHz.",
+                  bands: [
+                    { freq: 48, gain: 5, q: 1.5 },
+                    { freq: 130, gain: 2.6, q: 1.3 },
+                    { freq: 270, gain: -2.5, q: 1.5 },
+                    { freq: 700, gain: 1.5, q: 1.3 },
+                    { freq: 2600, gain: 3.6, q: 1.6 },
+                    { freq: 4800, gain: 2.4, q: 1.4 },
+                    { freq: 9000, gain: 1.8, q: 1.2 },
+                    { freq: 15200, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              tormenta: {
+                label: "Tormenta (2023)",
+                eq: {
+                  name: "Tormenta 2023",
+                  notes: "Drop travolgente: sub sismico a 44Hz, taglio del fango a 250Hz e presenza vocale aggressiva a 2.0kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.8, q: 1.4 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -2.8, q: 1.5 },
+                    { freq: 680, gain: 1, q: 1.3 },
+                    { freq: 2000, gain: 3, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              rain: {
+                label: "Rain (2022)",
+                eq: {
+                  name: "Rain 2022",
+                  notes: "Atmosfere chill phonk e pioggia di sintetizzatori: bassi caldi a 52Hz, morbidezza vocale a 1.6kHz e alte frequenze setose a 15kHz.",
+                  bands: [
+                    { freq: 52, gain: 3.8, q: 1.2 },
+                    { freq: 128, gain: 1.8, q: 1.1 },
+                    { freq: 300, gain: -1.6, q: 1.3 },
+                    { freq: 760, gain: 0.8, q: 1.2 },
+                    { freq: 1600, gain: 2.4, q: 1.4 },
+                    { freq: 4000, gain: 1.8, q: 1.2 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          sxmpra: {
+            label: "SXMPRA",
+            eq: {
+              name: "SXMPRA Master EQ",
+              notes: "Fast-flow Underground Phonk Rap: bassi 808 profondi a 46Hz, kick a 115Hz, intonazione rap tagliente a 2.5kHz e riduzione sibilanti a 7.5kHz.",
+              bands: [
+                { freq: 46, gain: 4.5, q: 1.4 },
+                { freq: 115, gain: 2.2, q: 1.2 },
+                { freq: 270, gain: -2.2, q: 1.4 },
+                { freq: 720, gain: 1.2, q: 1.3 },
+                { freq: 2500, gain: 3.5, q: 1.6 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 7500, gain: 0.8, q: 1.3 },
+                { freq: 14000, gain: 1.2, q: 1.0 }
+              ]
+            },
+            albums: {
+              cowbell_warrior: {
+                label: "Cowbell Warrior (2022)",
+                eq: {
+                  name: "Cowbell Warrior",
+                  notes: "Inno phonk rap furioso: 808 devastante a 44Hz, risalto dell'attacco del cowbell a 2.7kHz e chiarezza syllabica del rap a 3.8kHz.",
+                  bands: [
+                    { freq: 44, gain: 5, q: 1.5 },
+                    { freq: 118, gain: 2.5, q: 1.3 },
+                    { freq: 260, gain: -2.6, q: 1.5 },
+                    { freq: 700, gain: 1.5, q: 1.3 },
+                    { freq: 2700, gain: 3.8, q: 1.7 },
+                    { freq: 3800, gain: 2.4, q: 1.4 },
+                    { freq: 8200, gain: 1, q: 1.2 },
+                    { freq: 14500, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              holy_smokes: {
+                label: "Holy Smokes (2022)",
+                eq: {
+                  name: "Holy Smokes 2022",
+                  notes: "Collaborazione phonk da club: sub a 48Hz rotondo, cassa secca a 120Hz e piatti aperti definiti a 9.2kHz.",
+                  bands: [
+                    { freq: 48, gain: 4.4, q: 1.4 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -2, q: 1.4 },
+                    { freq: 750, gain: 1, q: 1.2 },
+                    { freq: 2300, gain: 3, q: 1.5 },
+                    { freq: 4400, gain: 1.8, q: 1.3 },
+                    { freq: 9200, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              step_back: {
+                label: "Step Back (2021)",
+                eq: {
+                  name: "Step Back 2021",
+                  notes: "Bassline pesante e rullante hip hop: colpo al torace a 112Hz, sub a 42Hz tellurico e voce aggressiva a 2.2kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.8, q: 1.4 },
+                    { freq: 112, gain: 2.6, q: 1.3 },
+                    { freq: 250, gain: -2.8, q: 1.5 },
+                    { freq: 680, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8500, gain: 1.2, q: 1.2 },
+                    { freq: 13800, gain: 1, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          ghostface_playa: {
+            label: "Ghostface Playa",
+            eq: {
+              name: "Ghostface Master",
+              notes: "Phonk leggendario russo/ucraino: sub tellurico a 45Hz, kick 808 solido a 120Hz, campana melodica vibrante a 2.4kHz e apertura smooth a 14kHz.",
+              bands: [
+                { freq: 45, gain: 4.8, q: 1.4 },
+                { freq: 120, gain: 2.4, q: 1.2 },
+                { freq: 270, gain: -2.2, q: 1.4 },
+                { freq: 700, gain: 1.4, q: 1.3 },
+                { freq: 2400, gain: 3.5, q: 1.6 },
+                { freq: 4500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 1.4, q: 1.2 },
+                { freq: 14000, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              why_not: {
+                label: "Why Not (2022)",
+                eq: {
+                  name: "Why Not 2022",
+                  notes: "Il brano meme-cult definitivo: sub 808 a 46Hz che scuote le cuffie, taglio del fango a 260Hz e cowbell ad altissima intonazione a 2.6kHz.",
+                  bands: [
+                    { freq: 46, gain: 5.4, q: 1.5 },
+                    { freq: 118, gain: 2.6, q: 1.3 },
+                    { freq: 260, gain: -2.8, q: 1.6 },
+                    { freq: 720, gain: 1.6, q: 1.4 },
+                    { freq: 2600, gain: 4, q: 1.7 },
+                    { freq: 4600, gain: 2.4, q: 1.3 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              swag: {
+                label: "Swag (2022)",
+                eq: {
+                  name: "Swag 2022",
+                  notes: "Groove lento e percussivo: calore analogico a 125Hz, sub 50Hz compatto e rullante crack a 4.2kHz.",
+                  bands: [
+                    { freq: 50, gain: 4.2, q: 1.3 },
+                    { freq: 125, gain: 2.2, q: 1.2 },
+                    { freq: 290, gain: -1.8, q: 1.3 },
+                    { freq: 750, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 2.8, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              i_kill: {
+                label: "I Kill (2021)",
+                eq: {
+                  name: "I Kill 2021",
+                  notes: "Dark phonk aggressivo: bassi sismici a 42Hz, attenuazione medi risonanti a 300Hz e synth glaciali a 2.8kHz.",
+                  bands: [
+                    { freq: 42, gain: 5, q: 1.5 },
+                    { freq: 112, gain: 2.2, q: 1.2 },
+                    { freq: 300, gain: -2.6, q: 1.5 },
+                    { freq: 680, gain: 1, q: 1.3 },
+                    { freq: 2800, gain: 3.4, q: 1.6 },
+                    { freq: 4800, gain: 2.2, q: 1.3 },
+                    { freq: 8600, gain: 1.4, q: 1.2 },
+                    { freq: 14500, gain: 1.6, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          moondeity: {
+            label: "MoonDeity",
+            eq: {
+              name: "MoonDeity Master",
+              notes: "Neon Phonk / Synthwave Drift: bassi 808 colossali a 44Hz, kick punch a 115Hz, synth retrò a dente di sega a 2.2kHz e riverbero stellare a 15kHz.",
+              bands: [
+                { freq: 44, gain: 4.8, q: 1.4 },
+                { freq: 115, gain: 2.4, q: 1.2 },
+                { freq: 260, gain: -2.4, q: 1.5 },
+                { freq: 700, gain: 1.2, q: 1.3 },
+                { freq: 2200, gain: 3.4, q: 1.5 },
+                { freq: 4400, gain: 2.2, q: 1.3 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.4, q: 1.1 }
+              ]
+            },
+            albums: {
+              neon_blade: {
+                label: "NEON BLADE (2022)",
+                eq: {
+                  name: "NEON BLADE 2022",
+                  notes: "Traccia anthemica cyberpunk: 808 a 42Hz devastante, taglio a 280Hz per fare spazio al leggendario cowbell lead a 2.5kHz e snare snap a 4.6kHz.",
+                  bands: [
+                    { freq: 42, gain: 5.2, q: 1.5 },
+                    { freq: 118, gain: 2.6, q: 1.3 },
+                    { freq: 280, gain: -2.8, q: 1.6 },
+                    { freq: 720, gain: 1.5, q: 1.3 },
+                    { freq: 2500, gain: 3.8, q: 1.6 },
+                    { freq: 4600, gain: 2.5, q: 1.4 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2.6, q: 1.1 }
+                  ]
+                }
+              },
+              wake_up: {
+                label: "WAKE UP (2022)",
+                eq: {
+                  name: "WAKE UP 2022",
+                  notes: "Collaborazione ad altissima adrenalina: sub spinto a 45Hz, cassa martellante a 110Hz e sintesi a 2.4kHz scintillante.",
+                  bands: [
+                    { freq: 45, gain: 4.8, q: 1.4 },
+                    { freq: 110, gain: 2.5, q: 1.3 },
+                    { freq: 250, gain: -2.5, q: 1.5 },
+                    { freq: 680, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              crystals: {
+                label: "CRYSTALS (2022)",
+                eq: {
+                  name: "CRYSTALS 2022",
+                  notes: "Atmosfere synthwave notturne: sub morbido a 46Hz, calore a 130Hz e frequenze altissime ariose a 16kHz.",
+                  bands: [
+                    { freq: 46, gain: 4.2, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: -1.8, q: 1.3 },
+                    { freq: 750, gain: 0.8, q: 1.2 },
+                    { freq: 2000, gain: 2.8, q: 1.4 },
+                    { freq: 4500, gain: 2, q: 1.3 },
+                    { freq: 9200, gain: 1.8, q: 1.2 },
+                    { freq: 16000, gain: 2.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          shadxwbxrn: {
+            label: "SHADXWBRXN",
+            eq: {
+              name: "SHADXWBRXN Mst",
+              notes: "Dark Phonk da corsa estrema: sub 808 ultra-compresso a 44Hz, colpo al petto a 118Hz, synth distorted lead a 2.6kHz e piatti controllati a 8.5kHz.",
+              bands: [
+                { freq: 44, gain: 4.8, q: 1.4 },
+                { freq: 118, gain: 2.2, q: 1.2 },
+                { freq: 260, gain: -2.5, q: 1.5 },
+                { freq: 700, gain: 1.2, q: 1.3 },
+                { freq: 2600, gain: 3.6, q: 1.6 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8500, gain: 1.2, q: 1.2 },
+                { freq: 14500, gain: 1.6, q: 1.1 }
+              ]
+            },
+            albums: {
+              knight: {
+                label: "KNIGHT (2022)",
+                eq: {
+                  name: "KNIGHT 2022",
+                  notes: "Drift phonk pesante: bassi profondi a 42Hz, attenuazione delle risonanze a 280Hz e cowbell armonico a 2.8kHz.",
+                  bands: [
+                    { freq: 42, gain: 5, q: 1.5 },
+                    { freq: 115, gain: 2.4, q: 1.2 },
+                    { freq: 280, gain: -2.8, q: 1.5 },
+                    { freq: 720, gain: 1.4, q: 1.3 },
+                    { freq: 2800, gain: 3.8, q: 1.6 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8800, gain: 1.4, q: 1.2 },
+                    { freq: 15000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              immortal: {
+                label: "IMMORTAL (2022)",
+                eq: {
+                  name: "IMMORTAL 2022",
+                  notes: "Hit virale su TikTok: sub intonato a 46Hz, punch kick secco a 120Hz e presenza vocale campionata a 1.8kHz.",
+                  bands: [
+                    { freq: 46, gain: 5.2, q: 1.5 },
+                    { freq: 120, gain: 2.5, q: 1.3 },
+                    { freq: 250, gain: -2.6, q: 1.5 },
+                    { freq: 680, gain: 1.2, q: 1.3 },
+                    { freq: 1800, gain: 3.2, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              damage: {
+                label: "DAMAGE (2023)",
+                eq: {
+                  name: "DAMAGE 2023",
+                  notes: "Distorsione brutale: sub 40Hz spinto al limite del clipping controllato, scoop a 270Hz e transienti metallici a 3.5kHz.",
+                  bands: [
+                    { freq: 40, gain: 5.4, q: 1.6 },
+                    { freq: 110, gain: 2.6, q: 1.3 },
+                    { freq: 270, gain: -3.2, q: 1.6 },
+                    { freq: 650, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.4, q: 1.5 },
+                    { freq: 3500, gain: 2.6, q: 1.4 },
+                    { freq: 8600, gain: 1, q: 1.2 },
+                    { freq: 13800, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          twisted: {
+            label: "Twisted",
+            eq: {
+              name: "Twisted Master",
+              notes: "Viral Phonk & Phonk House: bassi gommosi a 48Hz, colpo di cassa 4/4 a 125Hz, cowbell penetrante a 2.4kHz e brillantezza groove a 15kHz.",
+              bands: [
+                { freq: 48, gain: 4.6, q: 1.4 },
+                { freq: 125, gain: 2.4, q: 1.2 },
+                { freq: 270, gain: -2, q: 1.4 },
+                { freq: 720, gain: 1.2, q: 1.3 },
+                { freq: 2400, gain: 3.4, q: 1.5 },
+                { freq: 4400, gain: 2, q: 1.3 },
+                { freq: 8600, gain: 1.5, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              worth_nothing: {
+                label: "Worth Nothing (2022)",
+                eq: {
+                  name: "Worth Nothing 22",
+                  notes: "Phonk house globale con Oliver Tree: 808 bouncy a 46Hz, cassa precisa a 120Hz, voce a 1.8kHz e cowbell a 2.6kHz risaltati.",
+                  bands: [
+                    { freq: 46, gain: 5, q: 1.5 },
+                    { freq: 120, gain: 2.6, q: 1.3 },
+                    { freq: 260, gain: -2.4, q: 1.4 },
+                    { freq: 700, gain: 1.4, q: 1.3 },
+                    { freq: 2400, gain: 3.6, q: 1.6 },
+                    { freq: 4400, gain: 2.2, q: 1.3 },
+                    { freq: 8800, gain: 1.8, q: 1.2 },
+                    { freq: 15500, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              psycho: {
+                label: "Psycho (2022)",
+                eq: {
+                  name: "Psycho 2022",
+                  notes: "Ritmi martellanti da drift: cassa a 115Hz incisiva, sub a 44Hz monolitico e taglio alle medie scatolari a 300Hz.",
+                  bands: [
+                    { freq: 44, gain: 4.8, q: 1.4 },
+                    { freq: 115, gain: 2.5, q: 1.3 },
+                    { freq: 300, gain: -2.5, q: 1.5 },
+                    { freq: 750, gain: 1, q: 1.2 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2.2, q: 1.3 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 14200, gain: 1.6, q: 1.0 }
+                  ]
+                }
+              },
+              madness: {
+                label: "Madness (2023)",
+                eq: {
+                  name: "Madness 2023",
+                  notes: "Phonk energetico: sub 50Hz, calore analogico a 130Hz e percussioni brillanti a 9kHz per enfatizzare lo shuffle delle batterie.",
+                  bands: [
+                    { freq: 50, gain: 4.4, q: 1.3 },
+                    { freq: 130, gain: 2.2, q: 1.2 },
+                    { freq: 280, gain: -1.8, q: 1.3 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 9000, gain: 1.8, q: 1.2 },
+                    { freq: 14800, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      dnb: {
+        label: "Drum & Bass & Jungle",
+        eq: {
+          name: "DnB Pressure",
+          notes: "Controllo sub a 174 BPM, rullante a 200Hz/3.2kHz e dinamica rapida",
+          bands: [
+            { freq: 45, gain: 4, q: 1.3 },
+            { freq: 120, gain: 2, q: 1.2 },
+            { freq: 250, gain: 0, q: 1.3 },
+            { freq: 750, gain: 1, q: 1.2 },
+            { freq: 2400, gain: 2, q: 1.4 },
+            { freq: 4500, gain: 1, q: 1.3 },
+            { freq: 8500, gain: 2, q: 1.2 },
+            { freq: 15000, gain: 2, q: 1.0 }
+          ]
+        },
+        artists: {
+          pendulum: {
+            label: "Pendulum",
+            eq: {
+              name: "Pendulum Master",
+              notes: "Rock-Drum & Bass titanico: sub 44Hz a 174 BPM preciso, snare-crack devastante a 200Hz e 5kHz, chitarre rock corpose a 1.2kHz e break puliti.",
+              bands: [
+                { freq: 44, gain: 4.2, q: 1.4 },
+                { freq: 130, gain: 2, q: 1.2 },
+                { freq: 250, gain: -2.2, q: 1.4 },
+                { freq: 680, gain: 1.2, q: 1.3 },
+                { freq: 1800, gain: 2.8, q: 1.5 },
+                { freq: 4800, gain: 2.6, q: 1.4 },
+                { freq: 8500, gain: 1.5, q: 1.2 },
+                { freq: 15000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              hold_your_colour: {
+                label: "Hold Your Colour (2005)",
+                eq: {
+                  name: "Hold Your Colour",
+                  notes: "Capolavoro assoluto DnB: rullante leggendario a 180Hz e 4.5kHz, sub 45Hz pulito e breakbeat intarsiati a 800Hz senza asprezze digitali.",
+                  bands: [
+                    { freq: 45, gain: 4.4, q: 1.4 },
+                    { freq: 140, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.4 },
+                    { freq: 800, gain: 1.5, q: 1.3 },
+                    { freq: 2000, gain: 2.5, q: 1.4 },
+                    { freq: 4500, gain: 2.8, q: 1.4 },
+                    { freq: 8200, gain: 1.2, q: 1.2 },
+                    { freq: 14500, gain: 1.6, q: 1.0 }
+                  ]
+                }
+              },
+              in_silico: {
+                label: "In Silico (2008)",
+                eq: {
+                  name: "In Silico 2008",
+                  notes: "Fusione DnB ed alternative rock live: chitarre a 1.5kHz più evidenti, cassa rock a 110Hz e piatti aperti a 14kHz.",
+                  bands: [
+                    { freq: 46, gain: 3.8, q: 1.3 },
+                    { freq: 115, gain: 2.4, q: 1.2 },
+                    { freq: 240, gain: -1.8, q: 1.3 },
+                    { freq: 650, gain: 1, q: 1.2 },
+                    { freq: 1500, gain: 2.6, q: 1.4 },
+                    { freq: 4200, gain: 2.2, q: 1.3 },
+                    { freq: 8500, gain: 1.4, q: 1.2 },
+                    { freq: 14000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              immersion: {
+                label: "Immersion (2010)",
+                eq: {
+                  name: "Immersion 2010",
+                  notes: "Produzione monumentale: sub tellurico a 40Hz, synth electro-DnB brillanti a 2.2kHz e rullante stratificato a 5.0kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.5, q: 1.5 },
+                    { freq: 125, gain: 2.2, q: 1.2 },
+                    { freq: 270, gain: -2.5, q: 1.5 },
+                    { freq: 700, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3, q: 1.5 },
+                    { freq: 5000, gain: 2.6, q: 1.4 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15500, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              anima: {
+                label: "Anima (2023)",
+                eq: {
+                  name: "Anima 2023",
+                  notes: "Ritorno moderno e pesante: sub ultra-basso a 38Hz, notch a 280Hz per pulire i riff metalcore e transienti spietati a 4.6kHz.",
+                  bands: [
+                    { freq: 38, gain: 4.8, q: 1.5 },
+                    { freq: 112, gain: 2.4, q: 1.3 },
+                    { freq: 280, gain: -3, q: 1.6 },
+                    { freq: 620, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2.8, q: 1.4 },
+                    { freq: 8600, gain: 1.5, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          chase_and_status: {
+            label: "Chase & Status",
+            eq: {
+              name: "Chase & Status",
+              notes: "UK Bass & Jungle Authority: sub 808/reese a 45Hz corposo, crack del rullante a 160Hz/200Hz, medi vocali reggae/grime a 1.5kHz e ride cymbals puliti.",
+              bands: [
+                { freq: 45, gain: 4.5, q: 1.4 },
+                { freq: 130, gain: 2.2, q: 1.2 },
+                { freq: 260, gain: -2.2, q: 1.4 },
+                { freq: 700, gain: 1.2, q: 1.3 },
+                { freq: 1800, gain: 2.6, q: 1.4 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8500, gain: 1.4, q: 1.2 },
+                { freq: 14500, gain: 1.6, q: 1.1 }
+              ]
+            },
+            albums: {
+              more_than_alot: {
+                label: "More Than Alot (2008)",
+                eq: {
+                  name: "More Than Alot",
+                  notes: "Classico drum & bass/dubstep britannico: sub-bass caldo a 48Hz, corpo al rullante a 180Hz e armoniche analogiche a 2.0kHz.",
+                  bands: [
+                    { freq: 48, gain: 4.2, q: 1.3 },
+                    { freq: 135, gain: 2.4, q: 1.2 },
+                    { freq: 270, gain: -1.8, q: 1.3 },
+                    { freq: 750, gain: 1.4, q: 1.3 },
+                    { freq: 2000, gain: 2.5, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8000, gain: 1, q: 1.2 },
+                    { freq: 13500, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              no_more_idols: {
+                label: "No More Idols (2011)",
+                eq: {
+                  name: "No More Idols 11",
+                  notes: "Album pop-crossover iconico: kick corposo a 115Hz, intelligenza vocale a 1.6kHz e piatti aperti a 14kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 2.5, q: 1.2 },
+                    { freq: 250, gain: -2, q: 1.4 },
+                    { freq: 680, gain: 1, q: 1.2 },
+                    { freq: 1600, gain: 2.8, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8400, gain: 1.4, q: 1.2 },
+                    { freq: 14000, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              brand_new_machine: {
+                label: "Brand New Machine (2013)",
+                eq: {
+                  name: "Brand New Machin",
+                  notes: "Grime, garage e DnB: sub pesante a 42Hz, attenuazione medi cupi a 300Hz e synth garage brillanti a 2.4kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.4, q: 1.4 },
+                    { freq: 120, gain: 2.2, q: 1.2 },
+                    { freq: 300, gain: -2.4, q: 1.4 },
+                    { freq: 720, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 2.8, q: 1.5 },
+                    { freq: 4600, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.2, q: 1.2 },
+                    { freq: 14200, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              rtrn_ii_jungle: {
+                label: "RTRN II JUNGLE (2019)",
+                eq: {
+                  name: "RTRN II JUNGLE",
+                  notes: "Registrato in Giamaica con sound system autentico: sub 808 grasso a 45Hz, break Amen a 800Hz e rullanti jungle taglienti a 4.0kHz.",
+                  bands: [
+                    { freq: 45, gain: 5, q: 1.5 },
+                    { freq: 140, gain: 2.5, q: 1.2 },
+                    { freq: 260, gain: -2.6, q: 1.5 },
+                    { freq: 800, gain: 1.8, q: 1.4 },
+                    { freq: 1800, gain: 2.5, q: 1.4 },
+                    { freq: 4000, gain: 2.4, q: 1.3 },
+                    { freq: 8200, gain: 1.2, q: 1.2 },
+                    { freq: 13800, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              },
+              "2_ruff_vol_1": {
+                label: "2 Ruff Vol 1 (2023)",
+                eq: {
+                  name: "2 Ruff Vol 1",
+                  notes: "Rinascita DnB globale (Baddadan, Backbone): sub tellurico a 40Hz, snare snap micidiale a 170Hz/4.8kHz e punch al torace a 110Hz.",
+                  bands: [
+                    { freq: 40, gain: 5.2, q: 1.5 },
+                    { freq: 110, gain: 2.8, q: 1.3 },
+                    { freq: 250, gain: -3, q: 1.6 },
+                    { freq: 650, gain: 1.4, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4800, gain: 2.6, q: 1.4 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          sub_focus: {
+            label: "Sub Focus",
+            eq: {
+              name: "Sub Focus Master",
+              notes: "Dancefloor Drum & Bass di precisione: sub 44Hz perfetto, punch kick a 120Hz, synth melodici luccicanti a 2.2kHz e ariosità aperta a 15kHz.",
+              bands: [
+                { freq: 44, gain: 4.4, q: 1.4 },
+                { freq: 120, gain: 2.2, q: 1.2 },
+                { freq: 260, gain: -2.2, q: 1.4 },
+                { freq: 720, gain: 1, q: 1.2 },
+                { freq: 2200, gain: 3, q: 1.5 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.2, q: 1.1 }
+              ]
+            },
+            albums: {
+              sub_focus: {
+                label: "Sub Focus (2009)",
+                eq: {
+                  name: "Sub Focus 2009",
+                  notes: "Classico Ram Records: rullante punchy a 160Hz, sub tonale a 46Hz e wobble analogici vivaci a 1.8kHz.",
+                  bands: [
+                    { freq: 46, gain: 4.2, q: 1.3 },
+                    { freq: 125, gain: 2.4, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.4 },
+                    { freq: 750, gain: 1.2, q: 1.3 },
+                    { freq: 1800, gain: 2.6, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8200, gain: 1.2, q: 1.2 },
+                    { freq: 14000, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              torus: {
+                label: "Torus (2013)",
+                eq: {
+                  name: "Torus 2013",
+                  notes: "DnB commerciale e melodico: cassa brillante a 115Hz, frequenze vocali limpide a 2.0kHz e sub 42Hz rotondo.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -2.2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2000, gain: 3, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              portals: {
+                label: "Portals (2020)",
+                eq: {
+                  name: "Portals 2020",
+                  notes: "Collaborazione con Wilkinson: paesaggi sonori organici, calore a 130Hz, sub 45Hz avvolgente e apertura a 16kHz per archi e sintetizzatori.",
+                  bands: [
+                    { freq: 45, gain: 4.2, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1.8, q: 1.3 },
+                    { freq: 700, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 2.8, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2.6, q: 1.1 }
+                  ]
+                }
+              },
+              evolve: {
+                label: "Evolve (2023)",
+                eq: {
+                  name: "Evolve 2023",
+                  notes: "Dancefloor DnB contemporaneo di livello mondiale: sub tellurico a 40Hz, rullante snap a 4.8kHz e chiarezza cristallina.",
+                  bands: [
+                    { freq: 40, gain: 4.8, q: 1.5 },
+                    { freq: 118, gain: 2.4, q: 1.2 },
+                    { freq: 260, gain: -2.6, q: 1.5 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4800, gain: 2.4, q: 1.4 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          andy_c: {
+            label: "Andy C",
+            eq: {
+              name: "Andy C Master EQ",
+              notes: "The Executioner / Fast Double Drops: transiente della cassa a 115Hz fulmineo, sub 45Hz a roll continuo, taglio a 280Hz per separare 3 tracce in contemporanea e snare slap a 4.5kHz.",
+              bands: [
+                { freq: 45, gain: 4.4, q: 1.4 },
+                { freq: 115, gain: 2.5, q: 1.3 },
+                { freq: 280, gain: -3, q: 1.6 },
+                { freq: 750, gain: 1.2, q: 1.3 },
+                { freq: 2200, gain: 3, q: 1.5 },
+                { freq: 4500, gain: 2.4, q: 1.4 },
+                { freq: 8500, gain: 1.5, q: 1.2 },
+                { freq: 14500, gain: 1.6, q: 1.1 }
+              ]
+            },
+            albums: {
+              nightlife: {
+                label: "Nightlife (2013)",
+                eq: {
+                  name: "Nightlife 2013",
+                  notes: "Mix compilation leggendaria: risposta veloce su tutto lo spettro, kick a 120Hz rinforzato e ride puliti a 8.5kHz per il mixaggio a 3 piatti.",
+                  bands: [
+                    { freq: 46, gain: 4.2, q: 1.4 },
+                    { freq: 120, gain: 2.6, q: 1.2 },
+                    { freq: 270, gain: -2.8, q: 1.5 },
+                    { freq: 720, gain: 1, q: 1.2 },
+                    { freq: 2100, gain: 2.8, q: 1.4 },
+                    { freq: 4400, gain: 2.2, q: 1.3 },
+                    { freq: 8500, gain: 1.6, q: 1.2 },
+                    { freq: 14000, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              all_night: {
+                label: "All Night (2013)",
+                eq: {
+                  name: "All Night 2013",
+                  notes: "Hit con Eva Simons: basso rolling a 44Hz, presenza vocale cristallina a 2.4kHz e apertura aerea a 15kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.2, q: 1.3 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -2.2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4600, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 1.8, q: 1.2 },
+                    { freq: 15000, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              heartbeat_loud: {
+                label: "Heartbeat Loud (2014)",
+                eq: {
+                  name: "Heartbeat Loud",
+                  notes: "Produzione raffinata con Fiora: sub avvolgente a 42Hz, calore analogico a 130Hz e rullante stratificato a 4.8kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.5, q: 1.4 },
+                    { freq: 130, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -2.4, q: 1.5 },
+                    { freq: 700, gain: 1, q: 1.2 },
+                    { freq: 2200, gain: 3, q: 1.5 },
+                    { freq: 4800, gain: 2.2, q: 1.3 },
+                    { freq: 9000, gain: 1.8, q: 1.2 },
+                    { freq: 15500, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          netsky: {
+            label: "Netsky",
+            eq: {
+              name: "Netsky Master EQ",
+              notes: "Liquid Drum & Bass belga: bassi caldi e melodici a 48Hz, kick morbido a 120Hz, pianoforte ed elementi vocali caldi a 1.8kHz e brillantezza a 15kHz.",
+              bands: [
+                { freq: 48, gain: 4, q: 1.3 },
+                { freq: 120, gain: 2, q: 1.1 },
+                { freq: 270, gain: -1.8, q: 1.3 },
+                { freq: 700, gain: 1, q: 1.2 },
+                { freq: 1800, gain: 2.8, q: 1.4 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.4, q: 1.1 }
+              ]
+            },
+            albums: {
+              netsky: {
+                label: "Netsky (2010)",
+                eq: {
+                  name: "Netsky 2010",
+                  notes: "Il debutto su Hospital Records: sub rolling a 50Hz, calore analogico a 140Hz e rullanti liquid morbidi a 4.0kHz.",
+                  bands: [
+                    { freq: 50, gain: 4.2, q: 1.3 },
+                    { freq: 140, gain: 2.4, q: 1.1 },
+                    { freq: 280, gain: -1.5, q: 1.3 },
+                    { freq: 750, gain: 1.2, q: 1.3 },
+                    { freq: 1700, gain: 2.5, q: 1.4 },
+                    { freq: 4000, gain: 1.8, q: 1.2 },
+                    { freq: 8200, gain: 1.4, q: 1.2 },
+                    { freq: 14000, gain: 1.8, q: 1.0 }
+                  ]
+                }
+              },
+              "2": {
+                label: "2 (2012)",
+                eq: {
+                  name: "Netsky 2 (2012)",
+                  notes: "Crossover pop/dancefloor (Come Alive): cassa a 115Hz, intelligenza vocale a 2.2kHz e sub 45Hz solido.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -2, q: 1.4 },
+                    { freq: 700, gain: 0.8, q: 1.2 },
+                    { freq: 2200, gain: 3, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.6, q: 1.2 },
+                    { freq: 14800, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              "3": {
+                label: "3 (2016)",
+                eq: {
+                  name: "Netsky 3 (2016)",
+                  notes: "Produzione estiva e luminosa: bassi precisi a 46Hz, apertura brillante sulle chitarre e synth a 2.5kHz e aria a 16kHz.",
+                  bands: [
+                    { freq: 46, gain: 3.8, q: 1.3 },
+                    { freq: 120, gain: 1.8, q: 1.1 },
+                    { freq: 250, gain: -2.2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2500, gain: 2.8, q: 1.5 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2.6, q: 1.1 }
+                  ]
+                }
+              },
+              second_nature: {
+                label: "Second Nature (2020)",
+                eq: {
+                  name: "Second Nature 20",
+                  notes: "Ritorno al liquid sound puro: sub profondo a 44Hz, body rullante a 180Hz e spazialità widescreen a 15.5kHz.",
+                  bands: [
+                    { freq: 44, gain: 4.4, q: 1.4 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.4 },
+                    { freq: 720, gain: 1, q: 1.2 },
+                    { freq: 2000, gain: 3, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          hedex: {
+            label: "Hedex",
+            eq: {
+              name: "Hedex Master EQ",
+              notes: "Jump Up DnB / High-Pitch Squeak: sub sinusoidale a 46Hz potente, cassa 115Hz asciutta, screamer lead acuto a 2.8kHz e rullante crack a 4.8kHz.",
+              bands: [
+                { freq: 46, gain: 4.6, q: 1.4 },
+                { freq: 115, gain: 2.4, q: 1.3 },
+                { freq: 260, gain: -3.2, q: 1.6 },
+                { freq: 700, gain: 1, q: 1.3 },
+                { freq: 2800, gain: 3.8, q: 1.6 },
+                { freq: 4800, gain: 2.6, q: 1.4 },
+                { freq: 8500, gain: 1.2, q: 1.2 },
+                { freq: 14000, gain: 1.4, q: 1.0 }
+              ]
+            },
+            albums: {
+              mhitr: {
+                label: "MHITR (2023)",
+                eq: {
+                  name: "MHITR 2023",
+                  notes: "My High Is The Rhythm: jump-up ad altissima velocità, sub a 44Hz a massima botta, taglio a 280Hz per chop immediati e scream lead a 3.0kHz.",
+                  bands: [
+                    { freq: 44, gain: 5, q: 1.5 },
+                    { freq: 112, gain: 2.5, q: 1.3 },
+                    { freq: 280, gain: -3.5, q: 1.7 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2800, gain: 4, q: 1.7 },
+                    { freq: 4800, gain: 2.8, q: 1.4 },
+                    { freq: 8800, gain: 1.4, q: 1.2 },
+                    { freq: 14500, gain: 1.6, q: 1.1 }
+                  ]
+                }
+              },
+              sem_semi: {
+                label: "Sem Semi (2023)",
+                eq: {
+                  name: "Sem Semi 2023",
+                  notes: "Hit da club virale: bassline saltellante a 48Hz, colpo di rullante punchy a 170Hz e charleston veloci a 9kHz.",
+                  bands: [
+                    { freq: 48, gain: 4.8, q: 1.4 },
+                    { freq: 120, gain: 2.2, q: 1.2 },
+                    { freq: 260, gain: -3, q: 1.6 },
+                    { freq: 750, gain: 1.4, q: 1.3 },
+                    { freq: 2600, gain: 3.6, q: 1.6 },
+                    { freq: 4600, gain: 2.4, q: 1.3 },
+                    { freq: 9000, gain: 1.6, q: 1.2 },
+                    { freq: 14000, gain: 1.4, q: 1.0 }
+                  ]
+                }
+              },
+              club_workout: {
+                label: "Club Workout (2022)",
+                eq: {
+                  name: "Club Workout 22",
+                  notes: "Jump Up serrato e dinamico: cassa dura a 110Hz, sub controllato a 45Hz e medi pungenti a 2.5kHz.",
+                  bands: [
+                    { freq: 45, gain: 4.5, q: 1.4 },
+                    { freq: 110, gain: 2.6, q: 1.3 },
+                    { freq: 270, gain: -2.8, q: 1.5 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2500, gain: 3.2, q: 1.5 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 8400, gain: 1.2, q: 1.2 },
+                    { freq: 13800, gain: 1.2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          wilkinson: {
+            label: "Wilkinson",
+            eq: {
+              name: "Wilkinson Master",
+              notes: "Dancefloor & Vocal Drum & Bass: sub profondo e melodico a 44Hz, punch al petto a 120Hz, risalto vocale a 2.0kHz e spazialità panoramica a 15kHz.",
+              bands: [
+                { freq: 44, gain: 4.2, q: 1.3 },
+                { freq: 120, gain: 2.2, q: 1.2 },
+                { freq: 260, gain: -2, q: 1.4 },
+                { freq: 700, gain: 1, q: 1.2 },
+                { freq: 2000, gain: 3, q: 1.5 },
+                { freq: 4500, gain: 2.2, q: 1.3 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.4, q: 1.1 }
+              ]
+            },
+            albums: {
+              lazerslut: {
+                label: "Lazerslut (2013)",
+                eq: {
+                  name: "Lazerslut 2013",
+                  notes: "Album d'esordio (Afterglow): sub solido a 45Hz, snare body caldo a 190Hz, melodie vocali trascinanti a 2.2kHz e ride aperti a 9kHz.",
+                  bands: [
+                    { freq: 45, gain: 4.4, q: 1.4 },
+                    { freq: 125, gain: 2.4, q: 1.2 },
+                    { freq: 270, gain: -2, q: 1.4 },
+                    { freq: 750, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 1.8, q: 1.2 },
+                    { freq: 15000, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              sleepless: {
+                label: "Sleepless (2016)",
+                eq: {
+                  name: "Sleepless 2016",
+                  notes: "Produzione radiofonica rifinita: cassa secca a 115Hz, riduzione fango a 280Hz e voce cristallina a 1.8kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -2.2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 1800, gain: 2.8, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.6, q: 1.2 },
+                    { freq: 14800, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              cognition: {
+                label: "Cognition (2022)",
+                eq: {
+                  name: "Cognition 2022",
+                  notes: "DnB contemporaneo da festival (Used to This): sub a 40Hz potente, rullanti stratificati con snap a 4.8kHz e alte frequenze aperte a 16kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.6, q: 1.4 },
+                    { freq: 118, gain: 2.4, q: 1.2 },
+                    { freq: 250, gain: -2.5, q: 1.5 },
+                    { freq: 720, gain: 1, q: 1.2 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 4800, gain: 2.4, q: 1.4 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2.6, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          dimension: {
+            label: "Dimension",
+            eq: {
+              name: "Dimension Master",
+              notes: "Arena Dancefloor Drum & Bass: sub 42Hz tonale puro, cassa punchy a 118Hz, synth acid/trance a 2.4kHz e snap rullante cristallino a 4.6kHz.",
+              bands: [
+                { freq: 42, gain: 4.5, q: 1.4 },
+                { freq: 118, gain: 2.4, q: 1.2 },
+                { freq: 260, gain: -2.5, q: 1.5 },
+                { freq: 700, gain: 1, q: 1.3 },
+                { freq: 2400, gain: 3.2, q: 1.5 },
+                { freq: 4600, gain: 2.4, q: 1.3 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.2, q: 1.1 }
+              ]
+            },
+            albums: {
+              organ: {
+                label: "Organ (2021)",
+                eq: {
+                  name: "Organ 2021",
+                  notes: "Debut album maestoso: sub tellurico a 40Hz, enfasi sull'organo da chiesa/rave a 1.5kHz e brillantezza da festival a 15.5kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.8, q: 1.5 },
+                    { freq: 115, gain: 2.2, q: 1.2 },
+                    { freq: 270, gain: -2.6, q: 1.5 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3.4, q: 1.5 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              desire: {
+                label: "Desire (2018)",
+                eq: {
+                  name: "Desire 2018",
+                  notes: "Hit con Sub Focus: cassa potente a 120Hz, vocal chop ariosi a 2.0kHz e bassline 174 BPM incalzante a 44Hz.",
+                  bands: [
+                    { freq: 44, gain: 4.2, q: 1.3 },
+                    { freq: 120, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -2, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2000, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.6, q: 1.2 },
+                    { freq: 14800, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              dj_turn_it_up: {
+                label: "DJ Turn It Up (2023)",
+                eq: {
+                  name: "DJ Turn It Up 23",
+                  notes: "Rave inno moderno: bassline acid secca, sub a 42Hz da festival, taglio a 280Hz per massima separazione e transiente snare a 4.8kHz.",
+                  bands: [
+                    { freq: 42, gain: 5, q: 1.5 },
+                    { freq: 112, gain: 2.5, q: 1.3 },
+                    { freq: 280, gain: -3, q: 1.6 },
+                    { freq: 740, gain: 1.2, q: 1.3 },
+                    { freq: 2600, gain: 3.6, q: 1.6 },
+                    { freq: 4800, gain: 2.6, q: 1.4 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15000, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          hybrid_minds: {
+            label: "Hybrid Minds",
+            eq: {
+              name: "Hybrid Minds Mst",
+              notes: "Vocal Liquid Drum & Bass d'autore: sub caldo e avvolgente a 46Hz, pulizia delle basse frequenze a 280Hz, presenza intima delle voci a 1.8kHz e setosità a 15kHz.",
+              bands: [
+                { freq: 46, gain: 3.8, q: 1.3 },
+                { freq: 125, gain: 1.8, q: 1.1 },
+                { freq: 280, gain: -2, q: 1.4 },
+                { freq: 720, gain: 0.8, q: 1.2 },
+                { freq: 1800, gain: 2.8, q: 1.4 },
+                { freq: 4200, gain: 2, q: 1.3 },
+                { freq: 9000, gain: 2, q: 1.2 },
+                { freq: 15000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              mountains: {
+                label: "Mountains (2013)",
+                eq: {
+                  name: "Mountains 2013",
+                  notes: "Debutto emotivo e nostalgico: piano e archi a 800Hz e 2.2kHz, bassline analogica a 50Hz e batteria breakbeat classica.",
+                  bands: [
+                    { freq: 50, gain: 4, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 290, gain: -1.6, q: 1.3 },
+                    { freq: 800, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 2.6, q: 1.4 },
+                    { freq: 4000, gain: 1.8, q: 1.2 },
+                    { freq: 8500, gain: 1.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              elements: {
+                label: "Elements (2017)",
+                eq: {
+                  name: "Elements 2017",
+                  notes: "Liquid soul moderno: sub rotondo a 45Hz, rullanti morbidi a 180Hz, voce calda e limpida a 1.6kHz senza durezze.",
+                  bands: [
+                    { freq: 45, gain: 4.2, q: 1.3 },
+                    { freq: 120, gain: 1.8, q: 1.2 },
+                    { freq: 260, gain: -2.2, q: 1.4 },
+                    { freq: 700, gain: 0.8, q: 1.2 },
+                    { freq: 1600, gain: 3, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 1.8, q: 1.2 },
+                    { freq: 15000, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              },
+              tides: {
+                label: "Tides (2023)",
+                eq: {
+                  name: "Tides 2023",
+                  notes: "Produzione cristallina: sub 42Hz profondo, definizione dei dettagli acustici a 2.5kHz e massima apertura panoramica a 16kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.4, q: 1.4 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -2.4, q: 1.5 },
+                    { freq: 740, gain: 1, q: 1.2 },
+                    { freq: 2500, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 9200, gain: 2.2, q: 1.2 },
+                    { freq: 16000, gain: 2.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          kanine: {
+            label: "Kanine",
+            eq: {
+              name: "Kanine Master EQ",
+              notes: "Modern Jump Up & Dancefloor Roller: sub a 44Hz intonato e potentissimo, punch della cassa a 115Hz, lead synth taglienti a 2.5kHz e rullante schioccante a 4.6kHz.",
+              bands: [
+                { freq: 44, gain: 4.8, q: 1.5 },
+                { freq: 115, gain: 2.4, q: 1.2 },
+                { freq: 260, gain: -3, q: 1.6 },
+                { freq: 720, gain: 1, q: 1.3 },
+                { freq: 2500, gain: 3.5, q: 1.6 },
+                { freq: 4600, gain: 2.4, q: 1.3 },
+                { freq: 8800, gain: 1.6, q: 1.2 },
+                { freq: 14800, gain: 1.8, q: 1.1 }
+              ]
+            },
+            albums: {
+              get_down: {
+                label: "Get Down (2019)",
+                eq: {
+                  name: "Get Down 2019",
+                  notes: "Banger da festival: sub 46Hz continuo, chop veloci a 174 BPM puliti a 280Hz e snare snap a 5.0kHz.",
+                  bands: [
+                    { freq: 46, gain: 4.6, q: 1.4 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 280, gain: -3.2, q: 1.6 },
+                    { freq: 700, gain: 1.2, q: 1.3 },
+                    { freq: 2400, gain: 3.2, q: 1.5 },
+                    { freq: 5000, gain: 2.5, q: 1.4 },
+                    { freq: 8600, gain: 1.4, q: 1.2 },
+                    { freq: 14200, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              want_you: {
+                label: "Want You (2021)",
+                eq: {
+                  name: "Want You 2021",
+                  notes: "Fusione dancefloor melodico e roller: sub a 42Hz caldo, intelligenza vocale a 2.0kHz e piatti cristallini a 9kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.4, q: 1.4 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -2.5, q: 1.4 },
+                    { freq: 680, gain: 0.8, q: 1.2 },
+                    { freq: 2000, gain: 3, q: 1.5 },
+                    { freq: 4400, gain: 2.2, q: 1.3 },
+                    { freq: 9000, gain: 1.8, q: 1.2 },
+                    { freq: 15000, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              },
+              the_shadows: {
+                label: "The Shadows (2022)",
+                eq: {
+                  name: "The Shadows 2022",
+                  notes: "Dark roller e bassline aggressive: estensione tellurica a 38Hz, notch a 270Hz e medi distorti a 2.6kHz.",
+                  bands: [
+                    { freq: 38, gain: 5, q: 1.6 },
+                    { freq: 112, gain: 2.5, q: 1.3 },
+                    { freq: 270, gain: -3.4, q: 1.7 },
+                    { freq: 740, gain: 1.2, q: 1.3 },
+                    { freq: 2600, gain: 3.6, q: 1.6 },
+                    { freq: 4600, gain: 2.4, q: 1.3 },
+                    { freq: 8800, gain: 1.4, q: 1.2 },
+                    { freq: 14500, gain: 1.6, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          camo_and_krooked: {
+            label: "Camo & Krooked",
+            eq: {
+              name: "Camo & Krooked",
+              notes: "Sound Engineering & Minimal DnB austriaco: sub chirurgico a 44Hz, micro-dinamica nei break a 800Hz, medi ariosi e puliti a 2.2kHz e micro-dettaglio stereo a 15kHz.",
+              bands: [
+                { freq: 44, gain: 4, q: 1.4 },
+                { freq: 118, gain: 1.8, q: 1.2 },
+                { freq: 270, gain: -2.2, q: 1.4 },
+                { freq: 800, gain: 1.2, q: 1.3 },
+                { freq: 2200, gain: 3, q: 1.5 },
+                { freq: 4400, gain: 2, q: 1.3 },
+                { freq: 9000, gain: 2, q: 1.2 },
+                { freq: 15000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              cross_the_line: {
+                label: "Cross the Line (2011)",
+                eq: {
+                  name: "Cross The Line",
+                  notes: "Melodic e vocal DnB: sub caldo a 48Hz, colpo di rullante corposo a 170Hz e piano brillante a 2.0kHz.",
+                  bands: [
+                    { freq: 48, gain: 4.2, q: 1.3 },
+                    { freq: 125, gain: 2.2, q: 1.2 },
+                    { freq: 280, gain: -1.8, q: 1.3 },
+                    { freq: 750, gain: 1, q: 1.2 },
+                    { freq: 2000, gain: 2.8, q: 1.4 },
+                    { freq: 4200, gain: 2, q: 1.3 },
+                    { freq: 8600, gain: 1.6, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              zeitgeist: {
+                label: "Zeitgeist (2013)",
+                eq: {
+                  name: "Zeitgeist 2013",
+                  notes: "Evoluzione electro e french house influenza: punch a 115Hz incisivo, scoop a 250Hz e percussioni raffinate a 4.5kHz.",
+                  bands: [
+                    { freq: 45, gain: 3.8, q: 1.3 },
+                    { freq: 115, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -2.4, q: 1.5 },
+                    { freq: 700, gain: 0.8, q: 1.2 },
+                    { freq: 2400, gain: 3, q: 1.5 },
+                    { freq: 4500, gain: 2.2, q: 1.3 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 15200, gain: 2.4, q: 1.1 }
+                  ]
+                }
+              },
+              mosaik: {
+                label: "Mosaik (2017)",
+                eq: {
+                  name: "Mosaik 2017",
+                  notes: "Pietra miliare della produzione minimale: spazio dinamico enorme, sub 42Hz secco e definito, zero sovrapposizione a 260Hz e hi-hats organici a 16kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.2, q: 1.4 },
+                    { freq: 112, gain: 1.6, q: 1.2 },
+                    { freq: 260, gain: -2.8, q: 1.6 },
+                    { freq: 850, gain: 1.4, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 9500, gain: 2.2, q: 1.2 },
+                    { freq: 16000, gain: 2.8, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          noisia: {
+            label: "Noisia",
+            eq: {
+              name: "Noisia Master EQ",
+              notes: "I maestri assoluti del Neurofunk: sub 40Hz chirurgico e potentissimo, controllo risonanze reese a 250Hz, filtri neuro a 1.8kHz e micro-transienti iper-definiti a 4.5kHz.",
+              bands: [
+                { freq: 40, gain: 4.8, q: 1.5 },
+                { freq: 115, gain: 2.2, q: 1.3 },
+                { freq: 250, gain: -3.2, q: 1.6 },
+                { freq: 680, gain: 1.2, q: 1.3 },
+                { freq: 1800, gain: 3.2, q: 1.6 },
+                { freq: 4500, gain: 2.5, q: 1.4 },
+                { freq: 8800, gain: 1.8, q: 1.2 },
+                { freq: 15000, gain: 2.2, q: 1.1 }
+              ]
+            },
+            albums: {
+              split_the_atom: {
+                label: "Split the Atom (2010)",
+                eq: {
+                  name: "Split The Atom",
+                  notes: "Capolavoro neurofunk: rullante leggendario a 200Hz e 4.2kHz, reese bass granulari a 1.5kHz e sub 44Hz tellurico.",
+                  bands: [
+                    { freq: 44, gain: 4.6, q: 1.4 },
+                    { freq: 125, gain: 2.4, q: 1.2 },
+                    { freq: 260, gain: -2.8, q: 1.5 },
+                    { freq: 720, gain: 1.4, q: 1.3 },
+                    { freq: 1500, gain: 3, q: 1.5 },
+                    { freq: 4200, gain: 2.6, q: 1.4 },
+                    { freq: 8500, gain: 1.5, q: 1.2 },
+                    { freq: 14500, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              outer_edges: {
+                label: "Outer Edges (2016)",
+                eq: {
+                  name: "Outer Edges 2016",
+                  notes: "Vertice del sound design elettronico: sub 38Hz ad escursione massima, scoop a 280Hz per totale pulizia stereo e modulazioni a 2.4kHz scintillanti.",
+                  bands: [
+                    { freq: 38, gain: 5, q: 1.6 },
+                    { freq: 110, gain: 2, q: 1.3 },
+                    { freq: 280, gain: -3.5, q: 1.7 },
+                    { freq: 650, gain: 1, q: 1.3 },
+                    { freq: 2400, gain: 3.4, q: 1.6 },
+                    { freq: 4600, gain: 2.4, q: 1.4 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 15500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              closer: {
+                label: "Closer (2022)",
+                eq: {
+                  name: "Closer 2022",
+                  notes: "L'album d'addio: ogni timbro rifinito al millesimo di dB, sub 40Hz pulito, rullanti veloci a 174 BPM e spazialità widescreen a 16kHz.",
+                  bands: [
+                    { freq: 40, gain: 4.8, q: 1.5 },
+                    { freq: 118, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -3, q: 1.6 },
+                    { freq: 700, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 3.2, q: 1.5 },
+                    { freq: 4800, gain: 2.4, q: 1.4 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 16000, gain: 2.6, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          goldie: {
+            label: "Goldie",
+            eq: {
+              name: "Goldie Master EQ",
+              notes: "Padrino del Jungle / Drum & Bass: sub 808 e time-stretch Amen break a 800Hz, calore orchestrale a 180Hz, snare snap d'epoca e ariosità a 14kHz.",
+              bands: [
+                { freq: 45, gain: 4.5, q: 1.4 },
+                { freq: 130, gain: 2.4, q: 1.2 },
+                { freq: 260, gain: -2, q: 1.4 },
+                { freq: 800, gain: 1.8, q: 1.3 },
+                { freq: 1800, gain: 2.5, q: 1.4 },
+                { freq: 4200, gain: 2.2, q: 1.3 },
+                { freq: 8200, gain: 1.4, q: 1.2 },
+                { freq: 14000, gain: 1.8, q: 1.1 }
+              ]
+            },
+            albums: {
+              timeless: {
+                label: "Timeless (1995)",
+                eq: {
+                  name: "Timeless 1995",
+                  notes: "L'opera magna del drum & bass: Amen break time-stretched a 850Hz, sub-bass profondo a 45Hz, calore analogico Metalheadz e archi maestosi.",
+                  bands: [
+                    { freq: 45, gain: 4.6, q: 1.4 },
+                    { freq: 135, gain: 2.6, q: 1.2 },
+                    { freq: 270, gain: -1.8, q: 1.3 },
+                    { freq: 850, gain: 2, q: 1.4 },
+                    { freq: 1900, gain: 2.4, q: 1.3 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 8000, gain: 1.2, q: 1.2 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              saturnz_return: {
+                label: "Saturnz Return (1998)",
+                eq: {
+                  name: "Saturnz Return",
+                  notes: "Ambizione sinfonica e darkcore: sub 42Hz esteso, controllo risonanze basse a 250Hz e presenza vocale a 2.2kHz.",
+                  bands: [
+                    { freq: 42, gain: 4.4, q: 1.3 },
+                    { freq: 120, gain: 2.2, q: 1.2 },
+                    { freq: 250, gain: -2.2, q: 1.4 },
+                    { freq: 720, gain: 1.2, q: 1.3 },
+                    { freq: 2200, gain: 2.8, q: 1.4 },
+                    { freq: 4400, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 1.4, q: 1.2 },
+                    { freq: 14200, gain: 1.8, q: 1.1 }
+                  ]
+                }
+              },
+              the_journey_man: {
+                label: "The Journey Man (2017)",
+                eq: {
+                  name: "The Journey Man",
+                  notes: "Fusione soul, jazz e modern DnB: calore e trasparenza a 125Hz, sub 44Hz controllato, voce limpida a 1.6kHz e piatti rifiniti a 15kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1.8, q: 1.3 },
+                    { freq: 750, gain: 1, q: 1.2 },
+                    { freq: 1600, gain: 2.6, q: 1.4 },
+                    { freq: 4200, gain: 1.8, q: 1.3 },
+                    { freq: 8800, gain: 1.6, q: 1.2 },
+                    { freq: 15000, gain: 2.2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      synthwave: {
+        label: "Synthwave & Retrowave",
+        eq: {
+          name: "Neon Retrowave",
+          notes: "Rullanti gated anni 80, arpeggiatori synth e ariosita spaziale",
+          bands: [
+            { freq: 50, gain: 3, q: 1.2 },
+            { freq: 130, gain: 2, q: 1.2 },
+            { freq: 290, gain: 0, q: 1.2 },
+            { freq: 750, gain: 1, q: 1.2 },
+            { freq: 2200, gain: 2, q: 1.4 },
+            { freq: 4400, gain: 1, q: 1.3 },
+            { freq: 8000, gain: 2, q: 1.2 },
+            { freq: 14000, gain: 2, q: 1.0 }
+          ]
+        },
+        artists: {
+          the_midnight: {
+            label: "The Midnight",
+            eq: {
+              name: "The Midnight",
+              notes: "Profilo retrowave iconico: calore analogico Roland Juno a 240Hz, corpo per sax e voce a 1200Hz, e morbida apertura vintage a 14kHz.",
+              bands: [
+                { freq: 52, gain: 3, q: 1.1 },
+                { freq: 135, gain: 2, q: 1.0 },
+                { freq: 240, gain: 1.5, q: 1.2 },
+                { freq: 650, gain: -1, q: 1.0 },
+                { freq: 1200, gain: 2, q: 1.3 },
+                { freq: 3800, gain: 1.5, q: 1.1 },
+                { freq: 8200, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              days_of_thunder: {
+                label: "Days of Thunder (2014)",
+                eq: {
+                  name: "Days of Thunder",
+                  notes: "Synthwave pura: cassa punchy a 55Hz, snare gated LinnDrum a 3600Hz ed enfasi sull'arpeggiatore di basso a 140Hz.",
+                  bands: [
+                    { freq: 55, gain: 3.5, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.0 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              endless_summer: {
+                label: "Endless Summer (2016)",
+                eq: {
+                  name: "Endless Summer",
+                  notes: "Atmosfere estive e calde: corposità per sax contralto a 900Hz, sub rotondo a 48Hz e riverberi scintillanti a 15kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 900, gain: 2, q: 1.2 },
+                    { freq: 2200, gain: 1, q: 1.1 },
+                    { freq: 4200, gain: 1.5, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              nocturnal: {
+                label: "Nocturnal (2017)",
+                eq: {
+                  name: "Nocturnal",
+                  notes: "Tonalità darkwave notturna: sub-bassi profondi a 45Hz, medi bassi compatti a 180Hz e controllo delle alte frequenze taglienti.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.2 },
+                    { freq: 180, gain: 2, q: 1.1 },
+                    { freq: 320, gain: 1, q: 1.0 },
+                    { freq: 600, gain: -1.5, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.0 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              kids: {
+                label: "Kids (2018)",
+                eq: {
+                  name: "Kids",
+                  notes: "Nostalgia su cassetta anni 80: lieve enfasi lo-fi sui medi a 750Hz, transiente secco del rullante a 2.5kHz e bassi caldi.",
+                  bands: [
+                    { freq: 60, gain: 2.5, q: 1.1 },
+                    { freq: 150, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 750, gain: 2, q: 1.2 },
+                    { freq: 2500, gain: 1.5, q: 1.0 },
+                    { freq: 4500, gain: 1, q: 1.1 },
+                    { freq: 7500, gain: 0.5, q: 1.0 },
+                    { freq: 13000, gain: 1, q: 0.8 }
+                  ]
+                }
+              },
+              monsters: {
+                label: "Monsters (2020)",
+                eq: {
+                  name: "Monsters",
+                  notes: "Produzione synth-pop moderna: sub-kick scolpito a 42Hz, voce cristallina a 2.8kHz e spazialità ultra-estesa a 16kHz.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.3 },
+                    { freq: 125, gain: 1.5, q: 1.0 },
+                    { freq: 290, gain: -1.5, q: 1.2 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 2800, gain: 2.5, q: 1.2 },
+                    { freq: 5000, gain: 2, q: 1.1 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              heroes: {
+                label: "Heroes (2022)",
+                eq: {
+                  name: "Heroes",
+                  notes: "Stile arena rock ed synthwave epico: corpo per chitarre a 450Hz, presenza vocale forward a 2.4kHz e solidità a 80Hz.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 450, gain: 1.5, q: 1.2 },
+                    { freq: 2400, gain: 2.5, q: 1.3 },
+                    { freq: 4800, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          carpenter_brut: {
+            label: "Carpenter Brut",
+            eq: {
+              name: "Carpenter Brut",
+              notes: "Darksynth brutale e distorsioni analogiche: bassi ruggenti a 60Hz, attacco percussivo a 3.5kHz e controllo aggressività a 7kHz.",
+              bands: [
+                { freq: 58, gain: 3.5, q: 1.2 },
+                { freq: 125, gain: 2.5, q: 1.1 },
+                { freq: 310, gain: -1.5, q: 1.2 },
+                { freq: 700, gain: 1, q: 1.0 },
+                { freq: 1900, gain: 1.5, q: 1.1 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 7200, gain: -1, q: 1.2 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              trilogy: {
+                label: "Trilogy (2015)",
+                eq: {
+                  name: "Trilogy",
+                  notes: "Mastering aggressivo con synth distorti e cassa secca: punchy 65Hz, calore a 140Hz e taglio asprezze a 6.5kHz.",
+                  bands: [
+                    { freq: 65, gain: 3.5, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 6500, gain: -1.5, q: 1.3 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              leather_teeth: {
+                label: "Leather Teeth (2018)",
+                eq: {
+                  name: "Leather Teeth",
+                  notes: "Incrocio tra synthwave e glam metal anni 80: chitarre graffianti a 2.6kHz, rullante aperto e bassline serrato a 110Hz.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2.5, q: 1.2 },
+                    { freq: 300, gain: -1, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2600, gain: 2.5, q: 1.2 },
+                    { freq: 4500, gain: 2, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              leather_terror: {
+                label: "Leather Terror (2022)",
+                eq: {
+                  name: "Leather Terror",
+                  notes: "Industrial darksynth moderno: impatto sub tellurico a 45Hz, medi veloci per riff metallici a 2.2kHz e trasparenza su hi-hat.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 320, gain: -1.5, q: 1.1 },
+                    { freq: 680, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2.5, q: 1.2 },
+                    { freq: 7800, gain: -0.5, q: 1.1 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          perturbator: {
+            label: "Perturbator",
+            eq: {
+              name: "Perturbator",
+              notes: "Cyberpunk tenebroso: rombo sub-basso a 44Hz, corpo sintetico a 170Hz, apertura sulle texture aliene a 11kHz.",
+              bands: [
+                { freq: 44, gain: 3.5, q: 1.2 },
+                { freq: 170, gain: 2.5, q: 1.1 },
+                { freq: 340, gain: -1, q: 1.0 },
+                { freq: 650, gain: 0.5, q: 1.0 },
+                { freq: 1800, gain: 1, q: 1.1 },
+                { freq: 3200, gain: 2, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              dangerous_days: {
+                label: "Dangerous Days (2014)",
+                eq: {
+                  name: "Dangerous Days",
+                  notes: "Capolavoro cyberpunk oscuro: bassi martellanti a 50Hz, snare compresso a 3kHz e texture analogiche vintage.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.2 },
+                    { freq: 150, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1, q: 1.0 },
+                    { freq: 700, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              the_uncanny_valley: {
+                label: "The Uncanny Valley (2016)",
+                eq: {
+                  name: "Uncanny Valley",
+                  notes: "Dissonanze industriali e synth taglienti: sub-basso controllato a 46Hz, focus sui synth lead a 2.4kHz.",
+                  bands: [
+                    { freq: 46, gain: 3, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.1 },
+                    { freq: 310, gain: -1.5, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4400, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              lustful_sacraments: {
+                label: "Lustful Sacraments (2021)",
+                eq: {
+                  name: "Lustful Sacram",
+                  notes: "Tonalità post-punk e darkwave: enfasi sul chorus del basso a 220Hz, riverberi gotici e alte levigate.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 220, gain: 2.5, q: 1.2 },
+                    { freq: 600, gain: -0.5, q: 1.0 },
+                    { freq: 1600, gain: 1.5, q: 1.1 },
+                    { freq: 3500, gain: 1.5, q: 1.0 },
+                    { freq: 7000, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          kavinsky: {
+            label: "Kavinsky",
+            eq: {
+              name: "Kavinsky",
+              notes: "French electro cinematico: cassa secca e profonda a 50Hz, calore del basso analogico a 130Hz e atmosfera anni 80.",
+              bands: [
+                { freq: 50, gain: 3.5, q: 1.2 },
+                { freq: 130, gain: 2.5, q: 1.1 },
+                { freq: 270, gain: 0.5, q: 1.0 },
+                { freq: 700, gain: -1, q: 1.1 },
+                { freq: 2000, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 2, q: 1.1 },
+                { freq: 8000, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              outrun: {
+                label: "OutRun (2013)",
+                eq: {
+                  name: "OutRun",
+                  notes: "Profilo leggendario con Nightcall: sub profondo a 45Hz, compressione sidechain enfatizzata e vocoder caldo.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              },
+              reborn: {
+                label: "Reborn (2022)",
+                eq: {
+                  name: "Reborn",
+                  notes: "Orchestrazioni calde e funk moderno: bassi rotondi a 55Hz, medi vellutati per gli archi a 950Hz e top aperto.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 950, gain: 1.5, q: 1.2 },
+                    { freq: 2400, gain: 1.5, q: 1.1 },
+                    { freq: 4600, gain: 1.5, q: 1.0 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          gunship: {
+            label: "GUNSHIP",
+            eq: {
+              name: "GUNSHIP",
+              notes: "Synthwave vocale melodica: calore ai sintetizzatori analogici a 250Hz, presenza vocale a 2.5kHz e cassa solida a 54Hz.",
+              bands: [
+                { freq: 54, gain: 3, q: 1.1 },
+                { freq: 140, gain: 2, q: 1.0 },
+                { freq: 250, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: -1, q: 1.1 },
+                { freq: 2500, gain: 2.5, q: 1.2 },
+                { freq: 4200, gain: 1.5, q: 1.1 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              gunship: {
+                label: "Gunship (2015)",
+                eq: {
+                  name: "Gunship",
+                  notes: "Atmosfere cinematiche da colonna sonora: pad ampi a 300Hz, cassa vintage a 58Hz e riverberi vellutati.",
+                  bands: [
+                    { freq: 58, gain: 3, q: 1.1 },
+                    { freq: 145, gain: 2, q: 1.0 },
+                    { freq: 300, gain: 1.5, q: 1.1 },
+                    { freq: 800, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 3900, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              dark_all_day: {
+                label: "Dark All Day (2018)",
+                eq: {
+                  name: "Dark All Day",
+                  notes: "Tonalità darkwave con sax energico: boost percussivo a 120Hz, spinta al sassofono a 1.5kHz e brillantezza a 10kHz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.2 },
+                    { freq: 120, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.0 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 1500, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              unicorn: {
+                label: "Unicorn (2023)",
+                eq: {
+                  name: "Unicorn",
+                  notes: "Crossover industrial-rock moderno: sub aggressivo a 45Hz, chitarre sature a 2.8kHz e controllo dinamico generale.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 320, gain: -1.5, q: 1.2 },
+                    { freq: 850, gain: 1, q: 1.0 },
+                    { freq: 2800, gain: 2.5, q: 1.3 },
+                    { freq: 4800, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          fm_84: {
+            label: "FM-84",
+            eq: {
+              name: "FM-84",
+              notes: "Dreamy retrowave e synth-pop d'autore: bassi caldi analogici a 130Hz, voce cristallina a 3kHz e apertura ariosa a 15kHz.",
+              bands: [
+                { freq: 55, gain: 2.5, q: 1.1 },
+                { freq: 130, gain: 2.5, q: 1.1 },
+                { freq: 260, gain: 1, q: 1.0 },
+                { freq: 750, gain: -0.5, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 3500, gain: 2, q: 1.1 },
+                { freq: 8500, gain: 2.5, q: 1.0 },
+                { freq: 15000, gain: 3, q: 0.8 }
+              ]
+            },
+            albums: {
+              atlas: {
+                label: "Atlas (2016)",
+                eq: {
+                  name: "Atlas",
+                  notes: "Pietra miliare del synth-pop nostalgico: cassa rotonda a 52Hz, calore del basso a 140Hz, arpeggi scintillanti a 9kHz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.1 },
+                    { freq: 140, gain: 2.5, q: 1.0 },
+                    { freq: 270, gain: 1, q: 1.0 },
+                    { freq: 800, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          dance_with_the_dead: {
+            label: "Dance with the Dead",
+            eq: {
+              name: "DWTD Signature",
+              notes: "Heavy metal incontra synthwave: chitarre soliste urlanti a 3.2kHz, kick martellante a 60Hz e snare metallico potente.",
+              bands: [
+                { freq: 60, gain: 3.5, q: 1.2 },
+                { freq: 125, gain: 2, q: 1.1 },
+                { freq: 290, gain: -1.5, q: 1.2 },
+                { freq: 750, gain: 1, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3200, gain: 2.5, q: 1.3 },
+                { freq: 7500, gain: 1.5, q: 1.1 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              near_dark: {
+                label: "Near Dark (2014)",
+                eq: {
+                  name: "Near Dark",
+                  notes: "Horror synth aggressivo: groove compatto a 130Hz, riff taglienti a 2.5kHz e campionamenti horror in risalto.",
+                  bands: [
+                    { freq: 62, gain: 3, q: 1.1 },
+                    { freq: 130, gain: 2.5, q: 1.1 },
+                    { freq: 300, gain: -1, q: 1.0 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              the_shape: {
+                label: "The Shape (2016)",
+                eq: {
+                  name: "The Shape",
+                  notes: "Riff chitarristici devastanti ed electro-rock: bassi serrati a 58Hz, medi d'attacco a 3.5kHz e brillantezza sui crash.",
+                  bands: [
+                    { freq: 58, gain: 3.5, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1.5, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 8200, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              loved_to_death: {
+                label: "Loved to Death (2018)",
+                eq: {
+                  name: "Loved to Death",
+                  notes: "Tinte gothic e assoli veloci: sub-kick a 50Hz, armoniche delle chitarre a 2.8kHz e controllo delle risonanze medie.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 310, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              driven_to_madness: {
+                label: "Driven to Madness (2022)",
+                eq: {
+                  name: "Driven To Madnes",
+                  notes: "Mastering moderno ad alta dinamica: sub-basso a 48Hz, definizione chirurgica su rullante e piatti a 14kHz.",
+                  bands: [
+                    { freq: 48, gain: 4, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1.5, q: 1.2 },
+                    { freq: 850, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 2, q: 1.1 },
+                    { freq: 8800, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          timecop1983: {
+            label: "Timecop1983",
+            eq: {
+              name: "Timecop1983",
+              notes: "Dreamwave romantico: morbidezza del basso analogico a 120Hz, pad sognanti a 800Hz e riverberi vellutati a 14kHz.",
+              bands: [
+                { freq: 50, gain: 2.5, q: 1.0 },
+                { freq: 120, gain: 2.5, q: 1.1 },
+                { freq: 250, gain: 1.5, q: 1.0 },
+                { freq: 800, gain: 1.5, q: 1.2 },
+                { freq: 2100, gain: 1, q: 1.1 },
+                { freq: 3800, gain: 1.5, q: 1.0 },
+                { freq: 8200, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              journeys: {
+                label: "Journeys (2014)",
+                eq: {
+                  name: "Journeys",
+                  notes: "Atmosfere vintage anni 80: calore a 140Hz, percussioni elettroniche delicate e dolcezza sugli alti.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1.5, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 1, q: 1.1 },
+                    { freq: 3600, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              lovers: {
+                label: "Lovers (2016)",
+                eq: {
+                  name: "Lovers",
+                  notes: "Duetti vocali intimi: corpo e calore vocale a 1.2kHz, synth chorus spazioso e sub rotondo a 50Hz.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 1200, gain: 2, q: 1.2 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              night_drive: {
+                label: "Night Drive (2018)",
+                eq: {
+                  name: "Night Drive",
+                  notes: "Viaggio notturno synth-pop: sub-basso profondo a 45Hz, snare riverberato a 3.2kHz e grande ariosità.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 280, gain: 0.5, q: 1.0 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          home: {
+            label: "HOME",
+            eq: {
+              name: "HOME Signature",
+              notes: "Chillwave e nastro magnetico: calore vintage a 180Hz, saturazione nastro sui medi a 800Hz e alti vellutati.",
+              bands: [
+                { freq: 52, gain: 3, q: 1.1 },
+                { freq: 130, gain: 2, q: 1.0 },
+                { freq: 280, gain: 1.5, q: 1.1 },
+                { freq: 800, gain: 1.5, q: 1.2 },
+                { freq: 1900, gain: 0.5, q: 1.0 },
+                { freq: 3500, gain: 1, q: 1.0 },
+                { freq: 7500, gain: 1.5, q: 1.0 },
+                { freq: 13000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              odyssey: {
+                label: "Odyssey (2014)",
+                eq: {
+                  name: "Odyssey",
+                  notes: "Include Resonance: accordi di synth maestosi a 500Hz, sub morbido a 48Hz e calore analogico totale.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 260, gain: 1.5, q: 1.0 },
+                    { freq: 500, gain: 2, q: 1.2 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3600, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              falling_into_place: {
+                label: "Falling Into Place (2016)",
+                eq: {
+                  name: "Falling In Place",
+                  notes: "Lo-fi synthwave rilassato: punch vellutato a 55Hz, medi accoglienti a 650Hz ed eliminazione asprezze digitali.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.0 },
+                    { freq: 140, gain: 2, q: 1.0 },
+                    { freq: 290, gain: 1, q: 1.0 },
+                    { freq: 650, gain: 1.5, q: 1.2 },
+                    { freq: 2100, gain: 0.5, q: 1.0 },
+                    { freq: 3800, gain: 1, q: 1.0 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              resting_state: {
+                label: "Resting State (2017)",
+                eq: {
+                  name: "Resting State",
+                  notes: "Minimalismo downtempo: sub avvolgente a 42Hz, ritmi ipnotici e spazialità eterea ad alta fedeltà.",
+                  bands: [
+                    { freq: 42, gain: 3.5, q: 1.2 },
+                    { freq: 120, gain: 1.5, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 850, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 1, q: 1.0 },
+                    { freq: 4000, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          com_truise: {
+            label: "Com Truise",
+            eq: {
+              name: "Com Truise",
+              notes: "Mid-fi synth funk: sidechain marcato, spessore analogico Oberheim a 220Hz, snap del rullante a 2.6kHz.",
+              bands: [
+                { freq: 50, gain: 3.5, q: 1.2 },
+                { freq: 110, gain: 2.5, q: 1.1 },
+                { freq: 220, gain: 2, q: 1.2 },
+                { freq: 700, gain: -1, q: 1.1 },
+                { freq: 1800, gain: 1, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.3 },
+                { freq: 7500, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              galactic_melt: {
+                label: "Galactic Melt (2011)",
+                eq: {
+                  name: "Galactic Melt",
+                  notes: "Pietra miliare del synth funk rallentato: kick gommoso a 55Hz, calore a 135Hz e texture tape sature.",
+                  bands: [
+                    { freq: 55, gain: 3.5, q: 1.2 },
+                    { freq: 135, gain: 2.5, q: 1.1 },
+                    { freq: 260, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              wave_1: {
+                label: "Wave 1 (2014)",
+                eq: {
+                  name: "Wave 1",
+                  notes: "Groove più compatto e brillante: sub focalizzato a 48Hz, slap del rullante a 2.8kHz e pulizia sui medio-bassi.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.3 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              iteration: {
+                label: "Iteration (2017)",
+                eq: {
+                  name: "Iteration",
+                  notes: "Sci-fi narrativo e suoni metallici: bassi definiti a 52Hz, presenza dei synth lead a 2.4kHz e ariosità aperta.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 0.5, q: 1.0 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              persuasion_system: {
+                label: "Persuasion System (2019)",
+                eq: {
+                  name: "Persuasion Syst",
+                  notes: "Approccio modulare essenziale: bassi controllati a 44Hz, micro-texture analogiche e dettaglio sulle alte.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.2 },
+                    { freq: 120, gain: 1.5, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 900, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      french_touch_electro: {
+        label: "French Touch & Electro",
+        eq: {
+          name: "French Electro",
+          notes: "Sidechain pumping, saturazione analogica e campionamenti disco caldi",
+          bands: [
+            { freq: 50, gain: 3, q: 1.3 },
+            { freq: 130, gain: 2, q: 1.2 },
+            { freq: 280, gain: -1, q: 1.3 },
+            { freq: 800, gain: 1, q: 1.2 },
+            { freq: 2200, gain: 2, q: 1.4 },
+            { freq: 4500, gain: 1, q: 1.3 },
+            { freq: 8500, gain: 2, q: 1.2 },
+            { freq: 15000, gain: 2, q: 1.0 }
+          ]
+        },
+        artists: {
+          daft_punk: {
+            label: "Daft Punk",
+            eq: {
+              name: "Daft Punk",
+              notes: "Pietra miliare French Touch: punch alla cassa 909 a 60Hz, funk bassline a 130Hz e lucentezza sui piatti.",
+              bands: [
+                { freq: 52, gain: 3, q: 1.1 },
+                { freq: 130, gain: 2.5, q: 1.1 },
+                { freq: 260, gain: 1, q: 1.0 },
+                { freq: 750, gain: -1, q: 1.1 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 3600, gain: 2, q: 1.1 },
+                { freq: 8500, gain: 2.5, q: 1.0 },
+                { freq: 14500, gain: 3, q: 0.8 }
+              ]
+            },
+            albums: {
+              homework: {
+                label: "Homework (1997)",
+                eq: {
+                  name: "Homework",
+                  notes: "House grezza e distorsione del compressore 3630: spinta a 62Hz, morso medio a 2.5kHz e brillantezza hi-hat 909.",
+                  bands: [
+                    { freq: 62, gain: 4, q: 1.2 },
+                    { freq: 140, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 2.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              discovery: {
+                label: "Discovery (2001)",
+                eq: {
+                  name: "Discovery",
+                  notes: "Campionamenti disco filtrati e vocoder: calore alle chitarre a 300Hz, voce robotica a 1.8kHz e ariosità a 15kHz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.1 },
+                    { freq: 125, gain: 2.5, q: 1.1 },
+                    { freq: 300, gain: 1.5, q: 1.0 },
+                    { freq: 650, gain: -1, q: 1.0 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              human_after_all: {
+                label: "Human After All (2005)",
+                eq: {
+                  name: "Human After All",
+                  notes: "Minimalismo rock-elettronico distaccato: taglio fangosità a 320Hz, morso alle chitarre a 3kHz e cassa solida a 58Hz.",
+                  bands: [
+                    { freq: 58, gain: 3, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 320, gain: -1.5, q: 1.2 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              random_access_memories: {
+                label: "Random Access Memories (2013)",
+                eq: {
+                  name: "RAM 2013",
+                  notes: "Produzione audiofila da manuale: basso di Nathan East a 110Hz, orchestra e fiati a 1kHz e ariosità totale a 16kHz.",
+                  bands: [
+                    { freq: 45, gain: 2.5, q: 1.0 },
+                    { freq: 110, gain: 3, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 999, gain: 1.5, q: 1.1 },
+                    { freq: 2400, gain: 1.5, q: 1.1 },
+                    { freq: 4800, gain: 2, q: 1.1 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          justice: {
+            label: "Justice",
+            eq: {
+              name: "Justice Sign",
+              notes: "Electro-rock distorta e funk compresso: sub secco a 50Hz, calore slap-bass a 140Hz, sgranatura sui medi a 2.8kHz.",
+              bands: [
+                { freq: 50, gain: 3.5, q: 1.2 },
+                { freq: 140, gain: 2.5, q: 1.1 },
+                { freq: 300, gain: -1, q: 1.1 },
+                { freq: 750, gain: 0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.2 },
+                { freq: 7200, gain: 1, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              cross: {
+                label: "Cross (2007)",
+                eq: {
+                  name: "Cross 2007",
+                  notes: "Distorsione e micro-campionamenti micidiali: kick schiacciato a 55Hz, grinta al basso a 2.5kHz e controllo alte.",
+                  bands: [
+                    { freq: 55, gain: 4, q: 1.2 },
+                    { freq: 145, gain: 2, q: 1.0 },
+                    { freq: 310, gain: -1.5, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2500, gain: 2.5, q: 1.3 },
+                    { freq: 4500, gain: 1.5, q: 1.1 },
+                    { freq: 7000, gain: -1, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              audio_video_disco: {
+                label: "Audio, Video, Disco (2011)",
+                eq: {
+                  name: "AudioVideoDisco",
+                  notes: "Prog-rock arena e tastiere sinfoniche: spessore alle chitarre a 450Hz, presenza a 2kHz e piatti aperti.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1, q: 1.0 },
+                    { freq: 450, gain: 1.5, q: 1.2 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              woman: {
+                label: "Woman (2016)",
+                eq: {
+                  name: "Woman",
+                  notes: "Ritorno alla disco-funk solare: slap-bass morbido a 120Hz, archi vellutati a 1kHz e ariosità disco sui 15kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.1 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 999, gain: 1.5, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 4500, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              hyperdrama: {
+                label: "Hyperdrama (2024)",
+                eq: {
+                  name: "Hyperdrama",
+                  notes: "Elettronica moderna ad alta precisione: sub-basso profondo a 44Hz, voce lucida a 2.6kHz e transiente percussivo secco.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2600, gain: 2.5, q: 1.2 },
+                    { freq: 5000, gain: 2, q: 1.1 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          the_prodigy: {
+            label: "The Prodigy",
+            eq: {
+              name: "The Prodigy",
+              notes: "Big beat e breakbeat violento: kick devastante a 55Hz, medi aggressivi a 2.5kHz per synth lead e controllo asprezze.",
+              bands: [
+                { freq: 55, gain: 4, q: 1.2 },
+                { freq: 135, gain: 2.5, q: 1.1 },
+                { freq: 320, gain: -1.5, q: 1.2 },
+                { freq: 750, gain: 1, q: 1.0 },
+                { freq: 1900, gain: 1.5, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.3 },
+                { freq: 6800, gain: -0.5, q: 1.1 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              experience: {
+                label: "Experience (1992)",
+                eq: {
+                  name: "Experience",
+                  notes: "Hardcore rave anni 90 e break veloci: punch sui breaks a 140Hz, stabs luminosi a 3.5kHz e sub rave sostenuto.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.1 },
+                    { freq: 140, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: -0.5, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              music_for_the_jilted_generation: {
+                label: "Music for the Jilted Generation (1994)",
+                eq: {
+                  name: "Jilted Generatn",
+                  notes: "Rave oscuro e riff grunge: sub ruggente a 48Hz, corpo per chitarre a 450Hz e presenza sui campioni vocali.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 300, gain: -1, q: 1.1 },
+                    { freq: 450, gain: 1.5, q: 1.2 },
+                    { freq: 1800, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.2 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              the_fat_of_the_land: {
+                label: "The Fat of the Land (1997)",
+                eq: {
+                  name: "Fat Of The Land",
+                  notes: "Masterpiece big beat: kick martello a 55Hz, grinta al fuzz del basso a 2.2kHz e rullante tagliente a 4kHz.",
+                  bands: [
+                    { freq: 55, gain: 4.5, q: 1.3 },
+                    { freq: 135, gain: 2.5, q: 1.1 },
+                    { freq: 310, gain: -1.5, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2.5, q: 1.3 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              invaders_must_die: {
+                label: "Invaders Must Die (2009)",
+                eq: {
+                  name: "Invaders Must Di",
+                  notes: "Electro-punk compresso e compatto: bassi serrati a 58Hz, focus sui synth urlanti a 2.6kHz e transiente veloce.",
+                  bands: [
+                    { freq: 58, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2600, gain: 2.5, q: 1.2 },
+                    { freq: 4500, gain: 2, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              the_day_is_my_enemy: {
+                label: "The Day Is My Enemy (2015)",
+                eq: {
+                  name: "Day Is My Enemy",
+                  notes: "Muro di suono ultra-distorto: sub massiccio a 50Hz, controllo del medio affollato a 350Hz ed energia a 3kHz.",
+                  bands: [
+                    { freq: 50, gain: 4, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 350, gain: -2, q: 1.3 },
+                    { freq: 850, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 7200, gain: -0.5, q: 1.1 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          the_chemical_brothers: {
+            label: "The Chemical Brothers",
+            eq: {
+              name: "Chemical Bros",
+              notes: "Big beat psichedelico e synth modulari: sub potente a 48Hz, ritmi hip-hop accelerati a 130Hz e sweep analogici aperti.",
+              bands: [
+                { freq: 48, gain: 3.5, q: 1.2 },
+                { freq: 130, gain: 2.5, q: 1.1 },
+                { freq: 280, gain: 0.5, q: 1.0 },
+                { freq: 700, gain: -1, q: 1.1 },
+                { freq: 1900, gain: 1.5, q: 1.2 },
+                { freq: 3600, gain: 2, q: 1.1 },
+                { freq: 8500, gain: 2.5, q: 1.0 },
+                { freq: 15000, gain: 3, q: 0.8 }
+              ]
+            },
+            albums: {
+              exit_planet_dust: {
+                label: "Exit Planet Dust (1995)",
+                eq: {
+                  name: "Exit Planet Dust",
+                  notes: "Radici big beat e breakbeats vintage: calore su campioni a 140Hz, risonanza 303 a 2kHz e cassa piena a 60Hz.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.1 },
+                    { freq: 140, gain: 2.5, q: 1.1 },
+                    { freq: 270, gain: 1, q: 1.0 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.2 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              dig_your_own_hole: {
+                label: "Dig Your Own Hole (1997)",
+                eq: {
+                  name: "Dig Your Own Hol",
+                  notes: "Block Rockin' Beats: basso distorto monumentale a 52Hz, sirene e snare d'assalto a 3kHz e piatti ampi.",
+                  bands: [
+                    { freq: 52, gain: 4, q: 1.2 },
+                    { freq: 135, gain: 2.5, q: 1.1 },
+                    { freq: 300, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              surrender: {
+                label: "Surrender (1999)",
+                eq: {
+                  name: "Surrender",
+                  notes: "Psichedelia house ed electro sognante: vocal hooks a 1.5kHz, synth arpeggiati luminosi e sub rotondo a 46Hz.",
+                  bands: [
+                    { freq: 46, gain: 3.5, q: 1.1 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 650, gain: -0.5, q: 1.0 },
+                    { freq: 1500, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              push_the_button: {
+                label: "Push the Button (2005)",
+                eq: {
+                  name: "Push The Button",
+                  notes: "Groove hip-hop moderno (Galvanize): corde mediorientali a 900Hz, cassa secca e punch a 110Hz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.2 },
+                    { freq: 110, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 900, gain: 2, q: 1.2 },
+                    { freq: 2400, gain: 1.5, q: 1.1 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              },
+              for_that_beautiful_feeling: {
+                label: "For That Beautiful Feeling (2023)",
+                eq: {
+                  name: "Beautiful Feelin",
+                  notes: "Mastering moderno ad altissima definizione: sub-basso a 42Hz, stratificazione psichedelica e ariosità a 16kHz.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 0.5, q: 1.0 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4800, gain: 2, q: 1.1 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          fatboy_slim: {
+            label: "Fatboy Slim",
+            eq: {
+              name: "Fatboy Slim",
+              notes: "Big beat festaiolo e campionamenti funk: breakbeats polverosi a 130Hz, vocal hook a 2kHz e cassa potente a 55Hz.",
+              bands: [
+                { freq: 55, gain: 3.5, q: 1.2 },
+                { freq: 130, gain: 2.5, q: 1.1 },
+                { freq: 280, gain: 1, q: 1.0 },
+                { freq: 700, gain: -1, q: 1.1 },
+                { freq: 2000, gain: 2, q: 1.2 },
+                { freq: 3600, gain: 2, q: 1.1 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              better_living_through_chemistry: {
+                label: "Better Living Through Chemistry (1996)",
+                eq: {
+                  name: "Better Living",
+                  notes: "Acid house e breakbeat delle origini: risonanze acide Roland 303 a 1.8kHz, kick denso a 60Hz e sapore vinyl.",
+                  bands: [
+                    { freq: 60, gain: 3.5, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1, q: 1.0 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 1800, gain: 2.5, q: 1.3 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              youve_come_a_long_way_baby: {
+                label: "You've Come a Long Way, Baby (1998)",
+                eq: {
+                  name: "Long Way Baby",
+                  notes: "Inni mondiali (Praise You, Rockafeller Skank): break di batteria scolpiti a 120Hz, ottoni brillanti a 3.2kHz.",
+                  bands: [
+                    { freq: 52, gain: 4, q: 1.2 },
+                    { freq: 120, gain: 2.5, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3200, gain: 2.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              halfway_between_the_gutter_and_the_stars: {
+                label: "Halfway Between the Gutter and the Stars (2000)",
+                eq: {
+                  name: "Between Gutter",
+                  notes: "Sonorità soul e clubbing (Weapon of Choice): calore vocale a 1.2kHz, groove funk a 110Hz e piatti morbidi.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2.5, q: 1.1 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 650, gain: -0.5, q: 1.0 },
+                    { freq: 1200, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              palookaville: {
+                label: "Palookaville (2004)",
+                eq: {
+                  name: "Palookaville",
+                  notes: "Strumenti suonati dal vivo e ritmi indie-dance: chitarre e fiati a 800Hz, basso naturale e alte aperte.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.0 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 800, gain: 1.5, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 4000, gain: 1.5, q: 1.0 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          deadmau5: {
+            label: "deadmau5",
+            eq: {
+              name: "deadmau5",
+              notes: "Precisione chirurgica progressive house: sub 45Hz pulito, intagli a 300Hz contro il rimbombo, pluck definiti a 2.8kHz.",
+              bands: [
+                { freq: 45, gain: 3.5, q: 1.3 },
+                { freq: 120, gain: 1.5, q: 1.0 },
+                { freq: 300, gain: -2, q: 1.3 },
+                { freq: 750, gain: 0.5, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 3000, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 15000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              random_album_title: {
+                label: "Random Album Title (2008)",
+                eq: {
+                  name: "Rand Album Title",
+                  notes: "Classico progressive house (Faxing Berlin): rolling bass caldo a 110Hz, synth analogici vellutati e cassa morbida.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3600, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              },
+              for_lack_of_a_better_name: {
+                label: "For Lack of a Better Name (2009)",
+                eq: {
+                  name: "Lack Better Name",
+                  notes: "Punch serrato ed electro (Ghosts 'n' Stuff): cassa secca a 50Hz, synth tagliente a 2.5kHz e presenza vocale.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 320, gain: -1.5, q: 1.2 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 2500, gain: 2.5, q: 1.3 },
+                    { freq: 4500, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              "4x4_12": {
+                label: "4x4=12 (2010)",
+                eq: {
+                  name: "4x4=12",
+                  notes: "Electro-house ad altissima energia: sub tellurico a 44Hz, saw synth graffianti a 3.2kHz e rullante aperto.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -2, q: 1.3 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3200, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              },
+              while_1_less_than_2: {
+                label: "while(1<2) (2014)",
+                eq: {
+                  name: "while(1<2)",
+                  notes: "Doppio album cinematografico e ambient: dinamica aperta, piano intimo a 500Hz e sub-basso profondo a 40Hz.",
+                  bands: [
+                    { freq: 40, gain: 3, q: 1.1 },
+                    { freq: 115, gain: 1.5, q: 1.0 },
+                    { freq: 260, gain: 0.5, q: 1.0 },
+                    { freq: 500, gain: 1.5, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.0 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              w2016album: {
+                label: "W:/2016ALBUM/ (2016)",
+                eq: {
+                  name: "W:/2016ALBUM/",
+                  notes: "Sintesi modulare analogica e calore vintage: transiente secco alla cassa a 52Hz, arpeggi nitidi e top vellutato.",
+                  bands: [
+                    { freq: 52, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 1.5, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          madeon: {
+            label: "Madeon",
+            eq: {
+              name: "Madeon Sign",
+              notes: "Electro-pop francese ed euforico: micro-chops vocali a 2.6kHz, sub compatto a 50Hz e ariosità radiosa a 15kHz.",
+              bands: [
+                { freq: 50, gain: 3.5, q: 1.2 },
+                { freq: 130, gain: 2, q: 1.0 },
+                { freq: 280, gain: -1, q: 1.1 },
+                { freq: 750, gain: 0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.2 },
+                { freq: 3000, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2.5, q: 1.0 },
+                { freq: 15000, gain: 3, q: 0.8 }
+              ]
+            },
+            albums: {
+              adventure: {
+                label: "Adventure (2015)",
+                eq: {
+                  name: "Adventure",
+                  notes: "Nu-disco ed electro frizzante: cassa punchy a 55Hz, stratificazione di synth brillanti a 3.8kHz e bassi caldi.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              good_faith: {
+                label: "Good Faith (2019)",
+                eq: {
+                  name: "Good Faith",
+                  notes: "Neo-soul elettronico e cori gospel: calore al pianoforte e voce a 1.2kHz, batteria organica e top brillante.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 650, gain: 0, q: 1.0 },
+                    { freq: 1200, gain: 2.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.1 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          porter_robinson: {
+            label: "Porter Robinson",
+            eq: {
+              name: "Porter Robinson",
+              notes: "Elettronica emozionale: supersaws ampi a 3kHz, cassa solida a 50Hz e presenza vocale intima e radiosa.",
+              bands: [
+                { freq: 50, gain: 3.5, q: 1.2 },
+                { freq: 130, gain: 2, q: 1.0 },
+                { freq: 280, gain: -0.5, q: 1.0 },
+                { freq: 750, gain: 0.5, q: 1.0 },
+                { freq: 2000, gain: 1.5, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14500, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              worlds: {
+                label: "Worlds (2014)",
+                eq: {
+                  name: "Worlds",
+                  notes: "Epica cinematic anime-style: supersaws imponenti, sub tellurico a 45Hz e brillantezza glitch a 9kHz.",
+                  bands: [
+                    { freq: 45, gain: 4, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 300, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              nurture: {
+                label: "Nurture (2021)",
+                eq: {
+                  name: "Nurture",
+                  notes: "Natura acustica e pianoforti intimi: calore alle note a 450Hz, voce pitch-shifted a 2.4kHz e ariosità naturale.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.0 },
+                    { freq: 120, gain: 1.5, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 450, gain: 1.5, q: 1.1 },
+                    { freq: 2400, gain: 2.5, q: 1.2 },
+                    { freq: 4800, gain: 2, q: 1.1 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              smile: {
+                label: "Smile! :D (2024)",
+                eq: {
+                  name: "Smile",
+                  notes: "Pop-punk ed electro-pop energetico: chitarre ritmiche sature a 1.8kHz, rullante punchy e brillantezza pop radio.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 3200, gain: 2.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          gesaffelstein: {
+            label: "Gesaffelstein",
+            eq: {
+              name: "Gesaffelstein",
+              notes: "Techno industriale scura e metallica: sub-basso imponente a 42Hz, percussioni taglienti e medi intagliati.",
+              bands: [
+                { freq: 42, gain: 4, q: 1.3 },
+                { freq: 125, gain: 2, q: 1.1 },
+                { freq: 320, gain: -2, q: 1.3 },
+                { freq: 700, gain: 0.5, q: 1.0 },
+                { freq: 2000, gain: 1.5, q: 1.1 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 7500, gain: -0.5, q: 1.1 },
+                { freq: 14000, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              aleph: {
+                label: "Aleph (2013)",
+                eq: {
+                  name: "Aleph",
+                  notes: "Monolite industrial techno: cassa pesantissima a 44Hz, rullanti metallici a 3kHz e zero sbavature sui medio-bassi.",
+                  bands: [
+                    { freq: 44, gain: 4.5, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 330, gain: -2.5, q: 1.3 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3000, gain: 2.5, q: 1.3 },
+                    { freq: 7800, gain: 0.5, q: 1.0 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              hyperion: {
+                label: "Hyperion (2019)",
+                eq: {
+                  name: "Hyperion",
+                  notes: "Produzione dark-pop con The Weeknd: sub caldo a 40Hz, trasparenza e risalto sulla voce a 2.8kHz.",
+                  bands: [
+                    { freq: 40, gain: 4, q: 1.2 },
+                    { freq: 115, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 1800, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              gamma: {
+                label: "GAMMA (2024)",
+                eq: {
+                  name: "Gamma",
+                  notes: "Ritorno all'EBM grezza e analogica: linea di basso in sedicesimi a 110Hz, voci distorte a 2.2kHz e attacco fulmineo.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.2 },
+                    { freq: 110, gain: 3, q: 1.2 },
+                    { freq: 300, gain: -1.5, q: 1.2 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2.5, q: 1.3 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 8000, gain: 1, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      ambient_idm: {
+        label: "Ambient, IDM & Downtempo",
+        eq: {
+          name: "Ambient Immers",
+          notes: "Soundstage tridimensionale esteso, microdettagli setosi e sub profondo",
+          bands: [
+            { freq: 45, gain: 2, q: 1.1 },
+            { freq: 130, gain: 1, q: 1.1 },
+            { freq: 280, gain: 0, q: 1.2 },
+            { freq: 750, gain: 1, q: 1.1 },
+            { freq: 2200, gain: 1, q: 1.2 },
+            { freq: 4500, gain: 1, q: 1.2 },
+            { freq: 8000, gain: 2, q: 1.1 },
+            { freq: 15000, gain: 2, q: 0.9 }
+          ]
+        },
+        artists: {
+          aphex_twin: {
+            label: "Aphex Twin",
+            eq: {
+              name: "Aphex Twin",
+              notes: "Maestro IDM e ambient: transienti velocissimi sui micro-breaks a 3.8kHz, sub pulito a 46Hz e calore analogico.",
+              bands: [
+                { freq: 46, gain: 3.5, q: 1.2 },
+                { freq: 125, gain: 2, q: 1.1 },
+                { freq: 270, gain: 0.5, q: 1.0 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 2000, gain: 1.5, q: 1.2 },
+                { freq: 3800, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              selected_ambient_works_85_92: {
+                label: "Selected Ambient Works 85-92 (1992)",
+                eq: {
+                  name: "SAW 85-92",
+                  notes: "Nastro a cassetta e calore vintage: cassa profonda e morbida a 50Hz, calore a 240Hz e alte non affaticanti.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.1 },
+                    { freq: 140, gain: 2, q: 1.0 },
+                    { freq: 240, gain: 2, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 1800, gain: 1, q: 1.0 },
+                    { freq: 3200, gain: 1.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 12500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              selected_ambient_works_vol_ii: {
+                label: "Selected Ambient Works Vol II (1994)",
+                eq: {
+                  name: "SAW Vol II",
+                  notes: "Minimalismo ipnotico e droni microtonali: sub controllato a 40Hz, spazialità sui medi e silenzio di fondo.",
+                  bands: [
+                    { freq: 40, gain: 3, q: 1.0 },
+                    { freq: 110, gain: 1.5, q: 1.0 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 650, gain: 1, q: 1.1 },
+                    { freq: 1600, gain: 1.5, q: 1.1 },
+                    { freq: 4000, gain: 1.5, q: 1.0 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              richard_d_james_album: {
+                label: "Richard D. James Album (1996)",
+                eq: {
+                  name: "RDJ Album",
+                  notes: "Drill'n'bass frenetico e archi sintetici: attacco dei rullanti a 4.2kHz, corpo agli archi a 800Hz e kick rapido.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              drukqs: {
+                label: "Drukqs (2001)",
+                eq: {
+                  name: "Drukqs",
+                  notes: "Micro-programmazione estrema e piano preparato: dinamica fulminea a 5kHz, risonanze acustiche a 350Hz e sub 44Hz.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.3 },
+                    { freq: 120, gain: 1.5, q: 1.0 },
+                    { freq: 350, gain: 1.5, q: 1.2 },
+                    { freq: 850, gain: 0.5, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 5000, gain: 3, q: 1.3 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              syro: {
+                label: "Syro (2014)",
+                eq: {
+                  name: "Syro",
+                  notes: "Funk analogico ad altissima precisione: acid 303 squelch a 1.8kHz, kick denso a 52Hz e separazione impeccabile.",
+                  bands: [
+                    { freq: 52, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2.5, q: 1.1 },
+                    { freq: 270, gain: 0.5, q: 1.0 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 1800, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.1 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          boards_of_canada: {
+            label: "Boards of Canada",
+            eq: {
+              name: "Boards Of Canada",
+              notes: "Nostalgia ipnagogica su nastro magnetico: calore a 180Hz, lieve fluttuazione sui medi e alti caldi e morbidi.",
+              bands: [
+                { freq: 50, gain: 3, q: 1.1 },
+                { freq: 140, gain: 2.5, q: 1.1 },
+                { freq: 260, gain: 1.5, q: 1.1 },
+                { freq: 650, gain: 1, q: 1.0 },
+                { freq: 1800, gain: 1, q: 1.0 },
+                { freq: 3200, gain: 1.5, q: 1.1 },
+                { freq: 7500, gain: 1, q: 1.0 },
+                { freq: 13000, gain: 1.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              music_has_the_right_to_children: {
+                label: "Music Has the Right to Children (1998)",
+                eq: {
+                  name: "MHTRTC 1998",
+                  notes: "Pietra miliare downtempo: beat hip-hop polverosi a 130Hz, campionamenti vintage caldi e bassi avvolgenti a 48Hz.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.1 },
+                    { freq: 130, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.1 },
+                    { freq: 1900, gain: 1, q: 1.0 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13500, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              geogaddi: {
+                label: "Geogaddi (2002)",
+                eq: {
+                  name: "Geogaddi",
+                  notes: "Psichedelia esoterica e densità analogica: sub tellurico a 44Hz, accordi scordati a 500Hz e controllo risonanze.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 500, gain: 2, q: 1.2 },
+                    { freq: 1700, gain: 1, q: 1.0 },
+                    { freq: 3000, gain: 1.5, q: 1.1 },
+                    { freq: 7200, gain: 0.5, q: 1.0 },
+                    { freq: 12500, gain: 1, q: 0.8 }
+                  ]
+                }
+              },
+              the_campfire_headphase: {
+                label: "The Campfire Headphase (2005)",
+                eq: {
+                  name: "Campfire Headpha",
+                  notes: "Chitarre acustiche e soleggiata nostalgia: corpo alle chitarre a 350Hz, calore organico e alti luminosi ma dolci.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.0 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 350, gain: 2, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.1 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              tomorrows_harvest: {
+                label: "Tomorrow's Harvest (2013)",
+                eq: {
+                  name: "TomorrowsHarvest",
+                  notes: "Desolazione post-apocalittica: droni sub-bassi cupi a 40Hz, percussioni polverose e ampiezza cinematografica.",
+                  bands: [
+                    { freq: 40, gain: 4, q: 1.2 },
+                    { freq: 115, gain: 2, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 1800, gain: 1, q: 1.1 },
+                    { freq: 3500, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          bonobo: {
+            label: "Bonobo",
+            eq: {
+              name: "Bonobo",
+              notes: "Downtempo organico e world music: contrabbasso acustico profondo a 90Hz, percussioni etniche vivaci a 3kHz e trasparenza.",
+              bands: [
+                { freq: 48, gain: 3, q: 1.1 },
+                { freq: 100, gain: 2.5, q: 1.2 },
+                { freq: 260, gain: 1, q: 1.0 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3200, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14500, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              animal_magic: {
+                label: "Animal Magic (2000)",
+                eq: {
+                  name: "Animal Magic",
+                  notes: "Trip-hop acustico e groove jazz: calore del contrabbasso a 130Hz, beat lenti e sapore polveroso dei vinili.",
+                  bands: [
+                    { freq: 55, gain: 3, q: 1.0 },
+                    { freq: 130, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              dial_m_for_monkey: {
+                label: "Dial M for Monkey (2003)",
+                eq: {
+                  name: "Dial M Monkey",
+                  notes: "Ritmi organici più serrati: cassa definita a 58Hz, fiati brillanti a 2.4kHz e piano Rhodes avvolgente a 450Hz.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1, q: 1.0 },
+                    { freq: 450, gain: 1.5, q: 1.2 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4000, gain: 1.5, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              days_to_come: {
+                label: "Days to Come (2006)",
+                eq: {
+                  name: "Days to Come",
+                  notes: "Corpo orchestrale e voci soul di Bajka: pienezza sui medi a 900Hz, sub rotondo a 46Hz e apertura a 14kHz.",
+                  bands: [
+                    { freq: 46, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 900, gain: 2, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              black_sands: {
+                label: "Black Sands (2010)",
+                eq: {
+                  name: "Black Sands",
+                  notes: "Capolavoro assoluto: percussioni afro-brasiliane a 3.2kHz, contrabbasso a 85Hz e ottoni nobili e maestosi.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.1 },
+                    { freq: 100, gain: 3, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 1800, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 2.5, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              the_north_borders: {
+                label: "The North Borders (2013)",
+                eq: {
+                  name: "North Borders",
+                  notes: "Elettronica raffinata da club: sub profondo a 42Hz, kalimba e percussioni lignee a 2.8kHz e stereofonia aperta.",
+                  bands: [
+                    { freq: 42, gain: 3.5, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              migration: {
+                label: "Migration (2017)",
+                eq: {
+                  name: "Migration",
+                  notes: "Paesaggi sonori e registrazioni d'ambiente: pianoforte a 500Hz, sub-basso tellurico e ariosità naturale a 16kHz.",
+                  bands: [
+                    { freq: 40, gain: 3.5, q: 1.2 },
+                    { freq: 115, gain: 2, q: 1.0 },
+                    { freq: 250, gain: 0.5, q: 1.0 },
+                    { freq: 500, gain: 1.5, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              fragments: {
+                label: "Fragments (2022)",
+                eq: {
+                  name: "Fragments",
+                  notes: "Produzione contemporanea ad altissima definizione: archi modulari, sub potente a 44Hz e rifinitura setosa.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 270, gain: -0.5, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 2, q: 1.1 },
+                    { freq: 9200, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          tycho: {
+            label: "Tycho",
+            eq: {
+              name: "Tycho Sign",
+              notes: "Chillwave e post-rock d'autore: chitarre pulite con delay a 2.5kHz, synth caldi a 220Hz e ritmi di batteria lineari.",
+              bands: [
+                { freq: 52, gain: 2.5, q: 1.1 },
+                { freq: 120, gain: 2, q: 1.0 },
+                { freq: 220, gain: 2, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.2 },
+                { freq: 8500, gain: 2.5, q: 1.0 },
+                { freq: 15000, gain: 3, q: 0.8 }
+              ]
+            },
+            albums: {
+              past_is_prologue: {
+                label: "Past Is Prologue (2006)",
+                eq: {
+                  name: "Past Is Prologue",
+                  notes: "Origini IDM e tape hiss vintage: calore analogico a 140Hz, ritmi downtempo gentili e morbidezza sugli acuti.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.0 },
+                    { freq: 140, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 750, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 1, q: 1.1 },
+                    { freq: 3400, gain: 1.5, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              dive: {
+                label: "Dive (2011)",
+                eq: {
+                  name: "Dive",
+                  notes: "Il suono iconico di Tycho: chitarre chorus scintillanti a 3.2kHz, synth aperti e basso solido e melodico a 110Hz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.1 },
+                    { freq: 110, gain: 2.5, q: 1.1 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 2.5, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              awake: {
+                label: "Awake (2014)",
+                eq: {
+                  name: "Awake",
+                  notes: "Dinamica live da trio rock: rullante acustico centrato a 200Hz, chitarre d'impatto a 2.4kHz e punch a 60Hz.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 200, gain: 2, q: 1.2 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              epoch: {
+                label: "Epoch (2016)",
+                eq: {
+                  name: "Epoch",
+                  notes: "Sfumature più scure ed elettroniche: sub teso a 46Hz, percussioni taglienti e synth arp incisivi a 3.5kHz.",
+                  bands: [
+                    { freq: 46, gain: 3.5, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3500, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              weather: {
+                label: "Weather (2019)",
+                eq: {
+                  name: "Weather",
+                  notes: "Presenza vocale di Saint Sinner a 2.8kHz: chitarre acustiche dolci a 400Hz e ritmica bilanciata e pulita.",
+                  bands: [
+                    { freq: 52, gain: 2.5, q: 1.0 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 250, gain: 0.5, q: 1.0 },
+                    { freq: 400, gain: 1.5, q: 1.1 },
+                    { freq: 1800, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              simulcast: {
+                label: "Simulcast (2020)",
+                eq: {
+                  name: "Simulcast",
+                  notes: "Versione strumentale estesa di Weather: ampio respiro ai riverberi, sub rilassato a 44Hz e alte vellutate.",
+                  bands: [
+                    { freq: 44, gain: 3, q: 1.1 },
+                    { freq: 115, gain: 1.5, q: 1.0 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 3800, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          brian_eno: {
+            label: "Brian Eno",
+            eq: {
+              name: "Brian Eno",
+              notes: "Pioniere dell'ambient: esaltazione dei riverberi spaziali, corpo armonico sui medi a 600Hz e controllo delicato degli estremi.",
+              bands: [
+                { freq: 45, gain: 1.5, q: 0.9 },
+                { freq: 120, gain: 1.5, q: 1.0 },
+                { freq: 280, gain: 1, q: 1.0 },
+                { freq: 600, gain: 2, q: 1.1 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3500, gain: 1.5, q: 1.0 },
+                { freq: 8000, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              another_green_world: {
+                label: "Another Green World (1975)",
+                eq: {
+                  name: "Green World",
+                  notes: "Art-rock e prime texture ambient: basso fretless caldo a 140Hz, synth analogici organici e medi ricchi.",
+                  bands: [
+                    { freq: 55, gain: 2, q: 1.0 },
+                    { freq: 140, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: 1.5, q: 1.0 },
+                    { freq: 750, gain: 1.5, q: 1.1 },
+                    { freq: 1900, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 1.5, q: 1.0 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              discreet_music: {
+                label: "Discreet Music (1975)",
+                eq: {
+                  name: "Discreet Music",
+                  notes: "Sistemi di delay a nastro generativi: calore ipnotico a 300Hz, attenuazione asprezze e silenziosità di fondo.",
+                  bands: [
+                    { freq: 48, gain: 1.5, q: 0.8 },
+                    { freq: 130, gain: 1.5, q: 1.0 },
+                    { freq: 300, gain: 2, q: 1.1 },
+                    { freq: 650, gain: 1.5, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.0 },
+                    { freq: 3500, gain: 1, q: 1.0 },
+                    { freq: 7000, gain: 0.5, q: 1.0 },
+                    { freq: 12500, gain: 1, q: 0.8 }
+                  ]
+                }
+              },
+              music_for_airports: {
+                label: "Ambient 1: Music for Airports (1978)",
+                eq: {
+                  name: "Music 4 Airports",
+                  notes: "Decadimento del pianoforte acustico e voci a nastro: risonanza lignea a 400Hz, aria celestiale a 12kHz.",
+                  bands: [
+                    { freq: 40, gain: 1, q: 0.7 },
+                    { freq: 110, gain: 1, q: 0.9 },
+                    { freq: 240, gain: 1.5, q: 1.0 },
+                    { freq: 400, gain: 2.5, q: 1.2 },
+                    { freq: 1500, gain: 1.5, q: 1.1 },
+                    { freq: 3800, gain: 1.5, q: 1.0 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              apollo_atmospheres: {
+                label: "Apollo: Atmospheres and Soundtracks (1983)",
+                eq: {
+                  name: "Apollo Atmosph",
+                  notes: "Pedal steel guitar e synth spaziali: estensione siderale a 15kHz, calore chitarristico a 500Hz e sub etereo.",
+                  bands: [
+                    { freq: 42, gain: 2, q: 0.9 },
+                    { freq: 120, gain: 1.5, q: 1.0 },
+                    { freq: 260, gain: 1, q: 1.0 },
+                    { freq: 500, gain: 2, q: 1.1 },
+                    { freq: 1800, gain: 1.5, q: 1.1 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          four_tet: {
+            label: "Four Tet",
+            eq: {
+              name: "Four Tet",
+              notes: "Folktronica e house organica: percussioni lignee e campane a 3.5kHz, calore acustico a 250Hz e sub profondo da club a 45Hz.",
+              bands: [
+                { freq: 45, gain: 3.5, q: 1.2 },
+                { freq: 120, gain: 2, q: 1.0 },
+                { freq: 250, gain: 1.5, q: 1.1 },
+                { freq: 700, gain: -0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3500, gain: 2.5, q: 1.2 },
+                { freq: 8800, gain: 2, q: 1.0 },
+                { freq: 14500, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              rounds: {
+                label: "Rounds (2003)",
+                eq: {
+                  name: "Rounds",
+                  notes: "Pietra miliare della folktronica: campioni di carillon e chitarra a 1kHz, crepitio di vinile e kick morbido a 55Hz.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.0 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 1.5, q: 1.1 },
+                    { freq: 999, gain: 2, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 3800, gain: 2, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              there_is_love_in_you: {
+                label: "There Is Love in You (2010)",
+                eq: {
+                  name: "Love In You",
+                  notes: "Capolavoro micro-house emotivo: sub tellurico a 44Hz, vocal loops a 2.2kHz e rullanti ariosi a 14kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2.5, q: 1.2 },
+                    { freq: 4500, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              new_energy: {
+                label: "New Energy (2017)",
+                eq: {
+                  name: "New Energy",
+                  notes: "Dulcimer, arpeggi meditativi e techno spirituale: delicatezza a 5kHz, sub rotondo a 42Hz e spazialità tridimensionale.",
+                  bands: [
+                    { freq: 42, gain: 3.5, q: 1.2 },
+                    { freq: 115, gain: 1.5, q: 1.0 },
+                    { freq: 250, gain: 1, q: 1.0 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 5000, gain: 2.5, q: 1.2 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              sixteen_oceans: {
+                label: "Sixteen Oceans (2020)",
+                eq: {
+                  name: "Sixteen Oceans",
+                  notes: "Texture acquatiche e percussioni leggere: cassa pulita a 48Hz, arpeggi cristallini a 8.5kHz e medi trasparenti.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 260, gain: 0.5, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 1.5, q: 1.1 },
+                    { freq: 4200, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2.5, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              three: {
+                label: "Three (2024)",
+                eq: {
+                  name: "Three",
+                  notes: "Minimalismo elettronico maturo: groove compatto a 50Hz, calore del sintetizzatore a 300Hz e alta risoluzione.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          jon_hopkins: {
+            label: "Jon Hopkins",
+            eq: {
+              name: "Jon Hopkins",
+              notes: "Techno ipnotica e pianoforte intimo: impatto devastante a 42Hz, risonanza delle corde a 400Hz, transienti microfonici.",
+              bands: [
+                { freq: 42, gain: 4, q: 1.3 },
+                { freq: 120, gain: 2, q: 1.0 },
+                { freq: 270, gain: -1, q: 1.1 },
+                { freq: 400, gain: 2, q: 1.2 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3200, gain: 2.5, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 15000, gain: 3, q: 0.8 }
+              ]
+            },
+            albums: {
+              immunity: {
+                label: "Immunity (2013)",
+                eq: {
+                  name: "Immunity",
+                  notes: "Capolavoro techno-organico: kick micidiale a 45Hz, rumori di tasti e pedali del piano a 1.5kHz e texture dense.",
+                  bands: [
+                    { freq: 45, gain: 4.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 290, gain: -1.5, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 1500, gain: 2, q: 1.2 },
+                    { freq: 3400, gain: 2.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              singularity: {
+                label: "Singularity (2018)",
+                eq: {
+                  name: "Singularity",
+                  notes: "Viaggio sonoro cosmico: sub tellurico a 38Hz, modulazioni estreme dei synth analogici e ariosità totale.",
+                  bands: [
+                    { freq: 38, gain: 4.5, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 4500, gain: 2.5, q: 1.2 },
+                    { freq: 9500, gain: 2.5, q: 1.0 },
+                    { freq: 16000, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              music_for_psychedelic_therapy: {
+                label: "Music for Psychedelic Therapy (2021)",
+                eq: {
+                  name: "Psych Therapy",
+                  notes: "Esperienza meditativa pura e field recordings: morbidezza totale, calore a 300Hz, zero asprezze e spazio infinito.",
+                  bands: [
+                    { freq: 40, gain: 2, q: 0.8 },
+                    { freq: 110, gain: 1.5, q: 0.9 },
+                    { freq: 300, gain: 2, q: 1.1 },
+                    { freq: 600, gain: 1.5, q: 1.1 },
+                    { freq: 1600, gain: 1, q: 1.0 },
+                    { freq: 3500, gain: 1, q: 1.0 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14500, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              ritual: {
+                label: "Ritual (2024)",
+                eq: {
+                  name: "Ritual",
+                  notes: "Sintesi perfetta tra ritmo e trance: sub a 44Hz, pulsazioni modulari a 2.4kHz e stratificazione sonora millimetrica.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 270, gain: -0.5, q: 1.0 },
+                    { freq: 750, gain: 0.5, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 4800, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 3, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          burial: {
+            label: "Burial",
+            eq: {
+              name: "Burial",
+              notes: "Future garage e dubstep di South London: crepitio di vinile a pioggia, sub tellurico a 45Hz, snare legnoso a 2.8kHz.",
+              bands: [
+                { freq: 45, gain: 4.5, q: 1.2 },
+                { freq: 130, gain: 2, q: 1.0 },
+                { freq: 280, gain: -1, q: 1.1 },
+                { freq: 650, gain: 1, q: 1.1 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.2 },
+                { freq: 7500, gain: 1, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              burial: {
+                label: "Burial (2006)",
+                eq: {
+                  name: "Burial",
+                  notes: "Esordio cupo e metropolitano: sub massiccio a 50Hz, calore a 140Hz sui campioni e atmosfera fumosa e cavernosa.",
+                  bands: [
+                    { freq: 50, gain: 4, q: 1.2 },
+                    { freq: 140, gain: 2.5, q: 1.1 },
+                    { freq: 290, gain: -0.5, q: 1.0 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 1900, gain: 1.5, q: 1.1 },
+                    { freq: 3200, gain: 2, q: 1.1 },
+                    { freq: 7800, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              untrue: {
+                label: "Untrue (2007)",
+                eq: {
+                  name: "Untrue",
+                  notes: "Pietra miliare assoluta: ritmi 2-step sincopati, voci pitch-shifted commoventi a 2.2kHz e sub-basso profondo a 42Hz.",
+                  bands: [
+                    { freq: 42, gain: 4.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 300, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 1.5, q: 1.1 },
+                    { freq: 2200, gain: 2.5, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.1 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.8 }
+                  ]
+                }
+              },
+              tunes_2011_2019: {
+                label: "Tunes 2011 to 2019 (2019)",
+                eq: {
+                  name: "Tunes 2011-2019",
+                  notes: "Suite ambient e garage dilatate: estensione sub a 38Hz, tessitura analogica e dettagli spaziali immersivi.",
+                  bands: [
+                    { freq: 38, gain: 4, q: 1.2 },
+                    { freq: 115, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 0.5, q: 1.0 },
+                    { freq: 800, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 4000, gain: 2, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              }
+            }
+          },
+          massive_attack: {
+            label: "Massive Attack",
+            eq: {
+              name: "Massive Attack",
+              notes: "Padri del trip-hop: linea di basso dub profondissima a 40Hz, archi cinematografici a 1.2kHz e voci vellutate a 2.5kHz.",
+              bands: [
+                { freq: 40, gain: 4.5, q: 1.2 },
+                { freq: 110, gain: 2.5, q: 1.1 },
+                { freq: 260, gain: 1, q: 1.0 },
+                { freq: 650, gain: -1, q: 1.1 },
+                { freq: 1200, gain: 2, q: 1.2 },
+                { freq: 3000, gain: 2, q: 1.1 },
+                { freq: 8500, gain: 2, q: 1.0 },
+                { freq: 14000, gain: 2.5, q: 0.8 }
+              ]
+            },
+            albums: {
+              blue_lines: {
+                label: "Blue Lines (1991)",
+                eq: {
+                  name: "Blue Lines",
+                  notes: "Nascita del Bristol sound (Unfinished Sympathy): calore soul a 200Hz, archi maestosi a 1kHz e groove dub.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.1 },
+                    { freq: 130, gain: 2.5, q: 1.1 },
+                    { freq: 200, gain: 2, q: 1.1 },
+                    { freq: 999, gain: 2, q: 1.2 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 3800, gain: 1.5, q: 1.0 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              protection: {
+                label: "Protection (1994)",
+                eq: {
+                  name: "Protection",
+                  notes: "Intimità notturna con Tracey Thorn: piano Rhodes vellutato a 350Hz, calore vocale a 1.5kHz e sub morbido a 45Hz.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.1 },
+                    { freq: 120, gain: 2, q: 1.0 },
+                    { freq: 350, gain: 2, q: 1.1 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 1500, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 1.5, q: 1.1 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 14500, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              mezzanine: {
+                label: "Mezzanine (1998)",
+                eq: {
+                  name: "Mezzanine",
+                  notes: "Capolavoro oscuro e chitarre abrasive (Angel, Teardrop): sub sismico a 38Hz, rullanti pesanti e chitarre a 3kHz.",
+                  bands: [
+                    { freq: 38, gain: 5, q: 1.3 },
+                    { freq: 115, gain: 2.5, q: 1.1 },
+                    { freq: 290, gain: -1.5, q: 1.2 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 1800, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.0 },
+                    { freq: 15000, gain: 2.5, q: 0.8 }
+                  ]
+                }
+              },
+              "100th_window": {
+                label: "100th Window (2003)",
+                eq: {
+                  name: "100th Window",
+                  notes: "Elettronica gelida e archi ipnotici: sub chirurgico a 42Hz, percussioni metalliche a 4kHz e trasparenza vocale.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.0 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 800, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.1 },
+                    { freq: 4000, gain: 2.5, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.0 },
+                    { freq: 15500, gain: 3, q: 0.8 }
+                  ]
+                }
+              },
+              heligoland: {
+                label: "Heligoland (2010)",
+                eq: {
+                  name: "Heligoland",
+                  notes: "Batterie motorik crude e ottoni cupi: bassi secchi a 50Hz, enfasi percussiva a 2.4kHz e calore analogico.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.1 },
+                    { freq: 130, gain: 2, q: 1.0 },
+                    { freq: 270, gain: 0.5, q: 1.0 },
+                    { freq: 650, gain: 1, q: 1.0 },
+                    { freq: 2400, gain: 2, q: 1.2 },
+                    { freq: 3800, gain: 1.5, q: 1.1 },
+                    { freq: 8200, gain: 2, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          },
+          portishead: {
+            label: "Portishead",
+            eq: {
+              name: "Portishead",
+              notes: "Trip-hop cinematografico e spy-noir: voce penetrante di Beth Gibbons a 2.5kHz, scratch vinilici e calore Rhodes a 350Hz.",
+              bands: [
+                { freq: 48, gain: 3.5, q: 1.1 },
+                { freq: 125, gain: 2.5, q: 1.1 },
+                { freq: 350, gain: 1.5, q: 1.1 },
+                { freq: 750, gain: -0.5, q: 1.0 },
+                { freq: 1800, gain: 1.5, q: 1.1 },
+                { freq: 3000, gain: 2.5, q: 1.2 },
+                { freq: 8000, gain: 1.5, q: 1.0 },
+                { freq: 13500, gain: 2, q: 0.9 }
+              ]
+            },
+            albums: {
+              dummy: {
+                label: "Dummy (1994)",
+                eq: {
+                  name: "Dummy",
+                  notes: "Capolavoro assoluto del trip-hop: Rhodes cupo a 400Hz, giradischi e rullante hip-hop a 3kHz, voce straziante e intima.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.1 },
+                    { freq: 130, gain: 2.5, q: 1.1 },
+                    { freq: 280, gain: 1, q: 1.0 },
+                    { freq: 400, gain: 2, q: 1.2 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.0 },
+                    { freq: 13500, gain: 2, q: 0.9 }
+                  ]
+                }
+              },
+              portishead: {
+                label: "Portishead (1997)",
+                eq: {
+                  name: "Portishead",
+                  notes: "Atmosfere noir ancora più crude: vinili stampati ad hoc e risuonati, ottoni scuri a 800Hz e chitarre spy affilate.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.1 },
+                    { freq: 135, gain: 2, q: 1.0 },
+                    { freq: 300, gain: 1, q: 1.0 },
+                    { freq: 800, gain: 1.5, q: 1.2 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.1 },
+                    { freq: 7500, gain: 1, q: 1.0 },
+                    { freq: 13000, gain: 1.5, q: 0.9 }
+                  ]
+                }
+              },
+              third: {
+                label: "Third (2008)",
+                eq: {
+                  name: "Third",
+                  notes: "Svolta krautrock e post-punk: batterie motorik secche a 120Hz, synth analogici abrasivi a 2.8kHz e dinamica nuda.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.1 },
+                    { freq: 120, gain: 2.5, q: 1.1 },
+                    { freq: 260, gain: 0.5, q: 1.0 },
+                    { freq: 700, gain: 1, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.1 },
+                    { freq: 3000, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 1.5, q: 1.0 },
+                    { freq: 14000, gain: 2, q: 0.9 }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      techno_house_melodic: {
+        label: "Melodic Techno & Club Legends",
+        eq: {
+          name: "Melodic Techno",
+          notes: "Kick potente a 50Hz, clap presente a 1.5kHz e sintetizzatori avvolgenti",
+          bands: [
+            { freq: 50, gain: 3, q: 1.3 },
+            { freq: 125, gain: 2, q: 1.2 },
+            { freq: 250, gain: -1, q: 1.3 },
+            { freq: 700, gain: 1, q: 1.2 },
+            { freq: 2200, gain: 2, q: 1.4 },
+            { freq: 4500, gain: 1, q: 1.3 },
+            { freq: 8500, gain: 2, q: 1.2 },
+            { freq: 14500, gain: 2, q: 1.0 }
+          ]
+        },
+        artists: {
+          tale_of_us: {
+            label: "Tale of Us",
+            eq: {
+              name: "Tale of Us Sig",
+              notes: "Firma Afterlife: sub-bassi profondi e avvolgenti a 42Hz, controllo della risonanza medio-bassa a 280Hz, sintetizzatori melodici cinematici ed eterei a 3.2kHz con apertura ultra-smooth a 14kHz.",
+              bands: [
+                { freq: 42, gain: 3, q: 1.2 },
+                { freq: 115, gain: 1, q: 1.1 },
+                { freq: 280, gain: -1.5, q: 1.3 },
+                { freq: 650, gain: 0.5, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 3200, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 2.5, q: 1.2 },
+                { freq: 14000, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              endless: {
+                label: "Endless (2017)",
+                eq: {
+                  name: "Endless 2017",
+                  notes: "Album introspettivo e ambient-classical: enfasi sulla morbidezza delle basse frequenze a 48Hz, corpo al pianoforte a 300Hz, archi ariosi e reverbero spaziale controllato.",
+                  bands: [
+                    { freq: 48, gain: 2.5, q: 1.1 },
+                    { freq: 120, gain: 1, q: 1.0 },
+                    { freq: 300, gain: 1.5, q: 1.2 },
+                    { freq: 600, gain: -0.5, q: 1.1 },
+                    { freq: 1800, gain: 1, q: 1.2 },
+                    { freq: 3500, gain: 1.5, q: 1.3 },
+                    { freq: 8000, gain: 2, q: 1.1 },
+                    { freq: 15000, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              },
+              realm_of_consc: {
+                label: "Realm Of Consc (2016)",
+                eq: {
+                  name: "Realm Of Consc",
+                  notes: "Compilazione cardine Afterlife: cassa techno profonda e definita a 45Hz, bassline rolling a 110Hz, synth arpeggiati taglienti a 2.8kHz e percussioni metalliche brillanti.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.3 },
+                    { freq: 110, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 700, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3400, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              monument: {
+                label: "Monument (2017)",
+                eq: {
+                  name: "Monument 2017",
+                  notes: "Collaborazione ipnotica con Vaal: groove cadenzato a 50Hz, frequenze vocali focalizzate a 1.8kHz, pad atmosferici ampi e riverberati con roll-off morbido sulle sibilanti.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 115, gain: 1, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0, q: 1.0 },
+                    { freq: 1800, gain: 2, q: 1.3 },
+                    { freq: 3200, gain: 1.5, q: 1.2 },
+                    { freq: 7500, gain: -0.5, q: 1.2 },
+                    { freq: 13500, gain: 1.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          artbat: {
+            label: "ARTBAT",
+            eq: {
+              name: "ARTBAT Signature",
+              notes: "Potenza melodic techno da arena: transienti di cassa punchy a 52Hz, bassline vigorose a 115Hz, lead synth analogici energici a 2.6kHz e piatti taglienti e scintillanti a 13kHz.",
+              bands: [
+                { freq: 52, gain: 3.5, q: 1.3 },
+                { freq: 115, gain: 2, q: 1.2 },
+                { freq: 250, gain: -1, q: 1.1 },
+                { freq: 700, gain: 0.5, q: 1.0 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 13000, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              upperground: {
+                label: "Upperground (2019)",
+                eq: {
+                  name: "Upperground 2019",
+                  notes: "Traccia iconica del duo ucraino: transienti di kick scolpiti a 50Hz, bassline incalzante a 125Hz, arpeggio principale brillante a 3.4kHz per massimo impatto acustico su Nothing X.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1.5, q: 1.2 },
+                    { freq: 680, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3400, gain: 2.5, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              flame: {
+                label: "Flame (2021)",
+                eq: {
+                  name: "Flame 2021",
+                  notes: "Produzione UPPERGROUND energica: sub solido a 46Hz, compressione sidechain esaltata sui bassi, midrange aperto e trasparente a 2.2kHz per le progressioni d'accordi.",
+                  bands: [
+                    { freq: 46, gain: 3.5, q: 1.2 },
+                    { freq: 118, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              horizon: {
+                label: "Horizon (2021)",
+                eq: {
+                  name: "Horizon 2021",
+                  notes: "Capolavoro su Armada: drop tellurico a 44Hz, synth epici e melodie emozionali a 2.5kHz, apertura superlativa sulle alte a 12.5kHz senza fastidiose asprezze.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 112, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 12500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              age_of_love: {
+                label: "Age of Love (2021)",
+                eq: {
+                  name: "Age of Love 2021",
+                  notes: "Rework con Pete Tong del classico trance: sub potente e rotondo a 48Hz, acid 303 tagliente a 1.9kHz, kick punch a 130Hz per un'esperienza da festival estasiante.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 750, gain: 0.5, q: 1.1 },
+                    { freq: 1900, gain: 2.5, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          boris_brejcha: {
+            label: "Boris Brejcha",
+            eq: {
+              name: "Boris Brejcha",
+              notes: "Pioniere della High-Tech Minimal: cassa chirurgica e secca a 55Hz, punchy bassline a 120Hz, micro-percussioni stravaganti e dettagli glitch ultra-definiti a 4.5kHz e 14kHz.",
+              bands: [
+                { freq: 55, gain: 3, q: 1.3 },
+                { freq: 120, gain: 2.5, q: 1.2 },
+                { freq: 260, gain: -1.5, q: 1.2 },
+                { freq: 650, gain: -0.5, q: 1.1 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 4500, gain: 2.5, q: 1.4 },
+                { freq: 9500, gain: 2, q: 1.2 },
+                { freq: 14000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              space_diver: {
+                label: "Space Diver (2020)",
+                eq: {
+                  name: "Space Diver 2020",
+                  notes: "Album manifesto del suono high-tech minimal: sub-basso scattante a 52Hz, punch percussivo a 135Hz, sintetizzatori psichedelici e vocoder puliti e presenti a 2.8kHz.",
+                  bands: [
+                    { freq: 52, gain: 3.5, q: 1.3 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 4200, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              never_stop_danc: {
+                label: "Never Stop Dancing (2021)",
+                eq: {
+                  name: "Never Stop Danc",
+                  notes: "Sound design articolato e ritmato: kick rotondo a 50Hz, slap di rullante e percussioni a 1.2kHz, top-end arioso per esaltare i loop di charleston sincopati a 9kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 4000, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 15000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              level_one: {
+                label: "Level One (2024)",
+                eq: {
+                  name: "Level One 2024",
+                  notes: "Produzione ultramoderna: bassi monumentali e veloci a 45Hz, contrasto dinamico nei drop, medi lineari a 650Hz per separare sintetizzatori complessi e kick.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1.5, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 4600, gain: 2.5, q: 1.3 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              twenty_two: {
+                label: "22 (2016)",
+                eq: {
+                  name: "22 Brejcha 2016",
+                  notes: "Minimal techno ipnotica e pura: basso rotolante a 58Hz, frequenze medie pulite per groove essenziali, percussioni metalliche e hi-hat secchi a 12kHz.",
+                  bands: [
+                    { freq: 58, gain: 2.5, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.1 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 1900, gain: 1, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          amelie_lens: {
+            label: "Amelie Lens",
+            eq: {
+              name: "Amelie Lens Sig",
+              notes: "Peak-time techno ad alto bpm: kick rimbombante con sub distorta a 48Hz, bassline acida 303 incalzante a 1.8kHz, rullanti metallici a 3.5kHz e ride trascinanti a 10kHz.",
+              bands: [
+                { freq: 48, gain: 4, q: 1.3 },
+                { freq: 120, gain: 1.5, q: 1.2 },
+                { freq: 270, gain: -1.5, q: 1.2 },
+                { freq: 680, gain: 0, q: 1.1 },
+                { freq: 1800, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2.5, q: 1.3 },
+                { freq: 8800, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              higher: {
+                label: "Higher (2020)",
+                eq: {
+                  name: "Higher 2020",
+                  notes: "Rumble kick industriale e martellante a 45Hz, voce ipnotica filtrata a 1.5kHz, percussioni tribali e riverberate a 8kHz, resa dinamica e travolgente.",
+                  bands: [
+                    { freq: 45, gain: 4.5, q: 1.4 },
+                    { freq: 115, gain: 1.5, q: 1.2 },
+                    { freq: 260, gain: -1.5, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 1900, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 1.1 }
+                  ]
+                }
+              },
+              exhale: {
+                label: "Exhale (2016)",
+                eq: {
+                  name: "Exhale 2016",
+                  notes: "La release di svolta: basse massicce e claustrofobiche a 50Hz, groove scuro e cupo a 250Hz, percussioni sintetiche taglienti ad alta frequenza a 9.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 4, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1, q: 1.2 },
+                    { freq: 700, gain: -0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3400, gain: 2, q: 1.3 },
+                    { freq: 9500, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              basik: {
+                label: "Basik (2018)",
+                eq: {
+                  name: "Basik 2018",
+                  notes: "Groove analogico e percussivo: cassa compatta a 55Hz, medi veloci e asciutti a 700Hz per separare i pattern di percussioni Roland, top-end scintillante a 13kHz.",
+                  bands: [
+                    { freq: 55, gain: 3.5, q: 1.3 },
+                    { freq: 130, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: -1.5, q: 1.2 },
+                    { freq: 700, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              ravers_heart: {
+                label: "Raver's Heart (2021)",
+                eq: {
+                  name: "Ravers Heart 21",
+                  notes: "Omaggio ai rave anni 90: cassa hard-techno a 52Hz, synth rave acidi e sibilanti a 2.4kHz, hi-hat aperti frenetici a 11kHz bilanciati per evitare fatica d'ascolto.",
+                  bands: [
+                    { freq: 52, gain: 4, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 290, gain: -1, q: 1.2 },
+                    { freq: 720, gain: 0, q: 1.0 },
+                    { freq: 2400, gain: 2.5, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9500, gain: 1.5, q: 1.3 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          carl_cox: {
+            label: "Carl Cox",
+            eq: {
+              name: "Carl Cox Master",
+              notes: "Leggenda assoluta della club culture: groove house-techno organico, bassline pulsanti a 55Hz, punch percussivo a 125Hz, brillantezza e calore analogico tipico dei set su vinile e mixer Funktion-One.",
+              bands: [
+                { freq: 55, gain: 3, q: 1.2 },
+                { freq: 125, gain: 2.5, q: 1.2 },
+                { freq: 280, gain: -0.5, q: 1.1 },
+                { freq: 650, gain: 0.5, q: 1.1 },
+                { freq: 2000, gain: 1.5, q: 1.2 },
+                { freq: 3500, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              two_seasons: {
+                label: "Two Seasons (1996)",
+                eq: {
+                  name: "Two Seasons 1996",
+                  notes: "Radici techno-rave anni '90: sub caldo analogico a 60Hz, punch al rullante 909 a 200Hz, medi grezzi a 1.1kHz e alte frequenze calde e non affaticanti.",
+                  bands: [
+                    { freq: 60, gain: 3, q: 1.2 },
+                    { freq: 135, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 1, q: 1.2 },
+                    { freq: 700, gain: -0.5, q: 1.1 },
+                    { freq: 1800, gain: 1.5, q: 1.2 },
+                    { freq: 3400, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1, q: 1.1 },
+                    { freq: 12500, gain: 1, q: 1.0 }
+                  ]
+                }
+              },
+              second_sign: {
+                label: "Second Sign (2005)",
+                eq: {
+                  name: "Second Sign 2005",
+                  notes: "House e techno tribale con vocali potenti: kick rotondo a 50Hz, percussioni latine e congas valorizzate a 450Hz, brillantezza vocale pulita a 2.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.1 },
+                    { freq: 550, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              all_roads_lead: {
+                label: "All Roads Lead (2011)",
+                eq: {
+                  name: "All Roads Lead",
+                  notes: "Groove da Space Ibiza: cassa potente da main room a 48Hz, bassline funk a 120Hz, clap percussivi brillanti a 3.2kHz e hi-hat spaziosi a 10kHz.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.3 },
+                    { freq: 120, gain: 2.5, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              electronic_gen: {
+                label: "Electronic Gen (2022)",
+                eq: {
+                  name: "Electronic Gen22",
+                  notes: "Album live e analogico su macchine hardware: dinamica travolgente, modular synth grezzi a 1.8kHz, sub-bassi potenti e fisici a 42Hz, grande respiro a 14kHz.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 600, gain: 0.5, q: 1.1 },
+                    { freq: 1800, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 9500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          eric_prydz: {
+            label: "Eric Prydz",
+            eq: {
+              name: "Eric Prydz Sig",
+              notes: "Maestro del progressive house e techno (Pryda/Cirez D): estensione sub-basso profonda a 45Hz, accordi di synth maestosi a 1.6kHz, build-up epici e rifinitura cristallina a 12kHz.",
+              bands: [
+                { freq: 45, gain: 3, q: 1.2 },
+                { freq: 115, gain: 1.5, q: 1.1 },
+                { freq: 270, gain: -1, q: 1.2 },
+                { freq: 700, gain: 0.5, q: 1.0 },
+                { freq: 2000, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2.5, q: 1.2 },
+                { freq: 13000, gain: 2.5, q: 1.1 }
+              ]
+            },
+            albums: {
+              opus: {
+                label: "Opus (2016)",
+                eq: {
+                  name: "Opus 2016",
+                  notes: "Il magnum opus del progressive: crescendo leggendario, sub pulito e potente a 44Hz, synth a cascata a 2.2kHz, dinamica perfetta e massima separazione strumentale.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.3 },
+                    { freq: 110, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 3, q: 1.0 }
+                  ]
+                }
+              },
+              pryda: {
+                label: "Pryda (2012)",
+                eq: {
+                  name: "Pryda 2012",
+                  notes: "Triplo album antologico: l'essenza della progressive house svedese, basslines ipnotiche a 110Hz, melodie malinconiche di piano e synth a 800Hz e 3kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -0.5, q: 1.1 },
+                    { freq: 680, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3400, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              presents_pryda: {
+                label: "Eric Prydz Presents Pryda (2012)",
+                eq: {
+                  name: "Presents Pryda",
+                  notes: "Selezione club definitiva: kick poderoso a 52Hz, snare 909 squillante a 200Hz, arpeggi analogici analog-warmth e soundstage stereofonico amplissimo.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -0.5, q: 1.1 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          tiesto: {
+            label: "Tiësto",
+            eq: {
+              name: "Tiesto Master",
+              notes: "Dall'era d'oro della trance fino alla slap-house e tech-house contemporanea: bassi decisi a 46Hz, kick punchy a 120Hz, voci radiofoniche definite a 2.5kHz e brillantezza da festival.",
+              bands: [
+                { freq: 46, gain: 3, q: 1.2 },
+                { freq: 120, gain: 2, q: 1.2 },
+                { freq: 260, gain: -1, q: 1.2 },
+                { freq: 650, gain: 0, q: 1.0 },
+                { freq: 2200, gain: 1.5, q: 1.2 },
+                { freq: 3600, gain: 2, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              in_my_memory: {
+                label: "In My Memory (2001)",
+                eq: {
+                  name: "In My Memory 01",
+                  notes: "Classic trance melodica: sub rotondo e nostalgico a 55Hz, supersaw avvolgenti a 2.4kHz, voci emotive eteree a 4.5kHz, apertura vintage sulle alte.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.1 },
+                    { freq: 130, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: 0.5, q: 1.1 },
+                    { freq: 700, gain: -0.5, q: 1.1 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 12500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              just_be: {
+                label: "Just Be (2004)",
+                eq: {
+                  name: "Just Be 2004",
+                  notes: "L'era di 'Adagio for Strings': basse telluriche a 48Hz, synth d'archi epici a 1.2kHz, punch al rullante a 180Hz e riverberi maestosi controllati a 8kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: 0, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              elements_of_life: {
+                label: "Elements of Life (2007)",
+                eq: {
+                  name: "Elements Of Life",
+                  notes: "Trance orchestrale e progressiva: kick pulito a 50Hz, pad complessi a 600Hz, lead brillanti a 3kHz e hi-hat frizzanti a 12kHz su Nothing X.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 1.5, q: 1.1 },
+                    { freq: 270, gain: -0.5, q: 1.1 },
+                    { freq: 600, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              kaleidoscope: {
+                label: "Kaleidoscope (2009)",
+                eq: {
+                  name: "Kaleidoscope 09",
+                  notes: "Transizione electro-pop ed EDM: kick pompato a 52Hz, synth bass aggressivo a 130Hz, voci in primo piano a 2.8kHz e piatti compressi a 9kHz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 290, gain: -1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              town_paradise: {
+                label: "A Town Called Paradise (2014)",
+                eq: {
+                  name: "Town Called Par",
+                  notes: "Mainstage festival EDM: drop martellanti a 48Hz, pluck melodici squillanti a 3.5kHz, bilanciamento del mid-range a 800Hz per evitare asprezze d'ascolto.",
+                  bands: [
+                    { freq: 48, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1.5, q: 1.2 },
+                    { freq: 750, gain: 0, q: 1.0 },
+                    { freq: 2300, gain: 1.5, q: 1.2 },
+                    { freq: 3800, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              london_sessions: {
+                label: "The London Sessions (2020)",
+                eq: {
+                  name: "London Sessions",
+                  notes: "Svolta deep house e UK bounce: bassi profondi e scattanti a 45Hz, clap secchi a 1.5kHz, groove sincopato e calore britannico calibrato per Nothing X.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.2 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              drive: {
+                label: "Drive (2023)",
+                eq: {
+                  name: "Drive 2023",
+                  notes: "Pop-dance e club crossover moderno: sub-basso serrato a 42Hz, transienti di cassa nitidi a 105Hz, voci cristalline e levigate a 2.6kHz e aria a 15kHz.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.3 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          armin_van_buuren: {
+            label: "Armin van Buuren",
+            eq: {
+              name: "Armin Signature",
+              notes: "Il sovrano della Trance e ASOT: estensione sub-basso epica a 45Hz, punch percussivo a 138 bpm, supersaw monumentali a 2.8kHz e acuti cristallini a 13kHz per un'euforia senza limiti.",
+              bands: [
+                { freq: 45, gain: 3, q: 1.2 },
+                { freq: 120, gain: 1.5, q: 1.1 },
+                { freq: 270, gain: -0.5, q: 1.1 },
+                { freq: 650, gain: 0.5, q: 1.0 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 3600, gain: 2.5, q: 1.3 },
+                { freq: 8800, gain: 2.5, q: 1.2 },
+                { freq: 13500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              seventy_six: {
+                label: "76 (2003)",
+                eq: {
+                  name: "76 Armin 2003",
+                  notes: "Debutto puro trance: bassi rotondi a 55Hz, accordi caldi di Rhodes e synth a 700Hz, melodie trascinanti a 2.2kHz senza durezze digitali.",
+                  bands: [
+                    { freq: 55, gain: 2.5, q: 1.1 },
+                    { freq: 125, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: 0.5, q: 1.1 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 1.5, q: 1.2 },
+                    { freq: 8000, gain: 1.5, q: 1.1 },
+                    { freq: 12500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              shivers: {
+                label: "Shivers (2005)",
+                eq: {
+                  name: "Shivers 2005",
+                  notes: "Produzione vocale magistrale: kick solido a 50Hz, voce angelica di Susana focalizzata a 2.5kHz, apertura superlativa degli archi a 10kHz.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 1.5, q: 1.1 },
+                    { freq: 260, gain: 0, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              imagine: {
+                label: "Imagine (2008)",
+                eq: {
+                  name: "Imagine 2008",
+                  notes: "Anthem trance per eccellenza: cassa poderosa a 48Hz, riff di chitarra rock/trance a 1.8kHz, crescendo dinamico e hi-hat scintillanti a 12kHz.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              mirage: {
+                label: "Mirage (2010)",
+                eq: {
+                  name: "Mirage 2010",
+                  notes: "Trance orchestrale e sinfonica: sub profondo a 46Hz, contrasto tra strumenti acustici e synth moderni a 1.5kHz, estensione altissima e trasparente.",
+                  bands: [
+                    { freq: 46, gain: 3.5, q: 1.2 },
+                    { freq: 120, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: -0.5, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 9200, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              },
+              intense: {
+                label: "Intense (2013)",
+                eq: {
+                  name: "Intense 2013",
+                  notes: "Fusione tra violino classico e drop festivalieri: sub potente a 44Hz, violino di Miri Ben-Ari nitido a 3kHz, controllo delle sibilanti a 7.5kHz.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 680, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 8500, gain: 1.5, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              embrace: {
+                label: "Embrace (2015)",
+                eq: {
+                  name: "Embrace 2015",
+                  notes: "Sperimentazione eclettica con tromba jazz e rock: midrange morbido e corposo a 500Hz, kick deciso a 52Hz, presenza vocale avvolgente a 2.4kHz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 125, gain: 1.5, q: 1.1 },
+                    { freq: 290, gain: 0, q: 1.1 },
+                    { freq: 600, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 1.1 }
+                  ]
+                }
+              },
+              balance: {
+                label: "Balance (2019)",
+                eq: {
+                  name: "Balance 2019",
+                  notes: "Doppio album club & pop: cassa veloce e asciutta a 50Hz, bassline moderne a 115Hz, brillantezza e freschezza radiofonica a 8.5kHz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              feel_again: {
+                label: "Feel Again (2023)",
+                eq: {
+                  name: "Feel Again 2023",
+                  notes: "Trilogia emotiva post-lockdown: sub-bassi potenti e precisi a 42Hz, hook melodici penetranti a 2.6kHz, riverberi immersivi bilanciati per Nothing X.",
+                  bands: [
+                    { freq: 42, gain: 4, q: 1.3 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1, q: 1.2 },
+                    { freq: 700, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              breathe_in: {
+                label: "Breathe In (2024)",
+                eq: {
+                  name: "Breathe In 2024",
+                  notes: "Ritorno all'uplifting trance e ritmi veloci: kick teso a 50Hz, roll percussivo a 125Hz, arpeggi scintillanti a 3.5kHz e super-highs a 14kHz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          martin_garrix: {
+            label: "Martin Garrix",
+            eq: {
+              name: "Garrix Signature",
+              notes: "Big room, progressive house e pop da stadio: drop tellurici con transienti di kick a 50Hz, layer di lead stratificati a 2.5kHz, snare roll esplosivi e aria a 13.5kHz.",
+              bands: [
+                { freq: 50, gain: 3.5, q: 1.3 },
+                { freq: 115, gain: 2, q: 1.2 },
+                { freq: 260, gain: -1, q: 1.2 },
+                { freq: 700, gain: 0.5, q: 1.0 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 3600, gain: 2.5, q: 1.3 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              sentio: {
+                label: "Sentio (2022)",
+                eq: {
+                  name: "Sentio 2022",
+                  notes: "Album club puro dedicato ai festival: sub potentissimo a 44Hz, punch al petto a 110Hz, synth al piombo a 2.2kHz e claps taglienti a 4.5kHz.",
+                  bands: [
+                    { freq: 44, gain: 4, q: 1.3 },
+                    { freq: 110, gain: 2.5, q: 1.2 },
+                    { freq: 250, gain: -1.5, q: 1.2 },
+                    { freq: 680, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              gold_skies: {
+                label: "Gold Skies (2014)",
+                eq: {
+                  name: "Gold Skies 2014",
+                  notes: "L'esplosione EDM globale (Animals, Tremor): woodblock percussivo iconico a 800Hz, cassa distorta e compressa a 55Hz, lead festivalieri penetranti a 3kHz.",
+                  bands: [
+                    { freq: 55, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.2 },
+                    { freq: 800, gain: 1, q: 1.1 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 1.5, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              break_through: {
+                label: "Break Through the Silence (2015)",
+                eq: {
+                  name: "Break Through 15",
+                  notes: "Collaborazione con Matisse & Sadko: progressive house melodica ed emozionale, sub teso a 48Hz, accordi supersaw aperti a 1.8kHz, riverbero spaziale.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 118, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              seven_ep: {
+                label: "7 (2016)",
+                eq: {
+                  name: "7 EP Garrix 2016",
+                  notes: "7 tracce in 7 giorni: sound design versatile, da bassline future bounce a drop melodici, bassi precisi a 50Hz, presenza delle voci a 2.6kHz.",
+                  bands: [
+                    { freq: 50, gain: 3.5, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 700, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          avicii: {
+            label: "Avicii",
+            eq: {
+              name: "Avicii Signature",
+              notes: "Melodie folk-EDM eterne e pianoforti solari: kick caldo e percussivo a 52Hz, corpo al pianoforte a 300Hz, chitarre acustiche brillanti a 2.8kHz e acuti dolci e mai affaticanti.",
+              bands: [
+                { freq: 52, gain: 3, q: 1.2 },
+                { freq: 120, gain: 1.5, q: 1.1 },
+                { freq: 280, gain: 0.5, q: 1.1 },
+                { freq: 650, gain: 0.5, q: 1.0 },
+                { freq: 2100, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              true: {
+                label: "True (2013)",
+                eq: {
+                  name: "True Avicii 2013",
+                  notes: "Capolavoro che ha ridefinito l'EDM: chitarre acustiche e bluegrass calde a 250Hz, voce soul a 1.5kHz, drop solare con sub pulito a 48Hz e aria setosa.",
+                  bands: [
+                    { freq: 48, gain: 3, q: 1.2 },
+                    { freq: 115, gain: 1.5, q: 1.1 },
+                    { freq: 250, gain: 1, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.3 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              stories: {
+                label: "Stories (2015)",
+                eq: {
+                  name: "Stories 2015",
+                  notes: "Produzione ricca e organica: fiati e funk bass a 120Hz, cassa bilanciata a 50Hz, pianoforte a coda presente a 2.2kHz, soundstage spazioso ed emozionante.",
+                  bands: [
+                    { freq: 50, gain: 3, q: 1.2 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 270, gain: 0.5, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 1.5, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              tim: {
+                label: "TIM (2019)",
+                eq: {
+                  name: "TIM Avicii 2019",
+                  notes: "Album postumo intimo ed espressivo: sub vellutato a 45Hz, trasparenza e calore sulle voci a 2.5kHz, percussioni etniche definite e rispetto timbrico perfetto.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 115, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 600, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.2 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.0 }
+                  ]
+                }
+              }
+            }
+          },
+          swedish_house_mafia: {
+            label: "Swedish House Mafia",
+            eq: {
+              name: "SHM Signature",
+              notes: "Il leggendario trio svedese: cassa epica da arena a 48Hz, kick punch solido a 115Hz, pianoforti house a 400Hz, lead monumentali a 2.4kHz e riverberi maestosi controllati.",
+              bands: [
+                { freq: 48, gain: 3.5, q: 1.3 },
+                { freq: 115, gain: 2, q: 1.2 },
+                { freq: 260, gain: -1, q: 1.2 },
+                { freq: 650, gain: 0.5, q: 1.1 },
+                { freq: 2200, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2, q: 1.2 },
+                { freq: 8800, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 2, q: 1.0 }
+              ]
+            },
+            albums: {
+              until_one: {
+                label: "Until One (2010)",
+                eq: {
+                  name: "Until One 2010",
+                  notes: "L'era di 'One' e 'Miami 2 Ibiza': sub analogico sporco a 52Hz, snare aggressivo a 200Hz, lead sintetici graffianti a 2kHz per pura adrenalina clubbing.",
+                  bands: [
+                    { freq: 52, gain: 3.5, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 280, gain: -1, q: 1.1 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              until_now: {
+                label: "Until Now (2012)",
+                eq: {
+                  name: "Until Now 2012",
+                  notes: "Contiene 'Don't You Worry Child': pianoforte emotivo a 350Hz, crescendo magistrale, sub possente a 46Hz, acuti cristallini e avvolgenti a 12kHz.",
+                  bands: [
+                    { freq: 46, gain: 3.5, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -0.5, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              paradise_again: {
+                label: "Paradise Again (2022)",
+                eq: {
+                  name: "Paradise Again22",
+                  notes: "Evoluzione dark e underground: 808 profonde e scure a 40Hz, percussioni industriali a 1.2kHz, synth analogici distorcenti controllati a 3kHz, alta fedeltà.",
+                  bands: [
+                    { freq: 40, gain: 4, q: 1.3 },
+                    { freq: 110, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1.5, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3500, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          dom_dolla: {
+            label: "Dom Dolla",
+            eq: {
+              name: "Dom Dolla Club",
+              notes: "Top producer house australiano: groove tech-house implacabile, sub tellurico a 44Hz, punchy mid-bass a 125Hz, transienti di rullante e clap secchi a 1.8kHz per far tremare i club.",
+              bands: [
+                { freq: 44, gain: 4, q: 1.3 },
+                { freq: 120, gain: 2.5, q: 1.2 },
+                { freq: 260, gain: -1.5, q: 1.2 },
+                { freq: 680, gain: 0.5, q: 1.1 },
+                { freq: 2000, gain: 2, q: 1.3 },
+                { freq: 3600, gain: 2, q: 1.2 },
+                { freq: 8800, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 1.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              rhyme_dust: {
+                label: "Rhyme Dust (2023)",
+                eq: {
+                  name: "Rhyme Dust 2023",
+                  notes: "Drop virale con MK: sub-bass rolling a 42Hz di enorme spinta, campionamento vocale hip-hop focalizzato a 1.4kHz, kick e clap asciutti e percussivi.",
+                  bands: [
+                    { freq: 42, gain: 4.5, q: 1.3 },
+                    { freq: 115, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1.5, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              saving_up: {
+                label: "Saving Up (2023)",
+                eq: {
+                  name: "Saving Up 2023",
+                  notes: "Disco-house moderna ed estiva: basso funk elastico a 110Hz, piano accordi luminoso a 600Hz, voce soul setosa a 2.8kHz e piatti frizzanti a 13kHz.",
+                  bands: [
+                    { freq: 45, gain: 3, q: 1.2 },
+                    { freq: 110, gain: 2.5, q: 1.2 },
+                    { freq: 280, gain: 0, q: 1.1 },
+                    { freq: 600, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.2 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              take_it: {
+                label: "Take It (2018)",
+                eq: {
+                  name: "Take It 2018",
+                  notes: "Traccia manifesto tech-house: kick pesante e scuro a 48Hz, bassline acida ipnotica a 140Hz, clap riverberato a 2.2kHz con ottimo isolamento sonoro.",
+                  bands: [
+                    { freq: 48, gain: 4, q: 1.3 },
+                    { freq: 130, gain: 2, q: 1.2 },
+                    { freq: 270, gain: -1.5, q: 1.2 },
+                    { freq: 700, gain: 0, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 1.5, q: 1.2 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              san_frandisco: {
+                label: "San Frandisco (2019)",
+                eq: {
+                  name: "San Frandisco 19",
+                  notes: "Banger club da magazzino: cassa 909 robusta a 50Hz, vocal loop tagliente a 2kHz, build-up di tensione con rullante serrato e top-end brillante.",
+                  bands: [
+                    { freq: 50, gain: 4, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          rufus_du_sol: {
+            label: "RÜFÜS DU SOL",
+            eq: {
+              name: "Rufus Du Sol Sig",
+              notes: "Alternative dance e indie electronic sofisticata: sub caldo e profondo a 42Hz, percussioni organiche a 300Hz, voce malinconica di Tyrone a 2kHz e texture di synth spaziali a 12kHz.",
+              bands: [
+                { freq: 42, gain: 3.5, q: 1.2 },
+                { freq: 115, gain: 1.5, q: 1.1 },
+                { freq: 280, gain: -0.5, q: 1.1 },
+                { freq: 650, gain: 0.5, q: 1.0 },
+                { freq: 2000, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2, q: 1.2 },
+                { freq: 8500, gain: 2.5, q: 1.2 },
+                { freq: 13500, gain: 2.5, q: 1.0 }
+              ]
+            },
+            albums: {
+              atlas: {
+                label: "Atlas (2013)",
+                eq: {
+                  name: "Atlas Rufus 2013",
+                  notes: "Debutto dream-pop e house australiana: cassa morbida a 50Hz, chitarre e pad caldi a 450Hz, voce ariosa a 2.5kHz con bassi non invasivi.",
+                  bands: [
+                    { freq: 50, gain: 2.5, q: 1.1 },
+                    { freq: 120, gain: 1.5, q: 1.1 },
+                    { freq: 280, gain: 0.5, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 1.5, q: 1.2 },
+                    { freq: 3500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              bloom: {
+                label: "Bloom (2016)",
+                eq: {
+                  name: "Bloom Rufus 2016",
+                  notes: "Contiene 'Innerbloom': sub-basso profondo e meditativo a 40Hz, ritmica analogica a 120Hz, synth modulati trascinanti a 1.8kHz e riverberi estesi.",
+                  bands: [
+                    { freq: 40, gain: 4, q: 1.3 },
+                    { freq: 115, gain: 1.5, q: 1.1 },
+                    { freq: 270, gain: -0.5, q: 1.1 },
+                    { freq: 600, gain: 0.5, q: 1.0 },
+                    { freq: 1900, gain: 2, q: 1.3 },
+                    { freq: 3400, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              solace: {
+                label: "Solace (2018)",
+                eq: {
+                  name: "Solace 2018",
+                  notes: "Toni più oscuri e viscerali: basse pesanti e serrate a 44Hz, distorsione analogica controllata sui synth a 1.2kHz, vocali penetranti e intimi.",
+                  bands: [
+                    { freq: 44, gain: 3.5, q: 1.2 },
+                    { freq: 118, gain: 1.5, q: 1.1 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 680, gain: 0.5, q: 1.1 },
+                    { freq: 2000, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 2, q: 1.0 }
+                  ]
+                }
+              },
+              surrender: {
+                label: "Surrender (2021)",
+                eq: {
+                  name: "Surrender 2021",
+                  notes: "Vincitore Grammy: arrangiamenti complessi, percussioni ibride vive a 250Hz, sub-basso avvolgente a 42Hz, grande apertura e tridimensionalità a 14kHz.",
+                  bands: [
+                    { freq: 42, gain: 3.5, q: 1.2 },
+                    { freq: 112, gain: 1.5, q: 1.1 },
+                    { freq: 250, gain: -0.5, q: 1.1 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3800, gain: 2, q: 1.2 },
+                    { freq: 9200, gain: 2.5, q: 1.2 },
+                    { freq: 14000, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              },
+              inhale_exhale: {
+                label: "Inhale Exhale (2024)",
+                eq: {
+                  name: "Inhale Exhale 24",
+                  notes: "Ultimo lavoro in studio: sound design d'avanguardia, kick tellurico ma asciutto a 45Hz, synth melodici setosi a 2.4kHz, perfetta linearità su Nothing X.",
+                  bands: [
+                    { freq: 45, gain: 3.5, q: 1.2 },
+                    { freq: 115, gain: 1.5, q: 1.1 },
+                    { freq: 270, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 14500, gain: 2.5, q: 1.1 }
+                  ]
+                }
+              }
+            }
+          },
+          james_hype: {
+            label: "James Hype",
+            eq: {
+              name: "James Hype Club",
+              notes: "Il re del virtuosismo tecnico e transition DJ: cassa tech-house punchy e incisiva a 52Hz, drop scattanti con sub a 45Hz, loop vocali serrati a 2kHz e hi-hat iper-dinamici a 10kHz.",
+              bands: [
+                { freq: 52, gain: 3.5, q: 1.3 },
+                { freq: 125, gain: 2.5, q: 1.2 },
+                { freq: 260, gain: -1.5, q: 1.2 },
+                { freq: 700, gain: 0.5, q: 1.0 },
+                { freq: 2000, gain: 2, q: 1.3 },
+                { freq: 3500, gain: 2, q: 1.2 },
+                { freq: 9000, gain: 2, q: 1.2 },
+                { freq: 13500, gain: 2, q: 1.1 }
+              ]
+            },
+            albums: {
+              ferrari: {
+                label: "Ferrari (2022)",
+                eq: {
+                  name: "Ferrari 2022",
+                  notes: "Mega-hit globale con Miggy Dela Rosa: sub-kick energico a 48Hz, sample chitarra caldo a 500Hz, voce pop-house chiara a 2.6kHz, groove travolgente.",
+                  bands: [
+                    { freq: 48, gain: 4, q: 1.3 },
+                    { freq: 120, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1, q: 1.2 },
+                    { freq: 650, gain: 0.5, q: 1.0 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 8800, gain: 2, q: 1.2 },
+                    { freq: 13500, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              drums: {
+                label: "Drums (2023)",
+                eq: {
+                  name: "Drums Hype 2023",
+                  notes: "Banger con Kim Petras e sample di Justin Timberlake: rullante e tom percussivi esplosivi a 220Hz, cassa potente a 50Hz, vocal chops brillanti a 3.2kHz.",
+                  bands: [
+                    { freq: 50, gain: 4, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 250, gain: -1, q: 1.1 },
+                    { freq: 700, gain: 0.5, q: 1.0 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3700, gain: 2.5, q: 1.3 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
+                  ]
+                }
+              },
+              more_than_friends: {
+                label: "More Than Friends (2017)",
+                eq: {
+                  name: "More Than Friend",
+                  notes: "Breakthrough piano house: pianoforte ritmico squillante a 600Hz, bassline bouncy a 115Hz, voce energica di Kelli-Leigh a 2.4kHz.",
+                  bands: [
+                    { freq: 52, gain: 3, q: 1.2 },
+                    { freq: 115, gain: 2.5, q: 1.2 },
+                    { freq: 270, gain: -0.5, q: 1.1 },
+                    { freq: 600, gain: 1, q: 1.1 },
+                    { freq: 2200, gain: 2, q: 1.3 },
+                    { freq: 3500, gain: 1.5, q: 1.2 },
+                    { freq: 8500, gain: 2, q: 1.2 },
+                    { freq: 13000, gain: 1.5, q: 1.0 }
+                  ]
+                }
+              },
+              number_1: {
+                label: "Number 1 (2023)",
+                eq: {
+                  name: "Number 1 Hype 23",
+                  notes: "Collaborazione con Major Lazer: bassline rotolante a 46Hz, percussioni sincopate a 1.2kHz, drop da festival ad alta intensità e piatti puliti.",
+                  bands: [
+                    { freq: 46, gain: 4, q: 1.3 },
+                    { freq: 125, gain: 2, q: 1.2 },
+                    { freq: 260, gain: -1.5, q: 1.2 },
+                    { freq: 680, gain: 0.5, q: 1.1 },
+                    { freq: 2100, gain: 2, q: 1.3 },
+                    { freq: 3600, gain: 2, q: 1.2 },
+                    { freq: 9000, gain: 2, q: 1.2 },
+                    { freq: 14000, gain: 2, q: 1.1 }
                   ]
                 }
               }

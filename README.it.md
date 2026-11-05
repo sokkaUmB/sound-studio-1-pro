@@ -15,7 +15,7 @@
 
 [![Live Web App](https://img.shields.io/badge/Live_Web_App-sound--studio--1--pro.pages.dev-22c55e.svg?logo=cloudflare-pages&logoColor=white)](https://sound-studio-1-pro.pages.dev/)
 [![Licenza: CC BY-NC 4.0](https://img.shields.io/badge/Licenza-CC_BY--NC_4.0-red.svg)](LICENSE.md)
-[![Preset](https://img.shields.io/badge/Profili_Acustici-1.231_Calibrati-38bdf8.svg)](#-catalogo-discografico-curato-1231-profili)
+[![Preset](https://img.shields.io/badge/Profili_Acustici-3.028_Calibrati-38bdf8.svg)](#-catalogo-discografico-curato-1231-profili)
 [![Offline](https://img.shields.io/badge/PWA-100%25_Offline_Standalone-22c55e.svg)](#-100-offline--standalone-pwa-zero-cdn-esterne)
 [![Nothing X](https://img.shields.io/badge/Protocollo-Nothing_X_PEQ-white.svg)](#-protocollo-qr-code-nothing-x-nativo)
 [![Sostieni con Revolut](https://img.shields.io/badge/Sostieni-Revolut-0075eb.svg?logo=revolut&logoColor=white)](https://revolut.me/sokkapkd)
@@ -39,7 +39,7 @@
 - [🎧 Panoramica](#-panoramica)
 - [✨ Funzionalità Principali](#-funzionalità-principali)
   - [🎛️ Motore PEQ a 8 Bande & Curva Parametrica su Canvas](#️-motore-peq-a-8-bande--curva-parametrica-su-canvas)
-  - [📚 Catalogo Discografico Curato (1.231 Profili)](#-catalogo-discografico-curato-1231-profili)
+  - [📚 Catalogo Discografico Curato (3.028 Profili)](#-catalogo-discografico-curato-1231-profili)
   - [📱 Protocollo QR Code Nothing X Nativo](#-protocollo-qr-code-nothing-x-nativo)
   - [🌐 100% Offline & Standalone PWA](#-100-offline--standalone-pwa-zero-cdn-esterne)
   - [🌍 Supporto Multilingua (9 Lingue)](#-supporto-multilingua-9-lingue)
@@ -57,7 +57,7 @@
 
 **Sound Studio (1) Pro** è una suite di mastering acustico ad alta fedeltà sviluppata specificamente per l'ecosistema audio Nothing — inclusi **Nothing Ear**, **Nothing Ear (a)**, **Nothing Ear (2)**, **Nothing HeadPhone (1)** e auricolari **CMF Buds**.
 
-Dotata di un **equalizzatore parametrico (PEQ) a 8 bande con filtri biquad interattivi** e di un vasto catalogo di **1.231 profili album calibrati in studio**, l'app genera istantaneamente codici QR conformi all'hardware Nothing, pronti per essere scansionati o importati direttamente nell'applicazione ufficiale **Nothing X**.
+Dotata di un **equalizzatore parametrico (PEQ) a 8 bande con filtri biquad interattivi** e di un vasto catalogo di **3.028 profili album calibrati in studio**, l'app genera istantaneamente codici QR conformi all'hardware Nothing, pronti per essere scansionati o importati direttamente nell'applicazione ufficiale **Nothing X**.
 
 ---
 
@@ -78,9 +78,9 @@ Dotata di un **equalizzatore parametrico (PEQ) a 8 bande con filtri biquad inter
 
 ---
 
-### 📚 Catalogo Discografico Curato (1.231 Profili)
+### 📚 Catalogo Discografico Curato (3.028 Profili)
 
-- **Calibrazioni Discografiche Approfondite**: Profili acustici meticolosi che coprono **139 artisti leggendari** e **1.071 album storici**.
+- **Calibrazioni Discografiche Approfondite**: Profili acustici meticolosi che coprono **436 artisti** e **2.592 album**.
 - **Copertura Generi Enciclopedica**: Progressive Metal, Thrash, Heavy Metal, Death, Doom, Rock, Metalcore, Nu-Metal, Folk Metal, Power Metal, Jazz, Classica e Pop.
 - **Ricerca Istantanea con Autocompletamento**: Motore di ricerca fuzzy in tempo reale per band, titolo album o anno di pubblicazione con supporto da tastiera.
 - **Note Tecniche di Mastering**: Dettagli analitici su saturazione a nastro, gamma dinamica, risonanze di missaggio e collocazione delle voci per ciascun album.
@@ -190,7 +190,7 @@ sound-studio-1-pro/
 │   └── style.css              # Stili tema dark/light & font dot-matrix Nothing OS
 ├── js/
 │   ├── app.js                 # Controller UI, visualizzatore Canvas & routing eventi
-│   ├── database.js            # 1.231 profili studio calibrati (139 artisti)
+│   ├── database.js            # 3.028 profili studio calibrati (436 artisti)
 │   ├── protocol.js            # Compressione Nothing X QR & codificatore binario
 │   ├── pako.min.js            # Motore locale di decompressione zlib
 │   ├── qrcode.min.js          # Generatore locale matrice QR
